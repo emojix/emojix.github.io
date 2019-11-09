@@ -1,0 +1,847 @@
+
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from emojipedia.org/hibiscus/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Mar 2017 08:08:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"applicationTime":2230,"errorBeacon":"bam.nr-data.net","queueTime":0,"transactionName":"b1NaN0oCW0RVUhJeWVYZfhZWAEFeW19JVFlKUxYWSg9GDVJdB0NpSFdMCw==","agent":"","beacon":"bam.nr-data.net","applicationID":"7909734","licenseKey":"475c936728"}</script>
+<meta name="viewport" content="width=device-width">
+<title>🌺 Hibiscus Emoji</title>
+<link href="../static/css/emojipedia.7cce6c6b80b4.css" rel="stylesheet" type="text/css"/>
+<link rel="apple-touch-icon" sizes="57x57" href="../static/img/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../static/img/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../static/img/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../static/img/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../static/img/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../static/img/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../static/img/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../static/img/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../static/img/favicons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="../static/img/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../static/img/favicons/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="../static/img/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="../static/img/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="../manifest.webapp">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/static/img/favicons/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="mask-icon" mask href="../static/img/emojipedia.svg" color="black">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@emojipedia">
+<meta name="twitter:title" content="🌺 Hibiscus Emoji">
+<meta name="twitter:description" content="A hibiscus emoji, a pretty flower that can be used to attract butterflies and bees. Hibiscus was approved as part…">
+<meta name="twitter:image" content="https://emojipedia-us.s3.amazonaws.com/social/hibiscus.png">
+<meta property="og:site_name" context="Emojipedia"/>
+<meta property="og:url" content="/hibiscus/"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="🌺 Hibiscus Emoji"/>
+<meta property="og:description" content="A hibiscus emoji, a pretty flower that can be used to attract butterflies and bees. Hibiscus was approved as part…"/>
+<meta property="og:image" content="https://emojipedia-us.s3.amazonaws.com/social/hibiscus.png"/>
+<script>window.lazySizesConfig={loadMode:0}</script>
+</head>
+<body>
+<script type="text/javascript">
+(function(){
+var bsa = document.createElement('script');
+bsa.type = 'text/javascript';
+bsa.async = true;
+bsa.src = '../../s3.buysellads.com/ac/bsa.js';
+(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+})();
+</script>
+<header>
+<div class="container">
+<a href="../index.html" class="logo" title="Go to Emojipedia Home">Emojipedia</a>
+<form method="get" action="http://emojipedia.org/search/" class="search-form">
+<label>
+<span class="sr-only">Search Emojipedia:</span>
+<input id="id_q" name="q" placeholder="Search Emojipedia" type="search"/>
+</label>
+</form>
+<a href="#nav-categories" id="nav-categories-toggle">Categories</a>
+<nav class="categories">
+<ul id="nav-categories">
+<li><a href="../people/index.html"><span class="emoji">😃</span> Smileys & People</a></li>
+<li><a href="../nature/index.html"><span class="emoji">🐻</span> Animals & Nature</a></li>
+<li><a href="../food-drink/index.html"><span class="emoji">🍔</span> Food & Drink</a></li>
+<li><a href="../activity/index.html"><span class="emoji">⚽</span> Activity</a></li>
+<li><a href="../travel-places/index.html"><span class="emoji">🌇</span> Travel & Places</a></li>
+<li><a href="../objects/index.html"><span class="emoji">💡</span> Objects</a></li>
+<li><a href="../symbols/index.html"><span class="emoji">🔣</span> Symbols</a></li>
+<li><a href="../flags/index.html"><span class="emoji">🎌</span> Flags</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<div class="sponsor"><p><a href="http://emojiwrap.com/"><span class="emoji">💌</span>&nbsp;Subscribe for the latest emoji news</a></p></div>
+<div class="ad-header">
+<script type="text/javascript">
+   google_ad_client = "ca-pub-3417095048576988";
+   width = document.documentElement.clientWidth;
+     google_ad_slot = "9547014904";
+     google_ad_width = 320;
+     google_ad_height = 100;
+     if (width > 728) {
+         google_ad_slot = "9138623707";
+         google_ad_width = 728;
+    google_ad_height = 90;
+     }
+
+  </script>
+<script type="text/javascript" src="../../pagead2.googlesyndication.com/pagead/f.txt"></script>
+</div>
+<div class="container">
+<div class="content">
+<article>
+<h1><span class="emoji">🌺</span> Hibiscus</h1>
+<section class="description">
+<p>A hibiscus emoji, a pretty flower that can be used to attract butterflies and <a title="🐝 Honeybee" href="../honeybee/index.html">bees</a>.</p>
+<p>
+<em>Hibiscus</em> was approved as part of <a href="../unicode-6.0/index.html">Unicode 6.0</a> in 2010
+and added to <a href="../emoji-1.0/index.html">Emoji 1.0</a> in 2015.
+</p>
+<form class="stacked no-top copy-paste">
+<label>
+<span class="copy-paste__label">Copy and paste this emoji:</span>
+<input type="text" value="🌺" readonly class="emoji-copy copy-paste__data" id="emoji-copy">
+<button type="button" class="btn-clipboard copy-paste__btn" data-clipboard-target="#emoji-copy" style="width:auto;display:inline-block">Copy</button>
+</label>
+</form>
+</section>
+<section class="vendor-list">
+<ul>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../apple/index.html">Apple</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/a9/a4/a9a42a06b77b55d63581bb5427960293.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/6f/e8/6fe80dc382b80bd5964868c4bdaf9fb8.png 2x" alt="Hibiscus on Apple iOS 10.2" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../apple/ios-10.2/index.html">iOS 10.2</a></p>
+</div>
+<div class="vendor-image">
+<a href="../apple/ios-10.2/hibiscus/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/30/6d/306d2d1fbb2bf9cb86cc35669fca5989.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/a9/a4/a9a42a06b77b55d63581bb5427960293.png 2x" alt="Hibiscus on Apple " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../apple/ios-6.0/index.html">iOS 6.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../apple/ios-6.0/hibiscus/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/7b/e3/7be365e17cd8763345219c0e559deb99.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/13/d3/13d3449f09c3ab82d5f2151900094783.png 2x" alt="Hibiscus on Apple " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../apple/ios-5.0/index.html">iOS 5.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../apple/ios-5.0/hibiscus/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/a1/6f/a16f7fc4591f5946fca6f7cf43a2d9df.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/07/3b/073b9d1d6bd33199390ad0aaa9bab1e4.png 2x" alt="Hibiscus on Apple " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../google/index.html">Google</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/26/15/26158387d3f250a49506f3069ea6cdee.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/5b/9a/5b9a2bded1becf874454b6f9d7ede229.png 2x" alt="Hibiscus on Google Android 7.1" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../google/android-7.1/index.html">Android 7.1</a></p>
+</div>
+<div class="vendor-image">
+<a href="../google/android-7.1/hibiscus/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/80/53/8053084de72c3ef28cba2bf69b3dab0e.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/26/15/26158387d3f250a49506f3069ea6cdee.png 2x" alt="Hibiscus on Google " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../google/android-4.4/index.html">Android 4.4</a></p>
+</div>
+<div class="vendor-image">
+<a href="../google/android-4.4/hibiscus/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/f7/ac/f7acd8708db1458218f3b913d4a1eb73.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/35/6b/356bd1ee52977cc932e55d3dbcf0f4bf.png 2x" alt="Hibiscus on Google " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../google/android-4.3/index.html">Android 4.3</a></p>
+</div>
+<div class="vendor-image">
+<a href="../google/android-4.3/hibiscus/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/20/c9/20c912b4fcb427e754bb9b57401b5e3c.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/62/76/6276ca3c6f8f370eef9e6e9f09a0bf36.png 2x" alt="Hibiscus on Google " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../microsoft/index.html">Microsoft</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/95/d4/95d468ff92b80351d0e50483e247ee85.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/90/0b/900bf46e7b1d36825d7ccad06982b4b0.png 2x" alt="Hibiscus on Microsoft Windows 10 Anniversary Update" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../microsoft/windows-10-anniversary-update/index.html">Windows 10 Anniversary Update</a></p>
+</div>
+<div class="vendor-image">
+<a href="../microsoft/windows-10-anniversary-update/hibiscus/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/cb/e8/cbe8b74e4284d499b633e963e1da8a45.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/95/d4/95d468ff92b80351d0e50483e247ee85.png 2x" alt="Hibiscus on Microsoft " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../microsoft/windows-8.1/index.html">Windows 8.1</a></p>
+</div>
+<div class="vendor-image">
+<a href="../microsoft/windows-8.1/hibiscus/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/32/d2/32d26241e43098eea2b8c0bfbe2aff35.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/6a/27/6a2779c6dea836d9fdfbe1681d179d1f.png 2x" alt="Hibiscus on Microsoft " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../microsoft/windows-8.0/index.html">Windows 8.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../microsoft/windows-8.0/hibiscus/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/b9/a3/b9a3bad88ac29837d0a7cd9af0b87e2b.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/d2/15/d2150162ad6a7d8b9f9f2f8844148b9b.png 2x" alt="Hibiscus on Microsoft " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../samsung/index.html">Samsung</a></h2>
+</div>
+<div class="vendor-image">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../samsung/galaxy-s8/index.html">Galaxy S8</a></p>
+</div>
+<div class="vendor-image">
+<a href="../samsung/galaxy-s8/hibiscus/index.html">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../samsung/galaxy-s4/index.html">Galaxy S4</a></p>
+</div>
+<div class="vendor-image">
+<a href="../samsung/galaxy-s4/hibiscus/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/c6/18/c6185c6d4b3bcb210df8d061e48f9c8f.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/48/9d/489df08df6e9a5853d0884d491f1a8f9.png 2x" alt="Hibiscus on Samsung " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../lg/index.html">LG</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/31/11/31114c5ac10584799a5eed2368a92569.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/1a/f4/1af400859914b359fa66d04694ae627a.png 2x" alt="Hibiscus on LG G5" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../lg/g5/index.html">G5</a></p>
+</div>
+<div class="vendor-image">
+<a href="../lg/g5/hibiscus/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/a4/cb/a4cb862ea586edd0feb310b7e020dc3b.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/31/11/31114c5ac10584799a5eed2368a92569.png 2x" alt="Hibiscus on LG " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../lg/g3/index.html">G3</a></p>
+</div>
+<div class="vendor-image">
+<a href="../lg/g3/hibiscus/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/55/31/5531e2912c03514a88e32726c5b4f9b4.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/40/4a/404ab4ad5c832969d8a00484bdcce9e4.png 2x" alt="Hibiscus on LG " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../htc/index.html">HTC</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/01/a3/01a3258ac7ea210c8abdabc2b411d2ca.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/b0/37/b0375c80534dca69f0b18e57211bd58e.png 2x" alt="Hibiscus on HTC Sense 7" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../htc/sense-7/index.html">Sense 7</a></p>
+</div>
+<div class="vendor-image">
+<a href="../htc/sense-7/hibiscus/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/16/2a/162a83d3e8554fce4807fc435504cd4d.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/01/a3/01a3258ac7ea210c8abdabc2b411d2ca.png 2x" alt="Hibiscus on HTC " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../facebook/index.html">Facebook</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/9c/c5/9cc5871a14649bdaabb21d908e6eca22.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/34/8d/348d9c872b3d3d96429310f2b15ae545.png 2x" alt="Hibiscus on Facebook 2.0" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../facebook/2.0/index.html">2.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../facebook/2.0/hibiscus/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/b1/46/b1466aaac3f9e2fab74d6b95f01cefef.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/9c/c5/9cc5871a14649bdaabb21d908e6eca22.png 2x" alt="Hibiscus on Facebook " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../facebook/1.0/index.html">1.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../facebook/1.0/hibiscus/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/3a/43/3a430379b0f18e51deff1736e8098eb7.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/b5/6b/b56b1295d617dc2a3eddf8763cf948f1.png 2x" alt="Hibiscus on Facebook " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../messenger/index.html">Messenger</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/c7/33/c733b4acad653350a6e79829e7e1ad2b.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/61/b1/61b1da5c42c8a9c9bb8cf5a5a83bd64f.png 2x" alt="Hibiscus on Messenger 1.0" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../messenger/1.0/index.html">1.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../messenger/1.0/hibiscus/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/1a/b5/1ab5be569ee94a3c8912f763f945a094.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/c7/33/c733b4acad653350a6e79829e7e1ad2b.png 2x" alt="Hibiscus on Messenger " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../twitter/index.html">Twitter</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/e8/0f/e80f736e7cc0aee62063180db8dad4f1.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/ef/9d/ef9d75fe8edc2042f33e6180cae60cda.png 2x" alt="Hibiscus on Twitter Twemoji 2.2.3" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../twitter/twemoji-2.2.3/index.html">Twemoji 2.2.3</a></p>
+</div>
+<div class="vendor-image">
+<a href="../twitter/twemoji-2.2.3/hibiscus/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/97/74/97748ff8536c232a79f9d3bcd8421f7a.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/e8/0f/e80f736e7cc0aee62063180db8dad4f1.png 2x" alt="Hibiscus on Twitter " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../twitter/twemoji-1.0/index.html">Twemoji 1.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../twitter/twemoji-1.0/hibiscus/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/29/4c/294c5cf865a030128f80ca6d36d63112.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/fb/9a/fb9a1d32273c0c4591624d1461edd809.png 2x" alt="Hibiscus on Twitter " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../mozilla/index.html">Mozilla</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/81/c6/81c6fcaa973167701d9a106ce46a4ba6.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/02/00/0200123e6049516adda94cfc9044890b.png 2x" alt="Hibiscus on Mozilla Firefox OS 2.5" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../mozilla/firefox-os-2.5/index.html">Firefox OS 2.5</a></p>
+</div>
+<div class="vendor-image">
+<a href="../mozilla/firefox-os-2.5/hibiscus/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/69/0d/690d8275fa8af16e24affbf251e24183.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/81/c6/81c6fcaa973167701d9a106ce46a4ba6.png 2x" alt="Hibiscus on Mozilla " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../emoji-one/index.html">Emoji One</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/40/59/4059e0edf1d1f074a7dbffa0ea88b457.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/c9/62/c962f7cd05cba5acc3e207b909082123.png 2x" alt="Hibiscus on Emoji One 2.2.5" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../emoji-one/2.2.5/index.html">2.2.5</a></p>
+</div>
+<div class="vendor-image">
+<a href="../emoji-one/2.2.5/hibiscus/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/e3/30/e330c706dd3981dd42b0dbbb25e70b67.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/40/59/4059e0edf1d1f074a7dbffa0ea88b457.png 2x" alt="Hibiscus on Emoji One " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../emoji-one/2.2/index.html">2.2</a></p>
+</div>
+<div class="vendor-image">
+<a href="../emoji-one/2.2/hibiscus/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/5c/1f/5c1f8dfa058cfb68b53aa65fe835a339.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/c1/aa/c1aa92ecf7e53a5b54cc9d14e6c7d41a.png 2x" alt="Hibiscus on Emoji One " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../emoji-one/2.0/index.html">2.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../emoji-one/2.0/hibiscus/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/6c/82/6c8234a69ae6bf86642d55a7058e70e9.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/a5/37/a5379050236c27954cfc95be11b8de99.png 2x" alt="Hibiscus on Emoji One " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../emoji-one/1.0/index.html">1.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../emoji-one/1.0/hibiscus/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/ad/fb/adfb5f2979671d8b270966a117cc4bee.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/fd/c2/fdc2fb969fa5f51a9b559c4bc2b771d4.png 2x" alt="Hibiscus on Emoji One " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../emojidex/index.html">emojidex</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/43/85/43854777890b9b1e30ea4f588c766d37.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/56/3b/563bf4f280c1f8f3b79cbfae95add6a5.png 2x" alt="Hibiscus on emojidex 1.0.24" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../emojidex/1.0.24/index.html">1.0.24</a></p>
+</div>
+<div class="vendor-image">
+<a href="../emojidex/1.0.24/hibiscus/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/df/cc/dfcc4a5f870d99967be735dc30ede721.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/43/85/43854777890b9b1e30ea4f588c766d37.png 2x" alt="Hibiscus on emojidex " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../emojidex/1.0.14/index.html">1.0.14</a></p>
+</div>
+<div class="vendor-image">
+<a href="../emojidex/1.0.14/hibiscus/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/de/b1/deb1005c751901412b6d9d08c148ee4b.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/99/21/9921baec803b0112e5295057e9366417.png 2x" alt="Hibiscus on emojidex " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</section>
+<h2>Codepoints</h2>
+<ul>
+<li><a href="../emoji/%f0%9f%8c%ba/index.html">🌺 U+1F33A</a></li>
+</ul>
+<h2>Shortcodes</h2>
+<ul class="shortcodes">
+<li>:hibiscus:</li>
+</ul>
+<h2>Browse</h2>
+<ul>
+<li><a href="https://instagram.com/explore/tags/🌺/"><span class="emoji">🌺</span> on Instagram</a></li>
+<li><a href="https://twitter.com/search?q=%f0%9f%8c%ba"><span class="emoji">🌺</span> on Twitter</a></li>
+<li><a href="https://en.wikipedia.org/wiki/🌺"><span class="emoji">🌺</span> on Wikipedia</a></li>
+<li><a href="http://www.yelp.com/search?find_desc=%f0%9f%8c%ba"><span class="emoji">🌺</span> on Yelp</a></li>
+<li><a href="https://www.youtube.com/results?search_query=%f0%9f%8c%ba"><span class="emoji">🌺</span> on YouTube</a></li>
+</ul>
+<h2>Related</h2>
+<ul class="emoji-list">
+<li><a href="../bouquet/index.html"><span class="emoji">💐</span> Bouquet</a></li>
+<li><a href="../flower-playing-cards/index.html"><span class="emoji">🎴</span> Flower Playing Cards</a></li>
+<li><a href="../flag-for-hong-kong/index.html"><span class="emoji">🇭🇰</span> Hong Kong Sar China</a></li>
+<li><a href="../negative-squared-latin-capital-letter-p/index.html"><span class="emoji">🅿️</span> P Button</a></li>
+<li><a href="../regional-indicator-symbol-letter-p/index.html"><span class="emoji">🇵</span> Regional Indicator Symbol Letter P</a></li>
+<li><a href="../rose/index.html"><span class="emoji">🌹</span> Rose</a></li>
+<li><a href="../rosette/index.html"><span class="emoji">🏵️</span> Rosette</a></li>
+<li><a href="../tulip/index.html"><span class="emoji">🌷</span> Tulip</a></li>
+<li><a href="../random/index.html"><span class="emoji">🔀</span> Random emoji</a></li>
+</ul>
+<form class="short-link stacked">
+<input type="text" value="http://📙.la/🌺" readonly>
+</form>
+</article>
+<div class="ad-footer">
+<div style="text-align:center">
+<script type="text/javascript">
+		    google_ad_client = "ca-pub-3417095048576988";
+		    width = document.documentElement.clientWidth;
+		    google_ad_slot = "7111864505";
+		    google_ad_width = 300;
+		    google_ad_height = 250;
+		    if (width > 380) {
+		        google_ad_slot = "8262920107";
+		        google_ad_width = 336;
+		       google_ad_height = 280;
+		    }
+ 
+		</script>
+<script type="text/javascript" src="../../pagead2.googlesyndication.com/pagead/f.txt">
+		</script>
+</div>
+</div>
+</div>
+<div class="sidebar">
+<div class="block">
+<h2>Categories</h2>
+<ul>
+<li><a href="../people/index.html"><span class="emoji">😃</span> Smileys & People</a></li>
+<li><a href="../nature/index.html"><span class="emoji">🐻</span> Animals & Nature</a></li>
+<li><a href="../food-drink/index.html"><span class="emoji">🍔</span> Food & Drink</a></li>
+<li><a href="../activity/index.html"><span class="emoji">⚽</span> Activity</a></li>
+<li><a href="../travel-places/index.html"><span class="emoji">🌇</span> Travel & Places</a></li>
+<li><a href="../objects/index.html"><span class="emoji">💡</span> Objects</a></li>
+<li><a href="../symbols/index.html"><span class="emoji">🔣</span> Symbols</a></li>
+<li><a href="../flags/index.html"><span class="emoji">🎌</span> Flags</a></li>
+</ul>
+</div>
+<div class="block">
+<h2>Most Popular</h2>
+<ul>
+<li><a href="../shrug/index.html"><span class="emoji">🤷</span> Person Shrugging</a></li>
+<li><a href="../face-with-tears-of-joy/index.html"><span class="emoji">😂</span> Face With Tears of Joy</a></li>
+<li><a href="../heavy-black-heart/index.html"><span class="emoji">❤</span> Red Heart</a></li>
+<li><a href="../smiling-face-with-heart-shaped-eyes/index.html"><span class="emoji">😍</span> Smiling Face With Heart-Eyes</a></li>
+<li><a href="../fire/index.html"><span class="emoji">🔥</span> Fire</a></li>
+<li><a href="../thinking-face/index.html"><span class="emoji">🤔</span> Thinking Face</a></li>
+<li><a href="../smiling-face-with-smiling-eyes/index.html"><span class="emoji">😊</span> Smiling Face With Smiling Eyes</a></li>
+<li><a href="../face-throwing-a-kiss/index.html"><span class="emoji">😘</span> Face Blowing a Kiss</a></li>
+<li><a href="../face-with-rolling-eyes/index.html"><span class="emoji">🙄</span> Face With Rolling Eyes</a></li>
+</ul>
+</div>
+<div class="block">
+<h2>Latest News</h2>
+<ul>
+<li><a href="http://blog.emojipedia.org/samsung-galaxy-s8-emoji-changelog/"><span class="emoji">📲</span> Samsung Galaxy S8 Emoji Changelog</a></li>
+<li><a href="http://blog.emojipedia.org/what-is-gender-and-why-does-it-matter-to-emoji/"><span class="emoji">🚻</span> What is Gender and Why Does it Matter to Emoji?</a></li>
+<li><a href="http://blog.emojipedia.org/why-there-were-two-emoji-updates-in-2016/"><span class="emoji">👀</span> Why There Were Two Emoji Updates In 2016</a></li>
+<li><a href="http://blog.emojipedia.org/facebook-completes-emoji-update/"><span class="emoji">💻</span> Facebook Completes Emoji Update</a></li>
+<li><a href="http://blog.emojipedia.org/the-resistance-will-be-emojified/"><span class="emoji">✊</span> The Resistance Will Be Emojified</a></li>
+<li><a href="http://blog.emojipedia.org/who-owns-emoji/"><span class="emoji">👩&zwj;⚖️</span> Who Owns Emoji?</a></li>
+<li><a href="http://blog.emojipedia.org/utc-provides-feedback-on-redhead-emoji/"><span class="emoji">📝</span> UTC Provides Feedback on Redhead Emoji</a></li>
+<li><a href="http://blog.emojipedia.org/happy-chinese-new-year/"><span class="emoji">🎇</span> Happy Chinese New Year!</a></li>
+</ul>
+</div>
+<div class="block">
+<h2>Events</h2>
+<ul>
+<li><a href="../australia-day/index.html"><span class="emoji">🇦🇺</span> Australia Day</a></li>
+<li><a href="../bastille-day/index.html"><span class="emoji">🇫🇷</span> Bastille Day</a></li>
+<li><a href="../birthday/index.html"><span class="emoji">🎂</span> Birthday</a></li>
+<li><a href="../black-friday/index.html"><span class="emoji">🛍</span> Black Friday</a></li>
+<li><a href="../canada-day/index.html"><span class="emoji">🇨🇦</span> Canada Day</a></li>
+<li><a href="../carnaval/index.html"><span class="emoji">🇧🇷</span> Carnaval</a></li>
+<li><a href="../chinese-new-year/index.html"><span class="emoji">🐉</span> Chinese New Year</a></li>
+<li><a href="../christmas/index.html"><span class="emoji">🎅</span> Christmas</a></li>
+<li><a href="../cinco-de-mayo/index.html"><span class="emoji">🇲🇽</span> Cinco de Mayo</a></li>
+<li><a href="../dragon-boat-festival/index.html"><span class="emoji">🇨🇳</span> Dragon Boat Festival</a></li>
+<li><a href="../easter/index.html"><span class="emoji">🐰</span> Easter</a></li>
+<li><a href="../emoji-movie/index.html"><span class="emoji">🎥</span> Emoji Movie</a></li>
+<li><a href="../fall-autumn/index.html"><span class="emoji">🍂</span> Fall / Autumn</a></li>
+<li><a href="../fathers-day/index.html"><span class="emoji">👨</span> Father’s Day</a></li>
+<li><a href="../festivus/index.html"><span class="emoji">💪</span> Festivus</a></li>
+<li><a href="../graduation/index.html"><span class="emoji">🎓</span> Graduation</a></li>
+<li><a href="../guy-fawkes/index.html"><span class="emoji">🔥</span> Guy Fawkes</a></li>
+<li><a href="../halloween/index.html"><span class="emoji">🎃</span> Halloween</a></li>
+<li><a href="../hanukkah/index.html"><span class="emoji">🕎</span> Hanukkah</a></li>
+<li><a href="../holi/index.html"><span class="emoji">🕉</span> Holi</a></li>
+<li><a href="../independence-day/index.html"><span class="emoji">🇺🇸</span> Independence Day</a></li>
+<li><a href="../mothers-day/index.html"><span class="emoji">👩</span> Mother’s Day</a></li>
+<li><a href="../new-years-eve/index.html"><span class="emoji">🎊</span> New Year’s Eve</a></li>
+<li><a href="../olympics/index.html"><span class="emoji">🏊</span> Olympics</a></li>
+<li><a href="../queens-birthday/index.html"><span class="emoji">👑</span> Queen’s Birthday</a></li>
+<li><a href="../ramadan/index.html"><span class="emoji">☪</span> Ramadan</a></li>
+<li><a href="../spring/index.html"><span class="emoji">🌱</span> Spring</a></li>
+<li><a href="../st-patricks-day/index.html"><span class="emoji">☘</span> St Patrick’s Day</a></li>
+<li><a href="../summer/index.html"><span class="emoji">☀</span> Summer</a></li>
+<li><a href="../super-bowl/index.html"><span class="emoji">🏈</span> Super Bowl</a></li>
+<li><a href="../thanksgiving/index.html"><span class="emoji">🦃</span> Thanksgiving</a></li>
+<li><a href="../valentines-day/index.html"><span class="emoji">💘</span> Valentine’s Day</a></li>
+<li><a href="../wedding-marriage/index.html"><span class="emoji">👰</span> Wedding / Marriage</a></li>
+<li><a href="../winter/index.html"><span class="emoji">⛄</span> Winter</a></li>
+<li><a href="../winter-olympics/index.html"><span class="emoji">🎿</span> Winter Olympics</a></li>
+<li><a href="../world-cup/index.html"><span class="emoji">⚽</span> World Cup</a></li>
+<li><a href="../world-emoji-day/index.html"><span class="emoji">🌎</span> World Emoji Day</a></li>
+</ul>
+</div>
+</div>
+</div>
+<footer>
+<nav>
+<div class="container">
+<div class="vendors">
+<h2>Platforms</h2>
+<ul>
+<li><a href="../apple/index.html">Apple</a></li>
+<li><a href="../emojidex/index.html">emojidex</a></li>
+<li><a href="../emoji-one/index.html">Emoji One</a></li>
+<li><a href="../emojipedia/index.html">Emojipedia</a></li>
+<li><a href="../facebook/index.html">Facebook</a></li>
+<li><a href="../google/index.html">Google</a></li>
+<li><a href="../htc/index.html">HTC</a></li>
+<li><a href="../instagram/index.html">Instagram</a></li>
+<li><a href="../lg/index.html">LG</a></li>
+<li><a href="../messenger/index.html">Messenger</a></li>
+<li><a href="../microsoft/index.html">Microsoft</a></li>
+<li><a href="../mozilla/index.html">Mozilla</a></li>
+<li><a href="../samsung/index.html">Samsung</a></li>
+<li><a href="../slack/index.html">Slack</a></li>
+<li><a href="../snapchat/index.html">Snapchat</a></li>
+<li><a href="../sponsored/index.html">Sponsored</a></li>
+<li><a href="../telegram/index.html">Telegram</a></li>
+<li><a href="../twitter/index.html">Twitter</a></li>
+<li><a href="../viber/index.html">Viber</a></li>
+<li><a href="../whatsapp/index.html">WhatsApp</a></li>
+<li><a href="../yo-status/index.html">Yo Status</a></li>
+</ul>
+</div>
+<div class="unicode-version">
+<h2>Emoji Versions</h2>
+<ul>
+<li><a href="../emoji-6.0/index.html">Emoji 6.0</a></li>
+<li><a href="../emoji-5.0/index.html">Emoji 5.0</a></li>
+<li><a href="../emoji-4.0/index.html">Emoji 4.0</a></li>
+<li><a href="../emoji-3.0/index.html">Emoji 3.0</a></li>
+<li><a href="../emoji-2.0/index.html">Emoji 2.0</a></li>
+<li><a href="../emoji-1.0/index.html">Emoji 1.0</a></li>
+</ul>
+<h2>Unicode Versions</h2>
+<ul>
+<li><a href="../unicode-11.0/index.html">Unicode 11.0</a></li>
+<li><a href="../unicode-10.0/index.html">Unicode 10.0</a></li>
+<li><a href="../unicode-9.0/index.html">Unicode 9.0</a></li>
+<li><a href="../unicode-8.0/index.html">Unicode 8.0</a></li>
+<li><a href="../unicode-7.0/index.html">Unicode 7.0</a></li>
+<li><a href="../unicode-6.1/index.html">Unicode 6.1</a></li>
+<li><a href="../unicode-6.0/index.html">Unicode 6.0</a></li>
+<li><a href="../unicode-5.2/index.html">Unicode 5.2</a></li>
+<li><a href="../unicode-5.1/index.html">Unicode 5.1</a></li>
+<li><a href="../unicode-4.1/index.html">Unicode 4.1</a></li>
+<li><a href="../unicode-4.0/index.html">Unicode 4.0</a></li>
+<li><a href="../unicode-3.2/index.html">Unicode 3.2</a></li>
+<li><a href="../unicode-3.1/index.html">Unicode 3.1</a></li>
+<li><a href="../unicode-3.0/index.html">Unicode 3.0</a></li>
+<li><a href="../unicode-1.1/index.html">Unicode 1.1</a></li>
+</ul>
+</div>
+<div class="static-pages">
+<h2>More</h2>
+<ul>
+<li><a href="../adopt-emoji-faq/index.html">Adopt An Emoji FAQ</a></li>
+<li><a href="../ads/index.html">Ads</a></li>
+<li><a href="../apple-watch/index.html">Apple Watch</a></li>
+<li><a href="../botmoji/index.html">Botmoji</a></li>
+<li><a href="../contact/index.html">Contact</a></li>
+<li><a href="../neutral/index.html">Emoji Neutral</a></li>
+<li><a href="../emojipedia-api/index.html">Emojipedia API</a></li>
+<li><a href="../app/index.html">Emojipedia Apps</a></li>
+<li><a href="../stats/index.html">Emoji Statistics</a></li>
+<li><a href="../emoji-wrap/index.html">Emoji Wrap</a></li>
+<li><a href="../emoji-zwj-sequences/index.html">Emoji ZWJ Sequences</a></li>
+<li><a href="../faq/index.html">FAQ</a></li>
+<li><a href="../glossary/index.html">Glossary</a></li>
+<li><a href="../stickers/index.html">iMessage Stickers</a></li>
+<li><a href="../press/index.html">In The News</a></li>
+<li><a href="../licensing/index.html">Licensing</a></li>
+<li><a href="../new/index.html">New</a></li>
+<li><a href="../privacy-policy/index.html">Privacy Policy</a></li>
+<li><a href="../tips/index.html">Tips</a></li>
+<li><a href="../modifiers/index.html">Modifiers</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="container content">
+<p>All emoji names&nbsp;are&nbsp;<a href="../faq/index.html">official character and/or CLDR names</a>&nbsp;and <a href="../emoji/index.html" title="😃 Every Emoji by Codepoint">code points</a>, listed as part of the <a href="https://en.wikipedia.org/wiki/Unicode_Standard">Unicode Standard</a>. Additional descriptions are copyright&nbsp;&copy; Emojipedia.&nbsp;Emoji character artwork and copyright belong to their respective font creators.</p>
+<p>Emojipedia&reg; is a registered trademark of Emojipedia Pty Ltd;&nbsp;Apple&reg; is a registered trademark of Apple Inc; Microsoft&reg; and Windows&reg; are registered trademarks of Microsoft Corporation; Google&reg; and Android&trade; are registered trademarks or trademarks of Google Inc in the United States and/or other countries. Emoji One images provided free by Emoji One.</p>
+</div>
+</footer>
+<script type="text/javascript" src="../static/js/jquery.min.d72a6941a827.js" charset="utf-8"></script>
+<script type="text/javascript" src="../static/js/site.9958d0753977.js" charset="utf-8"></script>
+<script type="text/javascript" src="../static/js/lazy.f12b5efd22b1.js" charset="utf-8"></script>
+<script>
+(function() {
+function async_load(script_url){
+var protocol = ('https:' == document.location.protocol ? 'https://' : 'http://');
+var s = document.createElement('script'); s.src = protocol + script_url;
+var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+}
+bm_website_code = 'D7A15B1CC4264F19';
+jQuery(document).ready(function(){async_load('asset.pagefair.com/measure.min.js')});
+jQuery(document).ready(function(){async_load('asset.pagefair.net/ads.min.js/index.html')});
+})();
+</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-43649623-1', 'auto');
+ga('send', 'pageview');
+</script>
+</body>
+
+<!-- Mirrored from emojipedia.org/hibiscus/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Mar 2017 08:08:48 GMT -->
+</html>
