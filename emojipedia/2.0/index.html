@@ -1,0 +1,732 @@
+
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from emojipedia.org/emojipedia/2.0/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Mar 2017 17:33:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"applicationTime":834,"errorBeacon":"bam.nr-data.net","queueTime":0,"transactionName":"b1NaN0oCW0RVUhJeWVYZfhZWAEFeW19JVFlKUxYVUQZCRA5nA1lSV0RuCl0UG1BRRQ==","agent":"","beacon":"bam.nr-data.net","applicationID":"7909734","licenseKey":"475c936728"}</script>
+<meta name="viewport" content="width=device-width">
+<title>Emojipedia 2.0 Emoji List</title>
+<link href="../../static/css/emojipedia.7cce6c6b80b4.css" rel="stylesheet" type="text/css"/>
+<link rel="apple-touch-icon" sizes="57x57" href="../../static/img/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../../static/img/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../../static/img/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../../static/img/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../../static/img/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../../static/img/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../../static/img/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../../static/img/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../static/img/favicons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="../../static/img/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../../static/img/favicons/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="../../static/img/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="../../static/img/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="../../manifest.webapp">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/static/img/favicons/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="mask-icon" mask href="../../static/img/emojipedia.svg" color="black">
+<meta name="description" content="Sample images for new emoji releases from Emojipedia. The latest emoji candidates for Unicode 10 and Emoji 5 for 2017.">
+<style id="lazystyles">.lazyparent.lazyparent{display:none;}</style>
+<script>window.lazySizesConfig={expand:window.innerHeight + 20*75}</script>
+</head>
+<body>
+<script type="text/javascript">
+(function(){
+var bsa = document.createElement('script');
+bsa.type = 'text/javascript';
+bsa.async = true;
+bsa.src = '../../../s3.buysellads.com/ac/bsa.js';
+(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+})();
+</script>
+<header>
+<div class="container">
+<a href="../../index.html" class="logo" title="Go to Emojipedia Home">Emojipedia</a>
+<form method="get" action="http://emojipedia.org/search/" class="search-form">
+<label>
+<span class="sr-only">Search Emojipedia:</span>
+<input id="id_q" name="q" placeholder="Search Emojipedia" type="search"/>
+</label>
+</form>
+<a href="#nav-categories" id="nav-categories-toggle">Categories</a>
+<nav class="categories">
+<ul id="nav-categories">
+<li><a href="../../people/index.html"><span class="emoji">😃</span> Smileys & People</a></li>
+<li><a href="../../nature/index.html"><span class="emoji">🐻</span> Animals & Nature</a></li>
+<li><a href="../../food-drink/index.html"><span class="emoji">🍔</span> Food & Drink</a></li>
+<li><a href="../../activity/index.html"><span class="emoji">⚽</span> Activity</a></li>
+<li><a href="../../travel-places/index.html"><span class="emoji">🌇</span> Travel & Places</a></li>
+<li><a href="../../objects/index.html"><span class="emoji">💡</span> Objects</a></li>
+<li><a href="../../symbols/index.html"><span class="emoji">🔣</span> Symbols</a></li>
+<li><a href="../../flags/index.html"><span class="emoji">🎌</span> Flags</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<div class="sponsor"><p><a href="http://emojiwrap.com/"><span class="emoji">💌</span>&nbsp;Subscribe for the latest emoji news</a></p></div>
+<div class="ad-header">
+<script type="text/javascript">
+   google_ad_client = "ca-pub-3417095048576988";
+   width = document.documentElement.clientWidth;
+     google_ad_slot = "9547014904";
+     google_ad_width = 320;
+     google_ad_height = 100;
+     if (width > 728) {
+         google_ad_slot = "9138623707";
+         google_ad_width = 728;
+    google_ad_height = 90;
+     }
+
+  </script>
+<script type="text/javascript" src="../../../pagead2.googlesyndication.com/pagead/f.txt"></script>
+</div>
+<div class="container">
+<div class="content">
+<article>
+<header>
+<h1>Emojipedia 2.0</h1>
+<ul>
+<li><strong>Vendor:</strong> <a href="../index.html">Emojipedia</a></li>
+<li><strong>Version:</strong> 2.0</li>
+<li><strong>Release Date:</strong> May 16, 2016</li>
+<li><strong>Emojis:</strong> 77</li>
+</ul>
+<p>Collection of original sample images&nbsp;from Emojipedia featuring the emojis from&nbsp;<a href="../../unicode-9.0/index.html">Unicode 9.0</a>. <a href="http://blog.emojipedia.org/new-unicode-9-emojis/">More about this update</a>.</p>
+</header>
+<p class="vsfilter">
+<span class="vsfilter__label">Show:</span>
+<a class="vsfilter__ln vsfilter__ln--active" href="index.html">all</a>,
+<a class="vsfilter__ln" title="since Emojipedia 1.0" href="changed/index.html">changed</a>,
+<a class="vsfilter__ln" title="since Emojipedia 1.0" href="new/index.html">new</a>
+</p>
+<ul class="emoji-grid">
+<li>
+<a href="rolling-on-the-floor-laughing/index.html">
+<img src="../../../emojipedia-us.s3.amazonaws.com/cache/83/fd/83fda473964d8ad5d362278a4a16dae5.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/ce/68/ce680446562fac0011a9951b3ef3b243.png 2x" alt="Rolling on the Floor Laughing" title="Rolling on the Floor Laughing" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="drooling-face/index.html">
+<img src="../../../emojipedia-us.s3.amazonaws.com/cache/e6/7c/e67c9c20170fb9ec25c9ba5d0fc377d4.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/54/f6/54f6c300ac77b5a4b8ab6cee4d253589.png 2x" alt="Drooling Face" title="Drooling Face" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="nauseated-face/index.html">
+<img src="../../../emojipedia-us.s3.amazonaws.com/cache/8e/59/8e597786a9a811ae546b460d9630f58c.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/c6/dc/c6dc242927772ba490adbf2a823708d9.png 2x" alt="Nauseated Face" title="Nauseated Face" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="sneezing-face/index.html">
+<img src="../../../emojipedia-us.s3.amazonaws.com/cache/42/cc/42cce26063d930ef92e90f8ab22e5ec8.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/02/f0/02f00f84f31e0eb5c131c0e0237dc05d.png 2x" alt="Sneezing Face" title="Sneezing Face" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="face-with-cowboy-hat/index.html">
+<img src="../../../emojipedia-us.s3.amazonaws.com/cache/5d/dd/5dddb910cf7a3c1967f7b2b9fc0a52fe.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/44/df/44dfb6c4945fb4b4a03502e3797c5a82.png 2x" alt="Cowboy Hat Face" title="Cowboy Hat Face" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="clown-face/index.html">
+<img src="../../../emojipedia-us.s3.amazonaws.com/cache/d7/99/d7991bc40fedd9754ed11040b6db14e4.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/92/c1/92c115db0417cf64617550f810199b6c.png 2x" alt="Clown Face" title="Clown Face" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="lying-face/index.html">
+<img src="../../../emojipedia-us.s3.amazonaws.com/cache/54/ac/54ace91ff2e88822b31b01830986d7c8.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/e1/5f/e15f8eff418533319903c55b229a7f01.png 2x" alt="Lying Face" title="Lying Face" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="prince/index.html">
+<img src="../../../emojipedia-us.s3.amazonaws.com/cache/48/0b/480b75eed1feb338074c577c704f57f6.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/af/2c/af2cb9699555e3c1932dc3c98ca823bc.png 2x" alt="Prince" title="Prince" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="man-in-tuxedo/index.html">
+<img src="../../../emojipedia-us.s3.amazonaws.com/cache/e7/c9/e7c98436d66e4d3b86b67ecdc00b29d6.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/87/c6/87c6706bce8c232c2eebcc7e9771783b.png 2x" alt="Man in Tuxedo" title="Man in Tuxedo" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="pregnant-woman/index.html">
+<img src="../../../emojipedia-us.s3.amazonaws.com/cache/a3/3d/a33d3c43d542d29b7c6640d906b8eac2.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/75/43/75432a24919a161c0efe114b589842c2.png 2x" alt="Pregnant Woman" title="Pregnant Woman" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="mother-christmas/index.html">
+<img src="../../../emojipedia-us.s3.amazonaws.com/cache/b4/10/b410f521e18a256e07e2c1649df1a235.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/bc/ae/bcaecf76a17aebef235f8823691df306.png 2x" alt="Mrs. Claus" title="Mrs. Claus" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="face-palm/index.html">
+<img src="../../../emojipedia-us.s3.amazonaws.com/cache/f1/8a/f18af880e6d7b93eecde3919f6aa80da.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/70/90/7090819fe5e7cfd6afa8737ee0639640.png 2x" alt="Person Facepalming" title="Person Facepalming" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="shrug/index.html">
+<img src="../../../emojipedia-us.s3.amazonaws.com/cache/62/49/62495f56d219322fb9e2fda99b2aa06b.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/a0/99/a099c0e3ebaa0f9daca2ffc7b7a87699.png 2x" alt="Person Shrugging" title="Person Shrugging" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="man-dancing/index.html">
+<img src="../../../emojipedia-us.s3.amazonaws.com/cache/bb/eb/bbeb5002647814908de6f7f710f6bee0.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/86/48/8648c065bf882b80445de2be2db972d7.png 2x" alt="Man Dancing" title="Man Dancing" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="fencer/index.html">
+<img src="../../../emojipedia-us.s3.amazonaws.com/cache/4d/3a/4d3a68df8593cc76bf841c935919ef40.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/2c/ad/2cada98baa05af1728ba8067fae4b25a.png 2x" alt="Person Fencing" title="Person Fencing" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="person-doing-cartwheel/index.html">
+<img src="../../../emojipedia-us.s3.amazonaws.com/cache/7a/67/7a67e2555a3589c1b52a7e994eb76e28.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/e9/db/e9dbec717324a228e4a9fe5c2a26f82f.png 2x" alt="Person Cartwheeling" title="Person Cartwheeling" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="wrestlers/index.html">
+<img src="../../../emojipedia-us.s3.amazonaws.com/cache/84/41/84412a29f1b896c15a44e1d8a14ae2fb.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/da/a6/daa6a09fbdfb0cb82ef2846a20a29335.png 2x" alt="People Wrestling" title="People Wrestling" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="water-polo/index.html">
+<img src="../../../emojipedia-us.s3.amazonaws.com/cache/7e/41/7e411383b087b51a450f09668858166e.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/e9/61/e961ab1fcfc1227768ed123a216bb512.png 2x" alt="Person Playing Water Polo" title="Person Playing Water Polo" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="handball/index.html">
+<img src="../../../emojipedia-us.s3.amazonaws.com/cache/2e/c1/2ec1f49c92ed8e178f586205a31f9302.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/a2/2f/a22f297be2be314ccf2d6e53a2ec98ca.png 2x" alt="Person Playing Handball" title="Person Playing Handball" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="juggling/index.html">
+<img src="../../../emojipedia-us.s3.amazonaws.com/cache/58/4b/584bfb3d6ea297ff6a7e51aba08f3813.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/b9/88/b988f5a4b9c1236f6fb3fb2a9cc37482.png 2x" alt="Person Juggling" title="Person Juggling" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="selfie/index.html">
+<img src="../../../emojipedia-us.s3.amazonaws.com/cache/f8/b1/f8b18386ef158c14a04284e75398dffc.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/5d/67/5d674f2d2a38011aa1e41b918508f702.png 2x" alt="Selfie" title="Selfie" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="hand-with-index-and-middle-fingers-crossed/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/a4/f4/a4f467839f4ace1e48fbc478a51fe7a7.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/d6/68/d668189b22b2aab9ef9b93e90dac97aa.png 2x" alt="Crossed Fingers" title="Crossed Fingers" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="call-me-hand/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/d7/2a/d72a099aecf57ff2e61f209e33117126.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/fc/7e/fc7e945b832e340a46ce651d9ed3fe37.png 2x" alt="Call Me Hand" title="Call Me Hand" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="left-facing-fist/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/ec/9f/ec9ffe21c7e8c50ef92e63b6ff7b5a8c.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/3c/dc/3cdc8280023df12e1652b137d76f9509.png 2x" alt="Left-Facing Fist" title="Left-Facing Fist" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="right-facing-fist/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/20/d4/20d41756abecfb9e7a7ce1a76e7a550a.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/01/4f/014f09a6b248020d5e1ebe847960230d.png 2x" alt="Right-Facing Fist" title="Right-Facing Fist" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="raised-back-of-hand/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/1a/61/1a610f42a80631e0d7a0db8350a5f0ae.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/10/87/10875618f5429b74e77b896985aef1a8.png 2x" alt="Raised Back of Hand" title="Raised Back of Hand" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="handshake/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/1e/be/1ebec985be8888b6c3ee230d090b4577.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/7d/99/7d99c5d76c8782dcc9d82cf1bf845cbc.png 2x" alt="Handshake" title="Handshake" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="black-heart/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/ad/e1/ade14012bf22166bcb4b24ca930df443.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/13/24/13244ae72d5888dda735b04db6330b43.png 2x" alt="Black Heart" title="Black Heart" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="gorilla/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/a6/b1/a6b1f6b396ed81b8c173141149bd5688.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/0e/eb/0eeb2fc59ade77233f41d990c9c459f0.png 2x" alt="Gorilla" title="Gorilla" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="fox-face/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/77/e4/77e4d0fd18bffd02b515eb92c648cbbb.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/92/85/9285917bc34d2aaaaa8ecffede717935.png 2x" alt="Fox Face" title="Fox Face" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="deer/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/2d/92/2d9223e81464ebc43eb6969f8f5f7602.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/fb/9e/fb9e4457273ed6c010f2a29859bc2e34.png 2x" alt="Deer" title="Deer" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="rhinoceros/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/36/56/365633876f65ee625b35263334f935c1.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/5e/d0/5ed0af5e998455ede934238d735d543f.png 2x" alt="Rhinoceros" title="Rhinoceros" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="bat/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/c4/9c/c49ccc071a42dc29ae19e42b8d423c4e.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/58/9e/589ee09dd54ef92497a6b3e2a931d781.png 2x" alt="Bat" title="Bat" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="eagle/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/57/6e/576eef1acdc2b87e883b249663b71475.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/29/aa/29aaa50b067ebcd81fe2e9a69a8304c6.png 2x" alt="Eagle" title="Eagle" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="duck/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/89/66/8966ca53a885d6ad491c35cbf29805bb.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/85/31/8531ada022c5e5e70b8d7d2d7bf23962.png 2x" alt="Duck" title="Duck" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="owl/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/d9/74/d9742c8f0d6d88b04dfee737204d8568.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/ef/e8/efe82a5940283cd0d12d5ce7712bae12.png 2x" alt="Owl" title="Owl" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="lizard/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/91/9e/919ece388abaa9599ae8e736447a55d0.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/10/cd/10cd3b63e248e31dd876d85e09c7ea84.png 2x" alt="Lizard" title="Lizard" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="shark/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/c8/1d/c81dd929d38c743ba9221864c5516931.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/ea/7f/ea7fd83a3c3e2f105246de4e7f4dcdfc.png 2x" alt="Shark" title="Shark" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="shrimp/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/21/bf/21bffab9823dc3948e89745975a81958.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/71/76/7176931f3fc53d740712d0e0585cc926.png 2x" alt="Shrimp" title="Shrimp" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="squid/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/c8/f8/c8f82304cbbad4af3e5d066b6180b9b1.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/cd/6d/cd6dac53af5b2c4ae609d7aaad416704.png 2x" alt="Squid" title="Squid" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="butterfly/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/6b/70/6b706fd42b956b8bdbdb203c6d7928a0.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/11/2b/112b625ef2225af9a15f1a105dec84d0.png 2x" alt="Butterfly" title="Butterfly" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="wilted-flower/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/c6/c9/c6c9bdc4905f493345e78ffd10f9c587.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/f3/6d/f36d6a3f01c0c98664e446ba2fe23a35.png 2x" alt="Wilted Flower" title="Wilted Flower" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="kiwifruit/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/74/98/74987ff1fe44b00c5c011cb59a4e5d91.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/2e/30/2e30c1585ae188e3cf47945291423f7e.png 2x" alt="Kiwi Fruit" title="Kiwi Fruit" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="avocado/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/55/47/55477213538d3570e4e86b4e9a496d97.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/43/74/437402d9320d8af77025456173afa9ab.png 2x" alt="Avocado" title="Avocado" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="potato/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/6a/fd/6afd66c826bd6ed1561c842ee424888f.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/bc/f0/bcf0642f223b97ca9be7833bb6a26a4a.png 2x" alt="Potato" title="Potato" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="carrot/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/07/73/07734a6d97dc3ee8174d487536de0156.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/c4/4e/c44eac565cab2a58c1be77b9c55005ec.png 2x" alt="Carrot" title="Carrot" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="cucumber/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/a6/35/a635bc48ef68f0d3825f048245a3e04a.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/2a/f5/2af500652d16d3b663638b64445b1db9.png 2x" alt="Cucumber" title="Cucumber" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="peanuts/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/f9/38/f938c9e463b8e245a45be9688fb11cab.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/eb/74/eb747385ff7494244304d851b09919ae.png 2x" alt="Peanuts" title="Peanuts" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="croissant/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/97/02/9702f5372d7f995c35514d67aa56b2a8.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/ef/3a/ef3a37d406444b798713e9bfd4c78e4b.png 2x" alt="Croissant" title="Croissant" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="baguette-bread/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/36/d3/36d3bf19378b6e104828f290219dd15b.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/c2/4c/c24c74d2c6c2c0cc6697b359b21fbfc9.png 2x" alt="Baguette Bread" title="Baguette Bread" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="pancakes/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/4d/f3/4df3735a08fca0c3fd9f1f76310cbf31.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/73/32/73326b747cc468fc0488e7be58dd822f.png 2x" alt="Pancakes" title="Pancakes" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="bacon/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/54/9c/549c0d5b0dd1dbd9df252179e5ae14d2.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/a5/f8/a5f8177118ecb667baba3e9dc5392e36.png 2x" alt="Bacon" title="Bacon" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="hot-dog/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/99/36/9936ccdd2210f883823478c68c9305ef.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/13/e5/13e581c09420d29c863e17fcb2aaed91.png 2x" alt="Hot Dog" title="Hot Dog" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="taco/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/cd/e7/cde7e1293317bd2ed020600c6c7e2c09.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/0e/86/0e86af28240dfb20f9cdc9ca779a26a9.png 2x" alt="Taco" title="Taco" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="burrito/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/8f/46/8f4694cd672678f6211f49be54c0a978.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/14/ca/14cae0a5cc4ad4b18f993d537d95b367.png 2x" alt="Burrito" title="Burrito" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="stuffed-flatbread/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/68/a1/68a1532dcdd2765e1148ee084fcca0a3.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/20/c9/20c90798f91bd0c4b3bdc8940edb6229.png 2x" alt="Stuffed Flatbread" title="Stuffed Flatbread" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="egg/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/68/9a/689ade0ec471afaa56f6844c77236ae1.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/ac/98/ac9854d8429be3e870398131eb4722ab.png 2x" alt="Egg" title="Egg" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="shallow-pan-of-food/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/92/11/92110cd311ce19c175f54454975ffd1c.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/ba/21/ba2147979bf85a810d9c995b95363bc3.png 2x" alt="Shallow Pan of Food" title="Shallow Pan of Food" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="green-salad/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/06/19/0619722f1f31fe4482ab4cf9df5fdab6.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/e3/a6/e3a6541ea12a63ece902ad0dedf06caa.png 2x" alt="Green Salad" title="Green Salad" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="glass-of-milk/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/2e/f5/2ef59a2bc6be150065feb76ab12b0b37.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/28/28/2828e9b2b4a4af89e147885ce8e1c090.png 2x" alt="Glass of Milk" title="Glass of Milk" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="clinking-glasses/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/c8/d3/c8d343f6a3a4a988a64a0ddc9a57f484.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/d7/e5/d7e5eb36c00dca6f99508bd9e3ecf972.png 2x" alt="Clinking Glasses" title="Clinking Glasses" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="tumbler-glass/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/3c/05/3c05c1e648e990963329d91925cd1c5c.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/65/97/65976a6cb8a8e1d0ca154e536c05b41c.png 2x" alt="Tumbler Glass" title="Tumbler Glass" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="spoon/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/5e/80/5e80289d5841b30c9e002301af1e1dfd.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/e8/39/e839c1f9a5f94f9c9b37abdd42863598.png 2x" alt="Spoon" title="Spoon" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="scooter/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/fc/05/fc05302bab35aa78c4a7e4ecd6cfefb7.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/91/18/91180ce03518bb48d73840b5d9a34890.png 2x" alt="Kick Scooter" title="Kick Scooter" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="motor-scooter/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/d6/29/d6299f564bdc9e6a6400b51540f7b3d8.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/3a/d6/3ad60948f7acd741e35e4def619ccb38.png 2x" alt="Motor Scooter" title="Motor Scooter" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="octagonal-sign/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/79/63/79630765f153a37b7242f9974994c13f.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/b3/07/b307bf1c803fe37c85dc3e2f3fbf74b2.png 2x" alt="Stop Sign" title="Stop Sign" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="canoe/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/ca/06/ca0611af42970bf1eda6f65dbba711e1.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/94/e8/94e815af9f75d6399bc95c1a8838bd4f.png 2x" alt="Canoe" title="Canoe" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="first-place-medal/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/1e/e9/1ee9f2dfc5e3b935813a712290b2f8e2.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/90/f1/90f13eb686498667e037e6221c83c31e.png 2x" alt="1st Place Medal" title="1st Place Medal" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="second-place-medal/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/c3/fd/c3fd16cf28059af5d5739d34cd99336f.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/dc/af/dcafa1564afc431f3768191967bd91c8.png 2x" alt="2nd Place Medal" title="2nd Place Medal" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="third-place-medal/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/9d/30/9d30f9515741553ae2801cbecf716357.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/8c/b3/8cb3f5dcc64a451208d8a7a0cc281615.png 2x" alt="3rd Place Medal" title="3rd Place Medal" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="boxing-glove/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/25/5f/255f839bcdddcee6eaf9708cbadc6cf8.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/1c/a6/1ca6b4449a494a0d3d00b8b65647880b.png 2x" alt="Boxing Glove" title="Boxing Glove" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="martial-arts-uniform/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/45/26/45261516b425d763c3e8b6f298cbe9be.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/3b/77/3b77e14f962cd4808bcfbcddd97d410a.png 2x" alt="Martial Arts Uniform" title="Martial Arts Uniform" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="goal-net/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/78/91/78916f94d0d40093a07be366091ccecd.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/e7/86/e78606ce098bcbd7d1676bf1339e24a7.png 2x" alt="Goal Net" title="Goal Net" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="drum-with-drumsticks/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/55/db/55db08539d011b9f4b062550ab8966d5.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/6f/e0/6fe0683010b5c5167fbe55a791dee993.png 2x" alt="Drum" title="Drum" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="shopping-trolley/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/34/e3/34e30bb4cd5b4f6b7c0fadf4e65ea8e8.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/30/a2/30a290390b16cdf2b68db3ca1b07496c.png 2x" alt="Shopping Cart" title="Shopping Cart" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="rifle/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/a8/cc/a8cc8143a0177c8834ce39e1f2152876.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/2d/c4/2dc464e488227b1c8f234b2163b89eac.png 2x" alt="Rifle" title="Rifle" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="modern-pentathlon/index.html">
+<img class="lazyload lazypreload" src="../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/59/6c/596c0bd4f3ef5d931706b5d02a842fea.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/b8/76/b876cdda73778a1f819db4d3affd73f2.png 2x" alt="Modern Pentathlon" title="Modern Pentathlon" width="72" height="72">
+</a>
+</li>
+</ul>
+<p id="lazymore">
+<a href="show_all/index.html#more" rel="nofollow">Show more</a>
+</p>
+<section>
+<h2>About Emojipedia Emojis</h2>
+<p>Original sample images from Emojipedia&nbsp;visualizing how new emojis may look when they come to fruition. These mockups are created at the candidate stage, and may or may not resemble final versions from each platform vendor.</p>
+<p>See <a href="../5.0/new/index.html" title="Sample Images for 2017 Emojis">what&#39;s new in&nbsp;Version 5.0</a> which includes&nbsp;all new emojis for the 2017 release of&nbsp;<a href="../../emoji-5.0/index.html">Emoji 5.0</a>.&nbsp;<strong>This update is not final and is subject to change.</strong></p>
+<p><em>Please include a link to Emojipedia for attribution when using any of these images online. These original images are &copy; 2017 Emojipedia. Details about <a href="../../licensing/index.html">emoji image licensing</a>.</em></p>
+</section>
+<section>
+<h2>Related</h2>
+<ul>
+<li><a href="../5.0/index.html">Emojipedia 5.0</a></li>
+<li><a href="../4.0/index.html">Emojipedia 4.0</a></li>
+<li><a href="../3.0/index.html">Emojipedia 3.0</a></li>
+<li><a href="index.html">Emojipedia 2.0</a></li>
+<li><a href="../1.0/index.html">Emojipedia 1.0</a></li>
+</ul>
+</section>
+</article>
+<div class="ad-footer">
+<div style="text-align:center">
+<script type="text/javascript">
+		    google_ad_client = "ca-pub-3417095048576988";
+		    width = document.documentElement.clientWidth;
+		    google_ad_slot = "7111864505";
+		    google_ad_width = 300;
+		    google_ad_height = 250;
+		    if (width > 380) {
+		        google_ad_slot = "8262920107";
+		        google_ad_width = 336;
+		       google_ad_height = 280;
+		    }
+ 
+		</script>
+<script type="text/javascript" src="../../../pagead2.googlesyndication.com/pagead/f.txt">
+		</script>
+</div>
+</div>
+</div>
+<div class="sidebar">
+<div class="block">
+<h2>Categories</h2>
+<ul>
+<li><a href="../../people/index.html"><span class="emoji">😃</span> Smileys & People</a></li>
+<li><a href="../../nature/index.html"><span class="emoji">🐻</span> Animals & Nature</a></li>
+<li><a href="../../food-drink/index.html"><span class="emoji">🍔</span> Food & Drink</a></li>
+<li><a href="../../activity/index.html"><span class="emoji">⚽</span> Activity</a></li>
+<li><a href="../../travel-places/index.html"><span class="emoji">🌇</span> Travel & Places</a></li>
+<li><a href="../../objects/index.html"><span class="emoji">💡</span> Objects</a></li>
+<li><a href="../../symbols/index.html"><span class="emoji">🔣</span> Symbols</a></li>
+<li><a href="../../flags/index.html"><span class="emoji">🎌</span> Flags</a></li>
+</ul>
+</div>
+<div class="block">
+<h2>Most Popular</h2>
+<ul>
+<li><a href="../../shrug/index.html"><span class="emoji">🤷</span> Person Shrugging</a></li>
+<li><a href="../../face-with-tears-of-joy/index.html"><span class="emoji">😂</span> Face With Tears of Joy</a></li>
+<li><a href="../../heavy-black-heart/index.html"><span class="emoji">❤</span> Red Heart</a></li>
+<li><a href="../../smiling-face-with-heart-shaped-eyes/index.html"><span class="emoji">😍</span> Smiling Face With Heart-Eyes</a></li>
+<li><a href="../../fire/index.html"><span class="emoji">🔥</span> Fire</a></li>
+<li><a href="../../thinking-face/index.html"><span class="emoji">🤔</span> Thinking Face</a></li>
+<li><a href="../../smiling-face-with-smiling-eyes/index.html"><span class="emoji">😊</span> Smiling Face With Smiling Eyes</a></li>
+<li><a href="../../face-throwing-a-kiss/index.html"><span class="emoji">😘</span> Face Blowing a Kiss</a></li>
+<li><a href="../../face-with-rolling-eyes/index.html"><span class="emoji">🙄</span> Face With Rolling Eyes</a></li>
+</ul>
+</div>
+<div class="block">
+<h2>Latest News</h2>
+<ul>
+<li><a href="http://blog.emojipedia.org/samsung-galaxy-s8-emoji-changelog/"><span class="emoji">📲</span> Samsung Galaxy S8 Emoji Changelog</a></li>
+<li><a href="http://blog.emojipedia.org/what-is-gender-and-why-does-it-matter-to-emoji/"><span class="emoji">🚻</span> What is Gender and Why Does it Matter to Emoji?</a></li>
+<li><a href="http://blog.emojipedia.org/why-there-were-two-emoji-updates-in-2016/"><span class="emoji">👀</span> Why There Were Two Emoji Updates In 2016</a></li>
+<li><a href="http://blog.emojipedia.org/facebook-completes-emoji-update/"><span class="emoji">💻</span> Facebook Completes Emoji Update</a></li>
+<li><a href="http://blog.emojipedia.org/the-resistance-will-be-emojified/"><span class="emoji">✊</span> The Resistance Will Be Emojified</a></li>
+<li><a href="http://blog.emojipedia.org/who-owns-emoji/"><span class="emoji">👩&zwj;⚖️</span> Who Owns Emoji?</a></li>
+<li><a href="http://blog.emojipedia.org/utc-provides-feedback-on-redhead-emoji/"><span class="emoji">📝</span> UTC Provides Feedback on Redhead Emoji</a></li>
+<li><a href="http://blog.emojipedia.org/happy-chinese-new-year/"><span class="emoji">🎇</span> Happy Chinese New Year!</a></li>
+</ul>
+</div>
+<div class="block">
+<h2>Events</h2>
+<ul>
+<li><a href="../../australia-day/index.html"><span class="emoji">🇦🇺</span> Australia Day</a></li>
+<li><a href="../../bastille-day/index.html"><span class="emoji">🇫🇷</span> Bastille Day</a></li>
+<li><a href="../../birthday/index.html"><span class="emoji">🎂</span> Birthday</a></li>
+<li><a href="../../black-friday/index.html"><span class="emoji">🛍</span> Black Friday</a></li>
+<li><a href="../../canada-day/index.html"><span class="emoji">🇨🇦</span> Canada Day</a></li>
+<li><a href="../../carnaval/index.html"><span class="emoji">🇧🇷</span> Carnaval</a></li>
+<li><a href="../../chinese-new-year/index.html"><span class="emoji">🐉</span> Chinese New Year</a></li>
+<li><a href="../../christmas/index.html"><span class="emoji">🎅</span> Christmas</a></li>
+<li><a href="../../cinco-de-mayo/index.html"><span class="emoji">🇲🇽</span> Cinco de Mayo</a></li>
+<li><a href="../../dragon-boat-festival/index.html"><span class="emoji">🇨🇳</span> Dragon Boat Festival</a></li>
+<li><a href="../../easter/index.html"><span class="emoji">🐰</span> Easter</a></li>
+<li><a href="../../emoji-movie/index.html"><span class="emoji">🎥</span> Emoji Movie</a></li>
+<li><a href="../../fall-autumn/index.html"><span class="emoji">🍂</span> Fall / Autumn</a></li>
+<li><a href="../../fathers-day/index.html"><span class="emoji">👨</span> Father’s Day</a></li>
+<li><a href="../../festivus/index.html"><span class="emoji">💪</span> Festivus</a></li>
+<li><a href="../../graduation/index.html"><span class="emoji">🎓</span> Graduation</a></li>
+<li><a href="../../guy-fawkes/index.html"><span class="emoji">🔥</span> Guy Fawkes</a></li>
+<li><a href="../../halloween/index.html"><span class="emoji">🎃</span> Halloween</a></li>
+<li><a href="../../hanukkah/index.html"><span class="emoji">🕎</span> Hanukkah</a></li>
+<li><a href="../../holi/index.html"><span class="emoji">🕉</span> Holi</a></li>
+<li><a href="../../independence-day/index.html"><span class="emoji">🇺🇸</span> Independence Day</a></li>
+<li><a href="../../mothers-day/index.html"><span class="emoji">👩</span> Mother’s Day</a></li>
+<li><a href="../../new-years-eve/index.html"><span class="emoji">🎊</span> New Year’s Eve</a></li>
+<li><a href="../../olympics/index.html"><span class="emoji">🏊</span> Olympics</a></li>
+<li><a href="../../queens-birthday/index.html"><span class="emoji">👑</span> Queen’s Birthday</a></li>
+<li><a href="../../ramadan/index.html"><span class="emoji">☪</span> Ramadan</a></li>
+<li><a href="../../spring/index.html"><span class="emoji">🌱</span> Spring</a></li>
+<li><a href="../../st-patricks-day/index.html"><span class="emoji">☘</span> St Patrick’s Day</a></li>
+<li><a href="../../summer/index.html"><span class="emoji">☀</span> Summer</a></li>
+<li><a href="../../super-bowl/index.html"><span class="emoji">🏈</span> Super Bowl</a></li>
+<li><a href="../../thanksgiving/index.html"><span class="emoji">🦃</span> Thanksgiving</a></li>
+<li><a href="../../valentines-day/index.html"><span class="emoji">💘</span> Valentine’s Day</a></li>
+<li><a href="../../wedding-marriage/index.html"><span class="emoji">👰</span> Wedding / Marriage</a></li>
+<li><a href="../../winter/index.html"><span class="emoji">⛄</span> Winter</a></li>
+<li><a href="../../winter-olympics/index.html"><span class="emoji">🎿</span> Winter Olympics</a></li>
+<li><a href="../../world-cup/index.html"><span class="emoji">⚽</span> World Cup</a></li>
+<li><a href="../../world-emoji-day/index.html"><span class="emoji">🌎</span> World Emoji Day</a></li>
+</ul>
+</div>
+</div>
+</div>
+<footer>
+<nav>
+<div class="container">
+<div class="vendors">
+<h2>Platforms</h2>
+<ul>
+<li><a href="../../apple/index.html">Apple</a></li>
+<li><a href="../../emojidex/index.html">emojidex</a></li>
+<li><a href="../../emoji-one/index.html">Emoji One</a></li>
+<li><a href="../index.html">Emojipedia</a></li>
+<li><a href="../../facebook/index.html">Facebook</a></li>
+<li><a href="../../google/index.html">Google</a></li>
+<li><a href="../../htc/index.html">HTC</a></li>
+<li><a href="../../instagram/index.html">Instagram</a></li>
+<li><a href="../../lg/index.html">LG</a></li>
+<li><a href="../../messenger/index.html">Messenger</a></li>
+<li><a href="../../microsoft/index.html">Microsoft</a></li>
+<li><a href="../../mozilla/index.html">Mozilla</a></li>
+<li><a href="../../samsung/index.html">Samsung</a></li>
+<li><a href="../../slack/index.html">Slack</a></li>
+<li><a href="../../snapchat/index.html">Snapchat</a></li>
+<li><a href="../../sponsored/index.html">Sponsored</a></li>
+<li><a href="../../telegram/index.html">Telegram</a></li>
+<li><a href="../../twitter/index.html">Twitter</a></li>
+<li><a href="../../viber/index.html">Viber</a></li>
+<li><a href="../../whatsapp/index.html">WhatsApp</a></li>
+<li><a href="../../yo-status/index.html">Yo Status</a></li>
+</ul>
+</div>
+<div class="unicode-version">
+<h2>Emoji Versions</h2>
+<ul>
+<li><a href="../../emoji-6.0/index.html">Emoji 6.0</a></li>
+<li><a href="../../emoji-5.0/index.html">Emoji 5.0</a></li>
+<li><a href="../../emoji-4.0/index.html">Emoji 4.0</a></li>
+<li><a href="../../emoji-3.0/index.html">Emoji 3.0</a></li>
+<li><a href="../../emoji-2.0/index.html">Emoji 2.0</a></li>
+<li><a href="../../emoji-1.0/index.html">Emoji 1.0</a></li>
+</ul>
+<h2>Unicode Versions</h2>
+<ul>
+<li><a href="../../unicode-11.0/index.html">Unicode 11.0</a></li>
+<li><a href="../../unicode-10.0/index.html">Unicode 10.0</a></li>
+<li><a href="../../unicode-9.0/index.html">Unicode 9.0</a></li>
+<li><a href="../../unicode-8.0/index.html">Unicode 8.0</a></li>
+<li><a href="../../unicode-7.0/index.html">Unicode 7.0</a></li>
+<li><a href="../../unicode-6.1/index.html">Unicode 6.1</a></li>
+<li><a href="../../unicode-6.0/index.html">Unicode 6.0</a></li>
+<li><a href="../../unicode-5.2/index.html">Unicode 5.2</a></li>
+<li><a href="../../unicode-5.1/index.html">Unicode 5.1</a></li>
+<li><a href="../../unicode-4.1/index.html">Unicode 4.1</a></li>
+<li><a href="../../unicode-4.0/index.html">Unicode 4.0</a></li>
+<li><a href="../../unicode-3.2/index.html">Unicode 3.2</a></li>
+<li><a href="../../unicode-3.1/index.html">Unicode 3.1</a></li>
+<li><a href="../../unicode-3.0/index.html">Unicode 3.0</a></li>
+<li><a href="../../unicode-1.1/index.html">Unicode 1.1</a></li>
+</ul>
+</div>
+<div class="static-pages">
+<h2>More</h2>
+<ul>
+<li><a href="../../adopt-emoji-faq/index.html">Adopt An Emoji FAQ</a></li>
+<li><a href="../../ads/index.html">Ads</a></li>
+<li><a href="../../apple-watch/index.html">Apple Watch</a></li>
+<li><a href="../../botmoji/index.html">Botmoji</a></li>
+<li><a href="../../contact/index.html">Contact</a></li>
+<li><a href="../../neutral/index.html">Emoji Neutral</a></li>
+<li><a href="../../emojipedia-api/index.html">Emojipedia API</a></li>
+<li><a href="../../app/index.html">Emojipedia Apps</a></li>
+<li><a href="../../stats/index.html">Emoji Statistics</a></li>
+<li><a href="../../emoji-wrap/index.html">Emoji Wrap</a></li>
+<li><a href="../../emoji-zwj-sequences/index.html">Emoji ZWJ Sequences</a></li>
+<li><a href="../../faq/index.html">FAQ</a></li>
+<li><a href="../../glossary/index.html">Glossary</a></li>
+<li><a href="../../stickers/index.html">iMessage Stickers</a></li>
+<li><a href="../../press/index.html">In The News</a></li>
+<li><a href="../../licensing/index.html">Licensing</a></li>
+<li><a href="../../new/index.html">New</a></li>
+<li><a href="../../privacy-policy/index.html">Privacy Policy</a></li>
+<li><a href="../../tips/index.html">Tips</a></li>
+<li><a href="../../modifiers/index.html">Modifiers</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="container content">
+<p>All emoji names&nbsp;are&nbsp;<a href="../../faq/index.html">official character and/or CLDR names</a>&nbsp;and <a href="../../emoji/index.html" title="😃 Every Emoji by Codepoint">code points</a>, listed as part of the <a href="https://en.wikipedia.org/wiki/Unicode_Standard">Unicode Standard</a>. Additional descriptions are copyright&nbsp;&copy; Emojipedia.&nbsp;Emoji character artwork and copyright belong to their respective font creators.</p>
+<p>Emojipedia&reg; is a registered trademark of Emojipedia Pty Ltd;&nbsp;Apple&reg; is a registered trademark of Apple Inc; Microsoft&reg; and Windows&reg; are registered trademarks of Microsoft Corporation; Google&reg; and Android&trade; are registered trademarks or trademarks of Google Inc in the United States and/or other countries. Emoji One images provided free by Emoji One.</p>
+</div>
+</footer>
+<script type="text/javascript" src="../../static/js/jquery.min.d72a6941a827.js" charset="utf-8"></script>
+<script type="text/javascript" src="../../static/js/site.9958d0753977.js" charset="utf-8"></script>
+<script type="text/javascript" src="../../static/js/lazy.f12b5efd22b1.js" charset="utf-8"></script>
+<script>
+(function() {
+function async_load(script_url){
+var protocol = ('https:' == document.location.protocol ? 'https://' : 'http://');
+var s = document.createElement('script'); s.src = protocol + script_url;
+var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+}
+bm_website_code = 'D7A15B1CC4264F19';
+jQuery(document).ready(function(){async_load('asset.pagefair.com/measure.min.html')});
+jQuery(document).ready(function(){async_load('asset.pagefair.net/ads.min.html')});
+})();
+</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-43649623-1', 'auto');
+ga('send', 'pageview');
+</script>
+</body>
+
+<!-- Mirrored from emojipedia.org/emojipedia/2.0/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Mar 2017 17:33:29 GMT -->
+</html>

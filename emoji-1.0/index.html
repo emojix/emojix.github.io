@@ -1,0 +1,1596 @@
+
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from emojipedia.org/emoji-1.0/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Mar 2017 08:05:54 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"applicationTime":1,"errorBeacon":"bam.nr-data.net","queueTime":0,"transactionName":"b1NaN0oCW0RVUhJeWVYZfhZWAEFeW19JU1xZWF8MFg5cU1BdA0BXSlMWAFkAXVIOdwNDVVBwSgxVIFRUXFQrXlJcWl0UWRFQGURDCVRTS0VnEV0SQFJHRQ==","agent":"","beacon":"bam.nr-data.net","applicationID":"7909734","licenseKey":"475c936728"}</script>
+<meta name="viewport" content="width=device-width">
+<title>Emoji Version 1.0 List</title>
+<link href="../static/css/emojipedia.7cce6c6b80b4.css" rel="stylesheet" type="text/css"/>
+<link rel="apple-touch-icon" sizes="57x57" href="../static/img/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../static/img/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../static/img/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../static/img/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../static/img/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../static/img/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../static/img/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../static/img/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../static/img/favicons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="../static/img/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../static/img/favicons/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="../static/img/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="../static/img/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="../manifest.webapp">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/static/img/favicons/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="mask-icon" mask href="../static/img/emojipedia.svg" color="black">
+</head>
+<body>
+<script type="text/javascript">
+(function(){
+var bsa = document.createElement('script');
+bsa.type = 'text/javascript';
+bsa.async = true;
+bsa.src = '../../s3.buysellads.com/ac/bsa.js';
+(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+})();
+</script>
+<header>
+<div class="container">
+<a href="../index.html" class="logo" title="Go to Emojipedia Home">Emojipedia</a>
+<form method="get" action="http://emojipedia.org/search/" class="search-form">
+<label>
+<span class="sr-only">Search Emojipedia:</span>
+<input id="id_q" name="q" placeholder="Search Emojipedia" type="search"/>
+</label>
+</form>
+<a href="#nav-categories" id="nav-categories-toggle">Categories</a>
+<nav class="categories">
+<ul id="nav-categories">
+<li><a href="../people/index.html"><span class="emoji">😃</span> Smileys & People</a></li>
+<li><a href="../nature/index.html"><span class="emoji">🐻</span> Animals & Nature</a></li>
+<li><a href="../food-drink/index.html"><span class="emoji">🍔</span> Food & Drink</a></li>
+<li><a href="../activity/index.html"><span class="emoji">⚽</span> Activity</a></li>
+<li><a href="../travel-places/index.html"><span class="emoji">🌇</span> Travel & Places</a></li>
+<li><a href="../objects/index.html"><span class="emoji">💡</span> Objects</a></li>
+<li><a href="../symbols/index.html"><span class="emoji">🔣</span> Symbols</a></li>
+<li><a href="../flags/index.html"><span class="emoji">🎌</span> Flags</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<div class="sponsor"><p><a href="http://emojiwrap.com/"><span class="emoji">💌</span>&nbsp;Subscribe for the latest emoji news</a></p></div>
+<div class="ad-header">
+<script type="text/javascript">
+   google_ad_client = "ca-pub-3417095048576988";
+   width = document.documentElement.clientWidth;
+     google_ad_slot = "9547014904";
+     google_ad_width = 320;
+     google_ad_height = 100;
+     if (width > 728) {
+         google_ad_slot = "9138623707";
+         google_ad_width = 728;
+    google_ad_height = 90;
+     }
+
+  </script>
+<script type="text/javascript" src="../../pagead2.googlesyndication.com/pagead/f.txt"></script>
+</div>
+<div class="container">
+<div class="content">
+<article>
+<header>
+<h1>Emoji Version 1.0</h1>
+</header>
+<section>
+<p>The first release of emoji documentation&nbsp;from Unicode, which includes all emojis approved between 2010&mdash;2015.&nbsp;</p>
+<p>Published in August 2015, this primarily includes emojis from <a href="../unicode-6.0/index.html">Unicode 6.0</a>, <a href="../unicode-6.1/index.html">Unicode 6.1</a>, and clarified which of the&nbsp;new pictographic characters from <a href="../unicode-7.0/index.html">Unicode 7.0</a>&nbsp;and <a href="../unicode-8.0/index.html">Unicode 8.0</a> would be recommended for emoji presentation.</p>
+<p>Until this release, no major vendors supported emojis from Unicode 7.0 or above.</p>
+<ul>
+<li><a href="http://unicode.org/Public/emoji/1.0/emoji-data.txt">🔣 Emoji Data 1.0 Source File</a></li>
+</ul>
+</section>
+<ul>
+<li><a href="../grinning-face/index.html"><span class="emoji">😀</span> Grinning Face</a></li>
+<li><a href="../grinning-face-with-smiling-eyes/index.html"><span class="emoji">😁</span> Grinning Face With Smiling Eyes</a></li>
+<li><a href="../face-with-tears-of-joy/index.html"><span class="emoji">😂</span> Face With Tears of Joy</a></li>
+<li><a href="../smiling-face-with-open-mouth/index.html"><span class="emoji">😃</span> Smiling Face With Open Mouth</a></li>
+<li><a href="../smiling-face-with-open-mouth-and-smiling-eyes/index.html"><span class="emoji">😄</span> Smiling Face With Open Mouth & Smiling Eyes</a></li>
+<li><a href="../smiling-face-with-open-mouth-and-cold-sweat/index.html"><span class="emoji">😅</span> Smiling Face With Open Mouth & Cold Sweat</a></li>
+<li><a href="../smiling-face-with-open-mouth-and-tightly-closed-eyes/index.html"><span class="emoji">😆</span> Smiling Face With Open Mouth & Closed Eyes</a></li>
+<li><a href="../winking-face/index.html"><span class="emoji">😉</span> Winking Face</a></li>
+<li><a href="../smiling-face-with-smiling-eyes/index.html"><span class="emoji">😊</span> Smiling Face With Smiling Eyes</a></li>
+<li><a href="../face-savouring-delicious-food/index.html"><span class="emoji">😋</span> Face Savouring Delicious Food</a></li>
+<li><a href="../smiling-face-with-sunglasses/index.html"><span class="emoji">😎</span> Smiling Face With Sunglasses</a></li>
+<li><a href="../smiling-face-with-heart-shaped-eyes/index.html"><span class="emoji">😍</span> Smiling Face With Heart-Eyes</a></li>
+<li><a href="../face-throwing-a-kiss/index.html"><span class="emoji">😘</span> Face Blowing a Kiss</a></li>
+<li><a href="../kissing-face/index.html"><span class="emoji">😗</span> Kissing Face</a></li>
+<li><a href="../kissing-face-with-smiling-eyes/index.html"><span class="emoji">😙</span> Kissing Face With Smiling Eyes</a></li>
+<li><a href="../kissing-face-with-closed-eyes/index.html"><span class="emoji">😚</span> Kissing Face With Closed Eyes</a></li>
+<li><a href="../white-smiling-face/index.html"><span class="emoji">☺</span> Smiling Face</a></li>
+<li><a href="../slightly-smiling-face/index.html"><span class="emoji">🙂</span> Slightly Smiling Face</a></li>
+<li><a href="../hugging-face/index.html"><span class="emoji">🤗</span> Hugging Face</a></li>
+<li><a href="../thinking-face/index.html"><span class="emoji">🤔</span> Thinking Face</a></li>
+<li><a href="../neutral-face/index.html"><span class="emoji">😐</span> Neutral Face</a></li>
+<li><a href="../expressionless-face/index.html"><span class="emoji">😑</span> Expressionless Face</a></li>
+<li><a href="../face-without-mouth/index.html"><span class="emoji">😶</span> Face Without Mouth</a></li>
+<li><a href="../face-with-rolling-eyes/index.html"><span class="emoji">🙄</span> Face With Rolling Eyes</a></li>
+<li><a href="../smirking-face/index.html"><span class="emoji">😏</span> Smirking Face</a></li>
+<li><a href="../persevering-face/index.html"><span class="emoji">😣</span> Persevering Face</a></li>
+<li><a href="../disappointed-but-relieved-face/index.html"><span class="emoji">😥</span> Disappointed but Relieved Face</a></li>
+<li><a href="../face-with-open-mouth/index.html"><span class="emoji">😮</span> Face With Open Mouth</a></li>
+<li><a href="../zipper-mouth-face/index.html"><span class="emoji">🤐</span> Zipper-Mouth Face</a></li>
+<li><a href="../hushed-face/index.html"><span class="emoji">😯</span> Hushed Face</a></li>
+<li><a href="../sleepy-face/index.html"><span class="emoji">😪</span> Sleepy Face</a></li>
+<li><a href="../tired-face/index.html"><span class="emoji">😫</span> Tired Face</a></li>
+<li><a href="../sleeping-face/index.html"><span class="emoji">😴</span> Sleeping Face</a></li>
+<li><a href="../relieved-face/index.html"><span class="emoji">😌</span> Relieved Face</a></li>
+<li><a href="../face-with-stuck-out-tongue/index.html"><span class="emoji">😛</span> Face With Stuck-Out Tongue</a></li>
+<li><a href="../face-with-stuck-out-tongue-and-winking-eye/index.html"><span class="emoji">😜</span> Face With Stuck-Out Tongue & Winking Eye</a></li>
+<li><a href="../face-with-stuck-out-tongue-and-tightly-closed-eyes/index.html"><span class="emoji">😝</span> Face With Stuck-Out Tongue & Closed Eyes</a></li>
+<li><a href="../unamused-face/index.html"><span class="emoji">😒</span> Unamused Face</a></li>
+<li><a href="../face-with-cold-sweat/index.html"><span class="emoji">😓</span> Face With Cold Sweat</a></li>
+<li><a href="../pensive-face/index.html"><span class="emoji">😔</span> Pensive Face</a></li>
+<li><a href="../confused-face/index.html"><span class="emoji">😕</span> Confused Face</a></li>
+<li><a href="../upside-down-face/index.html"><span class="emoji">🙃</span> Upside-Down Face</a></li>
+<li><a href="../money-mouth-face/index.html"><span class="emoji">🤑</span> Money-Mouth Face</a></li>
+<li><a href="../astonished-face/index.html"><span class="emoji">😲</span> Astonished Face</a></li>
+<li><a href="../white-frowning-face/index.html"><span class="emoji">☹</span> Frowning Face</a></li>
+<li><a href="../slightly-frowning-face/index.html"><span class="emoji">🙁</span> Slightly Frowning Face</a></li>
+<li><a href="../confounded-face/index.html"><span class="emoji">😖</span> Confounded Face</a></li>
+<li><a href="../disappointed-face/index.html"><span class="emoji">😞</span> Disappointed Face</a></li>
+<li><a href="../worried-face/index.html"><span class="emoji">😟</span> Worried Face</a></li>
+<li><a href="../face-with-look-of-triumph/index.html"><span class="emoji">😤</span> Face With Steam From Nose</a></li>
+<li><a href="../crying-face/index.html"><span class="emoji">😢</span> Crying Face</a></li>
+<li><a href="../loudly-crying-face/index.html"><span class="emoji">😭</span> Loudly Crying Face</a></li>
+<li><a href="../frowning-face-with-open-mouth/index.html"><span class="emoji">😦</span> Frowning Face With Open Mouth</a></li>
+<li><a href="../anguished-face/index.html"><span class="emoji">😧</span> Anguished Face</a></li>
+<li><a href="../fearful-face/index.html"><span class="emoji">😨</span> Fearful Face</a></li>
+<li><a href="../weary-face/index.html"><span class="emoji">😩</span> Weary Face</a></li>
+<li><a href="../grimacing-face/index.html"><span class="emoji">😬</span> Grimacing Face</a></li>
+<li><a href="../face-with-open-mouth-and-cold-sweat/index.html"><span class="emoji">😰</span> Face With Open Mouth & Cold Sweat</a></li>
+<li><a href="../face-screaming-in-fear/index.html"><span class="emoji">😱</span> Face Screaming in Fear</a></li>
+<li><a href="../flushed-face/index.html"><span class="emoji">😳</span> Flushed Face</a></li>
+<li><a href="../dizzy-face/index.html"><span class="emoji">😵</span> Dizzy Face</a></li>
+<li><a href="../pouting-face/index.html"><span class="emoji">😡</span> Pouting Face</a></li>
+<li><a href="../angry-face/index.html"><span class="emoji">😠</span> Angry Face</a></li>
+<li><a href="../face-with-medical-mask/index.html"><span class="emoji">😷</span> Face With Medical Mask</a></li>
+<li><a href="../face-with-thermometer/index.html"><span class="emoji">🤒</span> Face With Thermometer</a></li>
+<li><a href="../face-with-head-bandage/index.html"><span class="emoji">🤕</span> Face With Head-Bandage</a></li>
+<li><a href="../smiling-face-with-halo/index.html"><span class="emoji">😇</span> Smiling Face With Halo</a></li>
+<li><a href="../nerd-face/index.html"><span class="emoji">🤓</span> Nerd Face</a></li>
+<li><a href="../smiling-face-with-horns/index.html"><span class="emoji">😈</span> Smiling Face With Horns</a></li>
+<li><a href="../imp/index.html"><span class="emoji">👿</span> Angry Face With Horns</a></li>
+<li><a href="../japanese-ogre/index.html"><span class="emoji">👹</span> Ogre</a></li>
+<li><a href="../japanese-goblin/index.html"><span class="emoji">👺</span> Goblin</a></li>
+<li><a href="../skull/index.html"><span class="emoji">💀</span> Skull</a></li>
+<li><a href="../skull-and-crossbones/index.html"><span class="emoji">☠</span> Skull and Crossbones</a></li>
+<li><a href="../ghost/index.html"><span class="emoji">👻</span> Ghost</a></li>
+<li><a href="../extraterrestrial-alien/index.html"><span class="emoji">👽</span> Alien</a></li>
+<li><a href="../alien-monster/index.html"><span class="emoji">👾</span> Alien Monster</a></li>
+<li><a href="../robot-face/index.html"><span class="emoji">🤖</span> Robot Face</a></li>
+<li><a href="../pile-of-poo/index.html"><span class="emoji">💩</span> Pile of Poo</a></li>
+<li><a href="../smiling-cat-face-with-open-mouth/index.html"><span class="emoji">😺</span> Smiling Cat Face With Open Mouth</a></li>
+<li><a href="../grinning-cat-face-with-smiling-eyes/index.html"><span class="emoji">😸</span> Grinning Cat Face With Smiling Eyes</a></li>
+<li><a href="../cat-face-with-tears-of-joy/index.html"><span class="emoji">😹</span> Cat Face With Tears of Joy</a></li>
+<li><a href="../smiling-cat-face-with-heart-shaped-eyes/index.html"><span class="emoji">😻</span> Smiling Cat Face With Heart-Eyes</a></li>
+<li><a href="../cat-face-with-wry-smile/index.html"><span class="emoji">😼</span> Cat Face With Wry Smile</a></li>
+<li><a href="../kissing-cat-face-with-closed-eyes/index.html"><span class="emoji">😽</span> Kissing Cat Face With Closed Eyes</a></li>
+<li><a href="../weary-cat-face/index.html"><span class="emoji">🙀</span> Weary Cat Face</a></li>
+<li><a href="../crying-cat-face/index.html"><span class="emoji">😿</span> Crying Cat Face</a></li>
+<li><a href="../pouting-cat-face/index.html"><span class="emoji">😾</span> Pouting Cat Face</a></li>
+<li><a href="../see-no-evil-monkey/index.html"><span class="emoji">🙈</span> See-No-Evil Monkey</a></li>
+<li><a href="../hear-no-evil-monkey/index.html"><span class="emoji">🙉</span> Hear-No-Evil Monkey</a></li>
+<li><a href="../speak-no-evil-monkey/index.html"><span class="emoji">🙊</span> Speak-No-Evil Monkey</a></li>
+<li><a href="../baby/index.html"><span class="emoji">👶</span> Baby</a></li>
+<li><a href="../boy/index.html"><span class="emoji">👦</span> Boy</a></li>
+<li><a href="../girl/index.html"><span class="emoji">👧</span> Girl</a></li>
+<li><a href="../man/index.html"><span class="emoji">👨</span> Man</a></li>
+<li><a href="../woman/index.html"><span class="emoji">👩</span> Woman</a></li>
+<li><a href="../older-man/index.html"><span class="emoji">👴</span> Old Man</a></li>
+<li><a href="../older-woman/index.html"><span class="emoji">👵</span> Old Woman</a></li>
+<li><a href="../police-officer/index.html"><span class="emoji">👮</span> Police Officer</a></li>
+<li><a href="../sleuth-or-spy/index.html"><span class="emoji">🕵</span> Detective</a></li>
+<li><a href="../guardsman/index.html"><span class="emoji">💂</span> Guard</a></li>
+<li><a href="../construction-worker/index.html"><span class="emoji">👷</span> Construction Worker</a></li>
+<li><a href="../princess/index.html"><span class="emoji">👸</span> Princess</a></li>
+<li><a href="../man-with-turban/index.html"><span class="emoji">👳</span> Person Wearing Turban</a></li>
+<li><a href="../man-with-gua-pi-mao/index.html"><span class="emoji">👲</span> Man With Chinese Cap</a></li>
+<li><a href="../person-with-blond-hair/index.html"><span class="emoji">👱</span> Blond-Haired Person</a></li>
+<li><a href="../bride-with-veil/index.html"><span class="emoji">👰</span> Bride With Veil</a></li>
+<li><a href="../baby-angel/index.html"><span class="emoji">👼</span> Baby Angel</a></li>
+<li><a href="../father-christmas/index.html"><span class="emoji">🎅</span> Santa Claus</a></li>
+<li><a href="../person-frowning/index.html"><span class="emoji">🙍</span> Person Frowning</a></li>
+<li><a href="../emoji-modifier-fitzpatrick-type-1-2/index.html"><span class="emoji">🏻</span> Light Skin Tone</a></li>
+<li><a href="../emoji-modifier-fitzpatrick-type-3/index.html"><span class="emoji">🏼</span> Medium-Light Skin Tone</a></li>
+<li><a href="../emoji-modifier-fitzpatrick-type-4/index.html"><span class="emoji">🏽</span> Medium Skin Tone</a></li>
+<li><a href="../emoji-modifier-fitzpatrick-type-5/index.html"><span class="emoji">🏾</span> Medium-Dark Skin Tone</a></li>
+<li><a href="../emoji-modifier-fitzpatrick-type-6/index.html"><span class="emoji">🏿</span> Dark Skin Tone</a></li>
+<li><a href="../person-with-pouting-face/index.html"><span class="emoji">🙎</span> Person Pouting</a></li>
+<li><a href="../face-with-no-good-gesture/index.html"><span class="emoji">🙅</span> Person Gesturing No</a></li>
+<li><a href="../face-with-ok-gesture/index.html"><span class="emoji">🙆</span> Person Gesturing OK</a></li>
+<li><a href="../information-desk-person/index.html"><span class="emoji">💁</span> Person Tipping Hand</a></li>
+<li><a href="../happy-person-raising-one-hand/index.html"><span class="emoji">🙋</span> Person Raising Hand</a></li>
+<li><a href="../person-bowing-deeply/index.html"><span class="emoji">🙇</span> Person Bowing</a></li>
+<li><a href="../face-massage/index.html"><span class="emoji">💆</span> Person Getting Massage</a></li>
+<li><a href="../haircut/index.html"><span class="emoji">💇</span> Person Getting Haircut</a></li>
+<li><a href="../pedestrian/index.html"><span class="emoji">🚶</span> Person Walking</a></li>
+<li><a href="../runner/index.html"><span class="emoji">🏃</span> Person Running</a></li>
+<li><a href="../dancer/index.html"><span class="emoji">💃</span> Woman Dancing</a></li>
+<li><a href="../woman-with-bunny-ears/index.html"><span class="emoji">👯</span> People With Bunny Ears Partying</a></li>
+<li><a href="../bath/index.html"><span class="emoji">🛀</span> Person Taking Bath</a></li>
+<li><a href="../sleeping-accommodation/index.html"><span class="emoji">🛌</span> Person in Bed</a></li>
+<li><a href="../man-in-business-suit-levitating/index.html"><span class="emoji">🕴</span> Man in Business Suit Levitating</a></li>
+<li><a href="../speaking-head-in-silhouette/index.html"><span class="emoji">🗣</span> Speaking Head</a></li>
+<li><a href="../bust-in-silhouette/index.html"><span class="emoji">👤</span> Bust in Silhouette</a></li>
+<li><a href="../busts-in-silhouette/index.html"><span class="emoji">👥</span> Busts in Silhouette</a></li>
+<li><a href="../horse-racing/index.html"><span class="emoji">🏇</span> Horse Racing</a></li>
+<li><a href="../skier/index.html"><span class="emoji">⛷</span> Skier</a></li>
+<li><a href="../snowboarder/index.html"><span class="emoji">🏂</span> Snowboarder</a></li>
+<li><a href="../golfer/index.html"><span class="emoji">🏌</span> Person Golfing</a></li>
+<li><a href="../surfer/index.html"><span class="emoji">🏄</span> Person Surfing</a></li>
+<li><a href="../rowboat/index.html"><span class="emoji">🚣</span> Person Rowing Boat</a></li>
+<li><a href="../swimmer/index.html"><span class="emoji">🏊</span> Person Swimming</a></li>
+<li><a href="../person-with-ball/index.html"><span class="emoji">⛹</span> Person Bouncing Ball</a></li>
+<li><a href="../weight-lifter/index.html"><span class="emoji">🏋</span> Person Lifting Weights</a></li>
+<li><a href="../bicyclist/index.html"><span class="emoji">🚴</span> Person Biking</a></li>
+<li><a href="../mountain-bicyclist/index.html"><span class="emoji">🚵</span> Person Mountain Biking</a></li>
+<li><a href="../racing-car/index.html"><span class="emoji">🏎</span> Racing Car</a></li>
+<li><a href="../racing-motorcycle/index.html"><span class="emoji">🏍</span> Motorcycle</a></li>
+<li><a href="../man-and-woman-holding-hands/index.html"><span class="emoji">👫</span> Man and Woman Holding Hands</a></li>
+<li><a href="../two-men-holding-hands/index.html"><span class="emoji">👬</span> Two Men Holding Hands</a></li>
+<li><a href="../two-women-holding-hands/index.html"><span class="emoji">👭</span> Two Women Holding Hands</a></li>
+<li><a href="../kiss/index.html"><span class="emoji">💏</span> Kiss</a></li>
+<li><a href="../couple-with-heart/index.html"><span class="emoji">💑</span> Couple With Heart</a></li>
+<li><a href="../family/index.html"><span class="emoji">👪</span> Family</a></li>
+<li><a href="../flexed-biceps/index.html"><span class="emoji">💪</span> Flexed Biceps</a></li>
+<li><a href="../white-left-pointing-backhand-index/index.html"><span class="emoji">👈</span> Backhand Index Pointing Left</a></li>
+<li><a href="../white-right-pointing-backhand-index/index.html"><span class="emoji">👉</span> Backhand Index Pointing Right</a></li>
+<li><a href="../white-up-pointing-index/index.html"><span class="emoji">☝</span> Index Pointing Up</a></li>
+<li><a href="../white-up-pointing-backhand-index/index.html"><span class="emoji">👆</span> Backhand Index Pointing Up</a></li>
+<li><a href="../reversed-hand-with-middle-finger-extended/index.html"><span class="emoji">🖕</span> Middle Finger</a></li>
+<li><a href="../white-down-pointing-backhand-index/index.html"><span class="emoji">👇</span> Backhand Index Pointing Down</a></li>
+<li><a href="../victory-hand/index.html"><span class="emoji">✌</span> Victory Hand</a></li>
+<li><a href="../raised-hand-with-part-between-middle-and-ring-fingers/index.html"><span class="emoji">🖖</span> Vulcan Salute</a></li>
+<li><a href="../sign-of-the-horns/index.html"><span class="emoji">🤘</span> Sign of the Horns</a></li>
+<li><a href="../raised-hand-with-fingers-splayed/index.html"><span class="emoji">🖐</span> Raised Hand With Fingers Splayed</a></li>
+<li><a href="../raised-hand/index.html"><span class="emoji">✋</span> Raised Hand</a></li>
+<li><a href="../ok-hand-sign/index.html"><span class="emoji">👌</span> OK Hand</a></li>
+<li><a href="../thumbs-up-sign/index.html"><span class="emoji">👍</span> Thumbs Up</a></li>
+<li><a href="../thumbs-down-sign/index.html"><span class="emoji">👎</span> Thumbs Down</a></li>
+<li><a href="../raised-fist/index.html"><span class="emoji">✊</span> Raised Fist</a></li>
+<li><a href="../fisted-hand-sign/index.html"><span class="emoji">👊</span> Oncoming Fist</a></li>
+<li><a href="../waving-hand-sign/index.html"><span class="emoji">👋</span> Waving Hand</a></li>
+<li><a href="../writing-hand/index.html"><span class="emoji">✍</span> Writing Hand</a></li>
+<li><a href="../clapping-hands-sign/index.html"><span class="emoji">👏</span> Clapping Hands</a></li>
+<li><a href="../open-hands-sign/index.html"><span class="emoji">👐</span> Open Hands</a></li>
+<li><a href="../person-raising-both-hands-in-celebration/index.html"><span class="emoji">🙌</span> Raising Hands</a></li>
+<li><a href="../person-with-folded-hands/index.html"><span class="emoji">🙏</span> Folded Hands</a></li>
+<li><a href="../nail-polish/index.html"><span class="emoji">💅</span> Nail Polish</a></li>
+<li><a href="../ear/index.html"><span class="emoji">👂</span> Ear</a></li>
+<li><a href="../nose/index.html"><span class="emoji">👃</span> Nose</a></li>
+<li><a href="../footprints/index.html"><span class="emoji">👣</span> Footprints</a></li>
+<li><a href="../eyes/index.html"><span class="emoji">👀</span> Eyes</a></li>
+<li><a href="../eye/index.html"><span class="emoji">👁</span> Eye</a></li>
+<li><a href="../tongue/index.html"><span class="emoji">👅</span> Tongue</a></li>
+<li><a href="../mouth/index.html"><span class="emoji">👄</span> Mouth</a></li>
+<li><a href="../kiss-mark/index.html"><span class="emoji">💋</span> Kiss Mark</a></li>
+<li><a href="../heart-with-arrow/index.html"><span class="emoji">💘</span> Heart With Arrow</a></li>
+<li><a href="../heavy-black-heart/index.html"><span class="emoji">❤</span> Red Heart</a></li>
+<li><a href="../beating-heart/index.html"><span class="emoji">💓</span> Beating Heart</a></li>
+<li><a href="../broken-heart/index.html"><span class="emoji">💔</span> Broken Heart</a></li>
+<li><a href="../two-hearts/index.html"><span class="emoji">💕</span> Two Hearts</a></li>
+<li><a href="../sparkling-heart/index.html"><span class="emoji">💖</span> Sparkling Heart</a></li>
+<li><a href="../growing-heart/index.html"><span class="emoji">💗</span> Growing Heart</a></li>
+<li><a href="../blue-heart/index.html"><span class="emoji">💙</span> Blue Heart</a></li>
+<li><a href="../green-heart/index.html"><span class="emoji">💚</span> Green Heart</a></li>
+<li><a href="../yellow-heart/index.html"><span class="emoji">💛</span> Yellow Heart</a></li>
+<li><a href="../purple-heart/index.html"><span class="emoji">💜</span> Purple Heart</a></li>
+<li><a href="../heart-with-ribbon/index.html"><span class="emoji">💝</span> Heart With Ribbon</a></li>
+<li><a href="../revolving-hearts/index.html"><span class="emoji">💞</span> Revolving Hearts</a></li>
+<li><a href="../heart-decoration/index.html"><span class="emoji">💟</span> Heart Decoration</a></li>
+<li><a href="../heavy-heart-exclamation-mark-ornament/index.html"><span class="emoji">❣</span> Heavy Heart Exclamation</a></li>
+<li><a href="../love-letter/index.html"><span class="emoji">💌</span> Love Letter</a></li>
+<li><a href="../sleeping-symbol/index.html"><span class="emoji">💤</span> Zzz</a></li>
+<li><a href="../anger-symbol/index.html"><span class="emoji">💢</span> Anger Symbol</a></li>
+<li><a href="../bomb/index.html"><span class="emoji">💣</span> Bomb</a></li>
+<li><a href="../collision-symbol/index.html"><span class="emoji">💥</span> Collision</a></li>
+<li><a href="../splashing-sweat-symbol/index.html"><span class="emoji">💦</span> Sweat Droplets</a></li>
+<li><a href="../dash-symbol/index.html"><span class="emoji">💨</span> Dashing Away</a></li>
+<li><a href="../dizzy-symbol/index.html"><span class="emoji">💫</span> Dizzy</a></li>
+<li><a href="../speech-balloon/index.html"><span class="emoji">💬</span> Speech Balloon</a></li>
+<li><a href="../right-anger-bubble/index.html"><span class="emoji">🗯</span> Right Anger Bubble</a></li>
+<li><a href="../thought-balloon/index.html"><span class="emoji">💭</span> Thought Balloon</a></li>
+<li><a href="../hole/index.html"><span class="emoji">🕳</span> Hole</a></li>
+<li><a href="../eyeglasses/index.html"><span class="emoji">👓</span> Glasses</a></li>
+<li><a href="../dark-sunglasses/index.html"><span class="emoji">🕶</span> Sunglasses</a></li>
+<li><a href="../necktie/index.html"><span class="emoji">👔</span> Necktie</a></li>
+<li><a href="../t-shirt/index.html"><span class="emoji">👕</span> T-Shirt</a></li>
+<li><a href="../jeans/index.html"><span class="emoji">👖</span> Jeans</a></li>
+<li><a href="../dress/index.html"><span class="emoji">👗</span> Dress</a></li>
+<li><a href="../kimono/index.html"><span class="emoji">👘</span> Kimono</a></li>
+<li><a href="../bikini/index.html"><span class="emoji">👙</span> Bikini</a></li>
+<li><a href="../womans-clothes/index.html"><span class="emoji">👚</span> Woman’s Clothes</a></li>
+<li><a href="../purse/index.html"><span class="emoji">👛</span> Purse</a></li>
+<li><a href="../handbag/index.html"><span class="emoji">👜</span> Handbag</a></li>
+<li><a href="../pouch/index.html"><span class="emoji">👝</span> Clutch Bag</a></li>
+<li><a href="../shopping-bags/index.html"><span class="emoji">🛍</span> Shopping Bags</a></li>
+<li><a href="../school-satchel/index.html"><span class="emoji">🎒</span> School Backpack</a></li>
+<li><a href="../mans-shoe/index.html"><span class="emoji">👞</span> Man’s Shoe</a></li>
+<li><a href="../athletic-shoe/index.html"><span class="emoji">👟</span> Running Shoe</a></li>
+<li><a href="../high-heeled-shoe/index.html"><span class="emoji">👠</span> High-Heeled Shoe</a></li>
+<li><a href="../womans-sandal/index.html"><span class="emoji">👡</span> Woman’s Sandal</a></li>
+<li><a href="../womans-boots/index.html"><span class="emoji">👢</span> Woman’s Boot</a></li>
+<li><a href="../crown/index.html"><span class="emoji">👑</span> Crown</a></li>
+<li><a href="../womans-hat/index.html"><span class="emoji">👒</span> Woman’s Hat</a></li>
+<li><a href="../top-hat/index.html"><span class="emoji">🎩</span> Top Hat</a></li>
+<li><a href="../graduation-cap/index.html"><span class="emoji">🎓</span> Graduation Cap</a></li>
+<li><a href="../helmet-with-white-cross/index.html"><span class="emoji">⛑</span> Rescue Worker’s Helmet</a></li>
+<li><a href="../prayer-beads/index.html"><span class="emoji">📿</span> Prayer Beads</a></li>
+<li><a href="../lipstick/index.html"><span class="emoji">💄</span> Lipstick</a></li>
+<li><a href="../ring/index.html"><span class="emoji">💍</span> Ring</a></li>
+<li><a href="../gem-stone/index.html"><span class="emoji">💎</span> Gem Stone</a></li>
+<li><a href="../monkey-face/index.html"><span class="emoji">🐵</span> Monkey Face</a></li>
+<li><a href="../monkey/index.html"><span class="emoji">🐒</span> Monkey</a></li>
+<li><a href="../dog-face/index.html"><span class="emoji">🐶</span> Dog Face</a></li>
+<li><a href="../dog/index.html"><span class="emoji">🐕</span> Dog</a></li>
+<li><a href="../poodle/index.html"><span class="emoji">🐩</span> Poodle</a></li>
+<li><a href="../wolf-face/index.html"><span class="emoji">🐺</span> Wolf Face</a></li>
+<li><a href="../cat-face/index.html"><span class="emoji">🐱</span> Cat Face</a></li>
+<li><a href="../cat/index.html"><span class="emoji">🐈</span> Cat</a></li>
+<li><a href="../lion-face/index.html"><span class="emoji">🦁</span> Lion Face</a></li>
+<li><a href="../tiger-face/index.html"><span class="emoji">🐯</span> Tiger Face</a></li>
+<li><a href="../tiger/index.html"><span class="emoji">🐅</span> Tiger</a></li>
+<li><a href="../leopard/index.html"><span class="emoji">🐆</span> Leopard</a></li>
+<li><a href="../horse-face/index.html"><span class="emoji">🐴</span> Horse Face</a></li>
+<li><a href="../horse/index.html"><span class="emoji">🐎</span> Horse</a></li>
+<li><a href="../unicorn-face/index.html"><span class="emoji">🦄</span> Unicorn Face</a></li>
+<li><a href="../cow-face/index.html"><span class="emoji">🐮</span> Cow Face</a></li>
+<li><a href="../ox/index.html"><span class="emoji">🐂</span> Ox</a></li>
+<li><a href="../water-buffalo/index.html"><span class="emoji">🐃</span> Water Buffalo</a></li>
+<li><a href="../cow/index.html"><span class="emoji">🐄</span> Cow</a></li>
+<li><a href="../pig-face/index.html"><span class="emoji">🐷</span> Pig Face</a></li>
+<li><a href="../pig/index.html"><span class="emoji">🐖</span> Pig</a></li>
+<li><a href="../boar/index.html"><span class="emoji">🐗</span> Boar</a></li>
+<li><a href="../pig-nose/index.html"><span class="emoji">🐽</span> Pig Nose</a></li>
+<li><a href="../ram/index.html"><span class="emoji">🐏</span> Ram</a></li>
+<li><a href="../sheep/index.html"><span class="emoji">🐑</span> Ewe</a></li>
+<li><a href="../goat/index.html"><span class="emoji">🐐</span> Goat</a></li>
+<li><a href="../dromedary-camel/index.html"><span class="emoji">🐪</span> Camel</a></li>
+<li><a href="../bactrian-camel/index.html"><span class="emoji">🐫</span> Two-Hump Camel</a></li>
+<li><a href="../elephant/index.html"><span class="emoji">🐘</span> Elephant</a></li>
+<li><a href="../mouse-face/index.html"><span class="emoji">🐭</span> Mouse Face</a></li>
+<li><a href="../mouse/index.html"><span class="emoji">🐁</span> Mouse</a></li>
+<li><a href="../rat/index.html"><span class="emoji">🐀</span> Rat</a></li>
+<li><a href="../hamster-face/index.html"><span class="emoji">🐹</span> Hamster Face</a></li>
+<li><a href="../rabbit-face/index.html"><span class="emoji">🐰</span> Rabbit Face</a></li>
+<li><a href="../rabbit/index.html"><span class="emoji">🐇</span> Rabbit</a></li>
+<li><a href="../chipmunk/index.html"><span class="emoji">🐿</span> Chipmunk</a></li>
+<li><a href="../bear-face/index.html"><span class="emoji">🐻</span> Bear Face</a></li>
+<li><a href="../koala/index.html"><span class="emoji">🐨</span> Koala</a></li>
+<li><a href="../panda-face/index.html"><span class="emoji">🐼</span> Panda Face</a></li>
+<li><a href="../paw-prints/index.html"><span class="emoji">🐾</span> Paw Prints</a></li>
+<li><a href="../turkey/index.html"><span class="emoji">🦃</span> Turkey</a></li>
+<li><a href="../chicken/index.html"><span class="emoji">🐔</span> Chicken</a></li>
+<li><a href="../rooster/index.html"><span class="emoji">🐓</span> Rooster</a></li>
+<li><a href="../hatching-chick/index.html"><span class="emoji">🐣</span> Hatching Chick</a></li>
+<li><a href="../baby-chick/index.html"><span class="emoji">🐤</span> Baby Chick</a></li>
+<li><a href="../front-facing-baby-chick/index.html"><span class="emoji">🐥</span> Front-Facing Baby Chick</a></li>
+<li><a href="../bird/index.html"><span class="emoji">🐦</span> Bird</a></li>
+<li><a href="../penguin/index.html"><span class="emoji">🐧</span> Penguin</a></li>
+<li><a href="../dove-of-peace/index.html"><span class="emoji">🕊</span> Dove</a></li>
+<li><a href="../frog-face/index.html"><span class="emoji">🐸</span> Frog Face</a></li>
+<li><a href="../crocodile/index.html"><span class="emoji">🐊</span> Crocodile</a></li>
+<li><a href="../turtle/index.html"><span class="emoji">🐢</span> Turtle</a></li>
+<li><a href="../snake/index.html"><span class="emoji">🐍</span> Snake</a></li>
+<li><a href="../dragon-face/index.html"><span class="emoji">🐲</span> Dragon Face</a></li>
+<li><a href="../dragon/index.html"><span class="emoji">🐉</span> Dragon</a></li>
+<li><a href="../spouting-whale/index.html"><span class="emoji">🐳</span> Spouting Whale</a></li>
+<li><a href="../whale/index.html"><span class="emoji">🐋</span> Whale</a></li>
+<li><a href="../dolphin/index.html"><span class="emoji">🐬</span> Dolphin</a></li>
+<li><a href="../fish/index.html"><span class="emoji">🐟</span> Fish</a></li>
+<li><a href="../tropical-fish/index.html"><span class="emoji">🐠</span> Tropical Fish</a></li>
+<li><a href="../blowfish/index.html"><span class="emoji">🐡</span> Blowfish</a></li>
+<li><a href="../octopus/index.html"><span class="emoji">🐙</span> Octopus</a></li>
+<li><a href="../spiral-shell/index.html"><span class="emoji">🐚</span> Spiral Shell</a></li>
+<li><a href="../crab/index.html"><span class="emoji">🦀</span> Crab</a></li>
+<li><a href="../snail/index.html"><span class="emoji">🐌</span> Snail</a></li>
+<li><a href="../bug/index.html"><span class="emoji">🐛</span> Bug</a></li>
+<li><a href="../ant/index.html"><span class="emoji">🐜</span> Ant</a></li>
+<li><a href="../honeybee/index.html"><span class="emoji">🐝</span> Honeybee</a></li>
+<li><a href="../lady-beetle/index.html"><span class="emoji">🐞</span> Lady Beetle</a></li>
+<li><a href="../spider/index.html"><span class="emoji">🕷</span> Spider</a></li>
+<li><a href="../spider-web/index.html"><span class="emoji">🕸</span> Spider Web</a></li>
+<li><a href="../scorpion/index.html"><span class="emoji">🦂</span> Scorpion</a></li>
+<li><a href="../bouquet/index.html"><span class="emoji">💐</span> Bouquet</a></li>
+<li><a href="../cherry-blossom/index.html"><span class="emoji">🌸</span> Cherry Blossom</a></li>
+<li><a href="../white-flower/index.html"><span class="emoji">💮</span> White Flower</a></li>
+<li><a href="../rosette/index.html"><span class="emoji">🏵</span> Rosette</a></li>
+<li><a href="../rose/index.html"><span class="emoji">🌹</span> Rose</a></li>
+<li><a href="../hibiscus/index.html"><span class="emoji">🌺</span> Hibiscus</a></li>
+<li><a href="../sunflower/index.html"><span class="emoji">🌻</span> Sunflower</a></li>
+<li><a href="../blossom/index.html"><span class="emoji">🌼</span> Blossom</a></li>
+<li><a href="../tulip/index.html"><span class="emoji">🌷</span> Tulip</a></li>
+<li><a href="../seedling/index.html"><span class="emoji">🌱</span> Seedling</a></li>
+<li><a href="../evergreen-tree/index.html"><span class="emoji">🌲</span> Evergreen Tree</a></li>
+<li><a href="../deciduous-tree/index.html"><span class="emoji">🌳</span> Deciduous Tree</a></li>
+<li><a href="../palm-tree/index.html"><span class="emoji">🌴</span> Palm Tree</a></li>
+<li><a href="../cactus/index.html"><span class="emoji">🌵</span> Cactus</a></li>
+<li><a href="../ear-of-rice/index.html"><span class="emoji">🌾</span> Sheaf of Rice</a></li>
+<li><a href="../herb/index.html"><span class="emoji">🌿</span> Herb</a></li>
+<li><a href="../shamrock/index.html"><span class="emoji">☘</span> Shamrock</a></li>
+<li><a href="../four-leaf-clover/index.html"><span class="emoji">🍀</span> Four Leaf Clover</a></li>
+<li><a href="../maple-leaf/index.html"><span class="emoji">🍁</span> Maple Leaf</a></li>
+<li><a href="../fallen-leaf/index.html"><span class="emoji">🍂</span> Fallen Leaf</a></li>
+<li><a href="../leaf-fluttering-in-wind/index.html"><span class="emoji">🍃</span> Leaf Fluttering in Wind</a></li>
+<li><a href="../grapes/index.html"><span class="emoji">🍇</span> Grapes</a></li>
+<li><a href="../melon/index.html"><span class="emoji">🍈</span> Melon</a></li>
+<li><a href="../watermelon/index.html"><span class="emoji">🍉</span> Watermelon</a></li>
+<li><a href="../tangerine/index.html"><span class="emoji">🍊</span> Tangerine</a></li>
+<li><a href="../lemon/index.html"><span class="emoji">🍋</span> Lemon</a></li>
+<li><a href="../banana/index.html"><span class="emoji">🍌</span> Banana</a></li>
+<li><a href="../pineapple/index.html"><span class="emoji">🍍</span> Pineapple</a></li>
+<li><a href="../red-apple/index.html"><span class="emoji">🍎</span> Red Apple</a></li>
+<li><a href="../green-apple/index.html"><span class="emoji">🍏</span> Green Apple</a></li>
+<li><a href="../pear/index.html"><span class="emoji">🍐</span> Pear</a></li>
+<li><a href="../peach/index.html"><span class="emoji">🍑</span> Peach</a></li>
+<li><a href="../cherries/index.html"><span class="emoji">🍒</span> Cherries</a></li>
+<li><a href="../strawberry/index.html"><span class="emoji">🍓</span> Strawberry</a></li>
+<li><a href="../tomato/index.html"><span class="emoji">🍅</span> Tomato</a></li>
+<li><a href="../aubergine/index.html"><span class="emoji">🍆</span> Eggplant</a></li>
+<li><a href="../ear-of-maize/index.html"><span class="emoji">🌽</span> Ear of Corn</a></li>
+<li><a href="../hot-pepper/index.html"><span class="emoji">🌶</span> Hot Pepper</a></li>
+<li><a href="../mushroom/index.html"><span class="emoji">🍄</span> Mushroom</a></li>
+<li><a href="../chestnut/index.html"><span class="emoji">🌰</span> Chestnut</a></li>
+<li><a href="../bread/index.html"><span class="emoji">🍞</span> Bread</a></li>
+<li><a href="../cheese-wedge/index.html"><span class="emoji">🧀</span> Cheese Wedge</a></li>
+<li><a href="../meat-on-bone/index.html"><span class="emoji">🍖</span> Meat on Bone</a></li>
+<li><a href="../poultry-leg/index.html"><span class="emoji">🍗</span> Poultry Leg</a></li>
+<li><a href="../hamburger/index.html"><span class="emoji">🍔</span> Hamburger</a></li>
+<li><a href="../french-fries/index.html"><span class="emoji">🍟</span> French Fries</a></li>
+<li><a href="../slice-of-pizza/index.html"><span class="emoji">🍕</span> Pizza</a></li>
+<li><a href="../hot-dog/index.html"><span class="emoji">🌭</span> Hot Dog</a></li>
+<li><a href="../taco/index.html"><span class="emoji">🌮</span> Taco</a></li>
+<li><a href="../burrito/index.html"><span class="emoji">🌯</span> Burrito</a></li>
+<li><a href="../cooking/index.html"><span class="emoji">🍳</span> Cooking</a></li>
+<li><a href="../pot-of-food/index.html"><span class="emoji">🍲</span> Pot of Food</a></li>
+<li><a href="../popcorn/index.html"><span class="emoji">🍿</span> Popcorn</a></li>
+<li><a href="../bento-box/index.html"><span class="emoji">🍱</span> Bento Box</a></li>
+<li><a href="../rice-cracker/index.html"><span class="emoji">🍘</span> Rice Cracker</a></li>
+<li><a href="../rice-ball/index.html"><span class="emoji">🍙</span> Rice Ball</a></li>
+<li><a href="../cooked-rice/index.html"><span class="emoji">🍚</span> Cooked Rice</a></li>
+<li><a href="../curry-and-rice/index.html"><span class="emoji">🍛</span> Curry Rice</a></li>
+<li><a href="../steaming-bowl/index.html"><span class="emoji">🍜</span> Steaming Bowl</a></li>
+<li><a href="../spaghetti/index.html"><span class="emoji">🍝</span> Spaghetti</a></li>
+<li><a href="../roasted-sweet-potato/index.html"><span class="emoji">🍠</span> Roasted Sweet Potato</a></li>
+<li><a href="../oden/index.html"><span class="emoji">🍢</span> Oden</a></li>
+<li><a href="../sushi/index.html"><span class="emoji">🍣</span> Sushi</a></li>
+<li><a href="../fried-shrimp/index.html"><span class="emoji">🍤</span> Fried Shrimp</a></li>
+<li><a href="../fish-cake-with-swirl-design/index.html"><span class="emoji">🍥</span> Fish Cake With Swirl</a></li>
+<li><a href="../dango/index.html"><span class="emoji">🍡</span> Dango</a></li>
+<li><a href="../soft-ice-cream/index.html"><span class="emoji">🍦</span> Soft Ice Cream</a></li>
+<li><a href="../shaved-ice/index.html"><span class="emoji">🍧</span> Shaved Ice</a></li>
+<li><a href="../ice-cream/index.html"><span class="emoji">🍨</span> Ice Cream</a></li>
+<li><a href="../doughnut/index.html"><span class="emoji">🍩</span> Doughnut</a></li>
+<li><a href="../cookie/index.html"><span class="emoji">🍪</span> Cookie</a></li>
+<li><a href="../birthday-cake/index.html"><span class="emoji">🎂</span> Birthday Cake</a></li>
+<li><a href="../shortcake/index.html"><span class="emoji">🍰</span> Shortcake</a></li>
+<li><a href="../chocolate-bar/index.html"><span class="emoji">🍫</span> Chocolate Bar</a></li>
+<li><a href="../candy/index.html"><span class="emoji">🍬</span> Candy</a></li>
+<li><a href="../lollipop/index.html"><span class="emoji">🍭</span> Lollipop</a></li>
+<li><a href="../custard/index.html"><span class="emoji">🍮</span> Custard</a></li>
+<li><a href="../honey-pot/index.html"><span class="emoji">🍯</span> Honey Pot</a></li>
+<li><a href="../baby-bottle/index.html"><span class="emoji">🍼</span> Baby Bottle</a></li>
+<li><a href="../hot-beverage/index.html"><span class="emoji">☕</span> Hot Beverage</a></li>
+<li><a href="../teacup-without-handle/index.html"><span class="emoji">🍵</span> Teacup Without Handle</a></li>
+<li><a href="../sake-bottle-and-cup/index.html"><span class="emoji">🍶</span> Sake</a></li>
+<li><a href="../bottle-with-popping-cork/index.html"><span class="emoji">🍾</span> Bottle With Popping Cork</a></li>
+<li><a href="../wine-glass/index.html"><span class="emoji">🍷</span> Wine Glass</a></li>
+<li><a href="../cocktail-glass/index.html"><span class="emoji">🍸</span> Cocktail Glass</a></li>
+<li><a href="../tropical-drink/index.html"><span class="emoji">🍹</span> Tropical Drink</a></li>
+<li><a href="../beer-mug/index.html"><span class="emoji">🍺</span> Beer Mug</a></li>
+<li><a href="../clinking-beer-mugs/index.html"><span class="emoji">🍻</span> Clinking Beer Mugs</a></li>
+<li><a href="../fork-and-knife-with-plate/index.html"><span class="emoji">🍽</span> Fork and Knife With Plate</a></li>
+<li><a href="../fork-and-knife/index.html"><span class="emoji">🍴</span> Fork and Knife</a></li>
+<li><a href="../hocho/index.html"><span class="emoji">🔪</span> Kitchen Knife</a></li>
+<li><a href="../amphora/index.html"><span class="emoji">🏺</span> Amphora</a></li>
+<li><a href="../earth-globe-europe-africa/index.html"><span class="emoji">🌍</span> Globe Showing Europe-Africa</a></li>
+<li><a href="../earth-globe-americas/index.html"><span class="emoji">🌎</span> Globe Showing Americas</a></li>
+<li><a href="../earth-globe-asia-australia/index.html"><span class="emoji">🌏</span> Globe Showing Asia-Australia</a></li>
+<li><a href="../globe-with-meridians/index.html"><span class="emoji">🌐</span> Globe With Meridians</a></li>
+<li><a href="../world-map/index.html"><span class="emoji">🗺</span> World Map</a></li>
+<li><a href="../silhouette-of-japan/index.html"><span class="emoji">🗾</span> Map of Japan</a></li>
+<li><a href="../snow-capped-mountain/index.html"><span class="emoji">🏔</span> Snow-Capped Mountain</a></li>
+<li><a href="../mountain/index.html"><span class="emoji">⛰</span> Mountain</a></li>
+<li><a href="../volcano/index.html"><span class="emoji">🌋</span> Volcano</a></li>
+<li><a href="../mount-fuji/index.html"><span class="emoji">🗻</span> Mount Fuji</a></li>
+<li><a href="../camping/index.html"><span class="emoji">🏕</span> Camping</a></li>
+<li><a href="../beach-with-umbrella/index.html"><span class="emoji">🏖</span> Beach With Umbrella</a></li>
+<li><a href="../desert/index.html"><span class="emoji">🏜</span> Desert</a></li>
+<li><a href="../desert-island/index.html"><span class="emoji">🏝</span> Desert Island</a></li>
+<li><a href="../national-park/index.html"><span class="emoji">🏞</span> National Park</a></li>
+<li><a href="../stadium/index.html"><span class="emoji">🏟</span> Stadium</a></li>
+<li><a href="../classical-building/index.html"><span class="emoji">🏛</span> Classical Building</a></li>
+<li><a href="../building-construction/index.html"><span class="emoji">🏗</span> Building Construction</a></li>
+<li><a href="../house-buildings/index.html"><span class="emoji">🏘</span> House</a></li>
+<li><a href="../cityscape/index.html"><span class="emoji">🏙</span> Cityscape</a></li>
+<li><a href="../derelict-house-building/index.html"><span class="emoji">🏚</span> Derelict House</a></li>
+<li><a href="../house-building/index.html"><span class="emoji">🏠</span> House</a></li>
+<li><a href="../house-with-garden/index.html"><span class="emoji">🏡</span> House With Garden</a></li>
+<li><a href="../office-building/index.html"><span class="emoji">🏢</span> Office Building</a></li>
+<li><a href="../japanese-post-office/index.html"><span class="emoji">🏣</span> Japanese Post Office</a></li>
+<li><a href="../european-post-office/index.html"><span class="emoji">🏤</span> Post Office</a></li>
+<li><a href="../hospital/index.html"><span class="emoji">🏥</span> Hospital</a></li>
+<li><a href="../bank/index.html"><span class="emoji">🏦</span> Bank</a></li>
+<li><a href="../hotel/index.html"><span class="emoji">🏨</span> Hotel</a></li>
+<li><a href="../love-hotel/index.html"><span class="emoji">🏩</span> Love Hotel</a></li>
+<li><a href="../convenience-store/index.html"><span class="emoji">🏪</span> Convenience Store</a></li>
+<li><a href="../school/index.html"><span class="emoji">🏫</span> School</a></li>
+<li><a href="../department-store/index.html"><span class="emoji">🏬</span> Department Store</a></li>
+<li><a href="../factory/index.html"><span class="emoji">🏭</span> Factory</a></li>
+<li><a href="../japanese-castle/index.html"><span class="emoji">🏯</span> Japanese Castle</a></li>
+<li><a href="../european-castle/index.html"><span class="emoji">🏰</span> Castle</a></li>
+<li><a href="../wedding/index.html"><span class="emoji">💒</span> Wedding</a></li>
+<li><a href="../tokyo-tower/index.html"><span class="emoji">🗼</span> Tokyo Tower</a></li>
+<li><a href="../statue-of-liberty/index.html"><span class="emoji">🗽</span> Statue of Liberty</a></li>
+<li><a href="../church/index.html"><span class="emoji">⛪</span> Church</a></li>
+<li><a href="../mosque/index.html"><span class="emoji">🕌</span> Mosque</a></li>
+<li><a href="../synagogue/index.html"><span class="emoji">🕍</span> Synagogue</a></li>
+<li><a href="../shinto-shrine/index.html"><span class="emoji">⛩</span> Shinto Shrine</a></li>
+<li><a href="../kaaba/index.html"><span class="emoji">🕋</span> Kaaba</a></li>
+<li><a href="../fountain/index.html"><span class="emoji">⛲</span> Fountain</a></li>
+<li><a href="../tent/index.html"><span class="emoji">⛺</span> Tent</a></li>
+<li><a href="../foggy/index.html"><span class="emoji">🌁</span> Foggy</a></li>
+<li><a href="../night-with-stars/index.html"><span class="emoji">🌃</span> Night With Stars</a></li>
+<li><a href="../sunrise-over-mountains/index.html"><span class="emoji">🌄</span> Sunrise Over Mountains</a></li>
+<li><a href="../sunrise/index.html"><span class="emoji">🌅</span> Sunrise</a></li>
+<li><a href="../cityscape-at-dusk/index.html"><span class="emoji">🌆</span> Cityscape at Dusk</a></li>
+<li><a href="../sunset-over-buildings/index.html"><span class="emoji">🌇</span> Sunset</a></li>
+<li><a href="../bridge-at-night/index.html"><span class="emoji">🌉</span> Bridge at Night</a></li>
+<li><a href="../hot-springs/index.html"><span class="emoji">♨</span> Hot Springs</a></li>
+<li><a href="../milky-way/index.html"><span class="emoji">🌌</span> Milky Way</a></li>
+<li><a href="../carousel-horse/index.html"><span class="emoji">🎠</span> Carousel Horse</a></li>
+<li><a href="../ferris-wheel/index.html"><span class="emoji">🎡</span> Ferris Wheel</a></li>
+<li><a href="../roller-coaster/index.html"><span class="emoji">🎢</span> Roller Coaster</a></li>
+<li><a href="../barber-pole/index.html"><span class="emoji">💈</span> Barber Pole</a></li>
+<li><a href="../circus-tent/index.html"><span class="emoji">🎪</span> Circus Tent</a></li>
+<li><a href="../performing-arts/index.html"><span class="emoji">🎭</span> Performing Arts</a></li>
+<li><a href="../frame-with-picture/index.html"><span class="emoji">🖼</span> Framed Picture</a></li>
+<li><a href="../artist-palette/index.html"><span class="emoji">🎨</span> Artist Palette</a></li>
+<li><a href="../slot-machine/index.html"><span class="emoji">🎰</span> Slot Machine</a></li>
+<li><a href="../steam-locomotive/index.html"><span class="emoji">🚂</span> Locomotive</a></li>
+<li><a href="../railway-car/index.html"><span class="emoji">🚃</span> Railway Car</a></li>
+<li><a href="../high-speed-train/index.html"><span class="emoji">🚄</span> High-Speed Train</a></li>
+<li><a href="../high-speed-train-with-bullet-nose/index.html"><span class="emoji">🚅</span> High-Speed Train With Bullet Nose</a></li>
+<li><a href="../train/index.html"><span class="emoji">🚆</span> Train</a></li>
+<li><a href="../metro/index.html"><span class="emoji">🚇</span> Metro</a></li>
+<li><a href="../light-rail/index.html"><span class="emoji">🚈</span> Light Rail</a></li>
+<li><a href="../station/index.html"><span class="emoji">🚉</span> Station</a></li>
+<li><a href="../tram/index.html"><span class="emoji">🚊</span> Tram</a></li>
+<li><a href="../monorail/index.html"><span class="emoji">🚝</span> Monorail</a></li>
+<li><a href="../mountain-railway/index.html"><span class="emoji">🚞</span> Mountain Railway</a></li>
+<li><a href="../tram-car/index.html"><span class="emoji">🚋</span> Tram Car</a></li>
+<li><a href="../bus/index.html"><span class="emoji">🚌</span> Bus</a></li>
+<li><a href="../oncoming-bus/index.html"><span class="emoji">🚍</span> Oncoming Bus</a></li>
+<li><a href="../trolleybus/index.html"><span class="emoji">🚎</span> Trolleybus</a></li>
+<li><a href="../minibus/index.html"><span class="emoji">🚐</span> Minibus</a></li>
+<li><a href="../ambulance/index.html"><span class="emoji">🚑</span> Ambulance</a></li>
+<li><a href="../fire-engine/index.html"><span class="emoji">🚒</span> Fire Engine</a></li>
+<li><a href="../police-car/index.html"><span class="emoji">🚓</span> Police Car</a></li>
+<li><a href="../oncoming-police-car/index.html"><span class="emoji">🚔</span> Oncoming Police Car</a></li>
+<li><a href="../taxi/index.html"><span class="emoji">🚕</span> Taxi</a></li>
+<li><a href="../oncoming-taxi/index.html"><span class="emoji">🚖</span> Oncoming Taxi</a></li>
+<li><a href="../automobile/index.html"><span class="emoji">🚗</span> Automobile</a></li>
+<li><a href="../oncoming-automobile/index.html"><span class="emoji">🚘</span> Oncoming Automobile</a></li>
+<li><a href="../recreational-vehicle/index.html"><span class="emoji">🚙</span> Sport Utility Vehicle</a></li>
+<li><a href="../delivery-truck/index.html"><span class="emoji">🚚</span> Delivery Truck</a></li>
+<li><a href="../articulated-lorry/index.html"><span class="emoji">🚛</span> Articulated Lorry</a></li>
+<li><a href="../tractor/index.html"><span class="emoji">🚜</span> Tractor</a></li>
+<li><a href="../bicycle/index.html"><span class="emoji">🚲</span> Bicycle</a></li>
+<li><a href="../bus-stop/index.html"><span class="emoji">🚏</span> Bus Stop</a></li>
+<li><a href="../motorway/index.html"><span class="emoji">🛣</span> Motorway</a></li>
+<li><a href="../railway-track/index.html"><span class="emoji">🛤</span> Railway Track</a></li>
+<li><a href="../fuel-pump/index.html"><span class="emoji">⛽</span> Fuel Pump</a></li>
+<li><a href="../police-cars-revolving-light/index.html"><span class="emoji">🚨</span> Police Car Light</a></li>
+<li><a href="../horizontal-traffic-light/index.html"><span class="emoji">🚥</span> Horizontal Traffic Light</a></li>
+<li><a href="../vertical-traffic-light/index.html"><span class="emoji">🚦</span> Vertical Traffic Light</a></li>
+<li><a href="../construction-sign/index.html"><span class="emoji">🚧</span> Construction</a></li>
+<li><a href="../anchor/index.html"><span class="emoji">⚓</span> Anchor</a></li>
+<li><a href="../sailboat/index.html"><span class="emoji">⛵</span> Sailboat</a></li>
+<li><a href="../speedboat/index.html"><span class="emoji">🚤</span> Speedboat</a></li>
+<li><a href="../passenger-ship/index.html"><span class="emoji">🛳</span> Passenger Ship</a></li>
+<li><a href="../ferry/index.html"><span class="emoji">⛴</span> Ferry</a></li>
+<li><a href="../motor-boat/index.html"><span class="emoji">🛥</span> Motor Boat</a></li>
+<li><a href="../ship/index.html"><span class="emoji">🚢</span> Ship</a></li>
+<li><a href="../airplane/index.html"><span class="emoji">✈</span> Airplane</a></li>
+<li><a href="../small-airplane/index.html"><span class="emoji">🛩</span> Small Airplane</a></li>
+<li><a href="../airplane-departure/index.html"><span class="emoji">🛫</span> Airplane Departure</a></li>
+<li><a href="../airplane-arriving/index.html"><span class="emoji">🛬</span> Airplane Arrival</a></li>
+<li><a href="../seat/index.html"><span class="emoji">💺</span> Seat</a></li>
+<li><a href="../helicopter/index.html"><span class="emoji">🚁</span> Helicopter</a></li>
+<li><a href="../suspension-railway/index.html"><span class="emoji">🚟</span> Suspension Railway</a></li>
+<li><a href="../mountain-cableway/index.html"><span class="emoji">🚠</span> Mountain Cableway</a></li>
+<li><a href="../aerial-tramway/index.html"><span class="emoji">🚡</span> Aerial Tramway</a></li>
+<li><a href="../satellite/index.html"><span class="emoji">🛰</span> Satellite</a></li>
+<li><a href="../rocket/index.html"><span class="emoji">🚀</span> Rocket</a></li>
+<li><a href="../bellhop-bell/index.html"><span class="emoji">🛎</span> Bellhop Bell</a></li>
+<li><a href="../door/index.html"><span class="emoji">🚪</span> Door</a></li>
+<li><a href="../bed/index.html"><span class="emoji">🛏</span> Bed</a></li>
+<li><a href="../couch-and-lamp/index.html"><span class="emoji">🛋</span> Couch and Lamp</a></li>
+<li><a href="../toilet/index.html"><span class="emoji">🚽</span> Toilet</a></li>
+<li><a href="../shower/index.html"><span class="emoji">🚿</span> Shower</a></li>
+<li><a href="../bathtub/index.html"><span class="emoji">🛁</span> Bathtub</a></li>
+<li><a href="../hourglass/index.html"><span class="emoji">⌛</span> Hourglass</a></li>
+<li><a href="../hourglass-with-flowing-sand/index.html"><span class="emoji">⏳</span> Hourglass With Flowing Sand</a></li>
+<li><a href="../watch/index.html"><span class="emoji">⌚</span> Watch</a></li>
+<li><a href="../alarm-clock/index.html"><span class="emoji">⏰</span> Alarm Clock</a></li>
+<li><a href="../stopwatch/index.html"><span class="emoji">⏱</span> Stopwatch</a></li>
+<li><a href="../timer-clock/index.html"><span class="emoji">⏲</span> Timer Clock</a></li>
+<li><a href="../mantelpiece-clock/index.html"><span class="emoji">🕰</span> Mantelpiece Clock</a></li>
+<li><a href="../clock-face-twelve-oclock/index.html"><span class="emoji">🕛</span> Twelve O’clock</a></li>
+<li><a href="../clock-face-twelve-thirty/index.html"><span class="emoji">🕧</span> Twelve-Thirty</a></li>
+<li><a href="../clock-face-one-oclock/index.html"><span class="emoji">🕐</span> One O’clock</a></li>
+<li><a href="../clock-face-one-thirty/index.html"><span class="emoji">🕜</span> One-Thirty</a></li>
+<li><a href="../clock-face-two-oclock/index.html"><span class="emoji">🕑</span> Two O’clock</a></li>
+<li><a href="../clock-face-two-thirty/index.html"><span class="emoji">🕝</span> Two-Thirty</a></li>
+<li><a href="../clock-face-three-oclock/index.html"><span class="emoji">🕒</span> Three O’clock</a></li>
+<li><a href="../clock-face-three-thirty/index.html"><span class="emoji">🕞</span> Three-Thirty</a></li>
+<li><a href="../clock-face-four-oclock/index.html"><span class="emoji">🕓</span> Four O’clock</a></li>
+<li><a href="../clock-face-four-thirty/index.html"><span class="emoji">🕟</span> Four-Thirty</a></li>
+<li><a href="../clock-face-five-oclock/index.html"><span class="emoji">🕔</span> Five O’clock</a></li>
+<li><a href="../clock-face-five-thirty/index.html"><span class="emoji">🕠</span> Five-Thirty</a></li>
+<li><a href="../clock-face-six-oclock/index.html"><span class="emoji">🕕</span> Six O’clock</a></li>
+<li><a href="../clock-face-six-thirty/index.html"><span class="emoji">🕡</span> Six-Thirty</a></li>
+<li><a href="../clock-face-seven-oclock/index.html"><span class="emoji">🕖</span> Seven O’clock</a></li>
+<li><a href="../clock-face-seven-thirty/index.html"><span class="emoji">🕢</span> Seven-Thirty</a></li>
+<li><a href="../clock-face-eight-oclock/index.html"><span class="emoji">🕗</span> Eight O’clock</a></li>
+<li><a href="../clock-face-eight-thirty/index.html"><span class="emoji">🕣</span> Eight-Thirty</a></li>
+<li><a href="../clock-face-nine-oclock/index.html"><span class="emoji">🕘</span> Nine O’clock</a></li>
+<li><a href="../clock-face-nine-thirty/index.html"><span class="emoji">🕤</span> Nine-Thirty</a></li>
+<li><a href="../clock-face-ten-oclock/index.html"><span class="emoji">🕙</span> Ten O’clock</a></li>
+<li><a href="../clock-face-ten-thirty/index.html"><span class="emoji">🕥</span> Ten-Thirty</a></li>
+<li><a href="../clock-face-eleven-oclock/index.html"><span class="emoji">🕚</span> Eleven O’clock</a></li>
+<li><a href="../clock-face-eleven-thirty/index.html"><span class="emoji">🕦</span> Eleven-Thirty</a></li>
+<li><a href="../new-moon-symbol/index.html"><span class="emoji">🌑</span> New Moon</a></li>
+<li><a href="../waxing-crescent-moon-symbol/index.html"><span class="emoji">🌒</span> Waxing Crescent Moon</a></li>
+<li><a href="../first-quarter-moon-symbol/index.html"><span class="emoji">🌓</span> First Quarter Moon</a></li>
+<li><a href="../waxing-gibbous-moon-symbol/index.html"><span class="emoji">🌔</span> Waxing Gibbous Moon</a></li>
+<li><a href="../full-moon-symbol/index.html"><span class="emoji">🌕</span> Full Moon</a></li>
+<li><a href="../waning-gibbous-moon-symbol/index.html"><span class="emoji">🌖</span> Waning Gibbous Moon</a></li>
+<li><a href="../last-quarter-moon-symbol/index.html"><span class="emoji">🌗</span> Last Quarter Moon</a></li>
+<li><a href="../waning-crescent-moon-symbol/index.html"><span class="emoji">🌘</span> Waning Crescent Moon</a></li>
+<li><a href="../crescent-moon/index.html"><span class="emoji">🌙</span> Crescent Moon</a></li>
+<li><a href="../new-moon-with-face/index.html"><span class="emoji">🌚</span> New Moon Face</a></li>
+<li><a href="../first-quarter-moon-with-face/index.html"><span class="emoji">🌛</span> First Quarter Moon With Face</a></li>
+<li><a href="../last-quarter-moon-with-face/index.html"><span class="emoji">🌜</span> Last Quarter Moon With Face</a></li>
+<li><a href="../thermometer/index.html"><span class="emoji">🌡</span> Thermometer</a></li>
+<li><a href="../black-sun-with-rays/index.html"><span class="emoji">☀</span> Sun</a></li>
+<li><a href="../full-moon-with-face/index.html"><span class="emoji">🌝</span> Full Moon With Face</a></li>
+<li><a href="../sun-with-face/index.html"><span class="emoji">🌞</span> Sun With Face</a></li>
+<li><a href="../white-medium-star/index.html"><span class="emoji">⭐</span> White Medium Star</a></li>
+<li><a href="../glowing-star/index.html"><span class="emoji">🌟</span> Glowing Star</a></li>
+<li><a href="../shooting-star/index.html"><span class="emoji">🌠</span> Shooting Star</a></li>
+<li><a href="../cloud/index.html"><span class="emoji">☁</span> Cloud</a></li>
+<li><a href="../sun-behind-cloud/index.html"><span class="emoji">⛅</span> Sun Behind Cloud</a></li>
+<li><a href="../thunder-cloud-and-rain/index.html"><span class="emoji">⛈</span> Cloud With Lightning and Rain</a></li>
+<li><a href="../white-sun-with-small-cloud/index.html"><span class="emoji">🌤</span> Sun Behind Small Cloud</a></li>
+<li><a href="../white-sun-behind-cloud/index.html"><span class="emoji">🌥</span> Sun Behind Large Cloud</a></li>
+<li><a href="../white-sun-behind-cloud-with-rain/index.html"><span class="emoji">🌦</span> Sun Behind Rain Cloud</a></li>
+<li><a href="../cloud-with-rain/index.html"><span class="emoji">🌧</span> Cloud With Rain</a></li>
+<li><a href="../cloud-with-snow/index.html"><span class="emoji">🌨</span> Cloud With Snow</a></li>
+<li><a href="../cloud-with-lightning/index.html"><span class="emoji">🌩</span> Cloud With Lightning</a></li>
+<li><a href="../cloud-with-tornado/index.html"><span class="emoji">🌪</span> Tornado</a></li>
+<li><a href="../fog/index.html"><span class="emoji">🌫</span> Fog</a></li>
+<li><a href="../wind-blowing-face/index.html"><span class="emoji">🌬</span> Wind Face</a></li>
+<li><a href="../cyclone/index.html"><span class="emoji">🌀</span> Cyclone</a></li>
+<li><a href="../rainbow/index.html"><span class="emoji">🌈</span> Rainbow</a></li>
+<li><a href="../closed-umbrella/index.html"><span class="emoji">🌂</span> Closed Umbrella</a></li>
+<li><a href="../umbrella/index.html"><span class="emoji">☂</span> Umbrella</a></li>
+<li><a href="../umbrella-with-rain-drops/index.html"><span class="emoji">☔</span> Umbrella With Rain Drops</a></li>
+<li><a href="../umbrella-on-ground/index.html"><span class="emoji">⛱</span> Umbrella on Ground</a></li>
+<li><a href="../high-voltage-sign/index.html"><span class="emoji">⚡</span> High Voltage</a></li>
+<li><a href="../snowflake/index.html"><span class="emoji">❄</span> Snowflake</a></li>
+<li><a href="../snowman/index.html"><span class="emoji">☃</span> Snowman</a></li>
+<li><a href="../snowman-without-snow/index.html"><span class="emoji">⛄</span> Snowman Without Snow</a></li>
+<li><a href="../comet/index.html"><span class="emoji">☄</span> Comet</a></li>
+<li><a href="../fire/index.html"><span class="emoji">🔥</span> Fire</a></li>
+<li><a href="../droplet/index.html"><span class="emoji">💧</span> Droplet</a></li>
+<li><a href="../water-wave/index.html"><span class="emoji">🌊</span> Water Wave</a></li>
+<li><a href="../jack-o-lantern/index.html"><span class="emoji">🎃</span> Jack-O-Lantern</a></li>
+<li><a href="../christmas-tree/index.html"><span class="emoji">🎄</span> Christmas Tree</a></li>
+<li><a href="../fireworks/index.html"><span class="emoji">🎆</span> Fireworks</a></li>
+<li><a href="../firework-sparkler/index.html"><span class="emoji">🎇</span> Sparkler</a></li>
+<li><a href="../sparkles/index.html"><span class="emoji">✨</span> Sparkles</a></li>
+<li><a href="../balloon/index.html"><span class="emoji">🎈</span> Balloon</a></li>
+<li><a href="../party-popper/index.html"><span class="emoji">🎉</span> Party Popper</a></li>
+<li><a href="../confetti-ball/index.html"><span class="emoji">🎊</span> Confetti Ball</a></li>
+<li><a href="../tanabata-tree/index.html"><span class="emoji">🎋</span> Tanabata Tree</a></li>
+<li><a href="../pine-decoration/index.html"><span class="emoji">🎍</span> Pine Decoration</a></li>
+<li><a href="../japanese-dolls/index.html"><span class="emoji">🎎</span> Japanese Dolls</a></li>
+<li><a href="../carp-streamer/index.html"><span class="emoji">🎏</span> Carp Streamer</a></li>
+<li><a href="../wind-chime/index.html"><span class="emoji">🎐</span> Wind Chime</a></li>
+<li><a href="../moon-viewing-ceremony/index.html"><span class="emoji">🎑</span> Moon Viewing Ceremony</a></li>
+<li><a href="../ribbon/index.html"><span class="emoji">🎀</span> Ribbon</a></li>
+<li><a href="../wrapped-present/index.html"><span class="emoji">🎁</span> Wrapped Gift</a></li>
+<li><a href="../reminder-ribbon/index.html"><span class="emoji">🎗</span> Reminder Ribbon</a></li>
+<li><a href="../admission-tickets/index.html"><span class="emoji">🎟</span> Admission Tickets</a></li>
+<li><a href="../ticket/index.html"><span class="emoji">🎫</span> Ticket</a></li>
+<li><a href="../military-medal/index.html"><span class="emoji">🎖</span> Military Medal</a></li>
+<li><a href="../trophy/index.html"><span class="emoji">🏆</span> Trophy</a></li>
+<li><a href="../sports-medal/index.html"><span class="emoji">🏅</span> Sports Medal</a></li>
+<li><a href="../soccer-ball/index.html"><span class="emoji">⚽</span> Soccer Ball</a></li>
+<li><a href="../baseball/index.html"><span class="emoji">⚾</span> Baseball</a></li>
+<li><a href="../basketball-and-hoop/index.html"><span class="emoji">🏀</span> Basketball</a></li>
+<li><a href="../volleyball/index.html"><span class="emoji">🏐</span> Volleyball</a></li>
+<li><a href="../american-football/index.html"><span class="emoji">🏈</span> American Football</a></li>
+<li><a href="../rugby-football/index.html"><span class="emoji">🏉</span> Rugby Football</a></li>
+<li><a href="../tennis-racquet-and-ball/index.html"><span class="emoji">🎾</span> Tennis</a></li>
+<li><a href="../billiards/index.html"><span class="emoji">🎱</span> Pool 8 Ball</a></li>
+<li><a href="../bowling/index.html"><span class="emoji">🎳</span> Bowling</a></li>
+<li><a href="../cricket-bat-and-ball/index.html"><span class="emoji">🏏</span> Cricket</a></li>
+<li><a href="../field-hockey-stick-and-ball/index.html"><span class="emoji">🏑</span> Field Hockey</a></li>
+<li><a href="../ice-hockey-stick-and-puck/index.html"><span class="emoji">🏒</span> Ice Hockey</a></li>
+<li><a href="../table-tennis-paddle-and-ball/index.html"><span class="emoji">🏓</span> Ping Pong</a></li>
+<li><a href="../badminton-racquet-and-shuttlecock/index.html"><span class="emoji">🏸</span> Badminton</a></li>
+<li><a href="../direct-hit/index.html"><span class="emoji">🎯</span> Direct Hit</a></li>
+<li><a href="../flag-in-hole/index.html"><span class="emoji">⛳</span> Flag in Hole</a></li>
+<li><a href="../ice-skate/index.html"><span class="emoji">⛸</span> Ice Skate</a></li>
+<li><a href="../fishing-pole-and-fish/index.html"><span class="emoji">🎣</span> Fishing Pole</a></li>
+<li><a href="../running-shirt-with-sash/index.html"><span class="emoji">🎽</span> Running Shirt</a></li>
+<li><a href="../ski-and-ski-boot/index.html"><span class="emoji">🎿</span> Skis</a></li>
+<li><a href="../video-game/index.html"><span class="emoji">🎮</span> Video Game</a></li>
+<li><a href="../joystick/index.html"><span class="emoji">🕹</span> Joystick</a></li>
+<li><a href="../game-die/index.html"><span class="emoji">🎲</span> Game Die</a></li>
+<li><a href="../black-spade-suit/index.html"><span class="emoji">♠</span> Spade Suit</a></li>
+<li><a href="../black-heart-suit/index.html"><span class="emoji">♥</span> Heart Suit</a></li>
+<li><a href="../black-diamond-suit/index.html"><span class="emoji">♦</span> Diamond Suit</a></li>
+<li><a href="../black-club-suit/index.html"><span class="emoji">♣</span> Club Suit</a></li>
+<li><a href="../playing-card-black-joker/index.html"><span class="emoji">🃏</span> Joker</a></li>
+<li><a href="../mahjong-tile-red-dragon/index.html"><span class="emoji">🀄</span> Mahjong Red Dragon</a></li>
+<li><a href="../flower-playing-cards/index.html"><span class="emoji">🎴</span> Flower Playing Cards</a></li>
+<li><a href="../speaker-with-cancellation-stroke/index.html"><span class="emoji">🔇</span> Muted Speaker</a></li>
+<li><a href="../speaker/index.html"><span class="emoji">🔈</span> Speaker Low Volume</a></li>
+<li><a href="../speaker-with-one-sound-wave/index.html"><span class="emoji">🔉</span> Speaker Medium Volume</a></li>
+<li><a href="../speaker-with-three-sound-waves/index.html"><span class="emoji">🔊</span> Speaker High Volume</a></li>
+<li><a href="../public-address-loudspeaker/index.html"><span class="emoji">📢</span> Loudspeaker</a></li>
+<li><a href="../cheering-megaphone/index.html"><span class="emoji">📣</span> Megaphone</a></li>
+<li><a href="../postal-horn/index.html"><span class="emoji">📯</span> Postal Horn</a></li>
+<li><a href="../bell/index.html"><span class="emoji">🔔</span> Bell</a></li>
+<li><a href="../bell-with-cancellation-stroke/index.html"><span class="emoji">🔕</span> Bell With Slash</a></li>
+<li><a href="../musical-score/index.html"><span class="emoji">🎼</span> Musical Score</a></li>
+<li><a href="../musical-note/index.html"><span class="emoji">🎵</span> Musical Note</a></li>
+<li><a href="../multiple-musical-notes/index.html"><span class="emoji">🎶</span> Musical Notes</a></li>
+<li><a href="../studio-microphone/index.html"><span class="emoji">🎙</span> Studio Microphone</a></li>
+<li><a href="../level-slider/index.html"><span class="emoji">🎚</span> Level Slider</a></li>
+<li><a href="../control-knobs/index.html"><span class="emoji">🎛</span> Control Knobs</a></li>
+<li><a href="../microphone/index.html"><span class="emoji">🎤</span> Microphone</a></li>
+<li><a href="../headphone/index.html"><span class="emoji">🎧</span> Headphone</a></li>
+<li><a href="../radio/index.html"><span class="emoji">📻</span> Radio</a></li>
+<li><a href="../saxophone/index.html"><span class="emoji">🎷</span> Saxophone</a></li>
+<li><a href="../guitar/index.html"><span class="emoji">🎸</span> Guitar</a></li>
+<li><a href="../musical-keyboard/index.html"><span class="emoji">🎹</span> Musical Keyboard</a></li>
+<li><a href="../trumpet/index.html"><span class="emoji">🎺</span> Trumpet</a></li>
+<li><a href="../violin/index.html"><span class="emoji">🎻</span> Violin</a></li>
+<li><a href="../mobile-phone/index.html"><span class="emoji">📱</span> Mobile Phone</a></li>
+<li><a href="../mobile-phone-with-rightwards-arrow-at-left/index.html"><span class="emoji">📲</span> Mobile Phone With Arrow</a></li>
+<li><a href="../black-telephone/index.html"><span class="emoji">☎</span> Telephone</a></li>
+<li><a href="../telephone-receiver/index.html"><span class="emoji">📞</span> Telephone Receiver</a></li>
+<li><a href="../pager/index.html"><span class="emoji">📟</span> Pager</a></li>
+<li><a href="../fax-machine/index.html"><span class="emoji">📠</span> Fax Machine</a></li>
+<li><a href="../battery/index.html"><span class="emoji">🔋</span> Battery</a></li>
+<li><a href="../electric-plug/index.html"><span class="emoji">🔌</span> Electric Plug</a></li>
+<li><a href="../personal-computer/index.html"><span class="emoji">💻</span> Laptop Computer</a></li>
+<li><a href="../desktop-computer/index.html"><span class="emoji">🖥</span> Desktop Computer</a></li>
+<li><a href="../printer/index.html"><span class="emoji">🖨</span> Printer</a></li>
+<li><a href="../keyboard/index.html"><span class="emoji">⌨</span> Keyboard</a></li>
+<li><a href="../three-button-mouse/index.html"><span class="emoji">🖱</span> Computer Mouse</a></li>
+<li><a href="../trackball/index.html"><span class="emoji">🖲</span> Trackball</a></li>
+<li><a href="../minidisc/index.html"><span class="emoji">💽</span> Computer Disk</a></li>
+<li><a href="../floppy-disk/index.html"><span class="emoji">💾</span> Floppy Disk</a></li>
+<li><a href="../optical-disc/index.html"><span class="emoji">💿</span> Optical Disk</a></li>
+<li><a href="../dvd/index.html"><span class="emoji">📀</span> DVD</a></li>
+<li><a href="../movie-camera/index.html"><span class="emoji">🎥</span> Movie Camera</a></li>
+<li><a href="../film-frames/index.html"><span class="emoji">🎞</span> Film Frames</a></li>
+<li><a href="../film-projector/index.html"><span class="emoji">📽</span> Film Projector</a></li>
+<li><a href="../clapper-board/index.html"><span class="emoji">🎬</span> Clapper Board</a></li>
+<li><a href="../television/index.html"><span class="emoji">📺</span> Television</a></li>
+<li><a href="../camera/index.html"><span class="emoji">📷</span> Camera</a></li>
+<li><a href="../camera-with-flash/index.html"><span class="emoji">📸</span> Camera With Flash</a></li>
+<li><a href="../video-camera/index.html"><span class="emoji">📹</span> Video Camera</a></li>
+<li><a href="../videocassette/index.html"><span class="emoji">📼</span> Videocassette</a></li>
+<li><a href="../left-pointing-magnifying-glass/index.html"><span class="emoji">🔍</span> Left-Pointing Magnifying Glass</a></li>
+<li><a href="../right-pointing-magnifying-glass/index.html"><span class="emoji">🔎</span> Right-Pointing Magnifying Glass</a></li>
+<li><a href="../microscope/index.html"><span class="emoji">🔬</span> Microscope</a></li>
+<li><a href="../telescope/index.html"><span class="emoji">🔭</span> Telescope</a></li>
+<li><a href="../satellite-antenna/index.html"><span class="emoji">📡</span> Satellite Antenna</a></li>
+<li><a href="../candle/index.html"><span class="emoji">🕯</span> Candle</a></li>
+<li><a href="../electric-light-bulb/index.html"><span class="emoji">💡</span> Light Bulb</a></li>
+<li><a href="../electric-torch/index.html"><span class="emoji">🔦</span> Flashlight</a></li>
+<li><a href="../izakaya-lantern/index.html"><span class="emoji">🏮</span> Red Paper Lantern</a></li>
+<li><a href="../notebook-with-decorative-cover/index.html"><span class="emoji">📔</span> Notebook With Decorative Cover</a></li>
+<li><a href="../closed-book/index.html"><span class="emoji">📕</span> Closed Book</a></li>
+<li><a href="../open-book/index.html"><span class="emoji">📖</span> Open Book</a></li>
+<li><a href="../green-book/index.html"><span class="emoji">📗</span> Green Book</a></li>
+<li><a href="../blue-book/index.html"><span class="emoji">📘</span> Blue Book</a></li>
+<li><a href="../orange-book/index.html"><span class="emoji">📙</span> Orange Book</a></li>
+<li><a href="../books/index.html"><span class="emoji">📚</span> Books</a></li>
+<li><a href="../notebook/index.html"><span class="emoji">📓</span> Notebook</a></li>
+<li><a href="../ledger/index.html"><span class="emoji">📒</span> Ledger</a></li>
+<li><a href="../page-with-curl/index.html"><span class="emoji">📃</span> Page With Curl</a></li>
+<li><a href="../scroll/index.html"><span class="emoji">📜</span> Scroll</a></li>
+<li><a href="../page-facing-up/index.html"><span class="emoji">📄</span> Page Facing Up</a></li>
+<li><a href="../newspaper/index.html"><span class="emoji">📰</span> Newspaper</a></li>
+<li><a href="../rolled-up-newspaper/index.html"><span class="emoji">🗞</span> Rolled-Up Newspaper</a></li>
+<li><a href="../bookmark-tabs/index.html"><span class="emoji">📑</span> Bookmark Tabs</a></li>
+<li><a href="../bookmark/index.html"><span class="emoji">🔖</span> Bookmark</a></li>
+<li><a href="../label/index.html"><span class="emoji">🏷</span> Label</a></li>
+<li><a href="../money-bag/index.html"><span class="emoji">💰</span> Money Bag</a></li>
+<li><a href="../banknote-with-yen-sign/index.html"><span class="emoji">💴</span> Yen Banknote</a></li>
+<li><a href="../banknote-with-dollar-sign/index.html"><span class="emoji">💵</span> Dollar Banknote</a></li>
+<li><a href="../banknote-with-euro-sign/index.html"><span class="emoji">💶</span> Euro Banknote</a></li>
+<li><a href="../banknote-with-pound-sign/index.html"><span class="emoji">💷</span> Pound Banknote</a></li>
+<li><a href="../money-with-wings/index.html"><span class="emoji">💸</span> Money With Wings</a></li>
+<li><a href="../credit-card/index.html"><span class="emoji">💳</span> Credit Card</a></li>
+<li><a href="../chart-with-upwards-trend-and-yen-sign/index.html"><span class="emoji">💹</span> Chart Increasing With Yen</a></li>
+<li><a href="../currency-exchange/index.html"><span class="emoji">💱</span> Currency Exchange</a></li>
+<li><a href="../heavy-dollar-sign/index.html"><span class="emoji">💲</span> Heavy Dollar Sign</a></li>
+<li><a href="../envelope/index.html"><span class="emoji">✉</span> Envelope</a></li>
+<li><a href="../e-mail-symbol/index.html"><span class="emoji">📧</span> E-Mail</a></li>
+<li><a href="../incoming-envelope/index.html"><span class="emoji">📨</span> Incoming Envelope</a></li>
+<li><a href="../envelope-with-downwards-arrow-above/index.html"><span class="emoji">📩</span> Envelope With Arrow</a></li>
+<li><a href="../outbox-tray/index.html"><span class="emoji">📤</span> Outbox Tray</a></li>
+<li><a href="../inbox-tray/index.html"><span class="emoji">📥</span> Inbox Tray</a></li>
+<li><a href="../package/index.html"><span class="emoji">📦</span> Package</a></li>
+<li><a href="../closed-mailbox-with-raised-flag/index.html"><span class="emoji">📫</span> Closed Mailbox With Raised Flag</a></li>
+<li><a href="../closed-mailbox-with-lowered-flag/index.html"><span class="emoji">📪</span> Closed Mailbox With Lowered Flag</a></li>
+<li><a href="../open-mailbox-with-raised-flag/index.html"><span class="emoji">📬</span> Open Mailbox With Raised Flag</a></li>
+<li><a href="../open-mailbox-with-lowered-flag/index.html"><span class="emoji">📭</span> Open Mailbox With Lowered Flag</a></li>
+<li><a href="../postbox/index.html"><span class="emoji">📮</span> Postbox</a></li>
+<li><a href="../ballot-box-with-ballot/index.html"><span class="emoji">🗳</span> Ballot Box With Ballot</a></li>
+<li><a href="../pencil/index.html"><span class="emoji">✏</span> Pencil</a></li>
+<li><a href="../black-nib/index.html"><span class="emoji">✒</span> Black Nib</a></li>
+<li><a href="../lower-left-fountain-pen/index.html"><span class="emoji">🖋</span> Fountain Pen</a></li>
+<li><a href="../lower-left-ballpoint-pen/index.html"><span class="emoji">🖊</span> Pen</a></li>
+<li><a href="../lower-left-paintbrush/index.html"><span class="emoji">🖌</span> Paintbrush</a></li>
+<li><a href="../lower-left-crayon/index.html"><span class="emoji">🖍</span> Crayon</a></li>
+<li><a href="../memo/index.html"><span class="emoji">📝</span> Memo</a></li>
+<li><a href="../briefcase/index.html"><span class="emoji">💼</span> Briefcase</a></li>
+<li><a href="../file-folder/index.html"><span class="emoji">📁</span> File Folder</a></li>
+<li><a href="../open-file-folder/index.html"><span class="emoji">📂</span> Open File Folder</a></li>
+<li><a href="../card-index-dividers/index.html"><span class="emoji">🗂</span> Card Index Dividers</a></li>
+<li><a href="../calendar/index.html"><span class="emoji">📅</span> Calendar</a></li>
+<li><a href="../tear-off-calendar/index.html"><span class="emoji">📆</span> Tear-Off Calendar</a></li>
+<li><a href="../spiral-note-pad/index.html"><span class="emoji">🗒</span> Spiral Notepad</a></li>
+<li><a href="../spiral-calendar-pad/index.html"><span class="emoji">🗓</span> Spiral Calendar</a></li>
+<li><a href="../card-index/index.html"><span class="emoji">📇</span> Card Index</a></li>
+<li><a href="../chart-with-upwards-trend/index.html"><span class="emoji">📈</span> Chart Increasing</a></li>
+<li><a href="../chart-with-downwards-trend/index.html"><span class="emoji">📉</span> Chart Decreasing</a></li>
+<li><a href="../bar-chart/index.html"><span class="emoji">📊</span> Bar Chart</a></li>
+<li><a href="../clipboard/index.html"><span class="emoji">📋</span> Clipboard</a></li>
+<li><a href="../pushpin/index.html"><span class="emoji">📌</span> Pushpin</a></li>
+<li><a href="../round-pushpin/index.html"><span class="emoji">📍</span> Round Pushpin</a></li>
+<li><a href="../paperclip/index.html"><span class="emoji">📎</span> Paperclip</a></li>
+<li><a href="../linked-paperclips/index.html"><span class="emoji">🖇</span> Linked Paperclips</a></li>
+<li><a href="../straight-ruler/index.html"><span class="emoji">📏</span> Straight Ruler</a></li>
+<li><a href="../triangular-ruler/index.html"><span class="emoji">📐</span> Triangular Ruler</a></li>
+<li><a href="../black-scissors/index.html"><span class="emoji">✂</span> Scissors</a></li>
+<li><a href="../card-file-box/index.html"><span class="emoji">🗃</span> Card File Box</a></li>
+<li><a href="../file-cabinet/index.html"><span class="emoji">🗄</span> File Cabinet</a></li>
+<li><a href="../wastebasket/index.html"><span class="emoji">🗑</span> Wastebasket</a></li>
+<li><a href="../lock/index.html"><span class="emoji">🔒</span> Locked</a></li>
+<li><a href="../open-lock/index.html"><span class="emoji">🔓</span> Unlocked</a></li>
+<li><a href="../lock-with-ink-pen/index.html"><span class="emoji">🔏</span> Locked With Pen</a></li>
+<li><a href="../closed-lock-with-key/index.html"><span class="emoji">🔐</span> Locked With Key</a></li>
+<li><a href="../key/index.html"><span class="emoji">🔑</span> Key</a></li>
+<li><a href="../old-key/index.html"><span class="emoji">🗝</span> Old Key</a></li>
+<li><a href="../hammer/index.html"><span class="emoji">🔨</span> Hammer</a></li>
+<li><a href="../pick/index.html"><span class="emoji">⛏</span> Pick</a></li>
+<li><a href="../hammer-and-pick/index.html"><span class="emoji">⚒</span> Hammer and Pick</a></li>
+<li><a href="../hammer-and-wrench/index.html"><span class="emoji">🛠</span> Hammer and Wrench</a></li>
+<li><a href="../dagger-knife/index.html"><span class="emoji">🗡</span> Dagger</a></li>
+<li><a href="../crossed-swords/index.html"><span class="emoji">⚔</span> Crossed Swords</a></li>
+<li><a href="../pistol/index.html"><span class="emoji">🔫</span> Pistol</a></li>
+<li><a href="../bow-and-arrow/index.html"><span class="emoji">🏹</span> Bow and Arrow</a></li>
+<li><a href="../shield/index.html"><span class="emoji">🛡</span> Shield</a></li>
+<li><a href="../wrench/index.html"><span class="emoji">🔧</span> Wrench</a></li>
+<li><a href="../nut-and-bolt/index.html"><span class="emoji">🔩</span> Nut and Bolt</a></li>
+<li><a href="../gear/index.html"><span class="emoji">⚙</span> Gear</a></li>
+<li><a href="../compression/index.html"><span class="emoji">🗜</span> Clamp</a></li>
+<li><a href="../alembic/index.html"><span class="emoji">⚗</span> Alembic</a></li>
+<li><a href="../scales/index.html"><span class="emoji">⚖</span> Balance Scale</a></li>
+<li><a href="../link-symbol/index.html"><span class="emoji">🔗</span> Link</a></li>
+<li><a href="../chains/index.html"><span class="emoji">⛓</span> Chains</a></li>
+<li><a href="../syringe/index.html"><span class="emoji">💉</span> Syringe</a></li>
+<li><a href="../pill/index.html"><span class="emoji">💊</span> Pill</a></li>
+<li><a href="../smoking-symbol/index.html"><span class="emoji">🚬</span> Cigarette</a></li>
+<li><a href="../coffin/index.html"><span class="emoji">⚰</span> Coffin</a></li>
+<li><a href="../funeral-urn/index.html"><span class="emoji">⚱</span> Funeral Urn</a></li>
+<li><a href="../moyai/index.html"><span class="emoji">🗿</span> Moai</a></li>
+<li><a href="../oil-drum/index.html"><span class="emoji">🛢</span> Oil Drum</a></li>
+<li><a href="../crystal-ball/index.html"><span class="emoji">🔮</span> Crystal Ball</a></li>
+<li><a href="../automated-teller-machine/index.html"><span class="emoji">🏧</span> Atm Sign</a></li>
+<li><a href="../put-litter-in-its-place-symbol/index.html"><span class="emoji">🚮</span> Litter in Bin Sign</a></li>
+<li><a href="../potable-water-symbol/index.html"><span class="emoji">🚰</span> Potable Water</a></li>
+<li><a href="../wheelchair-symbol/index.html"><span class="emoji">♿</span> Wheelchair Symbol</a></li>
+<li><a href="../mens-symbol/index.html"><span class="emoji">🚹</span> Men’s Room</a></li>
+<li><a href="../womens-symbol/index.html"><span class="emoji">🚺</span> Women’s Room</a></li>
+<li><a href="../restroom/index.html"><span class="emoji">🚻</span> Restroom</a></li>
+<li><a href="../baby-symbol/index.html"><span class="emoji">🚼</span> Baby Symbol</a></li>
+<li><a href="../water-closet/index.html"><span class="emoji">🚾</span> Water Closet</a></li>
+<li><a href="../passport-control/index.html"><span class="emoji">🛂</span> Passport Control</a></li>
+<li><a href="../customs/index.html"><span class="emoji">🛃</span> Customs</a></li>
+<li><a href="../baggage-claim/index.html"><span class="emoji">🛄</span> Baggage Claim</a></li>
+<li><a href="../left-luggage/index.html"><span class="emoji">🛅</span> Left Luggage</a></li>
+<li><a href="../warning-sign/index.html"><span class="emoji">⚠</span> Warning</a></li>
+<li><a href="../children-crossing/index.html"><span class="emoji">🚸</span> Children Crossing</a></li>
+<li><a href="../no-entry/index.html"><span class="emoji">⛔</span> No Entry</a></li>
+<li><a href="../no-entry-sign/index.html"><span class="emoji">🚫</span> Prohibited</a></li>
+<li><a href="../no-bicycles/index.html"><span class="emoji">🚳</span> No Bicycles</a></li>
+<li><a href="../no-smoking-symbol/index.html"><span class="emoji">🚭</span> No Smoking</a></li>
+<li><a href="../do-not-litter-symbol/index.html"><span class="emoji">🚯</span> No Littering</a></li>
+<li><a href="../non-potable-water-symbol/index.html"><span class="emoji">🚱</span> Non-Potable Water</a></li>
+<li><a href="../no-pedestrians/index.html"><span class="emoji">🚷</span> No Pedestrians</a></li>
+<li><a href="../no-mobile-phones/index.html"><span class="emoji">📵</span> No Mobile Phones</a></li>
+<li><a href="../no-one-under-eighteen-symbol/index.html"><span class="emoji">🔞</span> No One Under Eighteen</a></li>
+<li><a href="../radioactive-sign/index.html"><span class="emoji">☢</span> Radioactive</a></li>
+<li><a href="../biohazard-sign/index.html"><span class="emoji">☣</span> Biohazard</a></li>
+<li><a href="../upwards-black-arrow/index.html"><span class="emoji">⬆</span> Up Arrow</a></li>
+<li><a href="../north-east-arrow/index.html"><span class="emoji">↗</span> Up-Right Arrow</a></li>
+<li><a href="../black-rightwards-arrow/index.html"><span class="emoji">➡</span> Right Arrow</a></li>
+<li><a href="../south-east-arrow/index.html"><span class="emoji">↘</span> Down-Right Arrow</a></li>
+<li><a href="../downwards-black-arrow/index.html"><span class="emoji">⬇</span> Down Arrow</a></li>
+<li><a href="../south-west-arrow/index.html"><span class="emoji">↙</span> Down-Left Arrow</a></li>
+<li><a href="../leftwards-black-arrow/index.html"><span class="emoji">⬅</span> Left Arrow</a></li>
+<li><a href="../north-west-arrow/index.html"><span class="emoji">↖</span> Up-Left Arrow</a></li>
+<li><a href="../up-down-arrow/index.html"><span class="emoji">↕</span> Up-Down Arrow</a></li>
+<li><a href="../left-right-arrow/index.html"><span class="emoji">↔</span> Left-Right Arrow</a></li>
+<li><a href="../leftwards-arrow-with-hook/index.html"><span class="emoji">↩</span> Right Arrow Curving Left</a></li>
+<li><a href="../rightwards-arrow-with-hook/index.html"><span class="emoji">↪</span> Left Arrow Curving Right</a></li>
+<li><a href="../arrow-pointing-rightwards-then-curving-upwards/index.html"><span class="emoji">⤴</span> Right Arrow Curving Up</a></li>
+<li><a href="../arrow-pointing-rightwards-then-curving-downwards/index.html"><span class="emoji">⤵</span> Right Arrow Curving Down</a></li>
+<li><a href="../clockwise-downwards-and-upwards-open-circle-arrows/index.html"><span class="emoji">🔃</span> Clockwise Vertical Arrows</a></li>
+<li><a href="../anticlockwise-downwards-and-upwards-open-circle-arrows/index.html"><span class="emoji">🔄</span> Anticlockwise Arrows Button</a></li>
+<li><a href="../back-with-leftwards-arrow-above/index.html"><span class="emoji">🔙</span> Back Arrow</a></li>
+<li><a href="../end-with-leftwards-arrow-above/index.html"><span class="emoji">🔚</span> End Arrow</a></li>
+<li><a href="../on-with-exclamation-mark-with-left-right-arrow-above/index.html"><span class="emoji">🔛</span> On! Arrow</a></li>
+<li><a href="../soon-with-rightwards-arrow-above/index.html"><span class="emoji">🔜</span> Soon Arrow</a></li>
+<li><a href="../top-with-upwards-arrow-above/index.html"><span class="emoji">🔝</span> Top Arrow</a></li>
+<li><a href="../place-of-worship/index.html"><span class="emoji">🛐</span> Place of Worship</a></li>
+<li><a href="../atom-symbol/index.html"><span class="emoji">⚛</span> Atom Symbol</a></li>
+<li><a href="../om-symbol/index.html"><span class="emoji">🕉</span> Om</a></li>
+<li><a href="../star-of-david/index.html"><span class="emoji">✡</span> Star of David</a></li>
+<li><a href="../wheel-of-dharma/index.html"><span class="emoji">☸</span> Wheel of Dharma</a></li>
+<li><a href="../yin-yang/index.html"><span class="emoji">☯</span> Yin Yang</a></li>
+<li><a href="../latin-cross/index.html"><span class="emoji">✝</span> Latin Cross</a></li>
+<li><a href="../orthodox-cross/index.html"><span class="emoji">☦</span> Orthodox Cross</a></li>
+<li><a href="../star-and-crescent/index.html"><span class="emoji">☪</span> Star and Crescent</a></li>
+<li><a href="../peace-symbol/index.html"><span class="emoji">☮</span> Peace Symbol</a></li>
+<li><a href="../menorah-with-nine-branches/index.html"><span class="emoji">🕎</span> Menorah</a></li>
+<li><a href="../six-pointed-star-with-middle-dot/index.html"><span class="emoji">🔯</span> Dotted Six-Pointed Star</a></li>
+<li><a href="../aries/index.html"><span class="emoji">♈</span> Aries</a></li>
+<li><a href="../taurus/index.html"><span class="emoji">♉</span> Taurus</a></li>
+<li><a href="../gemini/index.html"><span class="emoji">♊</span> Gemini</a></li>
+<li><a href="../cancer/index.html"><span class="emoji">♋</span> Cancer</a></li>
+<li><a href="../leo/index.html"><span class="emoji">♌</span> Leo</a></li>
+<li><a href="../virgo/index.html"><span class="emoji">♍</span> Virgo</a></li>
+<li><a href="../libra/index.html"><span class="emoji">♎</span> Libra</a></li>
+<li><a href="../scorpius/index.html"><span class="emoji">♏</span> Scorpius</a></li>
+<li><a href="../sagittarius/index.html"><span class="emoji">♐</span> Sagittarius</a></li>
+<li><a href="../capricorn/index.html"><span class="emoji">♑</span> Capricorn</a></li>
+<li><a href="../aquarius/index.html"><span class="emoji">♒</span> Aquarius</a></li>
+<li><a href="../pisces/index.html"><span class="emoji">♓</span> Pisces</a></li>
+<li><a href="../ophiuchus/index.html"><span class="emoji">⛎</span> Ophiuchus</a></li>
+<li><a href="../twisted-rightwards-arrows/index.html"><span class="emoji">🔀</span> Shuffle Tracks Button</a></li>
+<li><a href="../clockwise-rightwards-and-leftwards-open-circle-arrows/index.html"><span class="emoji">🔁</span> Repeat Button</a></li>
+<li><a href="../clockwise-rightwards-and-leftwards-open-circle-arrows-with-circled-one-overlay/index.html"><span class="emoji">🔂</span> Repeat Single Button</a></li>
+<li><a href="../black-right-pointing-triangle/index.html"><span class="emoji">▶</span> Play Button</a></li>
+<li><a href="../black-right-pointing-double-triangle/index.html"><span class="emoji">⏩</span> Fast-Forward Button</a></li>
+<li><a href="../black-right-pointing-double-triangle-with-vertical-bar/index.html"><span class="emoji">⏭</span> Next Track Button</a></li>
+<li><a href="../black-right-pointing-triangle-with-double-vertical-bar/index.html"><span class="emoji">⏯</span> Play or Pause Button</a></li>
+<li><a href="../black-left-pointing-triangle/index.html"><span class="emoji">◀</span> Reverse Button</a></li>
+<li><a href="../black-left-pointing-double-triangle/index.html"><span class="emoji">⏪</span> Fast Reverse Button</a></li>
+<li><a href="../black-left-pointing-double-triangle-with-vertical-bar/index.html"><span class="emoji">⏮</span> Last Track Button</a></li>
+<li><a href="../up-pointing-small-red-triangle/index.html"><span class="emoji">🔼</span> Up Button</a></li>
+<li><a href="../black-up-pointing-double-triangle/index.html"><span class="emoji">⏫</span> Fast Up Button</a></li>
+<li><a href="../down-pointing-small-red-triangle/index.html"><span class="emoji">🔽</span> Down Button</a></li>
+<li><a href="../black-down-pointing-double-triangle/index.html"><span class="emoji">⏬</span> Fast Down Button</a></li>
+<li><a href="../double-vertical-bar/index.html"><span class="emoji">⏸</span> Pause Button</a></li>
+<li><a href="../black-square-for-stop/index.html"><span class="emoji">⏹</span> Stop Button</a></li>
+<li><a href="../black-circle-for-record/index.html"><span class="emoji">⏺</span> Record Button</a></li>
+<li><a href="../eject-symbol/index.html"><span class="emoji">⏏</span> Eject Button</a></li>
+<li><a href="../cinema/index.html"><span class="emoji">🎦</span> Cinema</a></li>
+<li><a href="../low-brightness-symbol/index.html"><span class="emoji">🔅</span> Dim Button</a></li>
+<li><a href="../high-brightness-symbol/index.html"><span class="emoji">🔆</span> Bright Button</a></li>
+<li><a href="../antenna-with-bars/index.html"><span class="emoji">📶</span> Antenna Bars</a></li>
+<li><a href="../vibration-mode/index.html"><span class="emoji">📳</span> Vibration Mode</a></li>
+<li><a href="../mobile-phone-off/index.html"><span class="emoji">📴</span> Mobile Phone Off</a></li>
+<li><a href="../black-universal-recycling-symbol/index.html"><span class="emoji">♻</span> Recycling Symbol</a></li>
+<li><a href="../fleur-de-lis/index.html"><span class="emoji">⚜</span> Fleur-De-Lis</a></li>
+<li><a href="../trident-emblem/index.html"><span class="emoji">🔱</span> Trident Emblem</a></li>
+<li><a href="../name-badge/index.html"><span class="emoji">📛</span> Name Badge</a></li>
+<li><a href="../japanese-symbol-for-beginner/index.html"><span class="emoji">🔰</span> Japanese Symbol for Beginner</a></li>
+<li><a href="../heavy-large-circle/index.html"><span class="emoji">⭕</span> Heavy Large Circle</a></li>
+<li><a href="../white-heavy-check-mark/index.html"><span class="emoji">✅</span> White Heavy Check Mark</a></li>
+<li><a href="../ballot-box-with-check/index.html"><span class="emoji">☑</span> Ballot Box With Check</a></li>
+<li><a href="../heavy-check-mark/index.html"><span class="emoji">✔</span> Heavy Check Mark</a></li>
+<li><a href="../heavy-multiplication-x/index.html"><span class="emoji">✖</span> Heavy Multiplication X</a></li>
+<li><a href="../cross-mark/index.html"><span class="emoji">❌</span> Cross Mark</a></li>
+<li><a href="../negative-squared-cross-mark/index.html"><span class="emoji">❎</span> Cross Mark Button</a></li>
+<li><a href="../heavy-plus-sign/index.html"><span class="emoji">➕</span> Heavy Plus Sign</a></li>
+<li><a href="../heavy-minus-sign/index.html"><span class="emoji">➖</span> Heavy Minus Sign</a></li>
+<li><a href="../heavy-division-sign/index.html"><span class="emoji">➗</span> Heavy Division Sign</a></li>
+<li><a href="../curly-loop/index.html"><span class="emoji">➰</span> Curly Loop</a></li>
+<li><a href="../double-curly-loop/index.html"><span class="emoji">➿</span> Double Curly Loop</a></li>
+<li><a href="../part-alternation-mark/index.html"><span class="emoji">〽</span> Part Alternation Mark</a></li>
+<li><a href="../eight-spoked-asterisk/index.html"><span class="emoji">✳</span> Eight-Spoked Asterisk</a></li>
+<li><a href="../eight-pointed-black-star/index.html"><span class="emoji">✴</span> Eight-Pointed Star</a></li>
+<li><a href="../sparkle/index.html"><span class="emoji">❇</span> Sparkle</a></li>
+<li><a href="../double-exclamation-mark/index.html"><span class="emoji">‼</span> Double Exclamation Mark</a></li>
+<li><a href="../exclamation-question-mark/index.html"><span class="emoji">⁉</span> Exclamation Question Mark</a></li>
+<li><a href="../black-question-mark-ornament/index.html"><span class="emoji">❓</span> Question Mark</a></li>
+<li><a href="../white-question-mark-ornament/index.html"><span class="emoji">❔</span> White Question Mark</a></li>
+<li><a href="../white-exclamation-mark-ornament/index.html"><span class="emoji">❕</span> White Exclamation Mark</a></li>
+<li><a href="../heavy-exclamation-mark-symbol/index.html"><span class="emoji">❗</span> Exclamation Mark</a></li>
+<li><a href="../wavy-dash/index.html"><span class="emoji">〰</span> Wavy Dash</a></li>
+<li><a href="../copyright-sign/index.html"><span class="emoji">©</span> Copyright</a></li>
+<li><a href="../registered-sign/index.html"><span class="emoji">®</span> Registered</a></li>
+<li><a href="../trade-mark-sign/index.html"><span class="emoji">™</span> Trade Mark</a></li>
+<li><a href="../keycap-ten/index.html"><span class="emoji">🔟</span> Keycap 10</a></li>
+<li><a href="../hundred-points-symbol/index.html"><span class="emoji">💯</span> Hundred Points</a></li>
+<li><a href="../input-symbol-for-latin-capital-letters/index.html"><span class="emoji">🔠</span> Input Latin Uppercase</a></li>
+<li><a href="../input-symbol-for-latin-small-letters/index.html"><span class="emoji">🔡</span> Input Latin Lowercase</a></li>
+<li><a href="../input-symbol-for-numbers/index.html"><span class="emoji">🔢</span> Input Numbers</a></li>
+<li><a href="../input-symbol-for-symbols/index.html"><span class="emoji">🔣</span> Input Symbols</a></li>
+<li><a href="../input-symbol-for-latin-letters/index.html"><span class="emoji">🔤</span> Input Latin Letters</a></li>
+<li><a href="../negative-squared-latin-capital-letter-a/index.html"><span class="emoji">🅰</span> A Button (blood Type)</a></li>
+<li><a href="../negative-squared-ab/index.html"><span class="emoji">🆎</span> Ab Button (blood Type)</a></li>
+<li><a href="../negative-squared-latin-capital-letter-b/index.html"><span class="emoji">🅱</span> B Button (blood Type)</a></li>
+<li><a href="../squared-cl/index.html"><span class="emoji">🆑</span> CL Button</a></li>
+<li><a href="../squared-cool/index.html"><span class="emoji">🆒</span> Cool Button</a></li>
+<li><a href="../squared-free/index.html"><span class="emoji">🆓</span> Free Button</a></li>
+<li><a href="../information-source/index.html"><span class="emoji">ℹ</span> Information</a></li>
+<li><a href="../squared-id/index.html"><span class="emoji">🆔</span> ID Button</a></li>
+<li><a href="../circled-latin-capital-letter-m/index.html"><span class="emoji">Ⓜ</span> Circled M</a></li>
+<li><a href="../squared-new/index.html"><span class="emoji">🆕</span> New Button</a></li>
+<li><a href="../squared-ng/index.html"><span class="emoji">🆖</span> NG Button</a></li>
+<li><a href="../negative-squared-latin-capital-letter-o/index.html"><span class="emoji">🅾</span> O Button (blood Type)</a></li>
+<li><a href="../squared-ok/index.html"><span class="emoji">🆗</span> OK Button</a></li>
+<li><a href="../negative-squared-latin-capital-letter-p/index.html"><span class="emoji">🅿</span> P Button</a></li>
+<li><a href="../squared-sos/index.html"><span class="emoji">🆘</span> SOS Button</a></li>
+<li><a href="../squared-up-with-exclamation-mark/index.html"><span class="emoji">🆙</span> Up! Button</a></li>
+<li><a href="../squared-vs/index.html"><span class="emoji">🆚</span> Vs Button</a></li>
+<li><a href="../squared-katakana-koko/index.html"><span class="emoji">🈁</span> Japanese “here” Button</a></li>
+<li><a href="../squared-katakana-sa/index.html"><span class="emoji">🈂</span> Japanese “service Charge” Button</a></li>
+<li><a href="../squared-cjk-unified-ideograph-6708/index.html"><span class="emoji">🈷</span> Japanese “monthly Amount” Button</a></li>
+<li><a href="../squared-cjk-unified-ideograph-6709/index.html"><span class="emoji">🈶</span> Japanese “not Free of Charge” Button</a></li>
+<li><a href="../squared-cjk-unified-ideograph-6307/index.html"><span class="emoji">🈯</span> Japanese “reserved” Button</a></li>
+<li><a href="../circled-ideograph-advantage/index.html"><span class="emoji">🉐</span> Japanese “bargain” Button</a></li>
+<li><a href="../squared-cjk-unified-ideograph-5272/index.html"><span class="emoji">🈹</span> Japanese “discount” Button</a></li>
+<li><a href="../squared-cjk-unified-ideograph-7121/index.html"><span class="emoji">🈚</span> Japanese “free of Charge” Button</a></li>
+<li><a href="../squared-cjk-unified-ideograph-7981/index.html"><span class="emoji">🈲</span> Japanese “prohibited” Button</a></li>
+<li><a href="../circled-ideograph-accept/index.html"><span class="emoji">🉑</span> Japanese “acceptable” Button</a></li>
+<li><a href="../squared-cjk-unified-ideograph-7533/index.html"><span class="emoji">🈸</span> Japanese “application” Button</a></li>
+<li><a href="../squared-cjk-unified-ideograph-5408/index.html"><span class="emoji">🈴</span> Japanese “passing Grade” Button</a></li>
+<li><a href="../squared-cjk-unified-ideograph-7a7a/index.html"><span class="emoji">🈳</span> Japanese “vacancy” Button</a></li>
+<li><a href="../circled-ideograph-congratulation/index.html"><span class="emoji">㊗</span> Japanese “congratulations” Button</a></li>
+<li><a href="../circled-ideograph-secret/index.html"><span class="emoji">㊙</span> Japanese “secret” Button</a></li>
+<li><a href="../squared-cjk-unified-ideograph-55b6/index.html"><span class="emoji">🈺</span> Japanese “open for Business” Button</a></li>
+<li><a href="../squared-cjk-unified-ideograph-6e80/index.html"><span class="emoji">🈵</span> Japanese “no Vacancy” Button</a></li>
+<li><a href="../black-small-square/index.html"><span class="emoji">▪</span> Black Small Square</a></li>
+<li><a href="../white-small-square/index.html"><span class="emoji">▫</span> White Small Square</a></li>
+<li><a href="../white-medium-square/index.html"><span class="emoji">◻</span> White Medium Square</a></li>
+<li><a href="../black-medium-square/index.html"><span class="emoji">◼</span> Black Medium Square</a></li>
+<li><a href="../white-medium-small-square/index.html"><span class="emoji">◽</span> White Medium-Small Square</a></li>
+<li><a href="../black-medium-small-square/index.html"><span class="emoji">◾</span> Black Medium-Small Square</a></li>
+<li><a href="../black-large-square/index.html"><span class="emoji">⬛</span> Black Large Square</a></li>
+<li><a href="../white-large-square/index.html"><span class="emoji">⬜</span> White Large Square</a></li>
+<li><a href="../large-orange-diamond/index.html"><span class="emoji">🔶</span> Large Orange Diamond</a></li>
+<li><a href="../large-blue-diamond/index.html"><span class="emoji">🔷</span> Large Blue Diamond</a></li>
+<li><a href="../small-orange-diamond/index.html"><span class="emoji">🔸</span> Small Orange Diamond</a></li>
+<li><a href="../small-blue-diamond/index.html"><span class="emoji">🔹</span> Small Blue Diamond</a></li>
+<li><a href="../up-pointing-red-triangle/index.html"><span class="emoji">🔺</span> Red Triangle Pointed Up</a></li>
+<li><a href="../down-pointing-red-triangle/index.html"><span class="emoji">🔻</span> Red Triangle Pointed Down</a></li>
+<li><a href="../diamond-shape-with-a-dot-inside/index.html"><span class="emoji">💠</span> Diamond With a Dot</a></li>
+<li><a href="../radio-button/index.html"><span class="emoji">🔘</span> Radio Button</a></li>
+<li><a href="../black-square-button/index.html"><span class="emoji">🔲</span> Black Square Button</a></li>
+<li><a href="../white-square-button/index.html"><span class="emoji">🔳</span> White Square Button</a></li>
+<li><a href="../medium-white-circle/index.html"><span class="emoji">⚪</span> White Circle</a></li>
+<li><a href="../medium-black-circle/index.html"><span class="emoji">⚫</span> Black Circle</a></li>
+<li><a href="../large-red-circle/index.html"><span class="emoji">🔴</span> Red Circle</a></li>
+<li><a href="../large-blue-circle/index.html"><span class="emoji">🔵</span> Blue Circle</a></li>
+<li><a href="../chequered-flag/index.html"><span class="emoji">🏁</span> Chequered Flag</a></li>
+<li><a href="../triangular-flag-on-post/index.html"><span class="emoji">🚩</span> Triangular Flag</a></li>
+<li><a href="../crossed-flags/index.html"><span class="emoji">🎌</span> Crossed Flags</a></li>
+<li><a href="../waving-black-flag/index.html"><span class="emoji">🏴</span> Black Flag</a></li>
+<li><a href="../waving-white-flag/index.html"><span class="emoji">🏳</span> White Flag</a></li>
+<li><a href="../flag-for-ascension-island/index.html"><span class="emoji">🇦🇨</span> Ascension Island</a></li>
+<li><a href="../flag-for-andorra/index.html"><span class="emoji">🇦🇩</span> Andorra</a></li>
+<li><a href="../flag-for-united-arab-emirates/index.html"><span class="emoji">🇦🇪</span> United Arab Emirates</a></li>
+<li><a href="../flag-for-afghanistan/index.html"><span class="emoji">🇦🇫</span> Afghanistan</a></li>
+<li><a href="../flag-for-antigua-barbuda/index.html"><span class="emoji">🇦🇬</span> Antigua & Barbuda</a></li>
+<li><a href="../flag-for-anguilla/index.html"><span class="emoji">🇦🇮</span> Anguilla</a></li>
+<li><a href="../flag-for-albania/index.html"><span class="emoji">🇦🇱</span> Albania</a></li>
+<li><a href="../flag-for-armenia/index.html"><span class="emoji">🇦🇲</span> Armenia</a></li>
+<li><a href="../flag-for-angola/index.html"><span class="emoji">🇦🇴</span> Angola</a></li>
+<li><a href="../flag-for-antarctica/index.html"><span class="emoji">🇦🇶</span> Antarctica</a></li>
+<li><a href="../flag-for-argentina/index.html"><span class="emoji">🇦🇷</span> Argentina</a></li>
+<li><a href="../flag-for-american-samoa/index.html"><span class="emoji">🇦🇸</span> American Samoa</a></li>
+<li><a href="../flag-for-austria/index.html"><span class="emoji">🇦🇹</span> Austria</a></li>
+<li><a href="../flag-for-australia/index.html"><span class="emoji">🇦🇺</span> Australia</a></li>
+<li><a href="../flag-for-aruba/index.html"><span class="emoji">🇦🇼</span> Aruba</a></li>
+<li><a href="../flag-for-aland-islands/index.html"><span class="emoji">🇦🇽</span> Åland Islands</a></li>
+<li><a href="../flag-for-azerbaijan/index.html"><span class="emoji">🇦🇿</span> Azerbaijan</a></li>
+<li><a href="../flag-for-bosnia-herzegovina/index.html"><span class="emoji">🇧🇦</span> Bosnia & Herzegovina</a></li>
+<li><a href="../flag-for-barbados/index.html"><span class="emoji">🇧🇧</span> Barbados</a></li>
+<li><a href="../flag-for-bangladesh/index.html"><span class="emoji">🇧🇩</span> Bangladesh</a></li>
+<li><a href="../flag-for-belgium/index.html"><span class="emoji">🇧🇪</span> Belgium</a></li>
+<li><a href="../flag-for-burkina-faso/index.html"><span class="emoji">🇧🇫</span> Burkina Faso</a></li>
+<li><a href="../flag-for-bulgaria/index.html"><span class="emoji">🇧🇬</span> Bulgaria</a></li>
+<li><a href="../flag-for-bahrain/index.html"><span class="emoji">🇧🇭</span> Bahrain</a></li>
+<li><a href="../flag-for-burundi/index.html"><span class="emoji">🇧🇮</span> Burundi</a></li>
+<li><a href="../flag-for-benin/index.html"><span class="emoji">🇧🇯</span> Benin</a></li>
+<li><a href="../flag-for-st-barthelemy/index.html"><span class="emoji">🇧🇱</span> St. Barthélemy</a></li>
+<li><a href="../flag-for-bermuda/index.html"><span class="emoji">🇧🇲</span> Bermuda</a></li>
+<li><a href="../flag-for-brunei/index.html"><span class="emoji">🇧🇳</span> Brunei</a></li>
+<li><a href="../flag-for-bolivia/index.html"><span class="emoji">🇧🇴</span> Bolivia</a></li>
+<li><a href="../flag-for-caribbean-netherlands/index.html"><span class="emoji">🇧🇶</span> Caribbean Netherlands</a></li>
+<li><a href="../flag-for-brazil/index.html"><span class="emoji">🇧🇷</span> Brazil</a></li>
+<li><a href="../flag-for-bahamas/index.html"><span class="emoji">🇧🇸</span> Bahamas</a></li>
+<li><a href="../flag-for-bhutan/index.html"><span class="emoji">🇧🇹</span> Bhutan</a></li>
+<li><a href="../flag-for-bouvet-island/index.html"><span class="emoji">🇧🇻</span> Bouvet Island</a></li>
+<li><a href="../flag-for-botswana/index.html"><span class="emoji">🇧🇼</span> Botswana</a></li>
+<li><a href="../flag-for-belarus/index.html"><span class="emoji">🇧🇾</span> Belarus</a></li>
+<li><a href="../flag-for-belize/index.html"><span class="emoji">🇧🇿</span> Belize</a></li>
+<li><a href="../flag-for-canada/index.html"><span class="emoji">🇨🇦</span> Canada</a></li>
+<li><a href="../flag-for-cocos-islands/index.html"><span class="emoji">🇨🇨</span> Cocos (Keeling) Islands</a></li>
+<li><a href="../flag-for-congo-kinshasa/index.html"><span class="emoji">🇨🇩</span> Congo - Kinshasa</a></li>
+<li><a href="../flag-for-central-african-republic/index.html"><span class="emoji">🇨🇫</span> Central African Republic</a></li>
+<li><a href="../flag-for-congo-brazzaville/index.html"><span class="emoji">🇨🇬</span> Congo - Brazzaville</a></li>
+<li><a href="../flag-for-switzerland/index.html"><span class="emoji">🇨🇭</span> Switzerland</a></li>
+<li><a href="../flag-for-cote-divoire/index.html"><span class="emoji">🇨🇮</span> Côte D’Ivoire</a></li>
+<li><a href="../flag-for-cook-islands/index.html"><span class="emoji">🇨🇰</span> Cook Islands</a></li>
+<li><a href="../flag-for-chile/index.html"><span class="emoji">🇨🇱</span> Chile</a></li>
+<li><a href="../flag-for-cameroon/index.html"><span class="emoji">🇨🇲</span> Cameroon</a></li>
+<li><a href="../flag-for-china/index.html"><span class="emoji">🇨🇳</span> China</a></li>
+<li><a href="../flag-for-colombia/index.html"><span class="emoji">🇨🇴</span> Colombia</a></li>
+<li><a href="../flag-for-clipperton-island/index.html"><span class="emoji">🇨🇵</span> Clipperton Island</a></li>
+<li><a href="../flag-for-costa-rica/index.html"><span class="emoji">🇨🇷</span> Costa Rica</a></li>
+<li><a href="../flag-for-cuba/index.html"><span class="emoji">🇨🇺</span> Cuba</a></li>
+<li><a href="../flag-for-cape-verde/index.html"><span class="emoji">🇨🇻</span> Cape Verde</a></li>
+<li><a href="../flag-for-curacao/index.html"><span class="emoji">🇨🇼</span> Curaçao</a></li>
+<li><a href="../flag-for-christmas-island/index.html"><span class="emoji">🇨🇽</span> Christmas Island</a></li>
+<li><a href="../flag-for-cyprus/index.html"><span class="emoji">🇨🇾</span> Cyprus</a></li>
+<li><a href="../flag-for-czech-republic/index.html"><span class="emoji">🇨🇿</span> Czechia</a></li>
+<li><a href="../flag-for-germany/index.html"><span class="emoji">🇩🇪</span> Germany</a></li>
+<li><a href="../flag-for-diego-garcia/index.html"><span class="emoji">🇩🇬</span> Diego Garcia</a></li>
+<li><a href="../flag-for-djibouti/index.html"><span class="emoji">🇩🇯</span> Djibouti</a></li>
+<li><a href="../flag-for-denmark/index.html"><span class="emoji">🇩🇰</span> Denmark</a></li>
+<li><a href="../flag-for-dominica/index.html"><span class="emoji">🇩🇲</span> Dominica</a></li>
+<li><a href="../flag-for-dominican-republic/index.html"><span class="emoji">🇩🇴</span> Dominican Republic</a></li>
+<li><a href="../flag-for-algeria/index.html"><span class="emoji">🇩🇿</span> Algeria</a></li>
+<li><a href="../flag-for-ceuta-melilla/index.html"><span class="emoji">🇪🇦</span> Ceuta & Melilla</a></li>
+<li><a href="../flag-for-ecuador/index.html"><span class="emoji">🇪🇨</span> Ecuador</a></li>
+<li><a href="../flag-for-estonia/index.html"><span class="emoji">🇪🇪</span> Estonia</a></li>
+<li><a href="../flag-for-egypt/index.html"><span class="emoji">🇪🇬</span> Egypt</a></li>
+<li><a href="../flag-for-western-sahara/index.html"><span class="emoji">🇪🇭</span> Western Sahara</a></li>
+<li><a href="../flag-for-eritrea/index.html"><span class="emoji">🇪🇷</span> Eritrea</a></li>
+<li><a href="../flag-for-spain/index.html"><span class="emoji">🇪🇸</span> Spain</a></li>
+<li><a href="../flag-for-ethiopia/index.html"><span class="emoji">🇪🇹</span> Ethiopia</a></li>
+<li><a href="../flag-for-european-union/index.html"><span class="emoji">🇪🇺</span> European Union</a></li>
+<li><a href="../flag-for-finland/index.html"><span class="emoji">🇫🇮</span> Finland</a></li>
+<li><a href="../flag-for-fiji/index.html"><span class="emoji">🇫🇯</span> Fiji</a></li>
+<li><a href="../flag-for-falkland-islands/index.html"><span class="emoji">🇫🇰</span> Falkland Islands</a></li>
+<li><a href="../flag-for-micronesia/index.html"><span class="emoji">🇫🇲</span> Micronesia</a></li>
+<li><a href="../flag-for-faroe-islands/index.html"><span class="emoji">🇫🇴</span> Faroe Islands</a></li>
+<li><a href="../flag-for-france/index.html"><span class="emoji">🇫🇷</span> France</a></li>
+<li><a href="../flag-for-gabon/index.html"><span class="emoji">🇬🇦</span> Gabon</a></li>
+<li><a href="../flag-for-united-kingdom/index.html"><span class="emoji">🇬🇧</span> United Kingdom</a></li>
+<li><a href="../flag-for-grenada/index.html"><span class="emoji">🇬🇩</span> Grenada</a></li>
+<li><a href="../flag-for-georgia/index.html"><span class="emoji">🇬🇪</span> Georgia</a></li>
+<li><a href="../flag-for-french-guiana/index.html"><span class="emoji">🇬🇫</span> French Guiana</a></li>
+<li><a href="../flag-for-guernsey/index.html"><span class="emoji">🇬🇬</span> Guernsey</a></li>
+<li><a href="../flag-for-ghana/index.html"><span class="emoji">🇬🇭</span> Ghana</a></li>
+<li><a href="../flag-for-gibraltar/index.html"><span class="emoji">🇬🇮</span> Gibraltar</a></li>
+<li><a href="../flag-for-greenland/index.html"><span class="emoji">🇬🇱</span> Greenland</a></li>
+<li><a href="../flag-for-gambia/index.html"><span class="emoji">🇬🇲</span> Gambia</a></li>
+<li><a href="../flag-for-guinea/index.html"><span class="emoji">🇬🇳</span> Guinea</a></li>
+<li><a href="../flag-for-guadeloupe/index.html"><span class="emoji">🇬🇵</span> Guadeloupe</a></li>
+<li><a href="../flag-for-equatorial-guinea/index.html"><span class="emoji">🇬🇶</span> Equatorial Guinea</a></li>
+<li><a href="../flag-for-greece/index.html"><span class="emoji">🇬🇷</span> Greece</a></li>
+<li><a href="../flag-for-south-georgia-south-sandwich-islands/index.html"><span class="emoji">🇬🇸</span> South Georgia & South Sandwich Islands</a></li>
+<li><a href="../flag-for-guatemala/index.html"><span class="emoji">🇬🇹</span> Guatemala</a></li>
+<li><a href="../flag-for-guam/index.html"><span class="emoji">🇬🇺</span> Guam</a></li>
+<li><a href="../flag-for-guinea-bissau/index.html"><span class="emoji">🇬🇼</span> Guinea-Bissau</a></li>
+<li><a href="../flag-for-guyana/index.html"><span class="emoji">🇬🇾</span> Guyana</a></li>
+<li><a href="../flag-for-hong-kong/index.html"><span class="emoji">🇭🇰</span> Hong Kong Sar China</a></li>
+<li><a href="../flag-for-heard-mcdonald-islands/index.html"><span class="emoji">🇭🇲</span> Heard & Mcdonald Islands</a></li>
+<li><a href="../flag-for-honduras/index.html"><span class="emoji">🇭🇳</span> Honduras</a></li>
+<li><a href="../flag-for-croatia/index.html"><span class="emoji">🇭🇷</span> Croatia</a></li>
+<li><a href="../flag-for-haiti/index.html"><span class="emoji">🇭🇹</span> Haiti</a></li>
+<li><a href="../flag-for-hungary/index.html"><span class="emoji">🇭🇺</span> Hungary</a></li>
+<li><a href="../flag-for-canary-islands/index.html"><span class="emoji">🇮🇨</span> Canary Islands</a></li>
+<li><a href="../flag-for-indonesia/index.html"><span class="emoji">🇮🇩</span> Indonesia</a></li>
+<li><a href="../flag-for-ireland/index.html"><span class="emoji">🇮🇪</span> Ireland</a></li>
+<li><a href="../flag-for-israel/index.html"><span class="emoji">🇮🇱</span> Israel</a></li>
+<li><a href="../flag-for-isle-of-man/index.html"><span class="emoji">🇮🇲</span> Isle of Man</a></li>
+<li><a href="../flag-for-india/index.html"><span class="emoji">🇮🇳</span> India</a></li>
+<li><a href="../flag-for-british-indian-ocean-territory/index.html"><span class="emoji">🇮🇴</span> British Indian Ocean Territory</a></li>
+<li><a href="../flag-for-iraq/index.html"><span class="emoji">🇮🇶</span> Iraq</a></li>
+<li><a href="../flag-for-iran/index.html"><span class="emoji">🇮🇷</span> Iran</a></li>
+<li><a href="../flag-for-iceland/index.html"><span class="emoji">🇮🇸</span> Iceland</a></li>
+<li><a href="../flag-for-italy/index.html"><span class="emoji">🇮🇹</span> Italy</a></li>
+<li><a href="../flag-for-jersey/index.html"><span class="emoji">🇯🇪</span> Jersey</a></li>
+<li><a href="../flag-for-jamaica/index.html"><span class="emoji">🇯🇲</span> Jamaica</a></li>
+<li><a href="../flag-for-jordan/index.html"><span class="emoji">🇯🇴</span> Jordan</a></li>
+<li><a href="../flag-for-japan/index.html"><span class="emoji">🇯🇵</span> Japan</a></li>
+<li><a href="../flag-for-kenya/index.html"><span class="emoji">🇰🇪</span> Kenya</a></li>
+<li><a href="../flag-for-kyrgyzstan/index.html"><span class="emoji">🇰🇬</span> Kyrgyzstan</a></li>
+<li><a href="../flag-for-cambodia/index.html"><span class="emoji">🇰🇭</span> Cambodia</a></li>
+<li><a href="../flag-for-kiribati/index.html"><span class="emoji">🇰🇮</span> Kiribati</a></li>
+<li><a href="../flag-for-comoros/index.html"><span class="emoji">🇰🇲</span> Comoros</a></li>
+<li><a href="../flag-for-st-kitts-nevis/index.html"><span class="emoji">🇰🇳</span> St. Kitts & Nevis</a></li>
+<li><a href="../flag-for-north-korea/index.html"><span class="emoji">🇰🇵</span> North Korea</a></li>
+<li><a href="../flag-for-south-korea/index.html"><span class="emoji">🇰🇷</span> South Korea</a></li>
+<li><a href="../flag-for-kuwait/index.html"><span class="emoji">🇰🇼</span> Kuwait</a></li>
+<li><a href="../flag-for-cayman-islands/index.html"><span class="emoji">🇰🇾</span> Cayman Islands</a></li>
+<li><a href="../flag-for-kazakhstan/index.html"><span class="emoji">🇰🇿</span> Kazakhstan</a></li>
+<li><a href="../flag-for-laos/index.html"><span class="emoji">🇱🇦</span> Laos</a></li>
+<li><a href="../flag-for-lebanon/index.html"><span class="emoji">🇱🇧</span> Lebanon</a></li>
+<li><a href="../flag-for-st-lucia/index.html"><span class="emoji">🇱🇨</span> St. Lucia</a></li>
+<li><a href="../flag-for-liechtenstein/index.html"><span class="emoji">🇱🇮</span> Liechtenstein</a></li>
+<li><a href="../flag-for-sri-lanka/index.html"><span class="emoji">🇱🇰</span> Sri Lanka</a></li>
+<li><a href="../flag-for-liberia/index.html"><span class="emoji">🇱🇷</span> Liberia</a></li>
+<li><a href="../flag-for-lesotho/index.html"><span class="emoji">🇱🇸</span> Lesotho</a></li>
+<li><a href="../flag-for-lithuania/index.html"><span class="emoji">🇱🇹</span> Lithuania</a></li>
+<li><a href="../flag-for-luxembourg/index.html"><span class="emoji">🇱🇺</span> Luxembourg</a></li>
+<li><a href="../flag-for-latvia/index.html"><span class="emoji">🇱🇻</span> Latvia</a></li>
+<li><a href="../flag-for-libya/index.html"><span class="emoji">🇱🇾</span> Libya</a></li>
+<li><a href="../flag-for-morocco/index.html"><span class="emoji">🇲🇦</span> Morocco</a></li>
+<li><a href="../flag-for-monaco/index.html"><span class="emoji">🇲🇨</span> Monaco</a></li>
+<li><a href="../flag-for-moldova/index.html"><span class="emoji">🇲🇩</span> Moldova</a></li>
+<li><a href="../flag-for-montenegro/index.html"><span class="emoji">🇲🇪</span> Montenegro</a></li>
+<li><a href="../flag-for-st-martin/index.html"><span class="emoji">🇲🇫</span> St. Martin</a></li>
+<li><a href="../flag-for-madagascar/index.html"><span class="emoji">🇲🇬</span> Madagascar</a></li>
+<li><a href="../flag-for-marshall-islands/index.html"><span class="emoji">🇲🇭</span> Marshall Islands</a></li>
+<li><a href="../flag-for-macedonia/index.html"><span class="emoji">🇲🇰</span> Macedonia</a></li>
+<li><a href="../flag-for-mali/index.html"><span class="emoji">🇲🇱</span> Mali</a></li>
+<li><a href="../flag-for-myanmar/index.html"><span class="emoji">🇲🇲</span> Myanmar (Burma)</a></li>
+<li><a href="../flag-for-mongolia/index.html"><span class="emoji">🇲🇳</span> Mongolia</a></li>
+<li><a href="../flag-for-macau/index.html"><span class="emoji">🇲🇴</span> Macau Sar China</a></li>
+<li><a href="../flag-for-northern-mariana-islands/index.html"><span class="emoji">🇲🇵</span> Northern Mariana Islands</a></li>
+<li><a href="../flag-for-martinique/index.html"><span class="emoji">🇲🇶</span> Martinique</a></li>
+<li><a href="../flag-for-mauritania/index.html"><span class="emoji">🇲🇷</span> Mauritania</a></li>
+<li><a href="../flag-for-montserrat/index.html"><span class="emoji">🇲🇸</span> Montserrat</a></li>
+<li><a href="../flag-for-malta/index.html"><span class="emoji">🇲🇹</span> Malta</a></li>
+<li><a href="../flag-for-mauritius/index.html"><span class="emoji">🇲🇺</span> Mauritius</a></li>
+<li><a href="../flag-for-maldives/index.html"><span class="emoji">🇲🇻</span> Maldives</a></li>
+<li><a href="../flag-for-malawi/index.html"><span class="emoji">🇲🇼</span> Malawi</a></li>
+<li><a href="../flag-for-mexico/index.html"><span class="emoji">🇲🇽</span> Mexico</a></li>
+<li><a href="../flag-for-malaysia/index.html"><span class="emoji">🇲🇾</span> Malaysia</a></li>
+<li><a href="../flag-for-mozambique/index.html"><span class="emoji">🇲🇿</span> Mozambique</a></li>
+<li><a href="../flag-for-namibia/index.html"><span class="emoji">🇳🇦</span> Namibia</a></li>
+<li><a href="../flag-for-new-caledonia/index.html"><span class="emoji">🇳🇨</span> New Caledonia</a></li>
+<li><a href="../flag-for-niger/index.html"><span class="emoji">🇳🇪</span> Niger</a></li>
+<li><a href="../flag-for-norfolk-island/index.html"><span class="emoji">🇳🇫</span> Norfolk Island</a></li>
+<li><a href="../flag-for-nigeria/index.html"><span class="emoji">🇳🇬</span> Nigeria</a></li>
+<li><a href="../flag-for-nicaragua/index.html"><span class="emoji">🇳🇮</span> Nicaragua</a></li>
+<li><a href="../flag-for-netherlands/index.html"><span class="emoji">🇳🇱</span> Netherlands</a></li>
+<li><a href="../flag-for-norway/index.html"><span class="emoji">🇳🇴</span> Norway</a></li>
+<li><a href="../flag-for-nepal/index.html"><span class="emoji">🇳🇵</span> Nepal</a></li>
+<li><a href="../flag-for-nauru/index.html"><span class="emoji">🇳🇷</span> Nauru</a></li>
+<li><a href="../flag-for-niue/index.html"><span class="emoji">🇳🇺</span> Niue</a></li>
+<li><a href="../flag-for-new-zealand/index.html"><span class="emoji">🇳🇿</span> New Zealand</a></li>
+<li><a href="../flag-for-oman/index.html"><span class="emoji">🇴🇲</span> Oman</a></li>
+<li><a href="../flag-for-panama/index.html"><span class="emoji">🇵🇦</span> Panama</a></li>
+<li><a href="../flag-for-peru/index.html"><span class="emoji">🇵🇪</span> Peru</a></li>
+<li><a href="../flag-for-french-polynesia/index.html"><span class="emoji">🇵🇫</span> French Polynesia</a></li>
+<li><a href="../flag-for-papua-new-guinea/index.html"><span class="emoji">🇵🇬</span> Papua New Guinea</a></li>
+<li><a href="../flag-for-philippines/index.html"><span class="emoji">🇵🇭</span> Philippines</a></li>
+<li><a href="../flag-for-pakistan/index.html"><span class="emoji">🇵🇰</span> Pakistan</a></li>
+<li><a href="../flag-for-poland/index.html"><span class="emoji">🇵🇱</span> Poland</a></li>
+<li><a href="../flag-for-st-pierre-miquelon/index.html"><span class="emoji">🇵🇲</span> St. Pierre & Miquelon</a></li>
+<li><a href="../flag-for-pitcairn-islands/index.html"><span class="emoji">🇵🇳</span> Pitcairn Islands</a></li>
+<li><a href="../flag-for-puerto-rico/index.html"><span class="emoji">🇵🇷</span> Puerto Rico</a></li>
+<li><a href="../flag-for-palestinian-territories/index.html"><span class="emoji">🇵🇸</span> Palestinian Territories</a></li>
+<li><a href="../flag-for-portugal/index.html"><span class="emoji">🇵🇹</span> Portugal</a></li>
+<li><a href="../flag-for-palau/index.html"><span class="emoji">🇵🇼</span> Palau</a></li>
+<li><a href="../flag-for-paraguay/index.html"><span class="emoji">🇵🇾</span> Paraguay</a></li>
+<li><a href="../flag-for-qatar/index.html"><span class="emoji">🇶🇦</span> Qatar</a></li>
+<li><a href="../flag-for-reunion/index.html"><span class="emoji">🇷🇪</span> Réunion</a></li>
+<li><a href="../flag-for-romania/index.html"><span class="emoji">🇷🇴</span> Romania</a></li>
+<li><a href="../flag-for-serbia/index.html"><span class="emoji">🇷🇸</span> Serbia</a></li>
+<li><a href="../flag-for-russia/index.html"><span class="emoji">🇷🇺</span> Russia</a></li>
+<li><a href="../flag-for-rwanda/index.html"><span class="emoji">🇷🇼</span> Rwanda</a></li>
+<li><a href="../flag-for-saudi-arabia/index.html"><span class="emoji">🇸🇦</span> Saudi Arabia</a></li>
+<li><a href="../flag-for-solomon-islands/index.html"><span class="emoji">🇸🇧</span> Solomon Islands</a></li>
+<li><a href="../flag-for-seychelles/index.html"><span class="emoji">🇸🇨</span> Seychelles</a></li>
+<li><a href="../flag-for-sudan/index.html"><span class="emoji">🇸🇩</span> Sudan</a></li>
+<li><a href="../flag-for-sweden/index.html"><span class="emoji">🇸🇪</span> Sweden</a></li>
+<li><a href="../flag-for-singapore/index.html"><span class="emoji">🇸🇬</span> Singapore</a></li>
+<li><a href="../flag-for-st-helena/index.html"><span class="emoji">🇸🇭</span> St. Helena</a></li>
+<li><a href="../flag-for-slovenia/index.html"><span class="emoji">🇸🇮</span> Slovenia</a></li>
+<li><a href="../flag-for-svalbard-jan-mayen/index.html"><span class="emoji">🇸🇯</span> Svalbard & Jan Mayen</a></li>
+<li><a href="../flag-for-slovakia/index.html"><span class="emoji">🇸🇰</span> Slovakia</a></li>
+<li><a href="../flag-for-sierra-leone/index.html"><span class="emoji">🇸🇱</span> Sierra Leone</a></li>
+<li><a href="../flag-for-san-marino/index.html"><span class="emoji">🇸🇲</span> San Marino</a></li>
+<li><a href="../flag-for-senegal/index.html"><span class="emoji">🇸🇳</span> Senegal</a></li>
+<li><a href="../flag-for-somalia/index.html"><span class="emoji">🇸🇴</span> Somalia</a></li>
+<li><a href="../flag-for-suriname/index.html"><span class="emoji">🇸🇷</span> Suriname</a></li>
+<li><a href="../flag-for-south-sudan/index.html"><span class="emoji">🇸🇸</span> South Sudan</a></li>
+<li><a href="../flag-for-sao-tome-principe/index.html"><span class="emoji">🇸🇹</span> São Tomé & Príncipe</a></li>
+<li><a href="../flag-for-el-salvador/index.html"><span class="emoji">🇸🇻</span> El Salvador</a></li>
+<li><a href="../flag-for-sint-maarten/index.html"><span class="emoji">🇸🇽</span> Sint Maarten</a></li>
+<li><a href="../flag-for-syria/index.html"><span class="emoji">🇸🇾</span> Syria</a></li>
+<li><a href="../flag-for-swaziland/index.html"><span class="emoji">🇸🇿</span> Swaziland</a></li>
+<li><a href="../flag-for-tristan-da-cunha/index.html"><span class="emoji">🇹🇦</span> Tristan Da Cunha</a></li>
+<li><a href="../flag-for-turks-caicos-islands/index.html"><span class="emoji">🇹🇨</span> Turks & Caicos Islands</a></li>
+<li><a href="../flag-for-chad/index.html"><span class="emoji">🇹🇩</span> Chad</a></li>
+<li><a href="../flag-for-french-southern-territories/index.html"><span class="emoji">🇹🇫</span> French Southern Territories</a></li>
+<li><a href="../flag-for-togo/index.html"><span class="emoji">🇹🇬</span> Togo</a></li>
+<li><a href="../flag-for-thailand/index.html"><span class="emoji">🇹🇭</span> Thailand</a></li>
+<li><a href="../flag-for-tajikistan/index.html"><span class="emoji">🇹🇯</span> Tajikistan</a></li>
+<li><a href="../flag-for-tokelau/index.html"><span class="emoji">🇹🇰</span> Tokelau</a></li>
+<li><a href="../flag-for-timor-leste/index.html"><span class="emoji">🇹🇱</span> Timor-Leste</a></li>
+<li><a href="../flag-for-turkmenistan/index.html"><span class="emoji">🇹🇲</span> Turkmenistan</a></li>
+<li><a href="../flag-for-tunisia/index.html"><span class="emoji">🇹🇳</span> Tunisia</a></li>
+<li><a href="../flag-for-tonga/index.html"><span class="emoji">🇹🇴</span> Tonga</a></li>
+<li><a href="../flag-for-turkey/index.html"><span class="emoji">🇹🇷</span> Turkey</a></li>
+<li><a href="../flag-for-trinidad-tobago/index.html"><span class="emoji">🇹🇹</span> Trinidad & Tobago</a></li>
+<li><a href="../flag-for-tuvalu/index.html"><span class="emoji">🇹🇻</span> Tuvalu</a></li>
+<li><a href="../flag-for-taiwan/index.html"><span class="emoji">🇹🇼</span> Taiwan</a></li>
+<li><a href="../flag-for-tanzania/index.html"><span class="emoji">🇹🇿</span> Tanzania</a></li>
+<li><a href="../flag-for-ukraine/index.html"><span class="emoji">🇺🇦</span> Ukraine</a></li>
+<li><a href="../flag-for-uganda/index.html"><span class="emoji">🇺🇬</span> Uganda</a></li>
+<li><a href="../flag-for-us-outlying-islands/index.html"><span class="emoji">🇺🇲</span> U.S. Outlying Islands</a></li>
+<li><a href="../flag-for-united-states/index.html"><span class="emoji">🇺🇸</span> United States</a></li>
+<li><a href="../flag-for-uruguay/index.html"><span class="emoji">🇺🇾</span> Uruguay</a></li>
+<li><a href="../flag-for-uzbekistan/index.html"><span class="emoji">🇺🇿</span> Uzbekistan</a></li>
+<li><a href="../flag-for-vatican-city/index.html"><span class="emoji">🇻🇦</span> Vatican City</a></li>
+<li><a href="../flag-for-st-vincent-grenadines/index.html"><span class="emoji">🇻🇨</span> St. Vincent & Grenadines</a></li>
+<li><a href="../flag-for-venezuela/index.html"><span class="emoji">🇻🇪</span> Venezuela</a></li>
+<li><a href="../flag-for-british-virgin-islands/index.html"><span class="emoji">🇻🇬</span> British Virgin Islands</a></li>
+<li><a href="../flag-for-us-virgin-islands/index.html"><span class="emoji">🇻🇮</span> U.S. Virgin Islands</a></li>
+<li><a href="../flag-for-vietnam/index.html"><span class="emoji">🇻🇳</span> Vietnam</a></li>
+<li><a href="../flag-for-vanuatu/index.html"><span class="emoji">🇻🇺</span> Vanuatu</a></li>
+<li><a href="../flag-for-wallis-futuna/index.html"><span class="emoji">🇼🇫</span> Wallis & Futuna</a></li>
+<li><a href="../flag-for-samoa/index.html"><span class="emoji">🇼🇸</span> Samoa</a></li>
+<li><a href="../flag-for-kosovo/index.html"><span class="emoji">🇽🇰</span> Kosovo</a></li>
+<li><a href="../flag-for-yemen/index.html"><span class="emoji">🇾🇪</span> Yemen</a></li>
+<li><a href="../flag-for-mayotte/index.html"><span class="emoji">🇾🇹</span> Mayotte</a></li>
+<li><a href="../flag-for-south-africa/index.html"><span class="emoji">🇿🇦</span> South Africa</a></li>
+<li><a href="../flag-for-zambia/index.html"><span class="emoji">🇿🇲</span> Zambia</a></li>
+<li><a href="../flag-for-zimbabwe/index.html"><span class="emoji">🇿🇼</span> Zimbabwe</a></li>
+</ul>
+<h2>Related</h2>
+<ul>
+<li><a href="../emoji-6.0/index.html">Emoji 6.0</a></li>
+<li><a href="../emoji-5.0/index.html">Emoji 5.0</a></li>
+<li><a href="../emoji-4.0/index.html">Emoji 4.0</a></li>
+<li><a href="../emoji-3.0/index.html">Emoji 3.0</a></li>
+<li><a href="../emoji-2.0/index.html">Emoji 2.0</a></li>
+</ul>
+</article>
+<div class="ad-footer">
+<div style="text-align:center">
+<script type="text/javascript">
+		    google_ad_client = "ca-pub-3417095048576988";
+		    width = document.documentElement.clientWidth;
+		    google_ad_slot = "7111864505";
+		    google_ad_width = 300;
+		    google_ad_height = 250;
+		    if (width > 380) {
+		        google_ad_slot = "8262920107";
+		        google_ad_width = 336;
+		       google_ad_height = 280;
+		    }
+ 
+		</script>
+<script type="text/javascript" src="../../pagead2.googlesyndication.com/pagead/f.txt">
+		</script>
+</div>
+</div>
+</div>
+<div class="sidebar">
+<div class="block">
+<h2>Categories</h2>
+<ul>
+<li><a href="../people/index.html"><span class="emoji">😃</span> Smileys & People</a></li>
+<li><a href="../nature/index.html"><span class="emoji">🐻</span> Animals & Nature</a></li>
+<li><a href="../food-drink/index.html"><span class="emoji">🍔</span> Food & Drink</a></li>
+<li><a href="../activity/index.html"><span class="emoji">⚽</span> Activity</a></li>
+<li><a href="../travel-places/index.html"><span class="emoji">🌇</span> Travel & Places</a></li>
+<li><a href="../objects/index.html"><span class="emoji">💡</span> Objects</a></li>
+<li><a href="../symbols/index.html"><span class="emoji">🔣</span> Symbols</a></li>
+<li><a href="../flags/index.html"><span class="emoji">🎌</span> Flags</a></li>
+</ul>
+</div>
+<div class="block">
+<h2>Most Popular</h2>
+<ul>
+<li><a href="../shrug/index.html"><span class="emoji">🤷</span> Person Shrugging</a></li>
+<li><a href="../face-with-tears-of-joy/index.html"><span class="emoji">😂</span> Face With Tears of Joy</a></li>
+<li><a href="../heavy-black-heart/index.html"><span class="emoji">❤</span> Red Heart</a></li>
+<li><a href="../smiling-face-with-heart-shaped-eyes/index.html"><span class="emoji">😍</span> Smiling Face With Heart-Eyes</a></li>
+<li><a href="../fire/index.html"><span class="emoji">🔥</span> Fire</a></li>
+<li><a href="../thinking-face/index.html"><span class="emoji">🤔</span> Thinking Face</a></li>
+<li><a href="../smiling-face-with-smiling-eyes/index.html"><span class="emoji">😊</span> Smiling Face With Smiling Eyes</a></li>
+<li><a href="../face-throwing-a-kiss/index.html"><span class="emoji">😘</span> Face Blowing a Kiss</a></li>
+<li><a href="../face-with-rolling-eyes/index.html"><span class="emoji">🙄</span> Face With Rolling Eyes</a></li>
+</ul>
+</div>
+<div class="block">
+<h2>Latest News</h2>
+<ul>
+<li><a href="http://blog.emojipedia.org/samsung-galaxy-s8-emoji-changelog/"><span class="emoji">📲</span> Samsung Galaxy S8 Emoji Changelog</a></li>
+<li><a href="http://blog.emojipedia.org/what-is-gender-and-why-does-it-matter-to-emoji/"><span class="emoji">🚻</span> What is Gender and Why Does it Matter to Emoji?</a></li>
+<li><a href="http://blog.emojipedia.org/why-there-were-two-emoji-updates-in-2016/"><span class="emoji">👀</span> Why There Were Two Emoji Updates In 2016</a></li>
+<li><a href="http://blog.emojipedia.org/facebook-completes-emoji-update/"><span class="emoji">💻</span> Facebook Completes Emoji Update</a></li>
+<li><a href="http://blog.emojipedia.org/the-resistance-will-be-emojified/"><span class="emoji">✊</span> The Resistance Will Be Emojified</a></li>
+<li><a href="http://blog.emojipedia.org/who-owns-emoji/"><span class="emoji">👩&zwj;⚖️</span> Who Owns Emoji?</a></li>
+<li><a href="http://blog.emojipedia.org/utc-provides-feedback-on-redhead-emoji/"><span class="emoji">📝</span> UTC Provides Feedback on Redhead Emoji</a></li>
+<li><a href="http://blog.emojipedia.org/happy-chinese-new-year/"><span class="emoji">🎇</span> Happy Chinese New Year!</a></li>
+</ul>
+</div>
+<div class="block">
+<h2>Events</h2>
+<ul>
+<li><a href="../australia-day/index.html"><span class="emoji">🇦🇺</span> Australia Day</a></li>
+<li><a href="../bastille-day/index.html"><span class="emoji">🇫🇷</span> Bastille Day</a></li>
+<li><a href="../birthday/index.html"><span class="emoji">🎂</span> Birthday</a></li>
+<li><a href="../black-friday/index.html"><span class="emoji">🛍</span> Black Friday</a></li>
+<li><a href="../canada-day/index.html"><span class="emoji">🇨🇦</span> Canada Day</a></li>
+<li><a href="../carnaval/index.html"><span class="emoji">🇧🇷</span> Carnaval</a></li>
+<li><a href="../chinese-new-year/index.html"><span class="emoji">🐉</span> Chinese New Year</a></li>
+<li><a href="../christmas/index.html"><span class="emoji">🎅</span> Christmas</a></li>
+<li><a href="../cinco-de-mayo/index.html"><span class="emoji">🇲🇽</span> Cinco de Mayo</a></li>
+<li><a href="../dragon-boat-festival/index.html"><span class="emoji">🇨🇳</span> Dragon Boat Festival</a></li>
+<li><a href="../easter/index.html"><span class="emoji">🐰</span> Easter</a></li>
+<li><a href="../emoji-movie/index.html"><span class="emoji">🎥</span> Emoji Movie</a></li>
+<li><a href="../fall-autumn/index.html"><span class="emoji">🍂</span> Fall / Autumn</a></li>
+<li><a href="../fathers-day/index.html"><span class="emoji">👨</span> Father’s Day</a></li>
+<li><a href="../festivus/index.html"><span class="emoji">💪</span> Festivus</a></li>
+<li><a href="../graduation/index.html"><span class="emoji">🎓</span> Graduation</a></li>
+<li><a href="../guy-fawkes/index.html"><span class="emoji">🔥</span> Guy Fawkes</a></li>
+<li><a href="../halloween/index.html"><span class="emoji">🎃</span> Halloween</a></li>
+<li><a href="../hanukkah/index.html"><span class="emoji">🕎</span> Hanukkah</a></li>
+<li><a href="../holi/index.html"><span class="emoji">🕉</span> Holi</a></li>
+<li><a href="../independence-day/index.html"><span class="emoji">🇺🇸</span> Independence Day</a></li>
+<li><a href="../mothers-day/index.html"><span class="emoji">👩</span> Mother’s Day</a></li>
+<li><a href="../new-years-eve/index.html"><span class="emoji">🎊</span> New Year’s Eve</a></li>
+<li><a href="../olympics/index.html"><span class="emoji">🏊</span> Olympics</a></li>
+<li><a href="../queens-birthday/index.html"><span class="emoji">👑</span> Queen’s Birthday</a></li>
+<li><a href="../ramadan/index.html"><span class="emoji">☪</span> Ramadan</a></li>
+<li><a href="../spring/index.html"><span class="emoji">🌱</span> Spring</a></li>
+<li><a href="../st-patricks-day/index.html"><span class="emoji">☘</span> St Patrick’s Day</a></li>
+<li><a href="../summer/index.html"><span class="emoji">☀</span> Summer</a></li>
+<li><a href="../super-bowl/index.html"><span class="emoji">🏈</span> Super Bowl</a></li>
+<li><a href="../thanksgiving/index.html"><span class="emoji">🦃</span> Thanksgiving</a></li>
+<li><a href="../valentines-day/index.html"><span class="emoji">💘</span> Valentine’s Day</a></li>
+<li><a href="../wedding-marriage/index.html"><span class="emoji">👰</span> Wedding / Marriage</a></li>
+<li><a href="../winter/index.html"><span class="emoji">⛄</span> Winter</a></li>
+<li><a href="../winter-olympics/index.html"><span class="emoji">🎿</span> Winter Olympics</a></li>
+<li><a href="../world-cup/index.html"><span class="emoji">⚽</span> World Cup</a></li>
+<li><a href="../world-emoji-day/index.html"><span class="emoji">🌎</span> World Emoji Day</a></li>
+</ul>
+</div>
+</div>
+</div>
+<footer>
+<nav>
+<div class="container">
+<div class="vendors">
+<h2>Platforms</h2>
+<ul>
+<li><a href="../apple/index.html">Apple</a></li>
+<li><a href="../emojidex/index.html">emojidex</a></li>
+<li><a href="../emoji-one/index.html">Emoji One</a></li>
+<li><a href="../emojipedia/index.html">Emojipedia</a></li>
+<li><a href="../facebook/index.html">Facebook</a></li>
+<li><a href="../google/index.html">Google</a></li>
+<li><a href="../htc/index.html">HTC</a></li>
+<li><a href="../instagram/index.html">Instagram</a></li>
+<li><a href="../lg/index.html">LG</a></li>
+<li><a href="../messenger/index.html">Messenger</a></li>
+<li><a href="../microsoft/index.html">Microsoft</a></li>
+<li><a href="../mozilla/index.html">Mozilla</a></li>
+<li><a href="../samsung/index.html">Samsung</a></li>
+<li><a href="../slack/index.html">Slack</a></li>
+<li><a href="../snapchat/index.html">Snapchat</a></li>
+<li><a href="../sponsored/index.html">Sponsored</a></li>
+<li><a href="../telegram/index.html">Telegram</a></li>
+<li><a href="../twitter/index.html">Twitter</a></li>
+<li><a href="../viber/index.html">Viber</a></li>
+<li><a href="../whatsapp/index.html">WhatsApp</a></li>
+<li><a href="../yo-status/index.html">Yo Status</a></li>
+</ul>
+</div>
+<div class="unicode-version">
+<h2>Emoji Versions</h2>
+<ul>
+<li><a href="../emoji-6.0/index.html">Emoji 6.0</a></li>
+<li><a href="../emoji-5.0/index.html">Emoji 5.0</a></li>
+<li><a href="../emoji-4.0/index.html">Emoji 4.0</a></li>
+<li><a href="../emoji-3.0/index.html">Emoji 3.0</a></li>
+<li><a href="../emoji-2.0/index.html">Emoji 2.0</a></li>
+<li><a href="index.html">Emoji 1.0</a></li>
+</ul>
+<h2>Unicode Versions</h2>
+<ul>
+<li><a href="../unicode-11.0/index.html">Unicode 11.0</a></li>
+<li><a href="../unicode-10.0/index.html">Unicode 10.0</a></li>
+<li><a href="../unicode-9.0/index.html">Unicode 9.0</a></li>
+<li><a href="../unicode-8.0/index.html">Unicode 8.0</a></li>
+<li><a href="../unicode-7.0/index.html">Unicode 7.0</a></li>
+<li><a href="../unicode-6.1/index.html">Unicode 6.1</a></li>
+<li><a href="../unicode-6.0/index.html">Unicode 6.0</a></li>
+<li><a href="../unicode-5.2/index.html">Unicode 5.2</a></li>
+<li><a href="../unicode-5.1/index.html">Unicode 5.1</a></li>
+<li><a href="../unicode-4.1/index.html">Unicode 4.1</a></li>
+<li><a href="../unicode-4.0/index.html">Unicode 4.0</a></li>
+<li><a href="../unicode-3.2/index.html">Unicode 3.2</a></li>
+<li><a href="../unicode-3.1/index.html">Unicode 3.1</a></li>
+<li><a href="../unicode-3.0/index.html">Unicode 3.0</a></li>
+<li><a href="../unicode-1.1/index.html">Unicode 1.1</a></li>
+</ul>
+</div>
+<div class="static-pages">
+<h2>More</h2>
+<ul>
+<li><a href="../adopt-emoji-faq/index.html">Adopt An Emoji FAQ</a></li>
+<li><a href="../ads/index.html">Ads</a></li>
+<li><a href="../apple-watch/index.html">Apple Watch</a></li>
+<li><a href="../botmoji/index.html">Botmoji</a></li>
+<li><a href="../contact/index.html">Contact</a></li>
+<li><a href="../neutral/index.html">Emoji Neutral</a></li>
+<li><a href="../emojipedia-api/index.html">Emojipedia API</a></li>
+<li><a href="../app/index.html">Emojipedia Apps</a></li>
+<li><a href="../stats/index.html">Emoji Statistics</a></li>
+<li><a href="../emoji-wrap/index.html">Emoji Wrap</a></li>
+<li><a href="../emoji-zwj-sequences/index.html">Emoji ZWJ Sequences</a></li>
+<li><a href="../faq/index.html">FAQ</a></li>
+<li><a href="../glossary/index.html">Glossary</a></li>
+<li><a href="../stickers/index.html">iMessage Stickers</a></li>
+<li><a href="../press/index.html">In The News</a></li>
+<li><a href="../licensing/index.html">Licensing</a></li>
+<li><a href="../new/index.html">New</a></li>
+<li><a href="../privacy-policy/index.html">Privacy Policy</a></li>
+<li><a href="../tips/index.html">Tips</a></li>
+<li><a href="../modifiers/index.html">Modifiers</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="container content">
+<p>All emoji names&nbsp;are&nbsp;<a href="../faq/index.html">official character and/or CLDR names</a>&nbsp;and <a href="../emoji/index.html" title="😃 Every Emoji by Codepoint">code points</a>, listed as part of the <a href="https://en.wikipedia.org/wiki/Unicode_Standard">Unicode Standard</a>. Additional descriptions are copyright&nbsp;&copy; Emojipedia.&nbsp;Emoji character artwork and copyright belong to their respective font creators.</p>
+<p>Emojipedia&reg; is a registered trademark of Emojipedia Pty Ltd;&nbsp;Apple&reg; is a registered trademark of Apple Inc; Microsoft&reg; and Windows&reg; are registered trademarks of Microsoft Corporation; Google&reg; and Android&trade; are registered trademarks or trademarks of Google Inc in the United States and/or other countries. Emoji One images provided free by Emoji One.</p>
+</div>
+</footer>
+<script type="text/javascript" src="../static/js/jquery.min.d72a6941a827.js" charset="utf-8"></script>
+<script type="text/javascript" src="../static/js/site.9958d0753977.js" charset="utf-8"></script>
+<script>
+(function() {
+function async_load(script_url){
+var protocol = ('https:' == document.location.protocol ? 'https://' : 'http://');
+var s = document.createElement('script'); s.src = protocol + script_url;
+var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+}
+bm_website_code = 'D7A15B1CC4264F19';
+jQuery(document).ready(function(){async_load('asset.pagefair.com/measure.min.html')});
+jQuery(document).ready(function(){async_load('asset.pagefair.net/ads.min.html')});
+})();
+</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-43649623-1', 'auto');
+ga('send', 'pageview');
+</script>
+</body>
+
+<!-- Mirrored from emojipedia.org/emoji-1.0/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Mar 2017 08:05:54 GMT -->
+</html>

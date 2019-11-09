@@ -1,0 +1,593 @@
+
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from emojipedia.org/emojidex/1.0.24/changed/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Mar 2017 21:00:42 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"applicationTime":877,"errorBeacon":"bam.nr-data.net","queueTime":0,"transactionName":"b1NaN0oCW0RVUhJeWVYZfhZWAEFeW19JVFlKUxYVUQZCRA5nA1lSV0RuCl0UG1BRRQ==","agent":"","beacon":"bam.nr-data.net","applicationID":"7909734","licenseKey":"475c936728"}</script>
+<meta name="viewport" content="width=device-width">
+<title>emojidex 1.0.24 Emoji List</title>
+<link href="../../../static/css/emojipedia.7cce6c6b80b4.css" rel="stylesheet" type="text/css"/>
+<link rel="apple-touch-icon" sizes="57x57" href="../../../static/img/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../../../static/img/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../../../static/img/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../../../static/img/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../../../static/img/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../../../static/img/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../../../static/img/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../../../static/img/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../../static/img/favicons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="../../../static/img/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../../../static/img/favicons/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="../../../static/img/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="../../../static/img/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="../../../manifest.webapp">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/static/img/favicons/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="mask-icon" mask href="../../../static/img/emojipedia.svg" color="black">
+<style id="lazystyles">.lazyparent.lazyparent{display:none;}</style>
+<script>window.lazySizesConfig={expand:window.innerHeight + 20*75}</script>
+</head>
+<body>
+<script type="text/javascript">
+(function(){
+var bsa = document.createElement('script');
+bsa.type = 'text/javascript';
+bsa.async = true;
+bsa.src = '../../../../s3.buysellads.com/ac/bsa.js';
+(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+})();
+</script>
+<header>
+<div class="container">
+<a href="../../../index.html" class="logo" title="Go to Emojipedia Home">Emojipedia</a>
+<form method="get" action="http://emojipedia.org/search/" class="search-form">
+<label>
+<span class="sr-only">Search Emojipedia:</span>
+<input id="id_q" name="q" placeholder="Search Emojipedia" type="search"/>
+</label>
+</form>
+<a href="#nav-categories" id="nav-categories-toggle">Categories</a>
+<nav class="categories">
+<ul id="nav-categories">
+<li><a href="../../../people/index.html"><span class="emoji">😃</span> Smileys & People</a></li>
+<li><a href="../../../nature/index.html"><span class="emoji">🐻</span> Animals & Nature</a></li>
+<li><a href="../../../food-drink/index.html"><span class="emoji">🍔</span> Food & Drink</a></li>
+<li><a href="../../../activity/index.html"><span class="emoji">⚽</span> Activity</a></li>
+<li><a href="../../../travel-places/index.html"><span class="emoji">🌇</span> Travel & Places</a></li>
+<li><a href="../../../objects/index.html"><span class="emoji">💡</span> Objects</a></li>
+<li><a href="../../../symbols/index.html"><span class="emoji">🔣</span> Symbols</a></li>
+<li><a href="../../../flags/index.html"><span class="emoji">🎌</span> Flags</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<div class="sponsor"><p><a href="http://emojiwrap.com/"><span class="emoji">💌</span>&nbsp;Subscribe for the latest emoji news</a></p></div>
+<div class="ad-header">
+<script type="text/javascript">
+   google_ad_client = "ca-pub-3417095048576988";
+   width = document.documentElement.clientWidth;
+     google_ad_slot = "9547014904";
+     google_ad_width = 320;
+     google_ad_height = 100;
+     if (width > 728) {
+         google_ad_slot = "9138623707";
+         google_ad_width = 728;
+    google_ad_height = 90;
+     }
+
+  </script>
+<script type="text/javascript" src="../../../../pagead2.googlesyndication.com/pagead/f.txt"></script>
+</div>
+<div class="container">
+<div class="content">
+<article>
+<header>
+<h1>emojidex 1.0.24</h1>
+<ul>
+<li><strong>Vendor:</strong> <a href="../../index.html">emojidex</a></li>
+<li><strong>Version:</strong> 1.0.24</li>
+<li><strong>Release Date:</strong> Dec. 9, 2016</li>
+<li><strong>Emojis:</strong> 1570</li>
+</ul>
+</header>
+<p class="vsfilter">
+<span class="vsfilter__label">Show:</span>
+<a class="vsfilter__ln" href="../index.html">all</a>,
+<a class="vsfilter__ln vsfilter__ln--active" title="since emojidex 1.0.22" href="index.html">changed</a>,
+<a class="vsfilter__ln" title="since emojidex 1.0.22" href="../new/index.html">new</a>
+</p>
+<ul class="emoji-grid">
+<li>
+<a href="../kiss-type-1-2/index.html">
+<img src="../../../../emojipedia-us.s3.amazonaws.com/cache/3c/11/3c11c9348c464f61f7a3c1336c6721d4.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/ba/9f/ba9f0481c7f38459d690ccd98bd0fd71.png 2x" alt="Kiss, Type-1-2" title="Kiss, Type-1-2" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="../kiss-type-3/index.html">
+<img src="../../../../emojipedia-us.s3.amazonaws.com/cache/38/2f/382fe56906255c3700e029a19208b864.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/87/3e/873e6f79f7c6211c0ad5b04f0b35f0ea.png 2x" alt="Kiss, Type-3" title="Kiss, Type-3" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="../kiss-type-4/index.html">
+<img src="../../../../emojipedia-us.s3.amazonaws.com/cache/ac/f3/acf3ec33c04ad8c8ebb8527271996550.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/28/f1/28f1b96826ca5c6f03f34d5850fb5170.png 2x" alt="Kiss, Type-4" title="Kiss, Type-4" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="../kiss-type-5/index.html">
+<img src="../../../../emojipedia-us.s3.amazonaws.com/cache/b5/c1/b5c1921c8c66a82e0ae20b37f48cf36f.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/3f/58/3f581bee663e5819743458c5fe706362.png 2x" alt="Kiss, Type-5" title="Kiss, Type-5" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="../kiss-type-6/index.html">
+<img src="../../../../emojipedia-us.s3.amazonaws.com/cache/9c/d5/9cd57b2872206189a9751417e7b00893.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/6a/ee/6aee0661821d8e625e57b1e81d86d665.png 2x" alt="Kiss, Type-6" title="Kiss, Type-6" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="../couple-with-heart-type-1-2/index.html">
+<img src="../../../../emojipedia-us.s3.amazonaws.com/cache/46/86/46862b72df6cdacc5dab9b5ca6f363fd.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/66/a1/66a191cd4a53274e685e379702f93b12.png 2x" alt="Couple With Heart, Type-1-2" title="Couple With Heart, Type-1-2" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="../couple-with-heart-type-3/index.html">
+<img src="../../../../emojipedia-us.s3.amazonaws.com/cache/a7/69/a769784a3b22b8982713aa2d676d01e8.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/33/69/3369a681b7758c017be6307f6ab59205.png 2x" alt="Couple With Heart, Type-3" title="Couple With Heart, Type-3" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="../couple-with-heart-type-4/index.html">
+<img src="../../../../emojipedia-us.s3.amazonaws.com/cache/40/19/4019c823918202c4f1dbf53f9ddc9fb2.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/4c/9e/4c9e751f545bbef663ce2712a711dbda.png 2x" alt="Couple With Heart, Type-4" title="Couple With Heart, Type-4" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="../couple-with-heart-type-5/index.html">
+<img src="../../../../emojipedia-us.s3.amazonaws.com/cache/2c/da/2cda31b3a6fd5b3afc4231a4dcdb4beb.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/e5/6b/e56b24d548df33d3214eb0de64db0a88.png 2x" alt="Couple With Heart, Type-5" title="Couple With Heart, Type-5" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="../couple-with-heart-type-6/index.html">
+<img src="../../../../emojipedia-us.s3.amazonaws.com/cache/17/e0/17e0e7c55b16176eb6031852197b69fc.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/f4/f1/f4f1eea37b4a16d3fc98bd6039279402.png 2x" alt="Couple With Heart, Type-6" title="Couple With Heart, Type-6" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="../face-with-stuck-out-tongue/index.html">
+<img src="../../../../emojipedia-us.s3.amazonaws.com/cache/14/30/1430ff5da76a4a87dd94592e1341dc21.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/1e/de/1ede24defdceab13fc22895c2e1d5a8b.png 2x" alt="Face With Stuck-Out Tongue" title="Face With Stuck-Out Tongue" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="../father-christmas/index.html">
+<img src="../../../../emojipedia-us.s3.amazonaws.com/cache/11/fa/11fa122b76b281b9b1fa60a5c95831cf.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/65/27/6527b0c2eb29dfbf7948205e41ba580e.png 2x" alt="Santa Claus" title="Santa Claus" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="../father-christmas-type-1-2/index.html">
+<img src="../../../../emojipedia-us.s3.amazonaws.com/cache/74/be/74bee215f7099523053f0fd07f923657.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/9d/7d/9d7df1d1bd50d3bdc95886d09e9f61b3.png 2x" alt="Santa Claus: Light Skin Tone" title="Santa Claus: Light Skin Tone" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="../father-christmas-type-3/index.html">
+<img src="../../../../emojipedia-us.s3.amazonaws.com/cache/5b/a7/5ba7dbac7351b793d15188380a81b9de.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/af/3a/af3a3245f4007b0f11323ba82da4b14e.png 2x" alt="Santa Claus: Medium-Light Skin Tone" title="Santa Claus: Medium-Light Skin Tone" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="../father-christmas-type-4/index.html">
+<img src="../../../../emojipedia-us.s3.amazonaws.com/cache/e6/8c/e68cd179e2545fc971a3f43dea4cbe7b.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/18/1e/181e481c45ecc1ef4176f02c5c14dfc1.png 2x" alt="Santa Claus: Medium Skin Tone" title="Santa Claus: Medium Skin Tone" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="../father-christmas-type-5/index.html">
+<img src="../../../../emojipedia-us.s3.amazonaws.com/cache/80/2f/802fa6af1abc0e467beb42f2b85f9ead.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/d7/c5/d7c5a9936622d78a6e92bb170a1862fe.png 2x" alt="Santa Claus: Medium-Dark Skin Tone" title="Santa Claus: Medium-Dark Skin Tone" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="../father-christmas-type-6/index.html">
+<img src="../../../../emojipedia-us.s3.amazonaws.com/cache/83/bc/83bcb6603d552bc12bfe300a5b8473e1.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/44/fc/44fc40704f37f5530999946cbc7552ec.png 2x" alt="Santa Claus: Dark Skin Tone" title="Santa Claus: Dark Skin Tone" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="../mother-christmas/index.html">
+<img src="../../../../emojipedia-us.s3.amazonaws.com/cache/7a/9a/7a9a85dcadd0f2035820e97913796074.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/6f/0a/6f0ac6684c9f128482739b7a91cf3bcd.png 2x" alt="Mrs. Claus" title="Mrs. Claus" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="../mother-christmas-type-1-2/index.html">
+<img src="../../../../emojipedia-us.s3.amazonaws.com/cache/eb/13/eb13a3910f83128d01765998bced8585.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/dd/8f/dd8f01324cfb74cfc618f24576b5d662.png 2x" alt="Mrs. Claus: Light Skin Tone" title="Mrs. Claus: Light Skin Tone" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="../mother-christmas-type-3/index.html">
+<img src="../../../../emojipedia-us.s3.amazonaws.com/cache/b8/5d/b85d8acbbfcd3a01716f1ae248d7b331.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/c9/c2/c9c2ae53541f8374fc59c527ca5aedc4.png 2x" alt="Mrs. Claus: Medium-Light Skin Tone" title="Mrs. Claus: Medium-Light Skin Tone" width="72" height="72">
+</a>
+</li>
+<li>
+<a href="../mother-christmas-type-4/index.html">
+<img src="../../../../emojipedia-us.s3.amazonaws.com/cache/3c/c9/3cc98af5cc069fa48c49a584c924d467.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/cf/45/cf45bf76174f9a835931cbf1ab86e373.png 2x" alt="Mrs. Claus: Medium Skin Tone" title="Mrs. Claus: Medium Skin Tone" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="../mother-christmas-type-5/index.html">
+<img class="lazyload lazypreload" src="../../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/5d/e0/5de03aec1b035fd24ed3d22204a2ad54.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/24/bb/24bbc95624aba21aaa6fab5f16c22e1d.png 2x" alt="Mrs. Claus: Medium-Dark Skin Tone" title="Mrs. Claus: Medium-Dark Skin Tone" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="../mother-christmas-type-6/index.html">
+<img class="lazyload lazypreload" src="../../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/26/55/2655cd5ed7b832939857ae63c757776f.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/ca/e6/cae69343a336e722923ad4c0d32d85d9.png 2x" alt="Mrs. Claus: Dark Skin Tone" title="Mrs. Claus: Dark Skin Tone" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="../man-and-woman-holding-hands-type-1-2/index.html">
+<img class="lazyload lazypreload" src="../../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/2b/34/2b34aee4ec7d1c24194652c5362f2302.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/1b/d9/1bd974b24a59f20906357eb45006109d.png 2x" alt="Man and Woman Holding Hands, Type-1-2" title="Man and Woman Holding Hands, Type-1-2" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="../man-and-woman-holding-hands-type-3/index.html">
+<img class="lazyload lazypreload" src="../../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/bf/1d/bf1d84e8d7688cc19a0b48a8cdcb8f9a.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/f1/1f/f11f134900518cac0d41a932fc1be414.png 2x" alt="Man and Woman Holding Hands, Type-3" title="Man and Woman Holding Hands, Type-3" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="../man-and-woman-holding-hands-type-4/index.html">
+<img class="lazyload lazypreload" src="../../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/e6/16/e6162941a7c89c76a56daa3203d14898.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/b8/ea/b8ea54f1a1a6aef2a3b31f59c5102ecb.png 2x" alt="Man and Woman Holding Hands, Type-4" title="Man and Woman Holding Hands, Type-4" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="../man-and-woman-holding-hands-type-5/index.html">
+<img class="lazyload lazypreload" src="../../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/bc/d1/bcd106ed7ce0a96ac1534b95958ba2c3.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/a8/fb/a8fbf950e75a6e28b6f8c6f4b2be4ed9.png 2x" alt="Man and Woman Holding Hands, Type-5" title="Man and Woman Holding Hands, Type-5" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="../man-and-woman-holding-hands-type-6/index.html">
+<img class="lazyload lazypreload" src="../../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/31/ea/31ea31c62b7c692d384cf83f972834f0.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/37/b5/37b536f94249f36b606d8f9070882400.png 2x" alt="Man and Woman Holding Hands, Type-6" title="Man and Woman Holding Hands, Type-6" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="../two-men-holding-hands-type-1-2/index.html">
+<img class="lazyload lazypreload" src="../../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/e9/1e/e91e12723b6b38b95d8ded990e9ffab7.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/09/60/09606da452cb1a3da785049f103a3fe2.png 2x" alt="Two Men Holding Hands, Type-1-2" title="Two Men Holding Hands, Type-1-2" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="../two-men-holding-hands-type-3/index.html">
+<img class="lazyload lazypreload" src="../../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/b2/0d/b20d747ba9be5b325f0c93ee65aa38dd.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/4d/1c/4d1c0bec254d349283c272afc9ec8259.png 2x" alt="Two Men Holding Hands, Type-3" title="Two Men Holding Hands, Type-3" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="../two-men-holding-hands-type-4/index.html">
+<img class="lazyload lazypreload" src="../../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/25/d2/25d2e1362c91554607e7cfa6f908103a.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/41/fa/41faf85049478ab0852b945ba072f500.png 2x" alt="Two Men Holding Hands, Type-4" title="Two Men Holding Hands, Type-4" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="../two-men-holding-hands-type-5/index.html">
+<img class="lazyload lazypreload" src="../../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/1f/4c/1f4c1c359a8773acce7cf6ab13020f08.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/67/64/676445c9575fa55901a72c4e9b6785d7.png 2x" alt="Two Men Holding Hands, Type-5" title="Two Men Holding Hands, Type-5" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="../two-men-holding-hands-type-6/index.html">
+<img class="lazyload lazypreload" src="../../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/ce/47/ce47846ec3540d989abd023a03697eb1.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/8c/b2/8cb26abf428233f03294ed627fb003a5.png 2x" alt="Two Men Holding Hands, Type-6" title="Two Men Holding Hands, Type-6" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="../two-women-holding-hands-type-1-2/index.html">
+<img class="lazyload lazypreload" src="../../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/17/c4/17c471a1e96901158b91d79ef322820d.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/a3/98/a39838ed6b44c38b1870392f0b95c71b.png 2x" alt="Two Women Holding Hands, Type-1-2" title="Two Women Holding Hands, Type-1-2" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="../two-women-holding-hands-type-3/index.html">
+<img class="lazyload lazypreload" src="../../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/b1/d1/b1d11764fae34abf052206ec545f010d.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/94/15/9415908bc2402510824cf3b8d289633e.png 2x" alt="Two Women Holding Hands, Type-3" title="Two Women Holding Hands, Type-3" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="../two-women-holding-hands-type-4/index.html">
+<img class="lazyload lazypreload" src="../../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/a6/82/a6826153d48cb33cbaeb1270f0aa4548.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/6d/e8/6de8b5b5c17b58896a8d349a0af9ae31.png 2x" alt="Two Women Holding Hands, Type-4" title="Two Women Holding Hands, Type-4" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="../two-women-holding-hands-type-5/index.html">
+<img class="lazyload lazypreload" src="../../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/66/34/6634495b67fbf91718de64be5da9ddbc.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/14/bd/14bd742911f877836b8b444d9c784e38.png 2x" alt="Two Women Holding Hands, Type-5" title="Two Women Holding Hands, Type-5" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="../two-women-holding-hands-type-6/index.html">
+<img class="lazyload lazypreload" src="../../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/d7/69/d7693796c36f25f07c2414c5bb1a6741.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/67/93/6793cea63f376c3d624c0bf427d83cf1.png 2x" alt="Two Women Holding Hands, Type-6" title="Two Women Holding Hands, Type-6" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="../family-type-1-2/index.html">
+<img class="lazyload lazypreload" src="../../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/21/06/210644d3ecc7d89bec1d0f3711c9d56d.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/25/3b/253b5d8e060adc1e833ec2c22feed498.png 2x" alt="Family, Type-1-2" title="Family, Type-1-2" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="../family-type-3/index.html">
+<img class="lazyload lazypreload" src="../../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/b2/bc/b2bc5275f673d1f9987f7ef6a6905bbb.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/70/83/70839dba0861b3a44b7cc6521862ae47.png 2x" alt="Family, Type-3" title="Family, Type-3" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="../family-type-4/index.html">
+<img class="lazyload lazypreload" src="../../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/de/42/de42645afb062fc3eac3a2b90bf2bb5d.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/da/3f/da3f6504c4983769eb55de02dead553d.png 2x" alt="Family, Type-4" title="Family, Type-4" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="../family-type-5/index.html">
+<img class="lazyload lazypreload" src="../../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/bc/bc/bcbc479498988d07e02dc8232adfa5a3.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/5a/39/5a3980e8dcdffd7860f0c0927728d606.png 2x" alt="Family, Type-5" title="Family, Type-5" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="../family-type-6/index.html">
+<img class="lazyload lazypreload" src="../../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/82/87/828793e71888450c872111278c50e209.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/71/c8/71c8dd3f9231f46f407288498ad4c31f.png 2x" alt="Family, Type-6" title="Family, Type-6" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="../man-and-woman-holding-hands/index.html">
+<img class="lazyload lazypreload" src="../../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/91/f7/91f7387855a807077baa7f57bd739700.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/75/41/75412d847cd498a19409fc416edcefc3.png 2x" alt="Man and Woman Holding Hands" title="Man and Woman Holding Hands" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="../two-men-holding-hands/index.html">
+<img class="lazyload lazypreload" src="../../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/8d/1c/8d1c81c23df46b82dda0b556444977ab.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/e8/84/e884d9f81694aede73c47f5ef4dfda6a.png 2x" alt="Two Men Holding Hands" title="Two Men Holding Hands" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="../two-women-holding-hands/index.html">
+<img class="lazyload lazypreload" src="../../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/68/da/68da59342755f7514c004f1cd37bdf60.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/ca/0e/ca0ecec59da429171b95bd8824f11a2d.png 2x" alt="Two Women Holding Hands" title="Two Women Holding Hands" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="../kiss/index.html">
+<img class="lazyload lazypreload" src="../../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/c4/dd/c4ddd0447846fc1adb8731baf78e2ef9.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/72/61/7261177719c8105a653fdb1aa99c4d20.png 2x" alt="Kiss" title="Kiss" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="../couple-with-heart/index.html">
+<img class="lazyload lazypreload" src="../../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/bc/f1/bcf183565829e84598289eba7bbe9e83.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/1d/5a/1d5aec8536380ae1f63658dc69d538e1.png 2x" alt="Couple With Heart" title="Couple With Heart" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="../family/index.html">
+<img class="lazyload lazypreload" src="../../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/2f/ec/2fec80cd83056dcd95a7e5dd6f364535.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/d6/42/d64291f1a0d17055811498aa56db4e78.png 2x" alt="Family" title="Family" width="72" height="72">
+</a>
+</li>
+<li class="lazyparent">
+<a href="../flag-for-united-states/index.html">
+<img class="lazyload lazypreload" src="../../../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/06/fb/06fb14e9c7f2b388b955d97178a3b68d.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/50/2a/502ad9eb7a99eb6203403ab0acc9f458.png 2x" alt="United States" title="United States" width="72" height="72">
+</a>
+</li>
+</ul>
+<p id="lazymore">
+<a href="show_all/index.html#more" rel="nofollow">Show more</a>
+</p>
+<section>
+<h2>About emojidex Emojis</h2>
+<p>Emoji images from&nbsp;<a href="http://www.emojidex.com/">emojidex</a> are part of an &quot;emoji as a service&quot; platform, which&nbsp;can be used on any web site or&nbsp;app that includes the emojidex libraries.</p>
+<p>Emojipedia displays all&nbsp;original emojidex&nbsp;images for Unicode emoji characters. User-submitted emoji images which are outside of the standard emoji set can be found on the&nbsp;emojidex website.</p>
+</section>
+<section>
+<h2>Related</h2>
+<ul>
+<li><a href="../index.html">emojidex 1.0.24</a></li>
+<li><a href="../../1.0.22/index.html">emojidex 1.0.22</a></li>
+<li><a href="../../1.0.19/index.html">emojidex 1.0.19</a></li>
+<li><a href="../../1.0.14/index.html">emojidex 1.0.14</a></li>
+</ul>
+</section>
+</article>
+<div class="ad-footer">
+<div style="text-align:center">
+<script type="text/javascript">
+		    google_ad_client = "ca-pub-3417095048576988";
+		    width = document.documentElement.clientWidth;
+		    google_ad_slot = "7111864505";
+		    google_ad_width = 300;
+		    google_ad_height = 250;
+		    if (width > 380) {
+		        google_ad_slot = "8262920107";
+		        google_ad_width = 336;
+		       google_ad_height = 280;
+		    }
+ 
+		</script>
+<script type="text/javascript" src="../../../../pagead2.googlesyndication.com/pagead/f.txt">
+		</script>
+</div>
+</div>
+</div>
+<div class="sidebar">
+<div class="block">
+<h2>Categories</h2>
+<ul>
+<li><a href="../../../people/index.html"><span class="emoji">😃</span> Smileys & People</a></li>
+<li><a href="../../../nature/index.html"><span class="emoji">🐻</span> Animals & Nature</a></li>
+<li><a href="../../../food-drink/index.html"><span class="emoji">🍔</span> Food & Drink</a></li>
+<li><a href="../../../activity/index.html"><span class="emoji">⚽</span> Activity</a></li>
+<li><a href="../../../travel-places/index.html"><span class="emoji">🌇</span> Travel & Places</a></li>
+<li><a href="../../../objects/index.html"><span class="emoji">💡</span> Objects</a></li>
+<li><a href="../../../symbols/index.html"><span class="emoji">🔣</span> Symbols</a></li>
+<li><a href="../../../flags/index.html"><span class="emoji">🎌</span> Flags</a></li>
+</ul>
+</div>
+<div class="block">
+<h2>Most Popular</h2>
+<ul>
+<li><a href="../../../shrug/index.html"><span class="emoji">🤷</span> Person Shrugging</a></li>
+<li><a href="../../../face-with-tears-of-joy/index.html"><span class="emoji">😂</span> Face With Tears of Joy</a></li>
+<li><a href="../../../heavy-black-heart/index.html"><span class="emoji">❤</span> Red Heart</a></li>
+<li><a href="../../../smiling-face-with-heart-shaped-eyes/index.html"><span class="emoji">😍</span> Smiling Face With Heart-Eyes</a></li>
+<li><a href="../../../fire/index.html"><span class="emoji">🔥</span> Fire</a></li>
+<li><a href="../../../thinking-face/index.html"><span class="emoji">🤔</span> Thinking Face</a></li>
+<li><a href="../../../smiling-face-with-smiling-eyes/index.html"><span class="emoji">😊</span> Smiling Face With Smiling Eyes</a></li>
+<li><a href="../../../face-throwing-a-kiss/index.html"><span class="emoji">😘</span> Face Blowing a Kiss</a></li>
+<li><a href="../../../face-with-rolling-eyes/index.html"><span class="emoji">🙄</span> Face With Rolling Eyes</a></li>
+</ul>
+</div>
+<div class="block">
+<h2>Latest News</h2>
+<ul>
+<li><a href="http://blog.emojipedia.org/samsung-galaxy-s8-emoji-changelog/"><span class="emoji">📲</span> Samsung Galaxy S8 Emoji Changelog</a></li>
+<li><a href="http://blog.emojipedia.org/what-is-gender-and-why-does-it-matter-to-emoji/"><span class="emoji">🚻</span> What is Gender and Why Does it Matter to Emoji?</a></li>
+<li><a href="http://blog.emojipedia.org/why-there-were-two-emoji-updates-in-2016/"><span class="emoji">👀</span> Why There Were Two Emoji Updates In 2016</a></li>
+<li><a href="http://blog.emojipedia.org/facebook-completes-emoji-update/"><span class="emoji">💻</span> Facebook Completes Emoji Update</a></li>
+<li><a href="http://blog.emojipedia.org/the-resistance-will-be-emojified/"><span class="emoji">✊</span> The Resistance Will Be Emojified</a></li>
+<li><a href="http://blog.emojipedia.org/who-owns-emoji/"><span class="emoji">👩&zwj;⚖️</span> Who Owns Emoji?</a></li>
+<li><a href="http://blog.emojipedia.org/utc-provides-feedback-on-redhead-emoji/"><span class="emoji">📝</span> UTC Provides Feedback on Redhead Emoji</a></li>
+<li><a href="http://blog.emojipedia.org/happy-chinese-new-year/"><span class="emoji">🎇</span> Happy Chinese New Year!</a></li>
+</ul>
+</div>
+<div class="block">
+<h2>Events</h2>
+<ul>
+<li><a href="../../../australia-day/index.html"><span class="emoji">🇦🇺</span> Australia Day</a></li>
+<li><a href="../../../bastille-day/index.html"><span class="emoji">🇫🇷</span> Bastille Day</a></li>
+<li><a href="../../../birthday/index.html"><span class="emoji">🎂</span> Birthday</a></li>
+<li><a href="../../../black-friday/index.html"><span class="emoji">🛍</span> Black Friday</a></li>
+<li><a href="../../../canada-day/index.html"><span class="emoji">🇨🇦</span> Canada Day</a></li>
+<li><a href="../../../carnaval/index.html"><span class="emoji">🇧🇷</span> Carnaval</a></li>
+<li><a href="../../../chinese-new-year/index.html"><span class="emoji">🐉</span> Chinese New Year</a></li>
+<li><a href="../../../christmas/index.html"><span class="emoji">🎅</span> Christmas</a></li>
+<li><a href="../../../cinco-de-mayo/index.html"><span class="emoji">🇲🇽</span> Cinco de Mayo</a></li>
+<li><a href="../../../dragon-boat-festival/index.html"><span class="emoji">🇨🇳</span> Dragon Boat Festival</a></li>
+<li><a href="../../../easter/index.html"><span class="emoji">🐰</span> Easter</a></li>
+<li><a href="../../../emoji-movie/index.html"><span class="emoji">🎥</span> Emoji Movie</a></li>
+<li><a href="../../../fall-autumn/index.html"><span class="emoji">🍂</span> Fall / Autumn</a></li>
+<li><a href="../../../fathers-day/index.html"><span class="emoji">👨</span> Father’s Day</a></li>
+<li><a href="../../../festivus/index.html"><span class="emoji">💪</span> Festivus</a></li>
+<li><a href="../../../graduation/index.html"><span class="emoji">🎓</span> Graduation</a></li>
+<li><a href="../../../guy-fawkes/index.html"><span class="emoji">🔥</span> Guy Fawkes</a></li>
+<li><a href="../../../halloween/index.html"><span class="emoji">🎃</span> Halloween</a></li>
+<li><a href="../../../hanukkah/index.html"><span class="emoji">🕎</span> Hanukkah</a></li>
+<li><a href="../../../holi/index.html"><span class="emoji">🕉</span> Holi</a></li>
+<li><a href="../../../independence-day/index.html"><span class="emoji">🇺🇸</span> Independence Day</a></li>
+<li><a href="../../../mothers-day/index.html"><span class="emoji">👩</span> Mother’s Day</a></li>
+<li><a href="../../../new-years-eve/index.html"><span class="emoji">🎊</span> New Year’s Eve</a></li>
+<li><a href="../../../olympics/index.html"><span class="emoji">🏊</span> Olympics</a></li>
+<li><a href="../../../queens-birthday/index.html"><span class="emoji">👑</span> Queen’s Birthday</a></li>
+<li><a href="../../../ramadan/index.html"><span class="emoji">☪</span> Ramadan</a></li>
+<li><a href="../../../spring/index.html"><span class="emoji">🌱</span> Spring</a></li>
+<li><a href="../../../st-patricks-day/index.html"><span class="emoji">☘</span> St Patrick’s Day</a></li>
+<li><a href="../../../summer/index.html"><span class="emoji">☀</span> Summer</a></li>
+<li><a href="../../../super-bowl/index.html"><span class="emoji">🏈</span> Super Bowl</a></li>
+<li><a href="../../../thanksgiving/index.html"><span class="emoji">🦃</span> Thanksgiving</a></li>
+<li><a href="../../../valentines-day/index.html"><span class="emoji">💘</span> Valentine’s Day</a></li>
+<li><a href="../../../wedding-marriage/index.html"><span class="emoji">👰</span> Wedding / Marriage</a></li>
+<li><a href="../../../winter/index.html"><span class="emoji">⛄</span> Winter</a></li>
+<li><a href="../../../winter-olympics/index.html"><span class="emoji">🎿</span> Winter Olympics</a></li>
+<li><a href="../../../world-cup/index.html"><span class="emoji">⚽</span> World Cup</a></li>
+<li><a href="../../../world-emoji-day/index.html"><span class="emoji">🌎</span> World Emoji Day</a></li>
+</ul>
+</div>
+</div>
+</div>
+<footer>
+<nav>
+<div class="container">
+<div class="vendors">
+<h2>Platforms</h2>
+<ul>
+<li><a href="../../../apple/index.html">Apple</a></li>
+<li><a href="../../index.html">emojidex</a></li>
+<li><a href="../../../emoji-one/index.html">Emoji One</a></li>
+<li><a href="../../../emojipedia/index.html">Emojipedia</a></li>
+<li><a href="../../../facebook/index.html">Facebook</a></li>
+<li><a href="../../../google/index.html">Google</a></li>
+<li><a href="../../../htc/index.html">HTC</a></li>
+<li><a href="../../../instagram/index.html">Instagram</a></li>
+<li><a href="../../../lg/index.html">LG</a></li>
+<li><a href="../../../messenger/index.html">Messenger</a></li>
+<li><a href="../../../microsoft/index.html">Microsoft</a></li>
+<li><a href="../../../mozilla/index.html">Mozilla</a></li>
+<li><a href="../../../samsung/index.html">Samsung</a></li>
+<li><a href="../../../slack/index.html">Slack</a></li>
+<li><a href="../../../snapchat/index.html">Snapchat</a></li>
+<li><a href="../../../sponsored/index.html">Sponsored</a></li>
+<li><a href="../../../telegram/index.html">Telegram</a></li>
+<li><a href="../../../twitter/index.html">Twitter</a></li>
+<li><a href="../../../viber/index.html">Viber</a></li>
+<li><a href="../../../whatsapp/index.html">WhatsApp</a></li>
+<li><a href="../../../yo-status/index.html">Yo Status</a></li>
+</ul>
+</div>
+<div class="unicode-version">
+<h2>Emoji Versions</h2>
+<ul>
+<li><a href="../../../emoji-6.0/index.html">Emoji 6.0</a></li>
+<li><a href="../../../emoji-5.0/index.html">Emoji 5.0</a></li>
+<li><a href="../../../emoji-4.0/index.html">Emoji 4.0</a></li>
+<li><a href="../../../emoji-3.0/index.html">Emoji 3.0</a></li>
+<li><a href="../../../emoji-2.0/index.html">Emoji 2.0</a></li>
+<li><a href="../../../emoji-1.0/index.html">Emoji 1.0</a></li>
+</ul>
+<h2>Unicode Versions</h2>
+<ul>
+<li><a href="../../../unicode-11.0/index.html">Unicode 11.0</a></li>
+<li><a href="../../../unicode-10.0/index.html">Unicode 10.0</a></li>
+<li><a href="../../../unicode-9.0/index.html">Unicode 9.0</a></li>
+<li><a href="../../../unicode-8.0/index.html">Unicode 8.0</a></li>
+<li><a href="../../../unicode-7.0/index.html">Unicode 7.0</a></li>
+<li><a href="../../../unicode-6.1/index.html">Unicode 6.1</a></li>
+<li><a href="../../../unicode-6.0/index.html">Unicode 6.0</a></li>
+<li><a href="../../../unicode-5.2/index.html">Unicode 5.2</a></li>
+<li><a href="../../../unicode-5.1/index.html">Unicode 5.1</a></li>
+<li><a href="../../../unicode-4.1/index.html">Unicode 4.1</a></li>
+<li><a href="../../../unicode-4.0/index.html">Unicode 4.0</a></li>
+<li><a href="../../../unicode-3.2/index.html">Unicode 3.2</a></li>
+<li><a href="../../../unicode-3.1/index.html">Unicode 3.1</a></li>
+<li><a href="../../../unicode-3.0/index.html">Unicode 3.0</a></li>
+<li><a href="../../../unicode-1.1/index.html">Unicode 1.1</a></li>
+</ul>
+</div>
+<div class="static-pages">
+<h2>More</h2>
+<ul>
+<li><a href="../../../adopt-emoji-faq/index.html">Adopt An Emoji FAQ</a></li>
+<li><a href="../../../ads/index.html">Ads</a></li>
+<li><a href="../../../apple-watch/index.html">Apple Watch</a></li>
+<li><a href="../../../botmoji/index.html">Botmoji</a></li>
+<li><a href="../../../contact/index.html">Contact</a></li>
+<li><a href="../../../neutral/index.html">Emoji Neutral</a></li>
+<li><a href="../../../emojipedia-api/index.html">Emojipedia API</a></li>
+<li><a href="../../../app/index.html">Emojipedia Apps</a></li>
+<li><a href="../../../stats/index.html">Emoji Statistics</a></li>
+<li><a href="../../../emoji-wrap/index.html">Emoji Wrap</a></li>
+<li><a href="../../../emoji-zwj-sequences/index.html">Emoji ZWJ Sequences</a></li>
+<li><a href="../../../faq/index.html">FAQ</a></li>
+<li><a href="../../../glossary/index.html">Glossary</a></li>
+<li><a href="../../../stickers/index.html">iMessage Stickers</a></li>
+<li><a href="../../../press/index.html">In The News</a></li>
+<li><a href="../../../licensing/index.html">Licensing</a></li>
+<li><a href="../../../new/index.html">New</a></li>
+<li><a href="../../../privacy-policy/index.html">Privacy Policy</a></li>
+<li><a href="../../../tips/index.html">Tips</a></li>
+<li><a href="../../../modifiers/index.html">Modifiers</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="container content">
+<p>All emoji names&nbsp;are&nbsp;<a href="../../../faq/index.html">official character and/or CLDR names</a>&nbsp;and <a href="../../../emoji/index.html" title="😃 Every Emoji by Codepoint">code points</a>, listed as part of the <a href="https://en.wikipedia.org/wiki/Unicode_Standard">Unicode Standard</a>. Additional descriptions are copyright&nbsp;&copy; Emojipedia.&nbsp;Emoji character artwork and copyright belong to their respective font creators.</p>
+<p>Emojipedia&reg; is a registered trademark of Emojipedia Pty Ltd;&nbsp;Apple&reg; is a registered trademark of Apple Inc; Microsoft&reg; and Windows&reg; are registered trademarks of Microsoft Corporation; Google&reg; and Android&trade; are registered trademarks or trademarks of Google Inc in the United States and/or other countries. Emoji One images provided free by Emoji One.</p>
+</div>
+</footer>
+<script type="text/javascript" src="../../../static/js/jquery.min.d72a6941a827.js" charset="utf-8"></script>
+<script type="text/javascript" src="../../../static/js/site.9958d0753977.js" charset="utf-8"></script>
+<script type="text/javascript" src="../../../static/js/lazy.f12b5efd22b1.js" charset="utf-8"></script>
+<script>
+(function() {
+function async_load(script_url){
+var protocol = ('https:' == document.location.protocol ? 'https://' : 'http://');
+var s = document.createElement('script'); s.src = protocol + script_url;
+var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+}
+bm_website_code = 'D7A15B1CC4264F19';
+jQuery(document).ready(function(){async_load('asset.pagefair.com/measure.min.html')});
+jQuery(document).ready(function(){async_load('asset.pagefair.net/ads.min.html')});
+})();
+</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','../../../../www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-43649623-1', 'auto');
+ga('send', 'pageview');
+</script>
+</body>
+
+<!-- Mirrored from emojipedia.org/emojidex/1.0.24/changed/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Mar 2017 21:00:50 GMT -->
+</html>
