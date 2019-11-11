@@ -1,0 +1,819 @@
+
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from emojipedia.org/shower/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Mar 2017 10:29:37 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"applicationTime":2259,"errorBeacon":"bam.nr-data.net","queueTime":0,"transactionName":"b1NaN0oCW0RVUhJeWVYZfhZWAEFeW19JVFlKUxYWSg9GDVJdB0NpSFdMCw==","agent":"","beacon":"bam.nr-data.net","applicationID":"7909734","licenseKey":"475c936728"}</script>
+<meta name="viewport" content="width=device-width">
+<title>🚿 Shower Emoji</title>
+<link href="../static/css/emojipedia.7cce6c6b80b4.css" rel="stylesheet" type="text/css"/>
+<link rel="apple-touch-icon" sizes="57x57" href="../static/img/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../static/img/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../static/img/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../static/img/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../static/img/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../static/img/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../static/img/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../static/img/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../static/img/favicons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="../static/img/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../static/img/favicons/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="../static/img/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="../static/img/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="../manifest.webapp">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/static/img/favicons/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="mask-icon" mask href="../static/img/emojipedia.svg" color="black">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@emojipedia">
+<meta name="twitter:title" content="🚿 Shower Emoji">
+<meta name="twitter:description" content="A shower, or shower head. Shown with various levels of pressure by platform. Additional shower heads can be found on some versions of the bathtub emoji. …">
+<meta name="twitter:image" content="https://emojipedia-us.s3.amazonaws.com/social/shower.png">
+<meta property="og:site_name" context="Emojipedia"/>
+<meta property="og:url" content="/shower/"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="🚿 Shower Emoji"/>
+<meta property="og:description" content="A shower, or shower head. Shown with various levels of pressure by platform. Additional shower heads can be found on some versions of the bathtub emoji. …"/>
+<meta property="og:image" content="https://emojipedia-us.s3.amazonaws.com/social/shower.png"/>
+<script>window.lazySizesConfig={loadMode:0}</script>
+</head>
+<body>
+<script type="text/javascript">
+(function(){
+var bsa = document.createElement('script');
+bsa.type = 'text/javascript';
+bsa.async = true;
+bsa.src = '../../s3.buysellads.com/ac/bsa.js';
+(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+})();
+</script>
+<header>
+<div class="container">
+<a href="../index.html" class="logo" title="Go to Emojipedia Home">Emojipedia</a>
+<form method="get" action="http://emojipedia.org/search/" class="search-form">
+<label>
+<span class="sr-only">Search Emojipedia:</span>
+<input id="id_q" name="q" placeholder="Search Emojipedia" type="search"/>
+</label>
+</form>
+<a href="#nav-categories" id="nav-categories-toggle">Categories</a>
+<nav class="categories">
+<ul id="nav-categories">
+<li><a href="../people/index.html"><span class="emoji">😃</span> Smileys & People</a></li>
+<li><a href="../nature/index.html"><span class="emoji">🐻</span> Animals & Nature</a></li>
+<li><a href="../food-drink/index.html"><span class="emoji">🍔</span> Food & Drink</a></li>
+<li><a href="../activity/index.html"><span class="emoji">⚽</span> Activity</a></li>
+<li><a href="../travel-places/index.html"><span class="emoji">🌇</span> Travel & Places</a></li>
+<li><a href="../objects/index.html"><span class="emoji">💡</span> Objects</a></li>
+<li><a href="../symbols/index.html"><span class="emoji">🔣</span> Symbols</a></li>
+<li><a href="../flags/index.html"><span class="emoji">🎌</span> Flags</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<div class="sponsor"><p><a href="http://emojiwrap.com/"><span class="emoji">💌</span>&nbsp;Subscribe for the latest emoji news</a></p></div>
+<div class="ad-header">
+<script type="text/javascript">
+   google_ad_client = "ca-pub-3417095048576988";
+   width = document.documentElement.clientWidth;
+     google_ad_slot = "9547014904";
+     google_ad_width = 320;
+     google_ad_height = 100;
+     if (width > 728) {
+         google_ad_slot = "9138623707";
+         google_ad_width = 728;
+    google_ad_height = 90;
+     }
+
+  </script>
+<script type="text/javascript" src="../../pagead2.googlesyndication.com/pagead/f.txt"></script>
+</div>
+<div class="container">
+<div class="content">
+<article>
+<h1><span class="emoji">🚿</span> Shower</h1>
+<section class="description">
+<p>A shower, or shower head. Shown with various levels of pressure by platform.</p>
+<p>Additional shower heads can be found on some versions of the <a href="../bathtub/index.html" title="🛁 Bathtub">bathtub emoji</a>.</p>
+<p>
+<em>Shower</em> was approved as part of <a href="../unicode-6.0/index.html">Unicode 6.0</a> in 2010
+and added to <a href="../emoji-1.0/index.html">Emoji 1.0</a> in 2015.
+</p>
+<form class="stacked no-top copy-paste">
+<label>
+<span class="copy-paste__label">Copy and paste this emoji:</span>
+<input type="text" value="🚿" readonly class="emoji-copy copy-paste__data" id="emoji-copy">
+<button type="button" class="btn-clipboard copy-paste__btn" data-clipboard-target="#emoji-copy" style="width:auto;display:inline-block">Copy</button>
+</label>
+</form>
+</section>
+<section class="aliases">
+<h2>Also Known As</h2>
+<ul>
+<li><span class="emoji">🚿</span> Shower Head</li>
+</ul>
+</section>
+<section class="vendor-list">
+<ul>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../apple/index.html">Apple</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/c5/8a/c58a4eebd83f5117b874c6984c117cff.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/30/79/307944cef6542c8fcef506522536411f.png 2x" alt="Shower on Apple iOS 10.2" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../apple/ios-10.2/index.html">iOS 10.2</a></p>
+</div>
+<div class="vendor-image">
+<a href="../apple/ios-10.2/shower/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/66/55/6655becfe2159c66455a819914751689.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/c5/8a/c58a4eebd83f5117b874c6984c117cff.png 2x" alt="Shower on Apple " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../apple/ios-6.0/index.html">iOS 6.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../apple/ios-6.0/shower/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/af/2c/af2c7d3cbd3960e75642741d157fb056.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/df/76/df7625e24dac3f99f2884f8ba43aea5e.png 2x" alt="Shower on Apple " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../google/index.html">Google</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/c7/c5/c7c522417c77d3a96182fc179cc55023.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/e7/a6/e7a6cb3fe3ecd4513fde21aeb7336208.png 2x" alt="Shower on Google Android 7.1" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../google/android-7.1/index.html">Android 7.1</a></p>
+</div>
+<div class="vendor-image">
+<a href="../google/android-7.1/shower/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/e4/be/e4be04b19eb558b8b47ee8165b1dcd9e.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/c7/c5/c7c522417c77d3a96182fc179cc55023.png 2x" alt="Shower on Google " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../google/android-7.0/index.html">Android 7.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../google/android-7.0/shower/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/1b/50/1b50cd675cec06c1da15fe2e968ecaf0.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/a4/31/a4314dfd5290695eaa5af0f211394b9a.png 2x" alt="Shower on Google " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../google/android-4.4/index.html">Android 4.4</a></p>
+</div>
+<div class="vendor-image">
+<a href="../google/android-4.4/shower/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/ba/0f/ba0fb2d05971b5ef4d6d91ea80270753.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/ba/69/ba69f94c1af81cf66a850cc741c36159.png 2x" alt="Shower on Google " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../microsoft/index.html">Microsoft</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/d3/19/d31973e4215b83d6f675ac9f7ea6cc2f.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/8b/f8/8bf846e20d0cea477e51c1600213f50c.png 2x" alt="Shower on Microsoft Windows 10 Anniversary Update" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../microsoft/windows-10-anniversary-update/index.html">Windows 10 Anniversary Update</a></p>
+</div>
+<div class="vendor-image">
+<a href="../microsoft/windows-10-anniversary-update/shower/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/65/ba/65bada1bfa3dfc3444c833d01f585c1f.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/d3/19/d31973e4215b83d6f675ac9f7ea6cc2f.png 2x" alt="Shower on Microsoft " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../microsoft/windows-8.1/index.html">Windows 8.1</a></p>
+</div>
+<div class="vendor-image">
+<a href="../microsoft/windows-8.1/shower/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/2f/11/2f115e18971f2ba9a967413d181208bf.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/84/54/8454a7f21dd427e0bf51129ab5b2ef13.png 2x" alt="Shower on Microsoft " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../microsoft/windows-8.0/index.html">Windows 8.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../microsoft/windows-8.0/shower/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/ba/40/ba400364405e09edc86130906ac3b7a3.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/02/23/0223ff59f0bc40ded3f9fd8ca63bcabf.png 2x" alt="Shower on Microsoft " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../samsung/index.html">Samsung</a></h2>
+</div>
+<div class="vendor-image">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../samsung/galaxy-s8/index.html">Galaxy S8</a></p>
+</div>
+<div class="vendor-image">
+<a href="../samsung/galaxy-s8/shower/index.html">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../samsung/galaxy-s4/index.html">Galaxy S4</a></p>
+</div>
+<div class="vendor-image">
+<a href="../samsung/galaxy-s4/shower/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/fa/78/fa78eb309e836739991462e5db36fd39.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/44/00/440054397c3ff431c28a987ec0e79d04.png 2x" alt="Shower on Samsung " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../lg/index.html">LG</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/a9/9d/a99ded6570db2bf61dd52029185e999a.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/4c/cc/4cccb7c6e822de1389844efb90872270.png 2x" alt="Shower on LG G5" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../lg/g5/index.html">G5</a></p>
+</div>
+<div class="vendor-image">
+<a href="../lg/g5/shower/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/5c/b5/5cb575b3f6ee8a0fbc8ea6e31200e83f.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/a9/9d/a99ded6570db2bf61dd52029185e999a.png 2x" alt="Shower on LG " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../lg/g3/index.html">G3</a></p>
+</div>
+<div class="vendor-image">
+<a href="../lg/g3/shower/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/a4/95/a495b94d690566991333aa9e7329361b.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/6b/6a/6b6a45844451f517685cebccc77a0b71.png 2x" alt="Shower on LG " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../htc/index.html">HTC</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/76/f9/76f9d6994e289756f96d75481186342d.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/98/9d/989dda4838122c491203b53c12cfbbfb.png 2x" alt="Shower on HTC Sense 7" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../htc/sense-7/index.html">Sense 7</a></p>
+</div>
+<div class="vendor-image">
+<a href="../htc/sense-7/shower/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/f4/f1/f4f16e71cbbf9fa17c3ce6eef1a204b4.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/76/f9/76f9d6994e289756f96d75481186342d.png 2x" alt="Shower on HTC " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../facebook/index.html">Facebook</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/cb/64/cb642c40d263738723911d684af4afa1.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/d4/f2/d4f281d834babf32eca7b452795ac201.png 2x" alt="Shower on Facebook 2.0" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../facebook/2.0/index.html">2.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../facebook/2.0/shower/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/be/38/be38c8658b249b0345fde8ffb05d1c7c.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/cb/64/cb642c40d263738723911d684af4afa1.png 2x" alt="Shower on Facebook " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../messenger/index.html">Messenger</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/d4/6d/d46d9d9960dbc7bf32754820497cab0e.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/b1/18/b1185db2c2deeed84719e90e04000188.png 2x" alt="Shower on Messenger 1.0" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../messenger/1.0/index.html">1.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../messenger/1.0/shower/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/e1/2b/e12bcc33e21d9c04f9c969616c9f3493.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/d4/6d/d46d9d9960dbc7bf32754820497cab0e.png 2x" alt="Shower on Messenger " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../twitter/index.html">Twitter</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/46/75/4675c33997bfd085e47f2ada86ccee80.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/ce/4d/ce4dbdfb86a6d6480d5e8338121ee437.png 2x" alt="Shower on Twitter Twemoji 2.2.3" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../twitter/twemoji-2.2.3/index.html">Twemoji 2.2.3</a></p>
+</div>
+<div class="vendor-image">
+<a href="../twitter/twemoji-2.2.3/shower/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/aa/ed/aaed8b19b6bc93283d8fc6f31ea27a8a.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/46/75/4675c33997bfd085e47f2ada86ccee80.png 2x" alt="Shower on Twitter " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../twitter/twemoji-1.0/index.html">Twemoji 1.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../twitter/twemoji-1.0/shower/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/ad/3b/ad3b6c8b3e030a38f8df5218257c6dcd.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/55/5a/555a4fb6a50e66c9281ae326b7037899.png 2x" alt="Shower on Twitter " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../mozilla/index.html">Mozilla</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/2a/79/2a793e96706638e47d835f8ac2e0661f.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/c5/c0/c5c079cda98672607d2054d944252ed5.png 2x" alt="Shower on Mozilla Firefox OS 2.5" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../mozilla/firefox-os-2.5/index.html">Firefox OS 2.5</a></p>
+</div>
+<div class="vendor-image">
+<a href="../mozilla/firefox-os-2.5/shower/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/d3/f6/d3f606eca75edd3cb5b4ed804e84774b.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/2a/79/2a793e96706638e47d835f8ac2e0661f.png 2x" alt="Shower on Mozilla " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../emoji-one/index.html">Emoji One</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/7f/95/7f95f6180c805fc6b2c19498cb0f3bf6.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/7d/3f/7d3fc93d0e8a3389f982d659a47fc2cb.png 2x" alt="Shower on Emoji One 2.2.5" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../emoji-one/2.2.5/index.html">2.2.5</a></p>
+</div>
+<div class="vendor-image">
+<a href="../emoji-one/2.2.5/shower/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/1f/6b/1f6b4f5e47195a800ae007341b5ac46b.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/7f/95/7f95f6180c805fc6b2c19498cb0f3bf6.png 2x" alt="Shower on Emoji One " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../emoji-one/2.0/index.html">2.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../emoji-one/2.0/shower/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/09/4f/094f322e0325baff433c5923fa702a42.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/80/8d/808da8f716eec30a408abcee30d50a32.png 2x" alt="Shower on Emoji One " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../emoji-one/1.0/index.html">1.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../emoji-one/1.0/shower/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/da/d9/dad9b7d2a96991f8c42985dfb4badddc.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/30/d7/30d70da6e473005ab16d8b3602d35b15.png 2x" alt="Shower on Emoji One " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../emojidex/index.html">emojidex</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/cc/16/cc16169d09718c0404f513d031fc8daf.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/29/70/2970281c305484082c5bafb93678a297.png 2x" alt="Shower on emojidex 1.0.24" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../emojidex/1.0.24/index.html">1.0.24</a></p>
+</div>
+<div class="vendor-image">
+<a href="../emojidex/1.0.24/shower/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/2f/25/2f254f1eca056c7d2f3538ed9a170b80.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/cc/16/cc16169d09718c0404f513d031fc8daf.png 2x" alt="Shower on emojidex " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../emojidex/1.0.14/index.html">1.0.14</a></p>
+</div>
+<div class="vendor-image">
+<a href="../emojidex/1.0.14/shower/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/6b/af/6baf7a9adc2a5929d5a5a952aed42150.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/43/ea/43eab6d99c63aa162bfb2b22c0e2d861.png 2x" alt="Shower on emojidex " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</section>
+<h2>Codepoints</h2>
+<ul>
+<li><a href="../emoji/%f0%9f%9a%bf/index.html">🚿 U+1F6BF</a></li>
+</ul>
+<h2>Shortcodes</h2>
+<ul class="shortcodes">
+<li>:shower:</li>
+</ul>
+<h2>Browse</h2>
+<ul>
+<li><a href="https://instagram.com/explore/tags/🚿/"><span class="emoji">🚿</span> on Instagram</a></li>
+<li><a href="https://twitter.com/search?q=%f0%9f%9a%bf"><span class="emoji">🚿</span> on Twitter</a></li>
+<li><a href="https://en.wikipedia.org/wiki/🚿"><span class="emoji">🚿</span> on Wikipedia</a></li>
+<li><a href="http://www.yelp.com/search?find_desc=%f0%9f%9a%bf"><span class="emoji">🚿</span> on Yelp</a></li>
+<li><a href="https://www.youtube.com/results?search_query=%f0%9f%9a%bf"><span class="emoji">🚿</span> on YouTube</a></li>
+</ul>
+<h2>Related</h2>
+<ul class="emoji-list">
+<li><a href="../bath/index.html"><span class="emoji">🛀</span> Person Taking Bath</a></li>
+<li><a href="../bathtub/index.html"><span class="emoji">🛁</span> Bathtub</a></li>
+<li><a href="../hot-springs/index.html"><span class="emoji">♨</span> Hot Springs</a></li>
+<li><a href="../non-potable-water-symbol/index.html"><span class="emoji">🚱</span> Non-Potable Water</a></li>
+<li><a href="../person-in-steamy-room/index.html"><span class="emoji">🧖</span> Person in Steamy Room</a></li>
+<li><a href="../potable-water-symbol/index.html"><span class="emoji">🚰</span> Potable Water</a></li>
+<li><a href="../splashing-sweat-symbol/index.html"><span class="emoji">💦</span> Sweat Droplets</a></li>
+<li><a href="../toilet/index.html"><span class="emoji">🚽</span> Toilet</a></li>
+<li><a href="../water-closet/index.html"><span class="emoji">🚾</span> Water Closet</a></li>
+<li><a href="../random/index.html"><span class="emoji">🔀</span> Random emoji</a></li>
+</ul>
+<form class="short-link stacked">
+<input type="text" value="http://📙.la/🚿" readonly>
+</form>
+</article>
+<div class="ad-footer">
+<div style="text-align:center">
+<script type="text/javascript">
+		    google_ad_client = "ca-pub-3417095048576988";
+		    width = document.documentElement.clientWidth;
+		    google_ad_slot = "7111864505";
+		    google_ad_width = 300;
+		    google_ad_height = 250;
+		    if (width > 380) {
+		        google_ad_slot = "8262920107";
+		        google_ad_width = 336;
+		       google_ad_height = 280;
+		    }
+ 
+		</script>
+<script type="text/javascript" src="../../pagead2.googlesyndication.com/pagead/f.txt">
+		</script>
+</div>
+</div>
+</div>
+<div class="sidebar">
+<div class="block">
+<h2>Categories</h2>
+<ul>
+<li><a href="../people/index.html"><span class="emoji">😃</span> Smileys & People</a></li>
+<li><a href="../nature/index.html"><span class="emoji">🐻</span> Animals & Nature</a></li>
+<li><a href="../food-drink/index.html"><span class="emoji">🍔</span> Food & Drink</a></li>
+<li><a href="../activity/index.html"><span class="emoji">⚽</span> Activity</a></li>
+<li><a href="../travel-places/index.html"><span class="emoji">🌇</span> Travel & Places</a></li>
+<li><a href="../objects/index.html"><span class="emoji">💡</span> Objects</a></li>
+<li><a href="../symbols/index.html"><span class="emoji">🔣</span> Symbols</a></li>
+<li><a href="../flags/index.html"><span class="emoji">🎌</span> Flags</a></li>
+</ul>
+</div>
+<div class="block">
+<h2>Most Popular</h2>
+<ul>
+<li><a href="../shrug/index.html"><span class="emoji">🤷</span> Person Shrugging</a></li>
+<li><a href="../face-with-tears-of-joy/index.html"><span class="emoji">😂</span> Face With Tears of Joy</a></li>
+<li><a href="../heavy-black-heart/index.html"><span class="emoji">❤</span> Red Heart</a></li>
+<li><a href="../smiling-face-with-heart-shaped-eyes/index.html"><span class="emoji">😍</span> Smiling Face With Heart-Eyes</a></li>
+<li><a href="../fire/index.html"><span class="emoji">🔥</span> Fire</a></li>
+<li><a href="../thinking-face/index.html"><span class="emoji">🤔</span> Thinking Face</a></li>
+<li><a href="../smiling-face-with-smiling-eyes/index.html"><span class="emoji">😊</span> Smiling Face With Smiling Eyes</a></li>
+<li><a href="../face-throwing-a-kiss/index.html"><span class="emoji">😘</span> Face Blowing a Kiss</a></li>
+<li><a href="../face-with-rolling-eyes/index.html"><span class="emoji">🙄</span> Face With Rolling Eyes</a></li>
+</ul>
+</div>
+<div class="block">
+<h2>Latest News</h2>
+<ul>
+<li><a href="http://blog.emojipedia.org/samsung-galaxy-s8-emoji-changelog/"><span class="emoji">📲</span> Samsung Galaxy S8 Emoji Changelog</a></li>
+<li><a href="http://blog.emojipedia.org/what-is-gender-and-why-does-it-matter-to-emoji/"><span class="emoji">🚻</span> What is Gender and Why Does it Matter to Emoji?</a></li>
+<li><a href="http://blog.emojipedia.org/why-there-were-two-emoji-updates-in-2016/"><span class="emoji">👀</span> Why There Were Two Emoji Updates In 2016</a></li>
+<li><a href="http://blog.emojipedia.org/facebook-completes-emoji-update/"><span class="emoji">💻</span> Facebook Completes Emoji Update</a></li>
+<li><a href="http://blog.emojipedia.org/the-resistance-will-be-emojified/"><span class="emoji">✊</span> The Resistance Will Be Emojified</a></li>
+<li><a href="http://blog.emojipedia.org/who-owns-emoji/"><span class="emoji">👩&zwj;⚖️</span> Who Owns Emoji?</a></li>
+<li><a href="http://blog.emojipedia.org/utc-provides-feedback-on-redhead-emoji/"><span class="emoji">📝</span> UTC Provides Feedback on Redhead Emoji</a></li>
+<li><a href="http://blog.emojipedia.org/happy-chinese-new-year/"><span class="emoji">🎇</span> Happy Chinese New Year!</a></li>
+</ul>
+</div>
+<div class="block">
+<h2>Events</h2>
+<ul>
+<li><a href="../australia-day/index.html"><span class="emoji">🇦🇺</span> Australia Day</a></li>
+<li><a href="../bastille-day/index.html"><span class="emoji">🇫🇷</span> Bastille Day</a></li>
+<li><a href="../birthday/index.html"><span class="emoji">🎂</span> Birthday</a></li>
+<li><a href="../black-friday/index.html"><span class="emoji">🛍</span> Black Friday</a></li>
+<li><a href="../canada-day/index.html"><span class="emoji">🇨🇦</span> Canada Day</a></li>
+<li><a href="../carnaval/index.html"><span class="emoji">🇧🇷</span> Carnaval</a></li>
+<li><a href="../chinese-new-year/index.html"><span class="emoji">🐉</span> Chinese New Year</a></li>
+<li><a href="../christmas/index.html"><span class="emoji">🎅</span> Christmas</a></li>
+<li><a href="../cinco-de-mayo/index.html"><span class="emoji">🇲🇽</span> Cinco de Mayo</a></li>
+<li><a href="../dragon-boat-festival/index.html"><span class="emoji">🇨🇳</span> Dragon Boat Festival</a></li>
+<li><a href="../easter/index.html"><span class="emoji">🐰</span> Easter</a></li>
+<li><a href="../emoji-movie/index.html"><span class="emoji">🎥</span> Emoji Movie</a></li>
+<li><a href="../fall-autumn/index.html"><span class="emoji">🍂</span> Fall / Autumn</a></li>
+<li><a href="../fathers-day/index.html"><span class="emoji">👨</span> Father’s Day</a></li>
+<li><a href="../festivus/index.html"><span class="emoji">💪</span> Festivus</a></li>
+<li><a href="../graduation/index.html"><span class="emoji">🎓</span> Graduation</a></li>
+<li><a href="../guy-fawkes/index.html"><span class="emoji">🔥</span> Guy Fawkes</a></li>
+<li><a href="../halloween/index.html"><span class="emoji">🎃</span> Halloween</a></li>
+<li><a href="../hanukkah/index.html"><span class="emoji">🕎</span> Hanukkah</a></li>
+<li><a href="../holi/index.html"><span class="emoji">🕉</span> Holi</a></li>
+<li><a href="../independence-day/index.html"><span class="emoji">🇺🇸</span> Independence Day</a></li>
+<li><a href="../mothers-day/index.html"><span class="emoji">👩</span> Mother’s Day</a></li>
+<li><a href="../new-years-eve/index.html"><span class="emoji">🎊</span> New Year’s Eve</a></li>
+<li><a href="../olympics/index.html"><span class="emoji">🏊</span> Olympics</a></li>
+<li><a href="../queens-birthday/index.html"><span class="emoji">👑</span> Queen’s Birthday</a></li>
+<li><a href="../ramadan/index.html"><span class="emoji">☪</span> Ramadan</a></li>
+<li><a href="../spring/index.html"><span class="emoji">🌱</span> Spring</a></li>
+<li><a href="../st-patricks-day/index.html"><span class="emoji">☘</span> St Patrick’s Day</a></li>
+<li><a href="../summer/index.html"><span class="emoji">☀</span> Summer</a></li>
+<li><a href="../super-bowl/index.html"><span class="emoji">🏈</span> Super Bowl</a></li>
+<li><a href="../thanksgiving/index.html"><span class="emoji">🦃</span> Thanksgiving</a></li>
+<li><a href="../valentines-day/index.html"><span class="emoji">💘</span> Valentine’s Day</a></li>
+<li><a href="../wedding-marriage/index.html"><span class="emoji">👰</span> Wedding / Marriage</a></li>
+<li><a href="../winter/index.html"><span class="emoji">⛄</span> Winter</a></li>
+<li><a href="../winter-olympics/index.html"><span class="emoji">🎿</span> Winter Olympics</a></li>
+<li><a href="../world-cup/index.html"><span class="emoji">⚽</span> World Cup</a></li>
+<li><a href="../world-emoji-day/index.html"><span class="emoji">🌎</span> World Emoji Day</a></li>
+</ul>
+</div>
+</div>
+</div>
+<footer>
+<nav>
+<div class="container">
+<div class="vendors">
+<h2>Platforms</h2>
+<ul>
+<li><a href="../apple/index.html">Apple</a></li>
+<li><a href="../emojidex/index.html">emojidex</a></li>
+<li><a href="../emoji-one/index.html">Emoji One</a></li>
+<li><a href="../emojipedia/index.html">Emojipedia</a></li>
+<li><a href="../facebook/index.html">Facebook</a></li>
+<li><a href="../google/index.html">Google</a></li>
+<li><a href="../htc/index.html">HTC</a></li>
+<li><a href="../instagram/index.html">Instagram</a></li>
+<li><a href="../lg/index.html">LG</a></li>
+<li><a href="../messenger/index.html">Messenger</a></li>
+<li><a href="../microsoft/index.html">Microsoft</a></li>
+<li><a href="../mozilla/index.html">Mozilla</a></li>
+<li><a href="../samsung/index.html">Samsung</a></li>
+<li><a href="../slack/index.html">Slack</a></li>
+<li><a href="../snapchat/index.html">Snapchat</a></li>
+<li><a href="../sponsored/index.html">Sponsored</a></li>
+<li><a href="../telegram/index.html">Telegram</a></li>
+<li><a href="../twitter/index.html">Twitter</a></li>
+<li><a href="../viber/index.html">Viber</a></li>
+<li><a href="../whatsapp/index.html">WhatsApp</a></li>
+<li><a href="../yo-status/index.html">Yo Status</a></li>
+</ul>
+</div>
+<div class="unicode-version">
+<h2>Emoji Versions</h2>
+<ul>
+<li><a href="../emoji-6.0/index.html">Emoji 6.0</a></li>
+<li><a href="../emoji-5.0/index.html">Emoji 5.0</a></li>
+<li><a href="../emoji-4.0/index.html">Emoji 4.0</a></li>
+<li><a href="../emoji-3.0/index.html">Emoji 3.0</a></li>
+<li><a href="../emoji-2.0/index.html">Emoji 2.0</a></li>
+<li><a href="../emoji-1.0/index.html">Emoji 1.0</a></li>
+</ul>
+<h2>Unicode Versions</h2>
+<ul>
+<li><a href="../unicode-11.0/index.html">Unicode 11.0</a></li>
+<li><a href="../unicode-10.0/index.html">Unicode 10.0</a></li>
+<li><a href="../unicode-9.0/index.html">Unicode 9.0</a></li>
+<li><a href="../unicode-8.0/index.html">Unicode 8.0</a></li>
+<li><a href="../unicode-7.0/index.html">Unicode 7.0</a></li>
+<li><a href="../unicode-6.1/index.html">Unicode 6.1</a></li>
+<li><a href="../unicode-6.0/index.html">Unicode 6.0</a></li>
+<li><a href="../unicode-5.2/index.html">Unicode 5.2</a></li>
+<li><a href="../unicode-5.1/index.html">Unicode 5.1</a></li>
+<li><a href="../unicode-4.1/index.html">Unicode 4.1</a></li>
+<li><a href="../unicode-4.0/index.html">Unicode 4.0</a></li>
+<li><a href="../unicode-3.2/index.html">Unicode 3.2</a></li>
+<li><a href="../unicode-3.1/index.html">Unicode 3.1</a></li>
+<li><a href="../unicode-3.0/index.html">Unicode 3.0</a></li>
+<li><a href="../unicode-1.1/index.html">Unicode 1.1</a></li>
+</ul>
+</div>
+<div class="static-pages">
+<h2>More</h2>
+<ul>
+<li><a href="../adopt-emoji-faq/index.html">Adopt An Emoji FAQ</a></li>
+<li><a href="../ads/index.html">Ads</a></li>
+<li><a href="../apple-watch/index.html">Apple Watch</a></li>
+<li><a href="../botmoji/index.html">Botmoji</a></li>
+<li><a href="../contact/index.html">Contact</a></li>
+<li><a href="../neutral/index.html">Emoji Neutral</a></li>
+<li><a href="../emojipedia-api/index.html">Emojipedia API</a></li>
+<li><a href="../app/index.html">Emojipedia Apps</a></li>
+<li><a href="../stats/index.html">Emoji Statistics</a></li>
+<li><a href="../emoji-wrap/index.html">Emoji Wrap</a></li>
+<li><a href="../emoji-zwj-sequences/index.html">Emoji ZWJ Sequences</a></li>
+<li><a href="../faq/index.html">FAQ</a></li>
+<li><a href="../glossary/index.html">Glossary</a></li>
+<li><a href="../stickers/index.html">iMessage Stickers</a></li>
+<li><a href="../press/index.html">In The News</a></li>
+<li><a href="../licensing/index.html">Licensing</a></li>
+<li><a href="../new/index.html">New</a></li>
+<li><a href="../privacy-policy/index.html">Privacy Policy</a></li>
+<li><a href="../tips/index.html">Tips</a></li>
+<li><a href="../modifiers/index.html">Modifiers</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="container content">
+<p>All emoji names&nbsp;are&nbsp;<a href="../faq/index.html">official character and/or CLDR names</a>&nbsp;and <a href="../emoji/index.html" title="😃 Every Emoji by Codepoint">code points</a>, listed as part of the <a href="https://en.wikipedia.org/wiki/Unicode_Standard">Unicode Standard</a>. Additional descriptions are copyright&nbsp;&copy; Emojipedia.&nbsp;Emoji character artwork and copyright belong to their respective font creators.</p>
+<p>Emojipedia&reg; is a registered trademark of Emojipedia Pty Ltd;&nbsp;Apple&reg; is a registered trademark of Apple Inc; Microsoft&reg; and Windows&reg; are registered trademarks of Microsoft Corporation; Google&reg; and Android&trade; are registered trademarks or trademarks of Google Inc in the United States and/or other countries. Emoji One images provided free by Emoji One.</p>
+</div>
+</footer>
+<script type="text/javascript" src="../static/js/jquery.min.d72a6941a827.js" charset="utf-8"></script>
+<script type="text/javascript" src="../static/js/site.9958d0753977.js" charset="utf-8"></script>
+<script type="text/javascript" src="../static/js/lazy.f12b5efd22b1.js" charset="utf-8"></script>
+<script>
+(function() {
+function async_load(script_url){
+var protocol = ('https:' == document.location.protocol ? 'https://' : 'http://');
+var s = document.createElement('script'); s.src = protocol + script_url;
+var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+}
+bm_website_code = 'D7A15B1CC4264F19';
+jQuery(document).ready(function(){async_load('asset.pagefair.com/measure.min.js/index.html')});
+jQuery(document).ready(function(){async_load('asset.pagefair.net/ads.min.js/index.html')});
+})();
+</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-43649623-1', 'auto');
+ga('send', 'pageview');
+</script>
+</body>
+
+<!-- Mirrored from emojipedia.org/shower/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Mar 2017 10:29:48 GMT -->
+</html>

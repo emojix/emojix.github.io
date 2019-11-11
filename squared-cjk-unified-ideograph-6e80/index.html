@@ -1,0 +1,860 @@
+
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from emojipedia.org/squared-cjk-unified-ideograph-6e80/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Mar 2017 16:47:14 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"applicationTime":2042,"errorBeacon":"bam.nr-data.net","queueTime":0,"transactionName":"b1NaN0oCW0RVUhJeWVYZfhZWAEFeW19JVFlKUxYWSg9GDVJdB0NpSFdMCw==","agent":"","beacon":"bam.nr-data.net","applicationID":"7909734","licenseKey":"475c936728"}</script>
+<meta name="viewport" content="width=device-width">
+<title>🈵 Squared CJK Unified Ideograph-6E80 Emoji</title>
+<link href="../static/css/emojipedia.7cce6c6b80b4.css" rel="stylesheet" type="text/css"/>
+<link rel="apple-touch-icon" sizes="57x57" href="../static/img/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../static/img/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../static/img/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../static/img/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../static/img/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../static/img/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../static/img/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../static/img/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../static/img/favicons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="../static/img/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../static/img/favicons/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="../static/img/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="../static/img/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="../manifest.webapp">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/static/img/favicons/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="mask-icon" mask href="../static/img/emojipedia.svg" color="black">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@emojipedia">
+<meta name="twitter:title" content="🈵 Squared CJK Unified Ideograph-6E80 Emoji">
+<meta name="twitter:description" content="This emoji means “full” in Japanese, usually used to denote “full capacity” such as a gas/petrol tank on a car or pre-paid phone card. CJK Ideographs are characters used in Chinese, Japanese…">
+<meta name="twitter:image" content="https://emojipedia-us.s3.amazonaws.com/social/squared-cjk-unified-ideograph-6e80.png">
+<meta property="og:site_name" context="Emojipedia"/>
+<meta property="og:url" content="/squared-cjk-unified-ideograph-6e80/"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="🈵 Squared CJK Unified Ideograph-6E80 Emoji"/>
+<meta property="og:description" content="This emoji means “full” in Japanese, usually used to denote “full capacity” such as a gas/petrol tank on a car or pre-paid phone card. CJK Ideographs are characters used in Chinese, Japanese…"/>
+<meta property="og:image" content="https://emojipedia-us.s3.amazonaws.com/social/squared-cjk-unified-ideograph-6e80.png"/>
+<script>window.lazySizesConfig={loadMode:0}</script>
+</head>
+<body>
+<script type="text/javascript">
+(function(){
+var bsa = document.createElement('script');
+bsa.type = 'text/javascript';
+bsa.async = true;
+bsa.src = '../../s3.buysellads.com/ac/bsa.js';
+(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+})();
+</script>
+<header>
+<div class="container">
+<a href="../index.html" class="logo" title="Go to Emojipedia Home">Emojipedia</a>
+<form method="get" action="http://emojipedia.org/search/" class="search-form">
+<label>
+<span class="sr-only">Search Emojipedia:</span>
+<input id="id_q" name="q" placeholder="Search Emojipedia" type="search"/>
+</label>
+</form>
+<a href="#nav-categories" id="nav-categories-toggle">Categories</a>
+<nav class="categories">
+<ul id="nav-categories">
+<li><a href="../people/index.html"><span class="emoji">😃</span> Smileys & People</a></li>
+<li><a href="../nature/index.html"><span class="emoji">🐻</span> Animals & Nature</a></li>
+<li><a href="../food-drink/index.html"><span class="emoji">🍔</span> Food & Drink</a></li>
+<li><a href="../activity/index.html"><span class="emoji">⚽</span> Activity</a></li>
+<li><a href="../travel-places/index.html"><span class="emoji">🌇</span> Travel & Places</a></li>
+<li><a href="../objects/index.html"><span class="emoji">💡</span> Objects</a></li>
+<li><a href="../symbols/index.html"><span class="emoji">🔣</span> Symbols</a></li>
+<li><a href="../flags/index.html"><span class="emoji">🎌</span> Flags</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<div class="sponsor"><p><a href="http://emojiwrap.com/"><span class="emoji">💌</span>&nbsp;Subscribe for the latest emoji news</a></p></div>
+<div class="ad-header">
+<script type="text/javascript">
+   google_ad_client = "ca-pub-3417095048576988";
+   width = document.documentElement.clientWidth;
+     google_ad_slot = "9547014904";
+     google_ad_width = 320;
+     google_ad_height = 100;
+     if (width > 728) {
+         google_ad_slot = "9138623707";
+         google_ad_width = 728;
+    google_ad_height = 90;
+     }
+
+  </script>
+<script type="text/javascript" src="../../pagead2.googlesyndication.com/pagead/f.txt"></script>
+</div>
+<div class="container">
+<div class="content">
+<article>
+<h1><span class="emoji">🈵</span> Japanese “no Vacancy” Button</h1>
+<section class="description">
+<p>This emoji means &ldquo;full&rdquo; in Japanese, usually used to denote &ldquo;full capacity&rdquo; such as a gas/petrol tank on a car or pre-paid phone card.</p>
+<p>CJK Ideographs are characters used in Chinese, Japanese and Korean languages. Their writing systems all completely or partly use&nbsp;<a href="http://en.wikipedia.org/wiki/Chinese_character">Chinese characters</a>.</p>
+<p>
+<em>Japanese “no Vacancy” Button</em> was approved as part of <a href="../unicode-6.0/index.html">Unicode 6.0</a> in 2010
+under the name “Squared CJK Unified Ideograph-6E80”
+and added to <a href="../emoji-1.0/index.html">Emoji 1.0</a> in 2015.
+</p>
+<form class="stacked no-top copy-paste">
+<label>
+<span class="copy-paste__label">Copy and paste this emoji:</span>
+<input type="text" value="🈵" readonly class="emoji-copy copy-paste__data" id="emoji-copy">
+<button type="button" class="btn-clipboard copy-paste__btn" data-clipboard-target="#emoji-copy" style="width:auto;display:inline-block">Copy</button>
+</label>
+</form>
+</section>
+<section class="aliases">
+<h2>Also Known As</h2>
+<ul>
+<li><span class="emoji">🈵</span> Full</li>
+<li><span class="emoji">🈵</span> 満</li>
+</ul>
+</section>
+<section class="unicodename">
+<h2>Unicode Name</h2>
+<p><span class="emoji">🈵</span> Squared CJK Unified Ideograph-6E80</p>
+</section>
+<section class="vendor-list">
+<ul>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../apple/index.html">Apple</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/4c/58/4c580eb24b2323a7a16edf36cc6422fa.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/a2/bc/a2bc020f36364305198f74e75f89ccc1.png 2x" alt="Japanese “no Vacancy” Button on Apple iOS 10.2" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../apple/ios-10.2/index.html">iOS 10.2</a></p>
+</div>
+<div class="vendor-image">
+<a href="../apple/ios-10.2/squared-cjk-unified-ideograph-6e80/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/35/76/35767d4e8a23eae3fd5ea4d566d9e60c.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/4c/58/4c580eb24b2323a7a16edf36cc6422fa.png 2x" alt="Japanese “no Vacancy” Button on Apple " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../apple/ios-6.0/index.html">iOS 6.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../apple/ios-6.0/squared-cjk-unified-ideograph-6e80/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/75/e0/75e0fd838a694a195e4ea05de52f5aa2.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/1b/99/1b994c4d18d74d380d17303b31522420.png 2x" alt="Japanese “no Vacancy” Button on Apple " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../apple/ios-5.0/index.html">iOS 5.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../apple/ios-5.0/squared-cjk-unified-ideograph-6e80/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/fe/cd/fecdef7be55c23d7d4352fb2a0c71bcd.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/25/56/2556ab4f9e2f0b9ceff94aa7374178c0.png 2x" alt="Japanese “no Vacancy” Button on Apple " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../google/index.html">Google</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/f6/35/f6357ded3ba056ffd7987b68dd7ab2e8.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/b3/1a/b31aad849defdf7419d32b4d4b8f2e1c.png 2x" alt="Japanese “no Vacancy” Button on Google Android 7.1" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../google/android-7.1/index.html">Android 7.1</a></p>
+</div>
+<div class="vendor-image">
+<a href="../google/android-7.1/squared-cjk-unified-ideograph-6e80/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/82/ae/82ae635582564a23c89d400306751171.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/f6/35/f6357ded3ba056ffd7987b68dd7ab2e8.png 2x" alt="Japanese “no Vacancy” Button on Google " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../google/android-4.4/index.html">Android 4.4</a></p>
+</div>
+<div class="vendor-image">
+<a href="../google/android-4.4/squared-cjk-unified-ideograph-6e80/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/40/88/4088e59708c7958f2ee30a696bcc176f.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/6a/a8/6aa883f0350ac4ffc04d59def83d284a.png 2x" alt="Japanese “no Vacancy” Button on Google " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../google/android-4.3/index.html">Android 4.3</a></p>
+</div>
+<div class="vendor-image">
+<a href="../google/android-4.3/squared-cjk-unified-ideograph-6e80/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/a2/fd/a2fd4535f65a66a0ec4200a6f2741828.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/aa/00/aa005f33c4e5db03a2a8855f9c324901.png 2x" alt="Japanese “no Vacancy” Button on Google " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../microsoft/index.html">Microsoft</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/d6/62/d6625707eedd9c7d794332e433ffde33.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/43/4a/434ada284961576c922112a151e7cb58.png 2x" alt="Japanese “no Vacancy” Button on Microsoft Windows 10 Anniversary Update" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../microsoft/windows-10-anniversary-update/index.html">Windows 10 Anniversary Update</a></p>
+</div>
+<div class="vendor-image">
+<a href="../microsoft/windows-10-anniversary-update/squared-cjk-unified-ideograph-6e80/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/14/b0/14b02b08a48a84243b0f96f9a36c93ff.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/d6/62/d6625707eedd9c7d794332e433ffde33.png 2x" alt="Japanese “no Vacancy” Button on Microsoft " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../microsoft/windows-8.1/index.html">Windows 8.1</a></p>
+</div>
+<div class="vendor-image">
+<a href="../microsoft/windows-8.1/squared-cjk-unified-ideograph-6e80/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/a4/9a/a49a2c44639b1f301cdf57ed92d71c40.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/fe/e9/fee916bf8f96cabfcaacb96fa6e680fc.png 2x" alt="Japanese “no Vacancy” Button on Microsoft " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../microsoft/windows-8.0/index.html">Windows 8.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../microsoft/windows-8.0/squared-cjk-unified-ideograph-6e80/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/e6/a9/e6a920a47b11e0f6e114d20b69f89781.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/0e/05/0e05821682ffaef47416445701c6b5a1.png 2x" alt="Japanese “no Vacancy” Button on Microsoft " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../samsung/index.html">Samsung</a></h2>
+</div>
+<div class="vendor-image">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../samsung/galaxy-s8/index.html">Galaxy S8</a></p>
+</div>
+<div class="vendor-image">
+<a href="../samsung/galaxy-s8/squared-cjk-unified-ideograph-6e80/index.html">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../samsung/galaxy-s4/index.html">Galaxy S4</a></p>
+</div>
+<div class="vendor-image">
+<a href="../samsung/galaxy-s4/squared-cjk-unified-ideograph-6e80/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/b2/52/b2521fb1e43ae9bbc20527d369c232b0.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/46/cb/46cb0c535281181a05cb3b9e53dd2743.png 2x" alt="Japanese “no Vacancy” Button on Samsung " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../lg/index.html">LG</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/6d/08/6d08a730fa518c96c85f18429aa0ddb8.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/be/0c/be0c96d27566c829a3161e458ac3b7b8.png 2x" alt="Japanese “no Vacancy” Button on LG G5" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../lg/g5/index.html">G5</a></p>
+</div>
+<div class="vendor-image">
+<a href="../lg/g5/squared-cjk-unified-ideograph-6e80/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/a8/f2/a8f2982a27c8bf43329759ec32c5af93.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/6d/08/6d08a730fa518c96c85f18429aa0ddb8.png 2x" alt="Japanese “no Vacancy” Button on LG " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../lg/g3/index.html">G3</a></p>
+</div>
+<div class="vendor-image">
+<a href="../lg/g3/squared-cjk-unified-ideograph-6e80/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/31/81/318156c53bb1536848d39a55d397e63f.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/9e/f6/9ef638384bb6f91820653f94a2f1b754.png 2x" alt="Japanese “no Vacancy” Button on LG " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../htc/index.html">HTC</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/8b/54/8b5483601b4735377e4c2f55de080b35.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/93/9b/939bdf2fd3269cb922006bf57f36bf86.png 2x" alt="Japanese “no Vacancy” Button on HTC Sense 7" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../htc/sense-7/index.html">Sense 7</a></p>
+</div>
+<div class="vendor-image">
+<a href="../htc/sense-7/squared-cjk-unified-ideograph-6e80/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/31/cc/31cca5da09b0dc4285764e940a81eb11.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/8b/54/8b5483601b4735377e4c2f55de080b35.png 2x" alt="Japanese “no Vacancy” Button on HTC " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../facebook/index.html">Facebook</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/fe/57/fe57b256b61a9e3abcdcb3b8f54c7eed.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/0e/55/0e55ee0aad896ce56ae7ab93425783f8.png 2x" alt="Japanese “no Vacancy” Button on Facebook 2.0" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../facebook/2.0/index.html">2.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../facebook/2.0/squared-cjk-unified-ideograph-6e80/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/92/81/92817f61af8694e991e992fc82486e06.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/fe/57/fe57b256b61a9e3abcdcb3b8f54c7eed.png 2x" alt="Japanese “no Vacancy” Button on Facebook " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../facebook/1.0/index.html">1.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../facebook/1.0/squared-cjk-unified-ideograph-6e80/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/cf/53/cf53d9e959c9d0c618ad334594b0c975.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/35/23/35234fc08168845ad53fba07573f71fe.png 2x" alt="Japanese “no Vacancy” Button on Facebook " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../messenger/index.html">Messenger</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/64/10/641017d349c27bd044f1a3dad099e1c5.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/3e/47/3e47b70d7c12a125817521a9e869a23c.png 2x" alt="Japanese “no Vacancy” Button on Messenger 1.0" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../messenger/1.0/index.html">1.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../messenger/1.0/squared-cjk-unified-ideograph-6e80/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/22/1b/221be652d7d659f4994fc24e8c3212c5.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/64/10/641017d349c27bd044f1a3dad099e1c5.png 2x" alt="Japanese “no Vacancy” Button on Messenger " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../twitter/index.html">Twitter</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/21/fd/21fd2670a49ad92688fbde5608442c3b.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/e7/48/e748eea842db6096e73211176fb2a9f4.png 2x" alt="Japanese “no Vacancy” Button on Twitter Twemoji 2.2.3" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../twitter/twemoji-2.2.3/index.html">Twemoji 2.2.3</a></p>
+</div>
+<div class="vendor-image">
+<a href="../twitter/twemoji-2.2.3/squared-cjk-unified-ideograph-6e80/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/a8/97/a897268d2c8c9ac00f09332ed15dd5aa.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/21/fd/21fd2670a49ad92688fbde5608442c3b.png 2x" alt="Japanese “no Vacancy” Button on Twitter " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../twitter/twemoji-1.0/index.html">Twemoji 1.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../twitter/twemoji-1.0/squared-cjk-unified-ideograph-6e80/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/ea/f7/eaf70396f96c3160b46da901707f8224.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/fa/d9/fad9f6bb79ea575ab9ea8b9fff7a1463.png 2x" alt="Japanese “no Vacancy” Button on Twitter " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../mozilla/index.html">Mozilla</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/8f/b1/8fb135e4004f97539bb5e12b4b42491b.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/89/0a/890ac40f05eee388b10d64c5f979f65d.png 2x" alt="Japanese “no Vacancy” Button on Mozilla Firefox OS 2.5" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../mozilla/firefox-os-2.5/index.html">Firefox OS 2.5</a></p>
+</div>
+<div class="vendor-image">
+<a href="../mozilla/firefox-os-2.5/squared-cjk-unified-ideograph-6e80/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/ff/60/ff60d4e384c4f914afa6a386f975c4f7.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/8f/b1/8fb135e4004f97539bb5e12b4b42491b.png 2x" alt="Japanese “no Vacancy” Button on Mozilla " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../emoji-one/index.html">Emoji One</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/28/e2/28e2fa25b0eb28e6eae28ca498932dec.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/81/cc/81cc909f408be54855fc7c99756d0fb3.png 2x" alt="Japanese “no Vacancy” Button on Emoji One 2.2.5" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../emoji-one/2.2.5/index.html">2.2.5</a></p>
+</div>
+<div class="vendor-image">
+<a href="../emoji-one/2.2.5/squared-cjk-unified-ideograph-6e80/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/6d/84/6d84b183b25cbad8abaeb69bedf5ad49.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/28/e2/28e2fa25b0eb28e6eae28ca498932dec.png 2x" alt="Japanese “no Vacancy” Button on Emoji One " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../emoji-one/2.2/index.html">2.2</a></p>
+</div>
+<div class="vendor-image">
+<a href="../emoji-one/2.2/squared-cjk-unified-ideograph-6e80/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/d8/78/d878dbff30946ee1a096e7527345ce39.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/9e/98/9e9888bc8a6b41c37958d0873491af54.png 2x" alt="Japanese “no Vacancy” Button on Emoji One " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../emoji-one/2.0/index.html">2.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../emoji-one/2.0/squared-cjk-unified-ideograph-6e80/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/89/f4/89f4cd3482a9726ad65e44bc14f284c7.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/8a/b3/8ab30adb27898b16c1521366977a185f.png 2x" alt="Japanese “no Vacancy” Button on Emoji One " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../emoji-one/1.0/index.html">1.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../emoji-one/1.0/squared-cjk-unified-ideograph-6e80/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/06/17/0617afc322122cae6653d68a41119b22.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/74/70/7470c3d48de74815132c1b63b51715fe.png 2x" alt="Japanese “no Vacancy” Button on Emoji One " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../emojidex/index.html">emojidex</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/44/84/448416dfb3b7b9febd74618a8e7c8986.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/78/1d/781d4eff2d5492e6e93128816bbd79bd.png 2x" alt="Japanese “no Vacancy” Button on emojidex 1.0.24" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../emojidex/1.0.24/index.html">1.0.24</a></p>
+</div>
+<div class="vendor-image">
+<a href="../emojidex/1.0.24/squared-cjk-unified-ideograph-6e80/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/e3/b3/e3b3e8588cc55d3f832fbe0592be040a.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/44/84/448416dfb3b7b9febd74618a8e7c8986.png 2x" alt="Japanese “no Vacancy” Button on emojidex " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../emojidex/1.0.14/index.html">1.0.14</a></p>
+</div>
+<div class="vendor-image">
+<a href="../emojidex/1.0.14/squared-cjk-unified-ideograph-6e80/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/b2/ff/b2ff12818156cd379863fab36e3deadf.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/fb/b1/fbb132027301eb3d532788548967bf4d.png 2x" alt="Japanese “no Vacancy” Button on emojidex " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</section>
+<h2>Codepoints</h2>
+<ul>
+<li><a href="../emoji/%f0%9f%88%b5/index.html">🈵 U+1F235</a></li>
+</ul>
+<h2>Shortcodes</h2>
+<ul class="shortcodes">
+<li>:u6e80:</li>
+</ul>
+<h2>Browse</h2>
+<ul>
+<li><a href="https://instagram.com/explore/tags/🈵/"><span class="emoji">🈵</span> on Instagram</a></li>
+<li><a href="https://twitter.com/search?q=%f0%9f%88%b5"><span class="emoji">🈵</span> on Twitter</a></li>
+<li><a href="https://en.wikipedia.org/wiki/🈵"><span class="emoji">🈵</span> on Wikipedia</a></li>
+<li><a href="http://www.yelp.com/search?find_desc=%f0%9f%88%b5"><span class="emoji">🈵</span> on Yelp</a></li>
+<li><a href="https://www.youtube.com/results?search_query=%f0%9f%88%b5"><span class="emoji">🈵</span> on YouTube</a></li>
+</ul>
+<h2>Related</h2>
+<ul class="emoji-list">
+<li><a href="../circled-ideograph-congratulation/index.html"><span class="emoji">㊗</span> Japanese “congratulations” Button</a></li>
+<li><a href="../squared-cjk-unified-ideograph-5272/index.html"><span class="emoji">🈹</span> Japanese “discount” Button</a></li>
+<li><a href="../squared-cjk-unified-ideograph-5408/index.html"><span class="emoji">🈴</span> Japanese “passing Grade” Button</a></li>
+<li><a href="../squared-cjk-unified-ideograph-55b6/index.html"><span class="emoji">🈺</span> Japanese “open for Business” Button</a></li>
+<li><a href="../squared-cjk-unified-ideograph-6708/index.html"><span class="emoji">🈷️</span> Japanese “monthly Amount” Button</a></li>
+<li><a href="../squared-cjk-unified-ideograph-7533/index.html"><span class="emoji">🈸</span> Japanese “application” Button</a></li>
+<li><a href="../squared-cjk-unified-ideograph-7981/index.html"><span class="emoji">🈲</span> Japanese “prohibited” Button</a></li>
+<li><a href="../squared-katakana-sa/index.html"><span class="emoji">🈂</span> Japanese “service Charge” Button</a></li>
+<li><a href="../random/index.html"><span class="emoji">🔀</span> Random emoji</a></li>
+</ul>
+<form class="short-link stacked">
+<input type="text" value="http://📙.la/🈵" readonly>
+</form>
+</article>
+<div class="ad-footer">
+<div style="text-align:center">
+<script type="text/javascript">
+		    google_ad_client = "ca-pub-3417095048576988";
+		    width = document.documentElement.clientWidth;
+		    google_ad_slot = "7111864505";
+		    google_ad_width = 300;
+		    google_ad_height = 250;
+		    if (width > 380) {
+		        google_ad_slot = "8262920107";
+		        google_ad_width = 336;
+		       google_ad_height = 280;
+		    }
+ 
+		</script>
+<script type="text/javascript" src="../../pagead2.googlesyndication.com/pagead/f.txt">
+		</script>
+</div>
+</div>
+</div>
+<div class="sidebar">
+<div class="block">
+<h2>Categories</h2>
+<ul>
+<li><a href="../people/index.html"><span class="emoji">😃</span> Smileys & People</a></li>
+<li><a href="../nature/index.html"><span class="emoji">🐻</span> Animals & Nature</a></li>
+<li><a href="../food-drink/index.html"><span class="emoji">🍔</span> Food & Drink</a></li>
+<li><a href="../activity/index.html"><span class="emoji">⚽</span> Activity</a></li>
+<li><a href="../travel-places/index.html"><span class="emoji">🌇</span> Travel & Places</a></li>
+<li><a href="../objects/index.html"><span class="emoji">💡</span> Objects</a></li>
+<li><a href="../symbols/index.html"><span class="emoji">🔣</span> Symbols</a></li>
+<li><a href="../flags/index.html"><span class="emoji">🎌</span> Flags</a></li>
+</ul>
+</div>
+<div class="block">
+<h2>Most Popular</h2>
+<ul>
+<li><a href="../shrug/index.html"><span class="emoji">🤷</span> Person Shrugging</a></li>
+<li><a href="../face-with-tears-of-joy/index.html"><span class="emoji">😂</span> Face With Tears of Joy</a></li>
+<li><a href="../heavy-black-heart/index.html"><span class="emoji">❤</span> Red Heart</a></li>
+<li><a href="../smiling-face-with-heart-shaped-eyes/index.html"><span class="emoji">😍</span> Smiling Face With Heart-Eyes</a></li>
+<li><a href="../fire/index.html"><span class="emoji">🔥</span> Fire</a></li>
+<li><a href="../thinking-face/index.html"><span class="emoji">🤔</span> Thinking Face</a></li>
+<li><a href="../smiling-face-with-smiling-eyes/index.html"><span class="emoji">😊</span> Smiling Face With Smiling Eyes</a></li>
+<li><a href="../face-throwing-a-kiss/index.html"><span class="emoji">😘</span> Face Blowing a Kiss</a></li>
+<li><a href="../face-with-rolling-eyes/index.html"><span class="emoji">🙄</span> Face With Rolling Eyes</a></li>
+</ul>
+</div>
+<div class="block">
+<h2>Latest News</h2>
+<ul>
+<li><a href="http://blog.emojipedia.org/samsung-galaxy-s8-emoji-changelog/"><span class="emoji">📲</span> Samsung Galaxy S8 Emoji Changelog</a></li>
+<li><a href="http://blog.emojipedia.org/what-is-gender-and-why-does-it-matter-to-emoji/"><span class="emoji">🚻</span> What is Gender and Why Does it Matter to Emoji?</a></li>
+<li><a href="http://blog.emojipedia.org/why-there-were-two-emoji-updates-in-2016/"><span class="emoji">👀</span> Why There Were Two Emoji Updates In 2016</a></li>
+<li><a href="http://blog.emojipedia.org/facebook-completes-emoji-update/"><span class="emoji">💻</span> Facebook Completes Emoji Update</a></li>
+<li><a href="http://blog.emojipedia.org/the-resistance-will-be-emojified/"><span class="emoji">✊</span> The Resistance Will Be Emojified</a></li>
+<li><a href="http://blog.emojipedia.org/who-owns-emoji/"><span class="emoji">👩&zwj;⚖️</span> Who Owns Emoji?</a></li>
+<li><a href="http://blog.emojipedia.org/utc-provides-feedback-on-redhead-emoji/"><span class="emoji">📝</span> UTC Provides Feedback on Redhead Emoji</a></li>
+<li><a href="http://blog.emojipedia.org/happy-chinese-new-year/"><span class="emoji">🎇</span> Happy Chinese New Year!</a></li>
+</ul>
+</div>
+<div class="block">
+<h2>Events</h2>
+<ul>
+<li><a href="../australia-day/index.html"><span class="emoji">🇦🇺</span> Australia Day</a></li>
+<li><a href="../bastille-day/index.html"><span class="emoji">🇫🇷</span> Bastille Day</a></li>
+<li><a href="../birthday/index.html"><span class="emoji">🎂</span> Birthday</a></li>
+<li><a href="../black-friday/index.html"><span class="emoji">🛍</span> Black Friday</a></li>
+<li><a href="../canada-day/index.html"><span class="emoji">🇨🇦</span> Canada Day</a></li>
+<li><a href="../carnaval/index.html"><span class="emoji">🇧🇷</span> Carnaval</a></li>
+<li><a href="../chinese-new-year/index.html"><span class="emoji">🐉</span> Chinese New Year</a></li>
+<li><a href="../christmas/index.html"><span class="emoji">🎅</span> Christmas</a></li>
+<li><a href="../cinco-de-mayo/index.html"><span class="emoji">🇲🇽</span> Cinco de Mayo</a></li>
+<li><a href="../dragon-boat-festival/index.html"><span class="emoji">🇨🇳</span> Dragon Boat Festival</a></li>
+<li><a href="../easter/index.html"><span class="emoji">🐰</span> Easter</a></li>
+<li><a href="../emoji-movie/index.html"><span class="emoji">🎥</span> Emoji Movie</a></li>
+<li><a href="../fall-autumn/index.html"><span class="emoji">🍂</span> Fall / Autumn</a></li>
+<li><a href="../fathers-day/index.html"><span class="emoji">👨</span> Father’s Day</a></li>
+<li><a href="../festivus/index.html"><span class="emoji">💪</span> Festivus</a></li>
+<li><a href="../graduation/index.html"><span class="emoji">🎓</span> Graduation</a></li>
+<li><a href="../guy-fawkes/index.html"><span class="emoji">🔥</span> Guy Fawkes</a></li>
+<li><a href="../halloween/index.html"><span class="emoji">🎃</span> Halloween</a></li>
+<li><a href="../hanukkah/index.html"><span class="emoji">🕎</span> Hanukkah</a></li>
+<li><a href="../holi/index.html"><span class="emoji">🕉</span> Holi</a></li>
+<li><a href="../independence-day/index.html"><span class="emoji">🇺🇸</span> Independence Day</a></li>
+<li><a href="../mothers-day/index.html"><span class="emoji">👩</span> Mother’s Day</a></li>
+<li><a href="../new-years-eve/index.html"><span class="emoji">🎊</span> New Year’s Eve</a></li>
+<li><a href="../olympics/index.html"><span class="emoji">🏊</span> Olympics</a></li>
+<li><a href="../queens-birthday/index.html"><span class="emoji">👑</span> Queen’s Birthday</a></li>
+<li><a href="../ramadan/index.html"><span class="emoji">☪</span> Ramadan</a></li>
+<li><a href="../spring/index.html"><span class="emoji">🌱</span> Spring</a></li>
+<li><a href="../st-patricks-day/index.html"><span class="emoji">☘</span> St Patrick’s Day</a></li>
+<li><a href="../summer/index.html"><span class="emoji">☀</span> Summer</a></li>
+<li><a href="../super-bowl/index.html"><span class="emoji">🏈</span> Super Bowl</a></li>
+<li><a href="../thanksgiving/index.html"><span class="emoji">🦃</span> Thanksgiving</a></li>
+<li><a href="../valentines-day/index.html"><span class="emoji">💘</span> Valentine’s Day</a></li>
+<li><a href="../wedding-marriage/index.html"><span class="emoji">👰</span> Wedding / Marriage</a></li>
+<li><a href="../winter/index.html"><span class="emoji">⛄</span> Winter</a></li>
+<li><a href="../winter-olympics/index.html"><span class="emoji">🎿</span> Winter Olympics</a></li>
+<li><a href="../world-cup/index.html"><span class="emoji">⚽</span> World Cup</a></li>
+<li><a href="../world-emoji-day/index.html"><span class="emoji">🌎</span> World Emoji Day</a></li>
+</ul>
+</div>
+</div>
+</div>
+<footer>
+<nav>
+<div class="container">
+<div class="vendors">
+<h2>Platforms</h2>
+<ul>
+<li><a href="../apple/index.html">Apple</a></li>
+<li><a href="../emojidex/index.html">emojidex</a></li>
+<li><a href="../emoji-one/index.html">Emoji One</a></li>
+<li><a href="../emojipedia/index.html">Emojipedia</a></li>
+<li><a href="../facebook/index.html">Facebook</a></li>
+<li><a href="../google/index.html">Google</a></li>
+<li><a href="../htc/index.html">HTC</a></li>
+<li><a href="../instagram/index.html">Instagram</a></li>
+<li><a href="../lg/index.html">LG</a></li>
+<li><a href="../messenger/index.html">Messenger</a></li>
+<li><a href="../microsoft/index.html">Microsoft</a></li>
+<li><a href="../mozilla/index.html">Mozilla</a></li>
+<li><a href="../samsung/index.html">Samsung</a></li>
+<li><a href="../slack/index.html">Slack</a></li>
+<li><a href="../snapchat/index.html">Snapchat</a></li>
+<li><a href="../sponsored/index.html">Sponsored</a></li>
+<li><a href="../telegram/index.html">Telegram</a></li>
+<li><a href="../twitter/index.html">Twitter</a></li>
+<li><a href="../viber/index.html">Viber</a></li>
+<li><a href="../whatsapp/index.html">WhatsApp</a></li>
+<li><a href="../yo-status/index.html">Yo Status</a></li>
+</ul>
+</div>
+<div class="unicode-version">
+<h2>Emoji Versions</h2>
+<ul>
+<li><a href="../emoji-6.0/index.html">Emoji 6.0</a></li>
+<li><a href="../emoji-5.0/index.html">Emoji 5.0</a></li>
+<li><a href="../emoji-4.0/index.html">Emoji 4.0</a></li>
+<li><a href="../emoji-3.0/index.html">Emoji 3.0</a></li>
+<li><a href="../emoji-2.0/index.html">Emoji 2.0</a></li>
+<li><a href="../emoji-1.0/index.html">Emoji 1.0</a></li>
+</ul>
+<h2>Unicode Versions</h2>
+<ul>
+<li><a href="../unicode-11.0/index.html">Unicode 11.0</a></li>
+<li><a href="../unicode-10.0/index.html">Unicode 10.0</a></li>
+<li><a href="../unicode-9.0/index.html">Unicode 9.0</a></li>
+<li><a href="../unicode-8.0/index.html">Unicode 8.0</a></li>
+<li><a href="../unicode-7.0/index.html">Unicode 7.0</a></li>
+<li><a href="../unicode-6.1/index.html">Unicode 6.1</a></li>
+<li><a href="../unicode-6.0/index.html">Unicode 6.0</a></li>
+<li><a href="../unicode-5.2/index.html">Unicode 5.2</a></li>
+<li><a href="../unicode-5.1/index.html">Unicode 5.1</a></li>
+<li><a href="../unicode-4.1/index.html">Unicode 4.1</a></li>
+<li><a href="../unicode-4.0/index.html">Unicode 4.0</a></li>
+<li><a href="../unicode-3.2/index.html">Unicode 3.2</a></li>
+<li><a href="../unicode-3.1/index.html">Unicode 3.1</a></li>
+<li><a href="../unicode-3.0/index.html">Unicode 3.0</a></li>
+<li><a href="../unicode-1.1/index.html">Unicode 1.1</a></li>
+</ul>
+</div>
+<div class="static-pages">
+<h2>More</h2>
+<ul>
+<li><a href="../adopt-emoji-faq/index.html">Adopt An Emoji FAQ</a></li>
+<li><a href="../ads/index.html">Ads</a></li>
+<li><a href="../apple-watch/index.html">Apple Watch</a></li>
+<li><a href="../botmoji/index.html">Botmoji</a></li>
+<li><a href="../contact/index.html">Contact</a></li>
+<li><a href="../neutral/index.html">Emoji Neutral</a></li>
+<li><a href="../emojipedia-api/index.html">Emojipedia API</a></li>
+<li><a href="../app/index.html">Emojipedia Apps</a></li>
+<li><a href="../stats/index.html">Emoji Statistics</a></li>
+<li><a href="../emoji-wrap/index.html">Emoji Wrap</a></li>
+<li><a href="../emoji-zwj-sequences/index.html">Emoji ZWJ Sequences</a></li>
+<li><a href="../faq/index.html">FAQ</a></li>
+<li><a href="../glossary/index.html">Glossary</a></li>
+<li><a href="../stickers/index.html">iMessage Stickers</a></li>
+<li><a href="../press/index.html">In The News</a></li>
+<li><a href="../licensing/index.html">Licensing</a></li>
+<li><a href="../new/index.html">New</a></li>
+<li><a href="../privacy-policy/index.html">Privacy Policy</a></li>
+<li><a href="../tips/index.html">Tips</a></li>
+<li><a href="../modifiers/index.html">Modifiers</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="container content">
+<p>All emoji names&nbsp;are&nbsp;<a href="../faq/index.html">official character and/or CLDR names</a>&nbsp;and <a href="../emoji/index.html" title="😃 Every Emoji by Codepoint">code points</a>, listed as part of the <a href="https://en.wikipedia.org/wiki/Unicode_Standard">Unicode Standard</a>. Additional descriptions are copyright&nbsp;&copy; Emojipedia.&nbsp;Emoji character artwork and copyright belong to their respective font creators.</p>
+<p>Emojipedia&reg; is a registered trademark of Emojipedia Pty Ltd;&nbsp;Apple&reg; is a registered trademark of Apple Inc; Microsoft&reg; and Windows&reg; are registered trademarks of Microsoft Corporation; Google&reg; and Android&trade; are registered trademarks or trademarks of Google Inc in the United States and/or other countries. Emoji One images provided free by Emoji One.</p>
+</div>
+</footer>
+<script type="text/javascript" src="../static/js/jquery.min.d72a6941a827.js" charset="utf-8"></script>
+<script type="text/javascript" src="../static/js/site.9958d0753977.js" charset="utf-8"></script>
+<script type="text/javascript" src="../static/js/lazy.f12b5efd22b1.js" charset="utf-8"></script>
+<script>
+(function() {
+function async_load(script_url){
+var protocol = ('https:' == document.location.protocol ? 'https://' : 'http://');
+var s = document.createElement('script'); s.src = protocol + script_url;
+var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+}
+bm_website_code = 'D7A15B1CC4264F19';
+jQuery(document).ready(function(){async_load('asset.pagefair.com/measure.min.js/index.html')});
+jQuery(document).ready(function(){async_load('asset.pagefair.net/ads.min.js/index.html')});
+})();
+</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-43649623-1', 'auto');
+ga('send', 'pageview');
+</script>
+</body>
+
+<!-- Mirrored from emojipedia.org/squared-cjk-unified-ideograph-6e80/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Mar 2017 16:47:25 GMT -->
+</html>
