@@ -1,0 +1,852 @@
+
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from emojipedia.org/white-medium-square/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Mar 2017 16:47:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"applicationTime":487,"errorBeacon":"bam.nr-data.net","queueTime":0,"transactionName":"b1NaN0oCW0RVUhJeWVYZfhZWAEFeW19JVFlKUxYWSg9GDVJdB0NpSFdMCw==","agent":"","beacon":"bam.nr-data.net","applicationID":"7909734","licenseKey":"475c936728"}</script>
+<meta name="viewport" content="width=device-width">
+<title>◻️ White Medium Square Emoji</title>
+<link href="../static/css/emojipedia.7cce6c6b80b4.css" rel="stylesheet" type="text/css"/>
+<link rel="apple-touch-icon" sizes="57x57" href="../static/img/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../static/img/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../static/img/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../static/img/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../static/img/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../static/img/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../static/img/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../static/img/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../static/img/favicons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="../static/img/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../static/img/favicons/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="../static/img/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="../static/img/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="../manifest.webapp">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/static/img/favicons/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="mask-icon" mask href="../static/img/emojipedia.svg" color="black">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@emojipedia">
+<meta name="twitter:title" content="◻️ White Medium Square Emoji">
+<meta name="twitter:description" content="White Medium Square was approved as part of Unicode 3.2 in 2002 and added…">
+<meta name="twitter:image" content="https://emojipedia-us.s3.amazonaws.com/social/white-medium-square.png">
+<meta property="og:site_name" context="Emojipedia"/>
+<meta property="og:url" content="/white-medium-square/"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="◻️ White Medium Square Emoji"/>
+<meta property="og:description" content="White Medium Square was approved as part of Unicode 3.2 in 2002 and added…"/>
+<meta property="og:image" content="https://emojipedia-us.s3.amazonaws.com/social/white-medium-square.png"/>
+<script>window.lazySizesConfig={loadMode:0}</script>
+</head>
+<body>
+<script type="text/javascript">
+(function(){
+var bsa = document.createElement('script');
+bsa.type = 'text/javascript';
+bsa.async = true;
+bsa.src = '../../s3.buysellads.com/ac/bsa.js';
+(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+})();
+</script>
+<header>
+<div class="container">
+<a href="../index.html" class="logo" title="Go to Emojipedia Home">Emojipedia</a>
+<form method="get" action="http://emojipedia.org/search/" class="search-form">
+<label>
+<span class="sr-only">Search Emojipedia:</span>
+<input id="id_q" name="q" placeholder="Search Emojipedia" type="search"/>
+</label>
+</form>
+<a href="#nav-categories" id="nav-categories-toggle">Categories</a>
+<nav class="categories">
+<ul id="nav-categories">
+<li><a href="../people/index.html"><span class="emoji">😃</span> Smileys & People</a></li>
+<li><a href="../nature/index.html"><span class="emoji">🐻</span> Animals & Nature</a></li>
+<li><a href="../food-drink/index.html"><span class="emoji">🍔</span> Food & Drink</a></li>
+<li><a href="../activity/index.html"><span class="emoji">⚽</span> Activity</a></li>
+<li><a href="../travel-places/index.html"><span class="emoji">🌇</span> Travel & Places</a></li>
+<li><a href="../objects/index.html"><span class="emoji">💡</span> Objects</a></li>
+<li><a href="../symbols/index.html"><span class="emoji">🔣</span> Symbols</a></li>
+<li><a href="../flags/index.html"><span class="emoji">🎌</span> Flags</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<div class="sponsor"><p><a href="http://emojiwrap.com/"><span class="emoji">💌</span>&nbsp;Subscribe for the latest emoji news</a></p></div>
+<div class="ad-header">
+<script type="text/javascript">
+   google_ad_client = "ca-pub-3417095048576988";
+   width = document.documentElement.clientWidth;
+     google_ad_slot = "9547014904";
+     google_ad_width = 320;
+     google_ad_height = 100;
+     if (width > 728) {
+         google_ad_slot = "9138623707";
+         google_ad_width = 728;
+    google_ad_height = 90;
+     }
+
+  </script>
+<script type="text/javascript" src="../../pagead2.googlesyndication.com/pagead/f.txt"></script>
+</div>
+<div class="container">
+<div class="content">
+<article>
+<h1><span class="emoji">◻️</span> White Medium Square</h1>
+<section class="description">
+<p>
+<em>White Medium Square</em> was approved as part of <a href="../unicode-3.2/index.html">Unicode 3.2</a> in 2002
+and added to <a href="../emoji-1.0/index.html">Emoji 1.0</a> in 2015.
+</p>
+<form class="stacked no-top copy-paste">
+<label>
+<span class="copy-paste__label">Copy and paste this emoji:</span>
+<input type="text" value="◻️" readonly class="emoji-copy copy-paste__data" id="emoji-copy">
+<button type="button" class="btn-clipboard copy-paste__btn" data-clipboard-target="#emoji-copy" style="width:auto;display:inline-block">Copy</button>
+</label>
+</form>
+</section>
+<section class="applenames">
+<h2>Apple Name</h2>
+<p><span class="emoji">◻️</span> White Medium Square</p>
+</section>
+<section class="vendor-list">
+<ul>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../apple/index.html">Apple</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/ad/8e/ad8e7e29cbc38a832e3df9459ef70735.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/31/ab/31abb72b28161151a03233217953bf13.png 2x" alt="White Medium Square on Apple iOS 10.2" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../apple/ios-10.2/index.html">iOS 10.2</a></p>
+</div>
+<div class="vendor-image">
+<a href="../apple/ios-10.2/white-medium-square/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/1a/6a/1a6a0c65ca03d8aedfadba92eda3238b.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/ad/8e/ad8e7e29cbc38a832e3df9459ef70735.png 2x" alt="White Medium Square on Apple " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../apple/ios-6.0/index.html">iOS 6.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../apple/ios-6.0/white-medium-square/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/b1/f4/b1f41345b6aef44f36ef990e369124ca.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/2c/0a/2c0a08e92ef8f3f4fefc13dc5a9b4376.png 2x" alt="White Medium Square on Apple " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../google/index.html">Google</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/59/ba/59ba8fead2575f2e0c3d465f905535cc.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/13/87/1387612bfeba999c8373f6406c46cb2c.png 2x" alt="White Medium Square on Google Android 7.1" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../google/android-7.1/index.html">Android 7.1</a></p>
+</div>
+<div class="vendor-image">
+<a href="../google/android-7.1/white-medium-square/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/55/86/5586240aafbd7e068fb943730319a108.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/59/ba/59ba8fead2575f2e0c3d465f905535cc.png 2x" alt="White Medium Square on Google " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../google/android-7.0/index.html">Android 7.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../google/android-7.0/white-medium-square/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/5b/6c/5b6c54a671a323c3893a723f52fe4148.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/58/70/58709428ee9934c3a1c3a3474b038871.png 2x" alt="White Medium Square on Google " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../google/android-4.4/index.html">Android 4.4</a></p>
+</div>
+<div class="vendor-image">
+<a href="../google/android-4.4/white-medium-square/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/61/06/6106f00a1f4b890fb116b667cac3ccdd.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/c6/6b/c66b4ffc1ff3107e28e3869a2ca0ceb8.png 2x" alt="White Medium Square on Google " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../google/android-4.3/index.html">Android 4.3</a></p>
+</div>
+<div class="vendor-image">
+<a href="../google/android-4.3/white-medium-square/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/34/8a/348a5bd8e0cd98aa2c47cddbd20d2800.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/99/57/9957f6d36de370cd53bb8f5453610c29.png 2x" alt="White Medium Square on Google " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../microsoft/index.html">Microsoft</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/a1/49/a14939e87ade5aec5d667ce16c06c602.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/92/50/92502eaeb649cf046c80683ffe9539f8.png 2x" alt="White Medium Square on Microsoft Windows 10" width="72" height="72">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../microsoft/windows-10/index.html">Windows 10</a></p>
+</div>
+<div class="vendor-image">
+<a href="../microsoft/windows-10/white-medium-square/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/ab/a9/aba9fc2a214143fdbef524d93faf1630.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/a1/49/a14939e87ade5aec5d667ce16c06c602.png 2x" alt="White Medium Square on Microsoft " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../microsoft/windows-8.1/index.html">Windows 8.1</a></p>
+</div>
+<div class="vendor-image">
+<a href="../microsoft/windows-8.1/white-medium-square/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/1f/c6/1fc61aadaa3eea237e8b6a4e1841d277.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/25/30/25308e9477fbd1bbee6a6b9af6ab3ea2.png 2x" alt="White Medium Square on Microsoft " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../microsoft/windows-8.0/index.html">Windows 8.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../microsoft/windows-8.0/white-medium-square/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/87/f2/87f20c8c33d7e80756d523beac4b71f2.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/01/15/01153b4aaec268c8edada4a4408702c7.png 2x" alt="White Medium Square on Microsoft " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../samsung/index.html">Samsung</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/45/7b/457b24db188accbaf91979acb6cb1cb6.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/96/2e/962e68e7095178c2b191f109355eea9a.png 2x" alt="White Medium Square on Samsung Galaxy S8" width="108" height="108">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../samsung/galaxy-s8/index.html">Galaxy S8</a></p>
+</div>
+<div class="vendor-image">
+<a href="../samsung/galaxy-s8/white-medium-square/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/43/d1/43d11bbc79a85d534ede1d3f4fd09561.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/45/7b/457b24db188accbaf91979acb6cb1cb6.png 2x" alt="White Medium Square on Samsung " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../samsung/galaxy-s4/index.html">Galaxy S4</a></p>
+</div>
+<div class="vendor-image">
+<a href="../samsung/galaxy-s4/white-medium-square/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/b0/60/b060a8c19c083ec64edcca9af5a7c5d8.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/d0/16/d01678e7df71e4ea214b40ea3cc1cabb.png 2x" alt="White Medium Square on Samsung " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../lg/index.html">LG</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/8f/da/8fdadbe73b0b78403f0c3436b5f7a2e0.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/c0/72/c072ccb895cf8d3f8f66bf400e5475eb.png 2x" alt="White Medium Square on LG G5" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../lg/g5/index.html">G5</a></p>
+</div>
+<div class="vendor-image">
+<a href="../lg/g5/white-medium-square/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/8e/d8/8ed80fbe6826294967cc5295a9e4ac81.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/8f/da/8fdadbe73b0b78403f0c3436b5f7a2e0.png 2x" alt="White Medium Square on LG " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../lg/g3/index.html">G3</a></p>
+</div>
+<div class="vendor-image">
+<a href="../lg/g3/white-medium-square/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/7d/d0/7dd05b833fddc5ffd69af2f1160a98ba.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/23/b5/23b5af3fae7698c2cc656033312ea659.png 2x" alt="White Medium Square on LG " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../htc/index.html">HTC</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/4c/e4/4ce4c1f2e3eecb3785327a43ca458ba3.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/2e/d1/2ed17927107bd263ce99ba1cb3f544d0.png 2x" alt="White Medium Square on HTC Sense 7" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../htc/sense-7/index.html">Sense 7</a></p>
+</div>
+<div class="vendor-image">
+<a href="../htc/sense-7/white-medium-square/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/6b/a3/6ba3f43dff627e8d897f7e7fb1f90a83.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/4c/e4/4ce4c1f2e3eecb3785327a43ca458ba3.png 2x" alt="White Medium Square on HTC " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../facebook/index.html">Facebook</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/2f/f5/2ff5c08e1faa0afcb4b208b0b12f9c39.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/a4/5d/a45d78e6c429dc2e9b64932bb0c19605.png 2x" alt="White Medium Square on Facebook 2.0" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../facebook/2.0/index.html">2.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../facebook/2.0/white-medium-square/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/5f/bc/5fbc039c207615703f293c30aabee78b.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/2f/f5/2ff5c08e1faa0afcb4b208b0b12f9c39.png 2x" alt="White Medium Square on Facebook " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../facebook/1.0/index.html">1.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../facebook/1.0/white-medium-square/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/b1/8f/b18f3981d25a2dcd8d11f107e15e21eb.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/22/5f/225f21af8dd5d27ff002177389a4c3a9.png 2x" alt="White Medium Square on Facebook " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../messenger/index.html">Messenger</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/d6/d1/d6d1e3075ca153d645b5b56dc1220105.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/43/69/4369c1bb5d15054fb4447ec271ef84b6.png 2x" alt="White Medium Square on Messenger 1.0" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../messenger/1.0/index.html">1.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../messenger/1.0/white-medium-square/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/fa/c9/fac975015521726a09a020cd92eaa819.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/d6/d1/d6d1e3075ca153d645b5b56dc1220105.png 2x" alt="White Medium Square on Messenger " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../twitter/index.html">Twitter</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/60/c8/60c89936d09ee14ae58071df11f0dca0.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/4b/5e/4b5e586c04827d45fe1998056c6d14a4.png 2x" alt="White Medium Square on Twitter Twemoji 2.2.3" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../twitter/twemoji-2.2.3/index.html">Twemoji 2.2.3</a></p>
+</div>
+<div class="vendor-image">
+<a href="../twitter/twemoji-2.2.3/white-medium-square/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/fd/48/fd4868bd217eb1c93040583bf04eeb1a.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/60/c8/60c89936d09ee14ae58071df11f0dca0.png 2x" alt="White Medium Square on Twitter " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../twitter/twemoji-1.0/index.html">Twemoji 1.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../twitter/twemoji-1.0/white-medium-square/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/98/0d/980dde6f6a803145a38e92a840feb238.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/f5/5d/f55df82eb77d879889254dbe9e79ac06.png 2x" alt="White Medium Square on Twitter " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../mozilla/index.html">Mozilla</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/22/e2/22e27e3994874da0765e95046901a2a4.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/ee/71/ee71a487d8a6b5dc74fa7a491bec3f4a.png 2x" alt="White Medium Square on Mozilla Firefox OS 2.5" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../mozilla/firefox-os-2.5/index.html">Firefox OS 2.5</a></p>
+</div>
+<div class="vendor-image">
+<a href="../mozilla/firefox-os-2.5/white-medium-square/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/e9/bc/e9bc78c81b257f24be12a0c79ad685ef.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/22/e2/22e27e3994874da0765e95046901a2a4.png 2x" alt="White Medium Square on Mozilla " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../emoji-one/index.html">Emoji One</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/a0/21/a02183251a5a6c3e8df257e643ade1e2.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/85/2e/852ec32fcb37764fac26bf00fa8cf103.png 2x" alt="White Medium Square on Emoji One 2.2.5" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../emoji-one/2.2.5/index.html">2.2.5</a></p>
+</div>
+<div class="vendor-image">
+<a href="../emoji-one/2.2.5/white-medium-square/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/7e/5d/7e5deb0ef13f641053bcf866d3dd2103.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/a0/21/a02183251a5a6c3e8df257e643ade1e2.png 2x" alt="White Medium Square on Emoji One " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../emoji-one/2.2/index.html">2.2</a></p>
+</div>
+<div class="vendor-image">
+<a href="../emoji-one/2.2/white-medium-square/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/4d/66/4d66105b94bb897f54b5d2eb99f3402f.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/5b/d9/5bd9f226fea276a1d4323ff5d1651dd6.png 2x" alt="White Medium Square on Emoji One " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../emoji-one/2.0/index.html">2.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../emoji-one/2.0/white-medium-square/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/8d/56/8d56a92992977e2021f4ad380bec555f.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/6b/fd/6bfd06b16e4997d85533c6723fb7d676.png 2x" alt="White Medium Square on Emoji One " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../emoji-one/1.0/index.html">1.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../emoji-one/1.0/white-medium-square/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/d8/12/d812ec1e690d3c0f9fb7e0f2392e8746.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/47/c5/47c5d987a0ae77c952d8047944fd8160.png 2x" alt="White Medium Square on Emoji One " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../emojidex/index.html">emojidex</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/f8/af/f8afee126be64e47381427133520cce6.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/2d/37/2d37328fe0ad2155475791e3cee91412.png 2x" alt="White Medium Square on emojidex 1.0.24" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../emojidex/1.0.24/index.html">1.0.24</a></p>
+</div>
+<div class="vendor-image">
+<a href="../emojidex/1.0.24/white-medium-square/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/43/a6/43a6c20e8253415419ac89b52fae9a16.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/f8/af/f8afee126be64e47381427133520cce6.png 2x" alt="White Medium Square on emojidex " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../emojidex/1.0.14/index.html">1.0.14</a></p>
+</div>
+<div class="vendor-image">
+<a href="../emojidex/1.0.14/white-medium-square/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/75/78/7578915da5f6587880a3d541582bbeec.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/f0/21/f021097aef23d4d9915c2ab736a05550.png 2x" alt="White Medium Square on emojidex " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</section>
+<h2>Codepoints</h2>
+<ul>
+<li><a href="../emoji/%e2%97%bb/index.html">◻ U+25FB</a></li>
+</ul>
+<h2>Shortcodes</h2>
+<ul class="shortcodes">
+<li>:white_medium_square:</li>
+</ul>
+<h2>Browse</h2>
+<ul>
+<li><a href="https://instagram.com/explore/tags/◻️/"><span class="emoji">◻️</span> on Instagram</a></li>
+<li><a href="https://twitter.com/search?q=%e2%97%bb%ef%b8%8f"><span class="emoji">◻️</span> on Twitter</a></li>
+<li><a href="https://en.wikipedia.org/wiki/◻️"><span class="emoji">◻️</span> on Wikipedia</a></li>
+<li><a href="http://www.yelp.com/search?find_desc=%e2%97%bb%ef%b8%8f"><span class="emoji">◻️</span> on Yelp</a></li>
+<li><a href="https://www.youtube.com/results?search_query=%e2%97%bb%ef%b8%8f"><span class="emoji">◻️</span> on YouTube</a></li>
+</ul>
+<h2>Related</h2>
+<ul class="emoji-list">
+<li><a href="../black-medium-small-square/index.html"><span class="emoji">◾</span> Black Medium-Small Square</a></li>
+<li><a href="../black-medium-square/index.html"><span class="emoji">◼️</span> Black Medium Square</a></li>
+<li><a href="../black-small-square/index.html"><span class="emoji">▪️</span> Black Small Square</a></li>
+<li><a href="../black-square-for-stop/index.html"><span class="emoji">⏹️</span> Stop Button</a></li>
+<li><a href="../white-large-square/index.html"><span class="emoji">⬜</span> White Large Square</a></li>
+<li><a href="../white-medium-small-square/index.html"><span class="emoji">◽</span> White Medium-Small Square</a></li>
+<li><a href="../white-small-square/index.html"><span class="emoji">▫️</span> White Small Square</a></li>
+<li><a href="../white-square-button/index.html"><span class="emoji">🔳</span> White Square Button</a></li>
+<li><a href="../random/index.html"><span class="emoji">🔀</span> Random emoji</a></li>
+</ul>
+<form class="short-link stacked">
+<input type="text" value="http://📙.la/◻️" readonly>
+</form>
+</article>
+<div class="ad-footer">
+<div style="text-align:center">
+<script type="text/javascript">
+		    google_ad_client = "ca-pub-3417095048576988";
+		    width = document.documentElement.clientWidth;
+		    google_ad_slot = "7111864505";
+		    google_ad_width = 300;
+		    google_ad_height = 250;
+		    if (width > 380) {
+		        google_ad_slot = "8262920107";
+		        google_ad_width = 336;
+		       google_ad_height = 280;
+		    }
+ 
+		</script>
+<script type="text/javascript" src="../../pagead2.googlesyndication.com/pagead/f.txt">
+		</script>
+</div>
+</div>
+</div>
+<div class="sidebar">
+<div class="block">
+<h2>Categories</h2>
+<ul>
+<li><a href="../people/index.html"><span class="emoji">😃</span> Smileys & People</a></li>
+<li><a href="../nature/index.html"><span class="emoji">🐻</span> Animals & Nature</a></li>
+<li><a href="../food-drink/index.html"><span class="emoji">🍔</span> Food & Drink</a></li>
+<li><a href="../activity/index.html"><span class="emoji">⚽</span> Activity</a></li>
+<li><a href="../travel-places/index.html"><span class="emoji">🌇</span> Travel & Places</a></li>
+<li><a href="../objects/index.html"><span class="emoji">💡</span> Objects</a></li>
+<li><a href="../symbols/index.html"><span class="emoji">🔣</span> Symbols</a></li>
+<li><a href="../flags/index.html"><span class="emoji">🎌</span> Flags</a></li>
+</ul>
+</div>
+<div class="block">
+<h2>Most Popular</h2>
+<ul>
+<li><a href="../shrug/index.html"><span class="emoji">🤷</span> Person Shrugging</a></li>
+<li><a href="../face-with-tears-of-joy/index.html"><span class="emoji">😂</span> Face With Tears of Joy</a></li>
+<li><a href="../heavy-black-heart/index.html"><span class="emoji">❤</span> Red Heart</a></li>
+<li><a href="../smiling-face-with-heart-shaped-eyes/index.html"><span class="emoji">😍</span> Smiling Face With Heart-Eyes</a></li>
+<li><a href="../fire/index.html"><span class="emoji">🔥</span> Fire</a></li>
+<li><a href="../thinking-face/index.html"><span class="emoji">🤔</span> Thinking Face</a></li>
+<li><a href="../smiling-face-with-smiling-eyes/index.html"><span class="emoji">😊</span> Smiling Face With Smiling Eyes</a></li>
+<li><a href="../face-throwing-a-kiss/index.html"><span class="emoji">😘</span> Face Blowing a Kiss</a></li>
+<li><a href="../face-with-rolling-eyes/index.html"><span class="emoji">🙄</span> Face With Rolling Eyes</a></li>
+</ul>
+</div>
+<div class="block">
+<h2>Latest News</h2>
+<ul>
+<li><a href="http://blog.emojipedia.org/samsung-galaxy-s8-emoji-changelog/"><span class="emoji">📲</span> Samsung Galaxy S8 Emoji Changelog</a></li>
+<li><a href="http://blog.emojipedia.org/what-is-gender-and-why-does-it-matter-to-emoji/"><span class="emoji">🚻</span> What is Gender and Why Does it Matter to Emoji?</a></li>
+<li><a href="http://blog.emojipedia.org/why-there-were-two-emoji-updates-in-2016/"><span class="emoji">👀</span> Why There Were Two Emoji Updates In 2016</a></li>
+<li><a href="http://blog.emojipedia.org/facebook-completes-emoji-update/"><span class="emoji">💻</span> Facebook Completes Emoji Update</a></li>
+<li><a href="http://blog.emojipedia.org/the-resistance-will-be-emojified/"><span class="emoji">✊</span> The Resistance Will Be Emojified</a></li>
+<li><a href="http://blog.emojipedia.org/who-owns-emoji/"><span class="emoji">👩&zwj;⚖️</span> Who Owns Emoji?</a></li>
+<li><a href="http://blog.emojipedia.org/utc-provides-feedback-on-redhead-emoji/"><span class="emoji">📝</span> UTC Provides Feedback on Redhead Emoji</a></li>
+<li><a href="http://blog.emojipedia.org/happy-chinese-new-year/"><span class="emoji">🎇</span> Happy Chinese New Year!</a></li>
+</ul>
+</div>
+<div class="block">
+<h2>Events</h2>
+<ul>
+<li><a href="../australia-day/index.html"><span class="emoji">🇦🇺</span> Australia Day</a></li>
+<li><a href="../bastille-day/index.html"><span class="emoji">🇫🇷</span> Bastille Day</a></li>
+<li><a href="../birthday/index.html"><span class="emoji">🎂</span> Birthday</a></li>
+<li><a href="../black-friday/index.html"><span class="emoji">🛍</span> Black Friday</a></li>
+<li><a href="../canada-day/index.html"><span class="emoji">🇨🇦</span> Canada Day</a></li>
+<li><a href="../carnaval/index.html"><span class="emoji">🇧🇷</span> Carnaval</a></li>
+<li><a href="../chinese-new-year/index.html"><span class="emoji">🐉</span> Chinese New Year</a></li>
+<li><a href="../christmas/index.html"><span class="emoji">🎅</span> Christmas</a></li>
+<li><a href="../cinco-de-mayo/index.html"><span class="emoji">🇲🇽</span> Cinco de Mayo</a></li>
+<li><a href="../dragon-boat-festival/index.html"><span class="emoji">🇨🇳</span> Dragon Boat Festival</a></li>
+<li><a href="../easter/index.html"><span class="emoji">🐰</span> Easter</a></li>
+<li><a href="../emoji-movie/index.html"><span class="emoji">🎥</span> Emoji Movie</a></li>
+<li><a href="../fall-autumn/index.html"><span class="emoji">🍂</span> Fall / Autumn</a></li>
+<li><a href="../fathers-day/index.html"><span class="emoji">👨</span> Father’s Day</a></li>
+<li><a href="../festivus/index.html"><span class="emoji">💪</span> Festivus</a></li>
+<li><a href="../graduation/index.html"><span class="emoji">🎓</span> Graduation</a></li>
+<li><a href="../guy-fawkes/index.html"><span class="emoji">🔥</span> Guy Fawkes</a></li>
+<li><a href="../halloween/index.html"><span class="emoji">🎃</span> Halloween</a></li>
+<li><a href="../hanukkah/index.html"><span class="emoji">🕎</span> Hanukkah</a></li>
+<li><a href="../holi/index.html"><span class="emoji">🕉</span> Holi</a></li>
+<li><a href="../independence-day/index.html"><span class="emoji">🇺🇸</span> Independence Day</a></li>
+<li><a href="../mothers-day/index.html"><span class="emoji">👩</span> Mother’s Day</a></li>
+<li><a href="../new-years-eve/index.html"><span class="emoji">🎊</span> New Year’s Eve</a></li>
+<li><a href="../olympics/index.html"><span class="emoji">🏊</span> Olympics</a></li>
+<li><a href="../queens-birthday/index.html"><span class="emoji">👑</span> Queen’s Birthday</a></li>
+<li><a href="../ramadan/index.html"><span class="emoji">☪</span> Ramadan</a></li>
+<li><a href="../spring/index.html"><span class="emoji">🌱</span> Spring</a></li>
+<li><a href="../st-patricks-day/index.html"><span class="emoji">☘</span> St Patrick’s Day</a></li>
+<li><a href="../summer/index.html"><span class="emoji">☀</span> Summer</a></li>
+<li><a href="../super-bowl/index.html"><span class="emoji">🏈</span> Super Bowl</a></li>
+<li><a href="../thanksgiving/index.html"><span class="emoji">🦃</span> Thanksgiving</a></li>
+<li><a href="../valentines-day/index.html"><span class="emoji">💘</span> Valentine’s Day</a></li>
+<li><a href="../wedding-marriage/index.html"><span class="emoji">👰</span> Wedding / Marriage</a></li>
+<li><a href="../winter/index.html"><span class="emoji">⛄</span> Winter</a></li>
+<li><a href="../winter-olympics/index.html"><span class="emoji">🎿</span> Winter Olympics</a></li>
+<li><a href="../world-cup/index.html"><span class="emoji">⚽</span> World Cup</a></li>
+<li><a href="../world-emoji-day/index.html"><span class="emoji">🌎</span> World Emoji Day</a></li>
+</ul>
+</div>
+</div>
+</div>
+<footer>
+<nav>
+<div class="container">
+<div class="vendors">
+<h2>Platforms</h2>
+<ul>
+<li><a href="../apple/index.html">Apple</a></li>
+<li><a href="../emojidex/index.html">emojidex</a></li>
+<li><a href="../emoji-one/index.html">Emoji One</a></li>
+<li><a href="../emojipedia/index.html">Emojipedia</a></li>
+<li><a href="../facebook/index.html">Facebook</a></li>
+<li><a href="../google/index.html">Google</a></li>
+<li><a href="../htc/index.html">HTC</a></li>
+<li><a href="../instagram/index.html">Instagram</a></li>
+<li><a href="../lg/index.html">LG</a></li>
+<li><a href="../messenger/index.html">Messenger</a></li>
+<li><a href="../microsoft/index.html">Microsoft</a></li>
+<li><a href="../mozilla/index.html">Mozilla</a></li>
+<li><a href="../samsung/index.html">Samsung</a></li>
+<li><a href="../slack/index.html">Slack</a></li>
+<li><a href="../snapchat/index.html">Snapchat</a></li>
+<li><a href="../sponsored/index.html">Sponsored</a></li>
+<li><a href="../telegram/index.html">Telegram</a></li>
+<li><a href="../twitter/index.html">Twitter</a></li>
+<li><a href="../viber/index.html">Viber</a></li>
+<li><a href="../whatsapp/index.html">WhatsApp</a></li>
+<li><a href="../yo-status/index.html">Yo Status</a></li>
+</ul>
+</div>
+<div class="unicode-version">
+<h2>Emoji Versions</h2>
+<ul>
+<li><a href="../emoji-6.0/index.html">Emoji 6.0</a></li>
+<li><a href="../emoji-5.0/index.html">Emoji 5.0</a></li>
+<li><a href="../emoji-4.0/index.html">Emoji 4.0</a></li>
+<li><a href="../emoji-3.0/index.html">Emoji 3.0</a></li>
+<li><a href="../emoji-2.0/index.html">Emoji 2.0</a></li>
+<li><a href="../emoji-1.0/index.html">Emoji 1.0</a></li>
+</ul>
+<h2>Unicode Versions</h2>
+<ul>
+<li><a href="../unicode-11.0/index.html">Unicode 11.0</a></li>
+<li><a href="../unicode-10.0/index.html">Unicode 10.0</a></li>
+<li><a href="../unicode-9.0/index.html">Unicode 9.0</a></li>
+<li><a href="../unicode-8.0/index.html">Unicode 8.0</a></li>
+<li><a href="../unicode-7.0/index.html">Unicode 7.0</a></li>
+<li><a href="../unicode-6.1/index.html">Unicode 6.1</a></li>
+<li><a href="../unicode-6.0/index.html">Unicode 6.0</a></li>
+<li><a href="../unicode-5.2/index.html">Unicode 5.2</a></li>
+<li><a href="../unicode-5.1/index.html">Unicode 5.1</a></li>
+<li><a href="../unicode-4.1/index.html">Unicode 4.1</a></li>
+<li><a href="../unicode-4.0/index.html">Unicode 4.0</a></li>
+<li><a href="../unicode-3.2/index.html">Unicode 3.2</a></li>
+<li><a href="../unicode-3.1/index.html">Unicode 3.1</a></li>
+<li><a href="../unicode-3.0/index.html">Unicode 3.0</a></li>
+<li><a href="../unicode-1.1/index.html">Unicode 1.1</a></li>
+</ul>
+</div>
+<div class="static-pages">
+<h2>More</h2>
+<ul>
+<li><a href="../adopt-emoji-faq/index.html">Adopt An Emoji FAQ</a></li>
+<li><a href="../ads/index.html">Ads</a></li>
+<li><a href="../apple-watch/index.html">Apple Watch</a></li>
+<li><a href="../botmoji/index.html">Botmoji</a></li>
+<li><a href="../contact/index.html">Contact</a></li>
+<li><a href="../neutral/index.html">Emoji Neutral</a></li>
+<li><a href="../emojipedia-api/index.html">Emojipedia API</a></li>
+<li><a href="../app/index.html">Emojipedia Apps</a></li>
+<li><a href="../stats/index.html">Emoji Statistics</a></li>
+<li><a href="../emoji-wrap/index.html">Emoji Wrap</a></li>
+<li><a href="../emoji-zwj-sequences/index.html">Emoji ZWJ Sequences</a></li>
+<li><a href="../faq/index.html">FAQ</a></li>
+<li><a href="../glossary/index.html">Glossary</a></li>
+<li><a href="../stickers/index.html">iMessage Stickers</a></li>
+<li><a href="../press/index.html">In The News</a></li>
+<li><a href="../licensing/index.html">Licensing</a></li>
+<li><a href="../new/index.html">New</a></li>
+<li><a href="../privacy-policy/index.html">Privacy Policy</a></li>
+<li><a href="../tips/index.html">Tips</a></li>
+<li><a href="../modifiers/index.html">Modifiers</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="container content">
+<p>All emoji names&nbsp;are&nbsp;<a href="../faq/index.html">official character and/or CLDR names</a>&nbsp;and <a href="../emoji/index.html" title="😃 Every Emoji by Codepoint">code points</a>, listed as part of the <a href="https://en.wikipedia.org/wiki/Unicode_Standard">Unicode Standard</a>. Additional descriptions are copyright&nbsp;&copy; Emojipedia.&nbsp;Emoji character artwork and copyright belong to their respective font creators.</p>
+<p>Emojipedia&reg; is a registered trademark of Emojipedia Pty Ltd;&nbsp;Apple&reg; is a registered trademark of Apple Inc; Microsoft&reg; and Windows&reg; are registered trademarks of Microsoft Corporation; Google&reg; and Android&trade; are registered trademarks or trademarks of Google Inc in the United States and/or other countries. Emoji One images provided free by Emoji One.</p>
+</div>
+</footer>
+<script type="text/javascript" src="../static/js/jquery.min.d72a6941a827.js" charset="utf-8"></script>
+<script type="text/javascript" src="../static/js/site.9958d0753977.js" charset="utf-8"></script>
+<script type="text/javascript" src="../static/js/lazy.f12b5efd22b1.js" charset="utf-8"></script>
+<script>
+(function() {
+function async_load(script_url){
+var protocol = ('https:' == document.location.protocol ? 'https://' : 'http://');
+var s = document.createElement('script'); s.src = protocol + script_url;
+var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+}
+bm_website_code = 'D7A15B1CC4264F19';
+jQuery(document).ready(function(){async_load('asset.pagefair.com/measure.min.js/index.html')});
+jQuery(document).ready(function(){async_load('asset.pagefair.net/ads.min.js/index.html')});
+})();
+</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-43649623-1', 'auto');
+ga('send', 'pageview');
+</script>
+</body>
+
+<!-- Mirrored from emojipedia.org/white-medium-square/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Mar 2017 16:48:00 GMT -->
+</html>

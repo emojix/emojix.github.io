@@ -1,0 +1,856 @@
+
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from emojipedia.org/worried-face/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Mar 2017 08:07:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"applicationTime":2,"errorBeacon":"bam.nr-data.net","queueTime":0,"transactionName":"b1NaN0oCW0RVUhJeWVYZfhZWAEFeW19JU1xZWF8MFg5cU1BdA0BXSlMWAFkAXVIOdwNDVVBwSgxVIFRUXFQrXlJcWl0UWRFQGURDCVRTS0VnEV0SQFJHRQ==","agent":"","beacon":"bam.nr-data.net","applicationID":"7909734","licenseKey":"475c936728"}</script>
+<meta name="viewport" content="width=device-width">
+<title>😟 Worried Face Emoji</title>
+<link href="../static/css/emojipedia.7cce6c6b80b4.css" rel="stylesheet" type="text/css"/>
+<link rel="apple-touch-icon" sizes="57x57" href="../static/img/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../static/img/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../static/img/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../static/img/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../static/img/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../static/img/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../static/img/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../static/img/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../static/img/favicons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="../static/img/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../static/img/favicons/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="../static/img/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="../static/img/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="../manifest.webapp">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/static/img/favicons/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="mask-icon" mask href="../static/img/emojipedia.svg" color="black">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@emojipedia">
+<meta name="twitter:title" content="😟 Worried Face Emoji">
+<meta name="twitter:description" content="Face with a sad mouth, and worried-looking eyebrows. Worried Face was approved as part of Unicode 6.1 in 2012 …">
+<meta name="twitter:image" content="https://emojipedia-us.s3.amazonaws.com/social/worried-face.png">
+<meta property="og:site_name" context="Emojipedia"/>
+<meta property="og:url" content="/worried-face/"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="😟 Worried Face Emoji"/>
+<meta property="og:description" content="Face with a sad mouth, and worried-looking eyebrows. Worried Face was approved as part of Unicode 6.1 in 2012 …"/>
+<meta property="og:image" content="https://emojipedia-us.s3.amazonaws.com/social/worried-face.png"/>
+<script>window.lazySizesConfig={loadMode:0}</script>
+</head>
+<body>
+<script type="text/javascript">
+(function(){
+var bsa = document.createElement('script');
+bsa.type = 'text/javascript';
+bsa.async = true;
+bsa.src = '../../s3.buysellads.com/ac/bsa.js';
+(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+})();
+</script>
+<header>
+<div class="container">
+<a href="../index.html" class="logo" title="Go to Emojipedia Home">Emojipedia</a>
+<form method="get" action="http://emojipedia.org/search/" class="search-form">
+<label>
+<span class="sr-only">Search Emojipedia:</span>
+<input id="id_q" name="q" placeholder="Search Emojipedia" type="search"/>
+</label>
+</form>
+<a href="#nav-categories" id="nav-categories-toggle">Categories</a>
+<nav class="categories">
+<ul id="nav-categories">
+<li><a href="../people/index.html"><span class="emoji">😃</span> Smileys & People</a></li>
+<li><a href="../nature/index.html"><span class="emoji">🐻</span> Animals & Nature</a></li>
+<li><a href="../food-drink/index.html"><span class="emoji">🍔</span> Food & Drink</a></li>
+<li><a href="../activity/index.html"><span class="emoji">⚽</span> Activity</a></li>
+<li><a href="../travel-places/index.html"><span class="emoji">🌇</span> Travel & Places</a></li>
+<li><a href="../objects/index.html"><span class="emoji">💡</span> Objects</a></li>
+<li><a href="../symbols/index.html"><span class="emoji">🔣</span> Symbols</a></li>
+<li><a href="../flags/index.html"><span class="emoji">🎌</span> Flags</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<div class="sponsor"><p><a href="http://emojiwrap.com/"><span class="emoji">💌</span>&nbsp;Subscribe for the latest emoji news</a></p></div>
+<div class="ad-header">
+<script type="text/javascript">
+   google_ad_client = "ca-pub-3417095048576988";
+   width = document.documentElement.clientWidth;
+     google_ad_slot = "9547014904";
+     google_ad_width = 320;
+     google_ad_height = 100;
+     if (width > 728) {
+         google_ad_slot = "9138623707";
+         google_ad_width = 728;
+    google_ad_height = 90;
+     }
+
+  </script>
+<script type="text/javascript" src="../../pagead2.googlesyndication.com/pagead/f.txt"></script>
+</div>
+<div class="container">
+<div class="content">
+<article>
+<h1><span class="emoji">😟</span> Worried Face</h1>
+<section class="description">
+<p>Face with a sad mouth, and worried-looking eyebrows.</p>
+<p>
+<em>Worried Face</em> was approved as part of <a href="../unicode-6.1/index.html">Unicode 6.1</a> in 2012
+and added to <a href="../emoji-1.0/index.html">Emoji 1.0</a> in 2015.
+</p>
+<form class="stacked no-top copy-paste">
+<label>
+<span class="copy-paste__label">Copy and paste this emoji:</span>
+<input type="text" value="😟" readonly class="emoji-copy copy-paste__data" id="emoji-copy">
+<button type="button" class="btn-clipboard copy-paste__btn" data-clipboard-target="#emoji-copy" style="width:auto;display:inline-block">Copy</button>
+</label>
+</form>
+</section>
+<section class="aliases">
+<h2>Also Known As</h2>
+<ul>
+<li><span class="emoji">😟</span> Sad</li>
+<li><span class="emoji">😟</span> Sadface</li>
+</ul>
+</section>
+<section class="vendor-list">
+<ul>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../apple/index.html">Apple</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/70/b3/70b34ff4e077443b017ca9a89ab913fe.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/5f/3f/5f3fb678c244972d55f8dd61b54bf9df.png 2x" alt="Worried Face on Apple iOS 10.2" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../apple/ios-10.2/index.html">iOS 10.2</a></p>
+</div>
+<div class="vendor-image">
+<a href="../apple/ios-10.2/worried-face/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/41/6e/416e3292e4b9622502a40d0c1f5db661.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/70/b3/70b34ff4e077443b017ca9a89ab913fe.png 2x" alt="Worried Face on Apple " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../apple/ios-10.0/index.html">iOS 10.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../apple/ios-10.0/worried-face/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/ff/4a/ff4a000124cb031281c5482941c7e5e2.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/f0/65/f065565eb5f02757858766531476d0dd.png 2x" alt="Worried Face on Apple " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../apple/ios-6.0/index.html">iOS 6.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../apple/ios-6.0/worried-face/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/aa/dd/aaddf3801032fca47ec3e900413639d4.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/79/e7/79e71c12631affd24d35788d42c78b66.png 2x" alt="Worried Face on Apple " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../google/index.html">Google</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/92/c4/92c4061f62fea3f77f3d591140b6d997.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/64/7e/647e670f287bc1db00d2d6e574740e38.png 2x" alt="Worried Face on Google Android 7.1" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../google/android-7.1/index.html">Android 7.1</a></p>
+</div>
+<div class="vendor-image">
+<a href="../google/android-7.1/worried-face/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/80/ee/80ee1a234a86141f6d2c09d97244978f.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/92/c4/92c4061f62fea3f77f3d591140b6d997.png 2x" alt="Worried Face on Google " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../google/android-7.0/index.html">Android 7.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../google/android-7.0/worried-face/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/ef/33/ef33fdb5079446583d842f94701674e2.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/eb/fa/ebfae0d0637d24a2405a0ee10438da4e.png 2x" alt="Worried Face on Google " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../google/android-4.4/index.html">Android 4.4</a></p>
+</div>
+<div class="vendor-image">
+<a href="../google/android-4.4/worried-face/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/45/3d/453dd86a92a7393847621487edb58662.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/a7/60/a760babbc5369dd60aff5c15999f4292.png 2x" alt="Worried Face on Google " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../microsoft/index.html">Microsoft</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/1c/e5/1ce5948c0cf7db9f3eddfc4f2e91ca29.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/b6/03/b6033b90ef5fb93793777be08bea1058.png 2x" alt="Worried Face on Microsoft Windows 10 Anniversary Update" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../microsoft/windows-10-anniversary-update/index.html">Windows 10 Anniversary Update</a></p>
+</div>
+<div class="vendor-image">
+<a href="../microsoft/windows-10-anniversary-update/worried-face/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/f1/e0/f1e07f63c221f49ae832b6a87d2fec61.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/1c/e5/1ce5948c0cf7db9f3eddfc4f2e91ca29.png 2x" alt="Worried Face on Microsoft " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../microsoft/windows-8.1/index.html">Windows 8.1</a></p>
+</div>
+<div class="vendor-image">
+<a href="../microsoft/windows-8.1/worried-face/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/da/79/da7993e115c3b78a031e03569c8f26e3.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/ba/fd/bafd8b54498075c26e1b3a0441db65c2.png 2x" alt="Worried Face on Microsoft " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../microsoft/windows-8.0/index.html">Windows 8.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../microsoft/windows-8.0/worried-face/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/b4/9e/b49e8837c019460f9197e06e2373a9fd.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/e4/c9/e4c961bae611a34b507927d30a67714d.png 2x" alt="Worried Face on Microsoft " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../samsung/index.html">Samsung</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/39/a9/39a94de4e415163d3905741054586698.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/1f/a0/1fa0f9ec3d9533573f3608d5f4012a3a.png 2x" alt="Worried Face on Samsung Galaxy S8" width="108" height="108">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../samsung/galaxy-s8/index.html">Galaxy S8</a></p>
+</div>
+<div class="vendor-image">
+<a href="../samsung/galaxy-s8/worried-face/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/f8/4f/f84f1eabb178557932eeb69ce36636f8.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/39/a9/39a94de4e415163d3905741054586698.png 2x" alt="Worried Face on Samsung " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../samsung/galaxy-s4/index.html">Galaxy S4</a></p>
+</div>
+<div class="vendor-image">
+<a href="../samsung/galaxy-s4/worried-face/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/42/0e/420e90e620ce4538be8a7e5a7993ff86.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/a3/60/a360dded883641d634763b41a7c6780c.png 2x" alt="Worried Face on Samsung " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../lg/index.html">LG</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/79/ec/79eca6fe44b74b0b8c406e4990277d0e.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/0d/11/0d11f7487d0aeb4765d6a30a3869f135.png 2x" alt="Worried Face on LG G5" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../lg/g5/index.html">G5</a></p>
+</div>
+<div class="vendor-image">
+<a href="../lg/g5/worried-face/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/b9/7e/b97e04b258a9a4383e923dc34d54a9d4.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/79/ec/79eca6fe44b74b0b8c406e4990277d0e.png 2x" alt="Worried Face on LG " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../lg/g3/index.html">G3</a></p>
+</div>
+<div class="vendor-image">
+<a href="../lg/g3/worried-face/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/e1/45/e1451a7b0203426e76f71f15bf3349d4.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/f2/e6/f2e6841294c29ef1390a21b57da68b01.png 2x" alt="Worried Face on LG " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../htc/index.html">HTC</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/f6/f3/f6f33fd4ae6e33b896ef132704813b62.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/bd/66/bd662aa7c684a7288e4c22e9ab2b7145.png 2x" alt="Worried Face on HTC Sense 7" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../htc/sense-7/index.html">Sense 7</a></p>
+</div>
+<div class="vendor-image">
+<a href="../htc/sense-7/worried-face/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/5d/0b/5d0b267796420a7df726bb501b9fda32.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/f6/f3/f6f33fd4ae6e33b896ef132704813b62.png 2x" alt="Worried Face on HTC " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../facebook/index.html">Facebook</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/62/2e/622ed91fc2e32b9efd10d95dfc3c9980.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/ca/ac/caacc61381c819b288067f88330f8ac1.png 2x" alt="Worried Face on Facebook 2.0" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../facebook/2.0/index.html">2.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../facebook/2.0/worried-face/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/d3/5b/d35b27e88799785e5fa2393e810cf244.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/62/2e/622ed91fc2e32b9efd10d95dfc3c9980.png 2x" alt="Worried Face on Facebook " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../messenger/index.html">Messenger</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/c2/42/c242433c3d7840094396e0cd2ab0fe0c.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/16/75/1675eb54b45969a7a77c34990949a772.png 2x" alt="Worried Face on Messenger 1.0" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../messenger/1.0/index.html">1.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../messenger/1.0/worried-face/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/e7/e5/e7e58f32294328b100a9c22329493421.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/c2/42/c242433c3d7840094396e0cd2ab0fe0c.png 2x" alt="Worried Face on Messenger " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../twitter/index.html">Twitter</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/f4/63/f463408675b9437b457915713b9af46c.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/db/d8/dbd82eebba7fadf011fb487d50acbc17.png 2x" alt="Worried Face on Twitter Twemoji 2.2.3" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../twitter/twemoji-2.2.3/index.html">Twemoji 2.2.3</a></p>
+</div>
+<div class="vendor-image">
+<a href="../twitter/twemoji-2.2.3/worried-face/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/fd/7f/fd7fb102d02345005add150bc865f4d8.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/f4/63/f463408675b9437b457915713b9af46c.png 2x" alt="Worried Face on Twitter " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../twitter/twemoji-1.0/index.html">Twemoji 1.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../twitter/twemoji-1.0/worried-face/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/77/26/7726ce3f376fe561933e47203fb30167.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/fe/dc/fedc52df8312fcf5c5ded7071e533f03.png 2x" alt="Worried Face on Twitter " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../mozilla/index.html">Mozilla</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/72/8a/728a40b18935d282db9f95945fb035e8.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/47/f2/47f2064433efe0c1e979785cd7b0d4ef.png 2x" alt="Worried Face on Mozilla Firefox OS 2.5" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../mozilla/firefox-os-2.5/index.html">Firefox OS 2.5</a></p>
+</div>
+<div class="vendor-image">
+<a href="../mozilla/firefox-os-2.5/worried-face/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/37/e5/37e53cbf177535e2ec60fd3d42090f75.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/72/8a/728a40b18935d282db9f95945fb035e8.png 2x" alt="Worried Face on Mozilla " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../emoji-one/index.html">Emoji One</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/21/79/21799a4fff749f7a02848d75fcd266c6.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/03/c3/03c31278957a1704a60aa54c64eb4741.png 2x" alt="Worried Face on Emoji One 2.2.5" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../emoji-one/2.2.5/index.html">2.2.5</a></p>
+</div>
+<div class="vendor-image">
+<a href="../emoji-one/2.2.5/worried-face/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/c6/48/c648a7927671913807af4f9ce2d8b841.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/21/79/21799a4fff749f7a02848d75fcd266c6.png 2x" alt="Worried Face on Emoji One " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../emoji-one/2.2/index.html">2.2</a></p>
+</div>
+<div class="vendor-image">
+<a href="../emoji-one/2.2/worried-face/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/d0/9b/d09b341aff040ce2dad2104d9292b246.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/46/25/462522755a976c198eeacadf19ef1b4b.png 2x" alt="Worried Face on Emoji One " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../emoji-one/2.1/index.html">2.1</a></p>
+</div>
+<div class="vendor-image">
+<a href="../emoji-one/2.1/worried-face/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/72/ec/72ec582b8e3482060ce322fc052ec23c.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/85/04/85047e63404e366e09344360e7e5f10f.png 2x" alt="Worried Face on Emoji One " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../emoji-one/2.0/index.html">2.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../emoji-one/2.0/worried-face/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/62/c2/62c267e94a57d4aa29ce0146247bdfa0.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/18/51/1851e31a898279d3bfc0fe8c60184390.png 2x" alt="Worried Face on Emoji One " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../emoji-one/1.0/index.html">1.0</a></p>
+</div>
+<div class="vendor-image">
+<a href="../emoji-one/1.0/worried-face/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/22/41/2241fd99e83d845130cb892a33f009ce.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/cc/ee/ccee201a6801a6ab5f13548948c3dfa0.png 2x" alt="Worried Face on Emoji One " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<div class="vendor-container vendor-rollout-target">
+<div class="vendor-info">
+<h2><a href="../emojidex/index.html">emojidex</a></h2>
+</div>
+<div class="vendor-image">
+<img src="../../emojipedia-us.s3.amazonaws.com/cache/ba/99/ba99876781d38b32084a4121af6a2f8f.png" srcset="http://emojipedia-us.s3.amazonaws.com/cache/1b/29/1b29a9531bbe6502dc6427de5094218f.png 2x" alt="Worried Face on emojidex 1.0.24" width="120" height="120">
+</div>
+</div>
+<div class="vendor-rollout-container">
+<ul class="vendor-rollout">
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../emojidex/1.0.24/index.html">1.0.24</a></p>
+</div>
+<div class="vendor-image">
+<a href="../emojidex/1.0.24/worried-face/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/4a/ab/4aab5840a5ae7b72cf08bbd74d02d5f8.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/ba/99/ba99876781d38b32084a4121af6a2f8f.png 2x" alt="Worried Face on emojidex " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+<li>
+<div class="vendor-container">
+<div class="vendor-info">
+<p class="version-name"><a href="../emojidex/1.0.14/index.html">1.0.14</a></p>
+</div>
+<div class="vendor-image">
+<a href="../emojidex/1.0.14/worried-face/index.html">
+<img class="vendor-rollout-lazy" src="../static/img/lazy.svg" data-src="http://emojipedia-us.s3.amazonaws.com/cache/65/a7/65a71feab414dee0821d9d1556c2b47b.png" data-srcset="http://emojipedia-us.s3.amazonaws.com/cache/06/56/065612eac08f2175b5b6fe802a51b542.png 2x" alt="Worried Face on emojidex " width="60" height="60">
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</section>
+<h2>Codepoints</h2>
+<ul>
+<li><a href="../emoji/%f0%9f%98%9f/index.html">😟 U+1F61F</a></li>
+</ul>
+<h2>Shortcodes</h2>
+<ul class="shortcodes">
+<li>:worried:</li>
+</ul>
+<h2>Browse</h2>
+<ul>
+<li><a href="https://instagram.com/explore/tags/😟/"><span class="emoji">😟</span> on Instagram</a></li>
+<li><a href="https://twitter.com/search?q=%f0%9f%98%9f"><span class="emoji">😟</span> on Twitter</a></li>
+<li><a href="https://en.wikipedia.org/wiki/😟"><span class="emoji">😟</span> on Wikipedia</a></li>
+<li><a href="http://www.yelp.com/search?find_desc=%f0%9f%98%9f"><span class="emoji">😟</span> on Yelp</a></li>
+<li><a href="https://www.youtube.com/results?search_query=%f0%9f%98%9f"><span class="emoji">😟</span> on YouTube</a></li>
+</ul>
+<h2>Related</h2>
+<ul class="emoji-list">
+<li><a href="../clown-face/index.html"><span class="emoji">🤡</span> Clown Face</a></li>
+<li><a href="../disappointed-face/index.html"><span class="emoji">😞</span> Disappointed Face</a></li>
+<li><a href="../drooling-face/index.html"><span class="emoji">🤤</span> Drooling Face</a></li>
+<li><a href="../expressionless-face/index.html"><span class="emoji">😑</span> Expressionless Face</a></li>
+<li><a href="../relieved-face/index.html"><span class="emoji">😌</span> Relieved Face</a></li>
+<li><a href="../unamused-face/index.html"><span class="emoji">😒</span> Unamused Face</a></li>
+<li><a href="../weary-face/index.html"><span class="emoji">😩</span> Weary Face</a></li>
+<li><a href="../white-frowning-face/index.html"><span class="emoji">☹</span> Frowning Face</a></li>
+<li><a href="../random/index.html"><span class="emoji">🔀</span> Random emoji</a></li>
+</ul>
+<form class="short-link stacked">
+<input type="text" value="http://📙.la/😟" readonly>
+</form>
+</article>
+<div class="ad-footer">
+<div style="text-align:center">
+<script type="text/javascript">
+		    google_ad_client = "ca-pub-3417095048576988";
+		    width = document.documentElement.clientWidth;
+		    google_ad_slot = "7111864505";
+		    google_ad_width = 300;
+		    google_ad_height = 250;
+		    if (width > 380) {
+		        google_ad_slot = "8262920107";
+		        google_ad_width = 336;
+		       google_ad_height = 280;
+		    }
+ 
+		</script>
+<script type="text/javascript" src="../../pagead2.googlesyndication.com/pagead/f.txt">
+		</script>
+</div>
+</div>
+</div>
+<div class="sidebar">
+<div class="block">
+<h2>Categories</h2>
+<ul>
+<li><a href="../people/index.html"><span class="emoji">😃</span> Smileys & People</a></li>
+<li><a href="../nature/index.html"><span class="emoji">🐻</span> Animals & Nature</a></li>
+<li><a href="../food-drink/index.html"><span class="emoji">🍔</span> Food & Drink</a></li>
+<li><a href="../activity/index.html"><span class="emoji">⚽</span> Activity</a></li>
+<li><a href="../travel-places/index.html"><span class="emoji">🌇</span> Travel & Places</a></li>
+<li><a href="../objects/index.html"><span class="emoji">💡</span> Objects</a></li>
+<li><a href="../symbols/index.html"><span class="emoji">🔣</span> Symbols</a></li>
+<li><a href="../flags/index.html"><span class="emoji">🎌</span> Flags</a></li>
+</ul>
+</div>
+<div class="block">
+<h2>Most Popular</h2>
+<ul>
+<li><a href="../shrug/index.html"><span class="emoji">🤷</span> Person Shrugging</a></li>
+<li><a href="../face-with-tears-of-joy/index.html"><span class="emoji">😂</span> Face With Tears of Joy</a></li>
+<li><a href="../heavy-black-heart/index.html"><span class="emoji">❤</span> Red Heart</a></li>
+<li><a href="../smiling-face-with-heart-shaped-eyes/index.html"><span class="emoji">😍</span> Smiling Face With Heart-Eyes</a></li>
+<li><a href="../fire/index.html"><span class="emoji">🔥</span> Fire</a></li>
+<li><a href="../thinking-face/index.html"><span class="emoji">🤔</span> Thinking Face</a></li>
+<li><a href="../smiling-face-with-smiling-eyes/index.html"><span class="emoji">😊</span> Smiling Face With Smiling Eyes</a></li>
+<li><a href="../face-throwing-a-kiss/index.html"><span class="emoji">😘</span> Face Blowing a Kiss</a></li>
+<li><a href="../face-with-rolling-eyes/index.html"><span class="emoji">🙄</span> Face With Rolling Eyes</a></li>
+</ul>
+</div>
+<div class="block">
+<h2>Latest News</h2>
+<ul>
+<li><a href="http://blog.emojipedia.org/samsung-galaxy-s8-emoji-changelog/"><span class="emoji">📲</span> Samsung Galaxy S8 Emoji Changelog</a></li>
+<li><a href="http://blog.emojipedia.org/what-is-gender-and-why-does-it-matter-to-emoji/"><span class="emoji">🚻</span> What is Gender and Why Does it Matter to Emoji?</a></li>
+<li><a href="http://blog.emojipedia.org/why-there-were-two-emoji-updates-in-2016/"><span class="emoji">👀</span> Why There Were Two Emoji Updates In 2016</a></li>
+<li><a href="http://blog.emojipedia.org/facebook-completes-emoji-update/"><span class="emoji">💻</span> Facebook Completes Emoji Update</a></li>
+<li><a href="http://blog.emojipedia.org/the-resistance-will-be-emojified/"><span class="emoji">✊</span> The Resistance Will Be Emojified</a></li>
+<li><a href="http://blog.emojipedia.org/who-owns-emoji/"><span class="emoji">👩&zwj;⚖️</span> Who Owns Emoji?</a></li>
+<li><a href="http://blog.emojipedia.org/utc-provides-feedback-on-redhead-emoji/"><span class="emoji">📝</span> UTC Provides Feedback on Redhead Emoji</a></li>
+<li><a href="http://blog.emojipedia.org/happy-chinese-new-year/"><span class="emoji">🎇</span> Happy Chinese New Year!</a></li>
+</ul>
+</div>
+<div class="block">
+<h2>Events</h2>
+<ul>
+<li><a href="../australia-day/index.html"><span class="emoji">🇦🇺</span> Australia Day</a></li>
+<li><a href="../bastille-day/index.html"><span class="emoji">🇫🇷</span> Bastille Day</a></li>
+<li><a href="../birthday/index.html"><span class="emoji">🎂</span> Birthday</a></li>
+<li><a href="../black-friday/index.html"><span class="emoji">🛍</span> Black Friday</a></li>
+<li><a href="../canada-day/index.html"><span class="emoji">🇨🇦</span> Canada Day</a></li>
+<li><a href="../carnaval/index.html"><span class="emoji">🇧🇷</span> Carnaval</a></li>
+<li><a href="../chinese-new-year/index.html"><span class="emoji">🐉</span> Chinese New Year</a></li>
+<li><a href="../christmas/index.html"><span class="emoji">🎅</span> Christmas</a></li>
+<li><a href="../cinco-de-mayo/index.html"><span class="emoji">🇲🇽</span> Cinco de Mayo</a></li>
+<li><a href="../dragon-boat-festival/index.html"><span class="emoji">🇨🇳</span> Dragon Boat Festival</a></li>
+<li><a href="../easter/index.html"><span class="emoji">🐰</span> Easter</a></li>
+<li><a href="../emoji-movie/index.html"><span class="emoji">🎥</span> Emoji Movie</a></li>
+<li><a href="../fall-autumn/index.html"><span class="emoji">🍂</span> Fall / Autumn</a></li>
+<li><a href="../fathers-day/index.html"><span class="emoji">👨</span> Father’s Day</a></li>
+<li><a href="../festivus/index.html"><span class="emoji">💪</span> Festivus</a></li>
+<li><a href="../graduation/index.html"><span class="emoji">🎓</span> Graduation</a></li>
+<li><a href="../guy-fawkes/index.html"><span class="emoji">🔥</span> Guy Fawkes</a></li>
+<li><a href="../halloween/index.html"><span class="emoji">🎃</span> Halloween</a></li>
+<li><a href="../hanukkah/index.html"><span class="emoji">🕎</span> Hanukkah</a></li>
+<li><a href="../holi/index.html"><span class="emoji">🕉</span> Holi</a></li>
+<li><a href="../independence-day/index.html"><span class="emoji">🇺🇸</span> Independence Day</a></li>
+<li><a href="../mothers-day/index.html"><span class="emoji">👩</span> Mother’s Day</a></li>
+<li><a href="../new-years-eve/index.html"><span class="emoji">🎊</span> New Year’s Eve</a></li>
+<li><a href="../olympics/index.html"><span class="emoji">🏊</span> Olympics</a></li>
+<li><a href="../queens-birthday/index.html"><span class="emoji">👑</span> Queen’s Birthday</a></li>
+<li><a href="../ramadan/index.html"><span class="emoji">☪</span> Ramadan</a></li>
+<li><a href="../spring/index.html"><span class="emoji">🌱</span> Spring</a></li>
+<li><a href="../st-patricks-day/index.html"><span class="emoji">☘</span> St Patrick’s Day</a></li>
+<li><a href="../summer/index.html"><span class="emoji">☀</span> Summer</a></li>
+<li><a href="../super-bowl/index.html"><span class="emoji">🏈</span> Super Bowl</a></li>
+<li><a href="../thanksgiving/index.html"><span class="emoji">🦃</span> Thanksgiving</a></li>
+<li><a href="../valentines-day/index.html"><span class="emoji">💘</span> Valentine’s Day</a></li>
+<li><a href="../wedding-marriage/index.html"><span class="emoji">👰</span> Wedding / Marriage</a></li>
+<li><a href="../winter/index.html"><span class="emoji">⛄</span> Winter</a></li>
+<li><a href="../winter-olympics/index.html"><span class="emoji">🎿</span> Winter Olympics</a></li>
+<li><a href="../world-cup/index.html"><span class="emoji">⚽</span> World Cup</a></li>
+<li><a href="../world-emoji-day/index.html"><span class="emoji">🌎</span> World Emoji Day</a></li>
+</ul>
+</div>
+</div>
+</div>
+<footer>
+<nav>
+<div class="container">
+<div class="vendors">
+<h2>Platforms</h2>
+<ul>
+<li><a href="../apple/index.html">Apple</a></li>
+<li><a href="../emojidex/index.html">emojidex</a></li>
+<li><a href="../emoji-one/index.html">Emoji One</a></li>
+<li><a href="../emojipedia/index.html">Emojipedia</a></li>
+<li><a href="../facebook/index.html">Facebook</a></li>
+<li><a href="../google/index.html">Google</a></li>
+<li><a href="../htc/index.html">HTC</a></li>
+<li><a href="../instagram/index.html">Instagram</a></li>
+<li><a href="../lg/index.html">LG</a></li>
+<li><a href="../messenger/index.html">Messenger</a></li>
+<li><a href="../microsoft/index.html">Microsoft</a></li>
+<li><a href="../mozilla/index.html">Mozilla</a></li>
+<li><a href="../samsung/index.html">Samsung</a></li>
+<li><a href="../slack/index.html">Slack</a></li>
+<li><a href="../snapchat/index.html">Snapchat</a></li>
+<li><a href="../sponsored/index.html">Sponsored</a></li>
+<li><a href="../telegram/index.html">Telegram</a></li>
+<li><a href="../twitter/index.html">Twitter</a></li>
+<li><a href="../viber/index.html">Viber</a></li>
+<li><a href="../whatsapp/index.html">WhatsApp</a></li>
+<li><a href="../yo-status/index.html">Yo Status</a></li>
+</ul>
+</div>
+<div class="unicode-version">
+<h2>Emoji Versions</h2>
+<ul>
+<li><a href="../emoji-6.0/index.html">Emoji 6.0</a></li>
+<li><a href="../emoji-5.0/index.html">Emoji 5.0</a></li>
+<li><a href="../emoji-4.0/index.html">Emoji 4.0</a></li>
+<li><a href="../emoji-3.0/index.html">Emoji 3.0</a></li>
+<li><a href="../emoji-2.0/index.html">Emoji 2.0</a></li>
+<li><a href="../emoji-1.0/index.html">Emoji 1.0</a></li>
+</ul>
+<h2>Unicode Versions</h2>
+<ul>
+<li><a href="../unicode-11.0/index.html">Unicode 11.0</a></li>
+<li><a href="../unicode-10.0/index.html">Unicode 10.0</a></li>
+<li><a href="../unicode-9.0/index.html">Unicode 9.0</a></li>
+<li><a href="../unicode-8.0/index.html">Unicode 8.0</a></li>
+<li><a href="../unicode-7.0/index.html">Unicode 7.0</a></li>
+<li><a href="../unicode-6.1/index.html">Unicode 6.1</a></li>
+<li><a href="../unicode-6.0/index.html">Unicode 6.0</a></li>
+<li><a href="../unicode-5.2/index.html">Unicode 5.2</a></li>
+<li><a href="../unicode-5.1/index.html">Unicode 5.1</a></li>
+<li><a href="../unicode-4.1/index.html">Unicode 4.1</a></li>
+<li><a href="../unicode-4.0/index.html">Unicode 4.0</a></li>
+<li><a href="../unicode-3.2/index.html">Unicode 3.2</a></li>
+<li><a href="../unicode-3.1/index.html">Unicode 3.1</a></li>
+<li><a href="../unicode-3.0/index.html">Unicode 3.0</a></li>
+<li><a href="../unicode-1.1/index.html">Unicode 1.1</a></li>
+</ul>
+</div>
+<div class="static-pages">
+<h2>More</h2>
+<ul>
+<li><a href="../adopt-emoji-faq/index.html">Adopt An Emoji FAQ</a></li>
+<li><a href="../ads/index.html">Ads</a></li>
+<li><a href="../apple-watch/index.html">Apple Watch</a></li>
+<li><a href="../botmoji/index.html">Botmoji</a></li>
+<li><a href="../contact/index.html">Contact</a></li>
+<li><a href="../neutral/index.html">Emoji Neutral</a></li>
+<li><a href="../emojipedia-api/index.html">Emojipedia API</a></li>
+<li><a href="../app/index.html">Emojipedia Apps</a></li>
+<li><a href="../stats/index.html">Emoji Statistics</a></li>
+<li><a href="../emoji-wrap/index.html">Emoji Wrap</a></li>
+<li><a href="../emoji-zwj-sequences/index.html">Emoji ZWJ Sequences</a></li>
+<li><a href="../faq/index.html">FAQ</a></li>
+<li><a href="../glossary/index.html">Glossary</a></li>
+<li><a href="../stickers/index.html">iMessage Stickers</a></li>
+<li><a href="../press/index.html">In The News</a></li>
+<li><a href="../licensing/index.html">Licensing</a></li>
+<li><a href="../new/index.html">New</a></li>
+<li><a href="../privacy-policy/index.html">Privacy Policy</a></li>
+<li><a href="../tips/index.html">Tips</a></li>
+<li><a href="../modifiers/index.html">Modifiers</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="container content">
+<p>All emoji names&nbsp;are&nbsp;<a href="../faq/index.html">official character and/or CLDR names</a>&nbsp;and <a href="../emoji/index.html" title="😃 Every Emoji by Codepoint">code points</a>, listed as part of the <a href="https://en.wikipedia.org/wiki/Unicode_Standard">Unicode Standard</a>. Additional descriptions are copyright&nbsp;&copy; Emojipedia.&nbsp;Emoji character artwork and copyright belong to their respective font creators.</p>
+<p>Emojipedia&reg; is a registered trademark of Emojipedia Pty Ltd;&nbsp;Apple&reg; is a registered trademark of Apple Inc; Microsoft&reg; and Windows&reg; are registered trademarks of Microsoft Corporation; Google&reg; and Android&trade; are registered trademarks or trademarks of Google Inc in the United States and/or other countries. Emoji One images provided free by Emoji One.</p>
+</div>
+</footer>
+<script type="text/javascript" src="../static/js/jquery.min.d72a6941a827.js" charset="utf-8"></script>
+<script type="text/javascript" src="../static/js/site.9958d0753977.js" charset="utf-8"></script>
+<script type="text/javascript" src="../static/js/lazy.f12b5efd22b1.js" charset="utf-8"></script>
+<script>
+(function() {
+function async_load(script_url){
+var protocol = ('https:' == document.location.protocol ? 'https://' : 'http://');
+var s = document.createElement('script'); s.src = protocol + script_url;
+var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+}
+bm_website_code = 'D7A15B1CC4264F19';
+jQuery(document).ready(function(){async_load('asset.pagefair.com/measure.min.js')});
+jQuery(document).ready(function(){async_load('asset.pagefair.net/ads.min.js')});
+})();
+</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-43649623-1', 'auto');
+ga('send', 'pageview');
+</script>
+</body>
+
+<!-- Mirrored from emojipedia.org/worried-face/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Mar 2017 08:07:26 GMT -->
+</html>
